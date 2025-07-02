@@ -305,28 +305,28 @@ text {
     margin: 0px -3px;
 }
 #gameTab img {
-  background-image: image-set(url("https://i.imgur.com/BCDoO2R.png") 2x);
+  background-image: image-set(url("https://raw.githubusercontent.com/kamarov-therussiantank/TTCV2/main/src/assets/snippets/tab1Selected@2x.png") 2x);
 }
 #gameTab img.deselected {
-  background-image: image-set(url("https://i.imgur.com/bAdWMsd.png") 2x);
+  background-image: image-set(url("https://raw.githubusercontent.com/kamarov-therussiantank/TTCV2/main/src/assets/snippets/tab1@2x.png") 2x);
 }
 #shopTab img {
-  background-image: image-set(url("https://i.imgur.com/AiRhgTT.png") 2x);
+  background-image: image-set(url("https://raw.githubusercontent.com/kamarov-therussiantank/TTCV2/main/src/assets/snippets/tab2Selected@2x.png") 2x);
 }
 #shopTab img.deselected {
-  background-image: image-set(url("https://i.imgur.com/mIe3oBK.png") 2x);
+  background-image: image-set(url("https://raw.githubusercontent.com/kamarov-therussiantank/TTCV2/main/src/assets/snippets/tab2@2x.png") 2x);
 }
 #newsTab img {
-  background-image: image-set(url("https://i.imgur.com/V5flxsL.png") 2x);
+  background-image: image-set(url("https://raw.githubusercontent.com/kamarov-therussiantank/TTCV2/main/src/assets/snippets/tab3Selected@2x.png") 2x);
 }
 #newsTab img.deselected {
-  background-image: image-set(url("https://i.imgur.com/0Z31tLr.png") 2x);
+  background-image: image-set(url("https://raw.githubusercontent.com/kamarov-therussiantank/TTCV2/main/src/assets/snippets/tab3@2x.png") 2x);
 }
 #forumTab img {
-  background-image: image-set(url("https://i.imgur.com/GYdGviu.png") 2x);
+  background-image: image-set(url("https://raw.githubusercontent.com/kamarov-therussiantank/TTCV2/main/src/assets/snippets/tab4Selected@2x.png") 2x);
 }
 #forumTab img.deselected {
-  background-image: image-set(url("https://i.imgur.com/JNZM9vs.png") 2x);
+  background-image: image-set(url("https://raw.githubusercontent.com/kamarov-therussiantank/TTCV2/main/src/assets/snippets/tab4@2x.png") 2x);
 }
 .shopItem {
     background: repeating-radial-gradient(#ccc, #55555599 100px) !important;
