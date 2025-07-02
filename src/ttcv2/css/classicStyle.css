@@ -1,508 +1,524 @@
-
-@font-face {
-    font-family: 'ClassicTankTrouble';
-    src:  url('ttcv2/fonts/Classic_TankTrouble_font.ttf') format('truetype');
+@keyframes moveLeft {
+  0% {
+    transform: translateX(0) scale(1);
+  }
+  100% {
+    transform: translateX(-60%) scale(0);
+  }
 }
-::-webkit-scrollbar {
-    width: 10px
+@keyframes moveRight {
+  0% {
+    transform: translateX(-60%) scale(0);
+  }
+  100% {
+    transform: translateX(0) scale(1);
+  }
 }
-
-::-webkit-scrollbar-button {
-    background-color: #353535;
-    height: 0;
-    width: 0;
-    border-radius: 5px;
-    -webkit-transition-duration: .2s;
-    transition-duration: .2s
-}
-
-::-webkit-scrollbar-track {
-    background-color: #646464
-}
-
-::-webkit-scrollbar-track-piece {
-    background-color: #353535
-}
-
-::-webkit-scrollbar-thumb {
-    height: 50px;
-    background-color: #5a5a5a;
-    border-radius: 2px;
-    -webkit-transition: 1s;
-    transition: 1s
-}
-
-::-webkit-scrollbar-thumb:hover {
-    background-color: #707070
-}
-
-::-webkit-scrollbar-button:vertical:decrement {
-    border-radius: 0;
-    -webkit-transition-duration: .2s;
-    transition-duration: .2s
-}
-
-::-webkit-scrollbar-button:vertical:decrement:hover {
-    background-color: #626262
-}
-
-::-webkit-scrollbar-button:vertical:increment {
-    border-radius: 0;
-    -webkit-transition-duration: .2s;
-    transition-duration: .2s
-}
-
-::-webkit-scrollbar-button:vertical:increment:hover {
-    background-color: #626262
-}
-
-::-webkit-scrollbar-corner {
-    background-color: #646464
-}
-
-::-webkit-resizer {
-    background-color: #666
-}
-
 #game {
-    position: relative;
-    left: -15px;
-    top: 0px;
+    top: 0 !important;
 }
-#secondaryContent {
-    float: left;
-    margin-left: 10px;
-    margin-top: 5px;
-    width: 130px;
+#leftBanner {
+  display: none !important;
 }
-#tertiaryContent {
-    float: right;
-    margin-right: 10px;
-    margin-top: 5px;
-    width: 130px;
-}
-#red_infiltration {
-    display: none !important;
-}
-#red_infiltration img {
-    display: none !important;
+#rightBanner {
+  display: none !important;
 }
 .premium #header {
-        background-image: url(../assets/images/header/background.png);
-        background-size: 120px 120px;
-}
-.snippet {
-    background: #fff;
-    border: #ccc 3px solid;
-    border-radius: 5px;
-    box-shadow: none;
-}
-.snippet .header {
-    background: #ccc;
-    color: #ffffff;
-    border-radius: 3px;
-    border: #ccc 2px solid;
-    margin-bottom: 5px;
-}
-.snippet .content {
-       margin: 0 !important;
-       font-size: 13px !important;
-    }
-#scrapyardSnippet .content {
-        margin-left: 4px;
-        margin-right: 4px;
-    }
-#scrapyardSnippet {
-    width: 133px;
-    padding: 3px;
-    border: #000 3px solid;
-}
-#scrapyardSnippet .header {
-    background: none;
-    border: none;
-}
-#wallOfFameSnippet {
-    background: #000;
-    cursor: pointer;
-    box-sizing: border-box;
-    padding: 4px;
-    border: none;
-    width: 135px;
-}
-#appStoreSnippet {
-    display: none !important;
-}
-#messagesSnippet {
-    display: none !important;
-}
-.shopItem svg text {
-       text-shadow: none;
-       stroke: none;
-    }
-.shopItem {
-    background: #555;
-    border-radius: 3px;
-    border: #666 3px solid;
-    box-shadow: #000 0 3px 5px 0;
-    border-radius: 7px;
-}
-div#virtualShopItem-500 {
-    background: repeating-linear-gradient(55deg, #101010, #333 100px);
-    border: #242424 3px solid;
-}
-div#virtualShopItem-520 {
-    background: repeating-linear-gradient(45deg, #ff00d4, #256cff, #00ffff, #02ff00, #e7ff00, #ffb300, red, #ff00d4 270px);
-    border: #ff0080 3px solid;
-}
-div#shopItem-120 {
-    background: #ebc934;
-    border: 3px #d3a310 solid;
-}
-div#shopItem-122 {
-    background: #1ab14d;
-    border: 3px #2a873b solid;
-}
-.shopItem.info button.info {
-    width: 34px;
-    float: right;
-    right: 10px;
-    color: white;
-    background: #0881d1;
-    }
-div#teaser-25 {
-    background: red;
-    color: white;
-    border: 3px red solid;
-    }
-#teaser-25 .header {
-    background: none;
-    border: none;
-    text-shadow: none;
-    }
-#teaser-25 .mode {
-        color: white;
-    }
-.forum .bubble {
-        background-color: #f2f2f2;
-        border: #e4e4e4 2px solid;
-        box-shadow: 0 3px 4px 0 rgba(0,0,0, .5);
-    }
-.forum .tank {
-        font-family: 'TankTrouble';
-        font-size: 14px;
-    }
-.forum .tank div {
-    width: 150px;
-    height: 20px;
-    left: -5px;
-    top: -19px;
-    position: relative;
-    }
-.forum .thread:not(.liked) .like:not(:active) .standard, .forum .thread:not(.liked) .like:active :not(.selected).active, .forum .thread.liked .like:not(:active) .selected:not(.active), .forum .thread.liked .like:active .selected.active, .forum .reply:not(.liked) .like:not(:active) .standard, .forum .reply:not(.liked) .like:active :not(.selected).active, .forum .reply.liked .like:not(:active) .selected:not(.active), .forum .reply.liked .like:active .selected.active, .forum .edit:not(:active) .standard, .forum .edit:active .active, .forum .acceptEdit:not(:active) .standard, .forum .acceptEdit:active .active, .forum .cancelEdit:not(:active) .standard, .forum .cancelEdit:active .active {
-    display: inherit;
-    padding: 0;
-    }
-.forum .synchronization {
-        font-size: .8em;
-        margin-top: 10px;
-        text-align: center;
-        font-family: 'TankTrouble';
-    }
-.box .content {
-    background: #d5d5d5;
-    border-radius: 5px;
-    border: #999 3px solid;
-    padding: 5px;
-    width: 250px;
-}
-.box .spaced {
-    padding: 5px;
-    left: 0px;
-    border: none;
-    background: none;
-    box-shadow: none;
-}
-#overlay .newGame .premium {
-    display: inline-block;
-    border: 3px solid gray;
-    border-radius: 8px;
-    position: relative;
-    padding: 40px 40px 30px;
-    margin: 80px 20px 20px;
-    box-shadow: 0px 10px 20px #000;
-}
-#overlay .subheadline {
-    font-size: 1.5em;
-    color: #555;
-    text-shadow: none;
-}
-button.warning {
-    background: linear-gradient(to bottom, red, maroon);
-    border: none;
-    color: #fff;
-}
-.buttonGroup div.selected button {
-    text-shadow: 0 0 4px #ccc, 0 0 4px #fff700, 0 0 5px #ffda00, 0 0 10px #ffe237;
-}
-.buttonGroup div.selected button:disabled {
-    text-shadow: 0 0 4px #ccc, 0 0 4px #fff700, 0 0 5px #ffda00, 0 0 10px #ffe237;
-}
-   #overlay .newGame .premium::before {
-    content: "";
-    width: 160px;
-    height: 180px;
-    position: absolute;
-    top: -115px;
-    left: 50%;
-    transform: translateX(-50%);
-    background-image: url(https://cdn.tanktrouble.com/RELEASE-2023-09-06-01/assets/images/tankInfo/accountActive@2x.png);
-    background-size: 160px 180px;
-}
-#overlay .messages .div {
-    font-family: cursive !important;
-    font-size: 14px;
-    color: #555;
-    text-shadow: none;
-}
-#overlay .messages .message {
-    background: #a3a3a3bd;
-    color: #000000;
-    border-radius: 2px;
-    text-shadow: none;
-    box-shadow: 7px 9px 15px 0 #000000;
-}
-#overlay .messages .message.important {
-        background: #e01f1f;
-        color: #fff;
-        border-radius: 2px;
-        text-shadow: none;
-     }
-#overlay .admin .attention {
-        text-shadow: none;
-     }
-#overlay .messages textarea {
-        box-sizing: border-box;
-        width: 490px;
-    }
-#overlay .subheadline {
-        font-size: 20px;
-        font-family: 'ClassicTanktrouble';
-    }
-.box .tab.right {
-        background: #999;
-    }
-.box .tab.left {
-        background: #999;
-    }
-#tankinfo .username {
-    position: relative;
-    z-index: 1;
-    height: 28px;
-    background: #979797;
-    border: 3px #0000002e solid;
-    border-radius: 4px;
-}
-#tankinfo .icon {
-    position: absolute;
-    width: 320px;
-    height: 192px;
-    left: calc(50% + 5px);
-    top: -162px;
-    -webkit-transform: translateX(-50%);
-    -ms-transform: translateX(-50%);
-    transform: translateX(-50%);
-}
-.achievement.unlockedAndSeen {
-        background: linear-gradient(to bottom, #ccc, #666);
-        box-shadow: #000 0px 3px 3px 0px;
-        text-shadow: none;
-        color: #000;
-    }
-.achievement {
-        background: #666;
-        text-shadow: none;
-        color: #fff;
-    }
-.achievement .progress {
-        background: linear-gradient(to bottom, #e5c766, #a68826);
-    }
-.note {
-        color: #000;
-    }
-#overlay input[type="checkbox"]+label::before {
-    content: '';
-    background: red;
-    border: 2px solid #bf0000;
-    transition: background .3s;
-    border-radius: 5px;
-    font-size: 35px;
-    line-height: 24px;
-    text-align: center;
-    vertical-align: middle;
-    display: inline-block;
-    width: 24px;
-    height: 24px;
-    margin-right: 5px;
-}
-#overlay input[type="checkbox"]:checked+label::before {
-    border-color: #00df4e !important;
-    background: limegreen;
-}
-#content {
-    max-width: 1884px !important;
-    width: calc(100%) !important;
-}
-.horizontalAdSlot,
-.verticalAdSlot,
-#leftBanner,
-#rightBanner,
-#topBanner {
-    display: none !important;
-}
-.buttonGroup {
-    display: inline-block;
-    background: #999;
-    border-radius: 3px;
-    border: #666 2px solid;
-    margin-bottom: 10px;
-}
-#chat {
-    -webkit-filter: none;
-    filter: none;
-    -webkit-transform: translateZ(0);
-    position: fixed;
-    z-index: 10;
-    width: 1px;
-    height: 1px;
-}
-#chat .body {
-    width: 242px;
-    height: 140px;
-    margin-left: 20px;
-    margin-top: 0px !important;
-    cursor: default;
-    background: #00000014;
-    padding: 2px 2px 2px 5px;
-}
-#chat .content {
-    font-family: verdana;
-    font-size: 10pt;
-    width: 0;
-    pointer-events: none;
-    transition: width .3s .2s;
-    background: none;
-}
-#chat form {
-    border-radius: 3px;
-    background-color: #dfdfdf;
-    pointer-events: auto;
-    animation-name: chatsend;
-    animation-duration: 5s;
-    animation-timing-function: linear;
-    animation-direction: normal;
-    animation-iteration-count: infinite;
-    padding: 2px 2px 2px 2px;
-    margin-left: 20px;
-    left: 0px;
-    border: none;
-    width: 245px;
-    box-shadow: none;
-}
-#chat:not(.open) form {
-	display: none;
-    background: none;
-}
-#chat.opening .content, #chat.open .content {
-    width: 269px;
-    transition: width .250s;
-}
-#chat.opening textarea, #chat.open textarea {
-    font-size: 12px;
-    width: 235px;
-    opacity: 1;
-    cursor: inherit;
-}
-#chat textarea {
-    font-family: 'Arial';
-    font-size: 12px !important;
-    font-weight: bold;
-    position: relative;
-    left: 1px !important;
-    width: 0;
-    min-height: 16px !important;
-    opacity: 0;
-    margin: 0;
-    padding: 1px 2px;
-    border: none !important;
-    outline: none !important;
-    overflow-y: hidden;
-    resize: none;
-    background: none;
-    cursor: default;
-}
-#chat text {
-    font-family: 'Arial';
-    font-size: 12px !important;
-}
-.box.topRight .tab.topRight {
-    display: inherit;
-    background: #999;
-}
-#overlay .controls img.selected {
-    padding: 0px;
+    background-image: url(../assets/images/header/background.png) !important;
+    background-size: 70px 70px !important;
 }
 #header {
-    background-size: 80px 80px !important
+    background-image: url(../assets/images/header/background.png);
+    background-size: 70px 70px !important;
 }
-.premium.halloween #header {
-    background-image: url(https://raw.githubusercontent.com/kamarov-therussiantank/TTCV2/main/src/assets/header/background2%402x.png) !important;
-    background-size: 80px 80px !important
+#contentWrapper {
+  margin-top: 0 !important;
+  padding-top: 10px;
+  z-index: 1;
 }
-.premium.halloween #header {
-    background-image: url(https://raw.githubusercontent.com/kamarov-therussiantank/TTCV2/main/src/assets/header/background2.png) !important;
-    background-size: 80px 80px !important
+.tooltipster-default {
+    box-shadow: 0 2px 3px 0 rgba(0,0,0,.2) !important;
+    border-radius: 10px !important;
+    background: #d3d3d3 !important;
 }
-.halloween #header {
-    background-image: url(https://raw.githubusercontent.com/kamarov-therussiantank/TTCV2/main/src/assets/header/background2%402x.png) !important;
-    background-size: 80px 80px !important
+.tooltipster-default .tooltipster-content {
+    font-family: 'TankTrouble' !important;
 }
-.halloween #header {
-    background-image: url(https://raw.githubusercontent.com/kamarov-therussiantank/TTCV2/main/src/assets/header/background2.png) !important;
-    background-size: 80px 80px !important
+.tooltipster-arrow-left span,.tooltipster-arrow-right span {
+    background: #d3d3d3 !important;
 }
-.premium.christams #header {
-    background-image: url(https://raw.githubusercontent.com/kamarov-therussiantank/TTCV2/main/src/assets/header/background3%402x.png) !important;
-    background-size: 80px 80px !important
+.tooltipster-arrow-top span,.tooltipster-arrow-top-right span,.tooltipster-arrow-top-left span {
+    background: #d3d3d3 !important;
 }
-.premium.christams #header {
-    background-image: url(https://raw.githubusercontent.com/kamarov-therussiantank/TTCV2/main/src/assets/header/background3.png) !important;
-    background-size: 80px 80px !important
+.tooltipster-arrow-bottom span,.tooltipster-arrow-bottom-right span,.tooltipster-arrow-bottom-left span {
+    background: #d3d3d3 !important;
 }
-.christmas #header {
-    background-image: url(https://raw.githubusercontent.com/kamarov-therussiantank/TTCV2/main/src/assets/header/background3%402x.png) !important;
-    background-size: 80px 80px !important
+.tooltipster-error {
+    background: red !important;
+    border-radius: 10px !important;
 }
-.christams #header {
-    background-image: url(https://raw.githubusercontent.com/kamarov-therussiantank/TTCV2/main/src/assets/header/background3.png) !important;
-    background-size: 80px 80px !important
+.tooltipster-error .tooltipster-content {
+    font-family: 'TankTrouble' !important;
 }
-#navigation .shadow {
-    background-image: none !important;
+.tooltipster-error .tooltipster-arrow-left span,.tooltipster-error .tooltipster-arrow-right span {
+    background: red !important;
 }
-b {
-    font-weight: bold;
+
+.tooltipster-error .tooltipster-arrow-top span,.tooltipster-error .tooltipster-arrow-top-right span,.tooltipster-error .tooltipster-arrow-top-left span {
+    background: red !important;
+}
+
+.tooltipster-error .tooltipster-arrow-bottom span,.tooltipster-error .tooltipster-arrow-bottom-right span,.tooltipster-error .tooltipster-arrow-bottom-left span {
+    background: red !important;
+}
+#tankinfo text {
+    font-family: 'TankTrouble' !important;
+    font-size: 12px !important;
+}
+#tankinfo .username.hasSVG text {
+    font-size: 22px !important;
+}
+text {
+    font-family: 'TankTrouble';
+}
+.snippet.important {
+  background: #ff0000 !important;
+}
+#wallOfFameSnippet {
+    border: 3px solid #000000;
+    width: 135px !important;
+}
+#messagesSnippet {
+  display: none !important;
+}
+#red_infiltration {
+    display: none;
+}
+.snippet.standard,
+#visitsSnippet {
+  background: #ffffff !important;
+  color: #4a4a4a;
+  font-family: Arial, sans-serif;
+  border: 3px solid #d3d3d3;
+  width: calc(100% - 6px) !important;
+}
+#FAQSnippet,
+#tellAFriendSnippet {
+  background: #000000;
+  border: 3px solid #000000;
+  color: #cacaca;
+  cursor: pointer;
+}
+#feedbackSnippet {
+  background: #ffffff;
+  border: 3px solid #000000;
+  color: #4a4a4a;
+  cursor: pointer;
+}
+.snippet.standard .header,
+#visitsSnippet .header {
+  background: #d3d3d3;
+  margin-bottom: 4px;
+}
+#FAQSnippet .header,
+#feedbackSnippet .header,
+#tellAFriendSnippet .header  {
+  color: #ffffff;
+  background: #000000;
+}
+#visitsSnippet #stats1, #stats2 {
+  margin-bottom: 6px;
+  font-size: 13px;
+}	
+#stats1 {
+   margin-top: 10px;
+}
+#stats2 > div, #stats2 > span {
+  display: inline-block;
+  vertical-align: middle;
+}
+#visitsToday, #playersOnline, #tankOwners, #loggedIn {
+  font-size: 12px;
+}
+#visits {
+  font-size: 16px;
+	margin-bottom: 5px;
+}
+.snippet.standard .content,
+#messagesSnippet .content {
+  margin: 0;
+}
+#tankinfo .content {
+    background: #ffffff;
+    border: #d3d3d3 3px solid;
+    border-radius: 12px;
+}
+.box .tab.bottom,
+.box .tab.right,
+.box .tab.left,
+.box .tab.top,
+.box .tab.topRight {
+    background: #d3d3d3 !important; 
+}
+.box.noselect .content {
+    background: #ffffff;
+    border-radius: 12px;
+    border: #d3d3d3 3px solid;
+}
+#chat form {
+    border-top-left-radius: 10px !important;
+    border-top-right-radius: 10px !important;
+    border: 3px solid #d3d3d3 !important;
+    background: #fff !important;
+    margin-left: 20px !important;
+    padding: 1px !important;
+    width: 249px !important;
+}
+#chat form .autocomplete-dropdown{
+    margin-left: 255px !important;
+    margin-top: -1px !important;
+}
+#chat.global form {
+    background: #68c5ff !important;
+}
+#chat.user form {
+    background: #08ef0a !important;
+}
+#chat:not(.open) form{
+    z-index: -1 !important;
+    position: relative !important;
+    animation: moveLeft 0.1s cubic-bezier(0.79, -0.02, 0.32, 0.98) forwards !important;
+}
+#chat:is(.opening, .open) form {
+    z-index: -1 !important;
+    position: relative !important;
+    padding-right: 0 !important;
+    animation: moveRight 0.3s cubic-bezier(0.79, -0.02, 0.32, 0.98) forwards !important;
+}
+#chat:is(.opening, .open) .content, #chat:is(.opening, .open) textarea {
+    width: 230px !important;
+}
+#chat {
+    -webkit-filter: drop-shadow(0 7px 4px rgba(0, 0, 0, .5)) !important;
+    filter: drop-shadow(rgba(0, 0, 0, 0.5) 0px 1px 2px) !important;
+}
+#chat .body {
+    width: 240px !important;
+    height: 160px !important;
+    margin-left: 20px;
+    margin-top: -2px !important;
+    background: rgb(255 255 255 / 75%);
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border: 3px solid #d3d3d3 !important;
+    padding: 5px;
+}
+#chat .body.dragging {
+    background: rgb(255 255 255 / 55%);
+    border: 3px solid #d3d3d3 !important;
+    border-bottom-left-radius: 10px !important;
+    border-bottom-right-radius: 10px !important;
+    margin-left: 20px !important;
+    margin-top: -2px;
+    padding: 5px;
+}
+#chat.opening textarea, #chat.open textarea {
+    width: 220px !important;
+    margin-left: -20px !important;
+    font-family: 'TankTrouble';
+    font-size: 12px;
+}
+#chat:not(.opening) textarea, #chat:not(.open) textarea {
+    margin-left: -20px !important;
+}
+#chat .handle {
     display: none !important;
 }
+.forum .bubble {
+    border: #000 2px solid !important;
+    border-radius: 10px !important;
+    background-color: #ffffff !important;
+    filter: drop-shadow(0 2px 2px rgba(0, 0, 0, .5));
+}
+.forum .compose input, .forum .editing input {
+    padding: 3px !important;
+    width: 45% !important;
+    border: 2px solid #d7d7d7 !important;
+    border-radius: 8px !important;
+    margin-bottom: 2px !important;
+}
+.forum .compose textarea, .forum .editing textarea {
+    padding: 3px !important;
+    border: 2px solid #d7d7d7 !important;
+    border-radius: 8px !important;
+    width: 99% !important;
+}
+#contentWrapper {
+    background: #fff;
+}
+#navigation {
+  height: 60px;
+  display: flex;
+  width: 100%;
+  justify-content: center;
+}
+#navigation .tab {
+    margin: 0px -3px;
+}
+#navigation .tab.selected {
+    z-index: 1;
+    filter: drop-shadow(rgba(0, 0, 0, 0.5) 0px 0px 4px);
+    margin: 0 -6px;
+}
+#navigation .tab img.deselected {
+    margin: 0 3px;
+}
+#gameTab img.deselected {
+    filter: drop-shadow(rgba(0, 0, 0, 0.4) 0px 0px 4px);
+    padding: 60px 0px 0px 368px;
+}
+#shopTab img.deselected, 
+#newsTab img.deselected, 
+#forumTab img.deselected {
+    filter: drop-shadow(rgba(0, 0, 0, 0.4) 0px 0px 4px);
+    padding: 60px 0px 0px 128px;
+}
+#gameTab img {
+  width: 0px !important;
+  height: 0px !important;
+  padding: 60px 0px 0px 380px;
+  margin: 0 -3px;
+}
+#shopTab img,
+#newsTab img,
+#forumTab img {
+  width: 0px !important;
+  height: 0px !important;
+  padding: 60px 0px 0px 128px;
+}
+#shopTab img.selected,
+#newsTab img.selected,
+#forumTab img.selected {
+    padding: 60px 0px 0px 140px;
+    width: 0px !important;
+    height: 0px !important;
+    margin: 0px -3px;
+}
+#gameTab img {
+  background-image: image-set(url("https://i.imgur.com/BCDoO2R.png") 2x);
+}
+#gameTab img.deselected {
+  background-image: image-set(url("https://i.imgur.com/bAdWMsd.png") 2x);
+}
+#shopTab img {
+  background-image: image-set(url("https://i.imgur.com/AiRhgTT.png") 2x);
+}
+#shopTab img.deselected {
+  background-image: image-set(url("https://i.imgur.com/mIe3oBK.png") 2x);
+}
+#newsTab img {
+  background-image: image-set(url("https://i.imgur.com/V5flxsL.png") 2x);
+}
+#newsTab img.deselected {
+  background-image: image-set(url("https://i.imgur.com/0Z31tLr.png") 2x);
+}
+#forumTab img {
+  background-image: image-set(url("https://i.imgur.com/GYdGviu.png") 2x);
+}
+#forumTab img.deselected {
+  background-image: image-set(url("https://i.imgur.com/JNZM9vs.png") 2x);
+}
+.shopItem {
+    background: repeating-radial-gradient(#ccc, #55555599 100px) !important;
+    border: #55555599 dotted !important;
+}
+#overlay {
+    background-color: rgb(147 147 147 / 80%) !important;
+}
+#overlay .newGame .premium {
+    display: block;
+    background: #fff;
+    border: 3px solid #d3d3d3;
+    border-radius: 10px;
+    color: gray;
+    font-family: 'TankTrouble';
+    font-size: 12px;
+}
+#overlay .newGame .premium::before {
+    background-image: none !important;
+}
+#overlay input[type="checkbox"]+label::before {
+    background: red !important;
+    border: 2px solid red !important;
+    transition: border .10s !important;
+    border-radius: 7px !important;
+    color: red !important;
+}
+#overlay input[type="checkbox"]:checked+label::before {
+    color: #31e000 !important;
+    background: #31e000 !important;
+    border-color: #31e000 !important;
+}
 #overlay input[type="text"], #overlay input[type="password"], #overlay textarea {
-    background-color: #e4e4e444 !important;
-    border: 3px solid rgba(128, 128, 128, 0.479) !important;
-    border-radius: 8px;
+    background-color: #e7e7e7 !important;
+    border: 2px solid #a8a8a8 !important;
+    border-radius: 12px !important;
+}
+#overlay input[type="text"] {
     color: #000 !important;
-    font-size: inherit;
-    margin: 10px 0 10px 0;
-    outline: none !important;
-    padding: 10px 20px 10px 20px;
-    resize: none;
-    transition: border .5s;
-    width: 200px;
+}
+#overlay input[type="password"] {
+    color: #000 !important;
+}
+#overlay textarea {
+    color: #000 !important;
+}
+#overlay .newGame .grid {
+    border-top: 3px solid #d3d3d3;
+}
+#overlay .newGame .setting {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-family: 'TankTrouble';
+    font-size: 11px !important;
+}
+#overlay .messages .message {
+    background: #fff !important;
+    border: 3px solid #d3d3d3;
+    border-radius: 10px !important;
+}
+#overlay .messages .message.important {
+    background: #427fff !important;
+    border: 3px solid #3062cb !important;
+    border-radius: 10px !important;
+    color: #fff;
+}
+button.warning {
+    background: red !important;
+    border-radius: 3px !important;
+}
+.exp.tooltipstered {
+    position: relative;
+    top: -1px;
+    height: 30px;
+}
+#tankinfo .rank, #tankinfo .xp {
+    position: relative;
+    height: 30px;
+}
+.exp-bar {
+    background-image: none !important;
+    background: repeating-linear-gradient(0deg, #3475dd, #649cf7 30px) !important;
+    height: 100%;
+}
+.about-container {
+    position: relative;
+    z-index: 2;
+    font-size: 12px;
+}
+.bannedText-container {
+    position: relative;
+    z-index: 2;
+    font-size: 12px;
+    margin: 20px 0 20px 0;
+}
+span.exp-text {
+    position: absolute;
+    top: 5px;
+    left: 32%;
+    font-family: 'TankTrouble';
+    font-size: 12px;
+    font-weight: bold;
+    color: #fff;
+    text-shadow: -1.4px -1.4px 0 black, 1.4px -1.4px 0 black, -1.4px 1.4px 0 black, 1.4px 1.4px 0 black;
+}
+#tankinfo .username {
+    z-index: 2;
+}
+.adminBadge {
+    z-index: 1;
+    position: absolute;
+    top: -75px;
+    right: -22px;
+}
+.kickstarterBadge {
+    z-index: 1;
+    position: absolute;
+    top: -70px;
+    right: -22px;
+}
+.banned-Icon {
+    z-index: 1;
+    position: absolute;
+    top: -140px;
+    left: 10px;
+}
+tr.tooltipstered {
+    display: none !important;
+}
+.statsContainer img.statsIcon {
+    position: absolute;
+}
+.statsContainer svg {
+    left: 45px;
+}
+.deaths.tooltipstered {
+    left: 55px;
+}
+#tankinfo table td:first-child .statsIcon {
+    left: 3px;
+}
+#tankinfo table td:first-child svg {
+    left: 44px;
+}
+#tankinfo table td:last-child .statsIcon {
+    right: 5px;
+}
+#tankinfo table td:last-child svg {
+    left: 5px;
+}
+.achievement.unlockedAndSeen {
+    background: #fff !important;
+    color: #000000 !important;
+    filter: drop-shadow(0 2px 2px rgba(0, 0, 0, .5));
+}
+.achievement {
+    background: #bbbbbb !important;
+    filter: drop-shadow(0 2px 2px rgba(0, 0, 0, .5));
+}
+.achievement .progress {
+    background: #999 !important;
+    filter: none !important;
+}
+#overlay .achievements .logo {
+    display: none !important;
+}
+#tankinfo .xp .progress .bar {
+    background-image: none !important;
+    background: repeating-linear-gradient(0deg, #a410b5, #fc2eff 30px) !important;
+}
+#tankinfo .rank .progress .bar {
+    background-image: none !important;
+    background: repeating-linear-gradient(0deg, #b59910, #ffd22e 30px) !important;
+}
+.action.like {
+    display: none !important;
+}
+.box {
+    -webkit-filter: none !important;
+    filter: none !important;
+}
+button {
+    background: #fff !important;
+    border-radius: 0px !important;
+    color: #000 !important;
+    border: 4px solid #000 !important;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, .5) !important;
+}
+.buttonGroup div.selected button {
+    background: #9ff585 !important;
+    text-shadow: none !important;
+}
+button:disabled {
+    background: #d3d3d3 !important;
 }

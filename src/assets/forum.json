@@ -1,0 +1,282 @@
+[
+    {
+      "id": 1,
+      "priority": 1,
+      "action": {
+        "type": "redirect",
+        "redirect": {
+          "extensionPath": "/assets/forum/page@2x.png"
+        }
+      },
+      "condition": {
+        "urlFilter": "https://cdn.tanktrouble.com/*/assets/images/forum/page*@2x.png",
+        "resourceTypes": ["image"]
+      }
+    },
+    {
+        "id": 2,
+        "priority": 1,
+        "action": {
+          "type": "redirect",
+          "redirect": {
+            "extensionPath": "/assets/forum/page.png"
+          }
+        },
+        "condition": {
+          "urlFilter": "https://cdn.tanktrouble.com/*/assets/images/forum/page*.png",
+          "resourceTypes": ["image"]
+        }
+      },
+      {
+        "id": 3,
+        "priority": 1,
+        "action": {
+          "type": "redirect",
+          "redirect": {
+            "extensionPath": "/assets/forum/page@2x.png"
+          }
+        },
+        "condition": {
+          "urlFilter": "https://cdn.tanktrouble.com/*/assets/images/forum/page*Active@2x.png",
+          "resourceTypes": ["image"]
+        }
+      },
+      {
+        "id": 4,
+        "priority": 1,
+        "action": {
+          "type": "redirect",
+          "redirect": {
+            "extensionPath": "/assets/forum/page.png"
+          }
+        },
+        "condition": {
+          "urlFilter": "https://cdn.tanktrouble.com/*/assets/images/forum/page*Active.png",
+          "resourceTypes": ["image"]
+        }
+      },
+      {
+        "id": 5,
+        "priority": 1,
+        "action": {
+          "type": "redirect",
+          "redirect": {
+            "extensionPath": "/assets/forum/pageSelected@2x.png"
+          }
+        },
+        "condition": {
+          "urlFilter": "https://cdn.tanktrouble.com/*/assets/images/forum/page*Selected@2x.png",
+          "resourceTypes": ["image"]
+        }
+      },
+      {
+        "id": 6,
+        "priority": 1,
+        "action": {
+          "type": "redirect",
+          "redirect": {
+            "extensionPath": "/assets/forum/pageSelected.png"
+          }
+        },
+        "condition": {
+          "urlFilter": "https://cdn.tanktrouble.com/*/assets/images/forum/page*Selected.png",
+          "resourceTypes": ["image"]
+        }
+      },
+      {
+        "id": 7,
+        "priority": 1,
+        "action": {
+          "type": "redirect",
+          "redirect": {
+            "extensionPath": "/assets/forum/pageNewest@2x.png"
+          }
+        },
+        "condition": {
+          "urlFilter": "https://cdn.tanktrouble.com/*/assets/images/forum/pageNewest@2x.png",
+          "resourceTypes": ["image"]
+        }
+      },
+      {
+        "id": 8,
+        "priority": 1,
+        "action": {
+          "type": "redirect",
+          "redirect": {
+            "extensionPath": "/assets/forum/pageNewest.png"
+          }
+        },
+        "condition": {
+          "urlFilter": "https://cdn.tanktrouble.com/*/assets/images/forum/pageNewest.png",
+          "resourceTypes": ["image"]
+        }
+      },
+      {
+        "id": 9,
+        "priority": 1,
+        "action": {
+          "type": "redirect",
+          "redirect": {
+            "extensionPath": "/assets/forum/pageOldest@2x.png"
+          }
+        },
+        "condition": {
+          "urlFilter": "https://cdn.tanktrouble.com/*/assets/images/forum/pageOldest@2x.png",
+          "resourceTypes": ["image"]
+        }
+      },
+      {
+        "id": 10,
+        "priority": 1,
+        "action": {
+          "type": "redirect",
+          "redirect": {
+            "extensionPath": "/assets/forum/pageOldest.png"
+          }
+        },
+        "condition": {
+          "urlFilter": "https://cdn.tanktrouble.com/*/assets/images/forum/pageOldest.png",
+          "resourceTypes": ["image"]
+        }
+      },
+      {
+        "id": 11,
+        "priority": 1,
+        "action": {
+          "type": "redirect",
+          "redirect": {
+            "extensionPath": "/assets/forum/pageOldestSelected@2x.png"
+          }
+        },
+        "condition": {
+          "urlFilter": "https://cdn.tanktrouble.com/*/assets/images/forum/pageOldestSelected@2x.png",
+          "resourceTypes": ["image"]
+        }
+      },
+      {
+        "id": 12,
+        "priority": 1,
+        "action": {
+          "type": "redirect",
+          "redirect": {
+            "extensionPath": "/assets/forum/pageOldestSelected.png"
+          }
+        },
+        "condition": {
+          "urlFilter": "https://cdn.tanktrouble.com/*/assets/images/forum/pageOldestSelected.png",
+          "resourceTypes": ["image"]
+        }
+      },
+      {
+        "id": 13,
+        "priority": 1,
+        "action": {
+          "type": "redirect",
+          "redirect": {
+            "extensionPath": "/assets/forum/backActive@2x.png"
+          }
+        },
+        "condition": {
+          "urlFilter": "https://cdn.tanktrouble.com/*/assets/images/forum/backActive@2x.png",
+          "resourceTypes": ["image"]
+        }
+      },
+      {
+        "id": 14,
+        "priority": 1,
+        "action": {
+          "type": "redirect",
+          "redirect": {
+            "extensionPath": "/assets/forum/backActive.png"
+          }
+        },
+        "condition": {
+          "urlFilter": "https://cdn.tanktrouble.com/*/assets/images/forum/backActive.png",
+          "resourceTypes": ["image"]
+        }
+      },
+      {
+        "id": 15,
+        "priority": 1,
+        "action": {
+          "type": "redirect",
+          "redirect": {
+            "extensionPath": "/assets/forum/backActive@2x.png"
+          }
+        },
+        "condition": {
+          "urlFilter": "https://cdn.tanktrouble.com/*/assets/images/forum/back@2x.png",
+          "resourceTypes": ["image"]
+        }
+      },
+      {
+        "id": 16,
+        "priority": 1,
+        "action": {
+          "type": "redirect",
+          "redirect": {
+            "extensionPath": "/assets/forum/backActive.png"
+          }
+        },
+        "condition": {
+          "urlFilter": "https://cdn.tanktrouble.com/*/assets/images/forum/back.png",
+          "resourceTypes": ["image"]
+        }
+      },
+      {
+        "id": 17,
+        "priority": 1,
+        "action": {
+          "type": "redirect",
+          "redirect": {
+            "extensionPath": "/assets/forum/pageNewestSelected@2x.png"
+          }
+        },
+        "condition": {
+          "urlFilter": "https://cdn.tanktrouble.com/*/assets/images/forum/pageNewestSelected@2x.png",
+          "resourceTypes": ["image"]
+        }
+      },
+      {
+        "id": 18,
+        "priority": 1,
+        "action": {
+          "type": "redirect",
+          "redirect": {
+            "extensionPath": "/assets/forum/pageNewestSelected.png"
+          }
+        },
+        "condition": {
+          "urlFilter": "https://cdn.tanktrouble.com/*/assets/images/forum/pageNewestSelected.png",
+          "resourceTypes": ["image"]
+        }
+      },
+      {
+        "id": 19,
+        "priority": 1,
+        "action": {
+          "type": "redirect",
+          "redirect": {
+            "extensionPath": "/assets/forum/ellipsis@2x.png"
+          }
+        },
+        "condition": {
+          "urlFilter": "https://cdn.tanktrouble.com/*/assets/images/forum/ellipsis@2x.png",
+          "resourceTypes": ["image"]
+        }
+      },
+      {
+        "id": 20,
+        "priority": 1,
+        "action": {
+          "type": "redirect",
+          "redirect": {
+            "extensionPath": "/assets/forum/ellipsis.png"
+          }
+        },
+        "condition": {
+          "urlFilter": "https://cdn.tanktrouble.com/*/assets/images/forum/ellipsis.png",
+          "resourceTypes": ["image"]
+        }
+      }
+]

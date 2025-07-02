@@ -1,10 +1,9 @@
 {
 	"name": "TTCV2",
-	"short_name": "TankTroubleClassicV2",
 	"author": "kamarov",
-	"version": "2024.9.29",
+	"version": "2.0.0",
 	"manifest_version": 3,
-	"description": "Ready to roll back in? If so! Do it in classic style!",
+	"description": "TTCV2 - Timeless mayhem - the blast from the past!",
 	"icons": {
 		"16": "icon/icon16.png",
 		"32": "icon/icon32.png",
@@ -18,11 +17,6 @@
 				"id": "1",
 				"enabled": true,
 				"path": "assets/colours.json"
-			},
-			{
-				"id": "2",
-				"enabled": true,
-				"path": "assets/header.json"
 			},
 			{
 				"id": "3",
@@ -45,14 +39,24 @@
 				"path": "assets/other.json"
 			},
 			{
-				"id": "7",
-				"enabled": true,
-				"path": "ttcv2/scripts/Constants.json"
-			},
-			{
 				"id": "8",
 				"enabled": true,
 				"path": "assets/inputs.json"
+			},
+			{
+				"id": "9",
+				"enabled": true,
+				"path": "assets/audio.json"
+			},
+			{
+				"id": "10",
+				"enabled": true,
+				"path": "assets/tankInfo.json"
+			},
+			{
+				"id": "11",
+				"enabled": true,
+				"path": "assets/forum.json"
 			}
 		]
 	},
@@ -73,103 +77,31 @@
 	"content_scripts": [
 		{
 			"matches": ["*://*.tanktrouble.com/*"],
-			"js": ["content.js",
-			"ttcv2/scripts/inject.js",
-			"ttcv2/scripts/B2DUtils.js",
-			"ttcv2/scripts/QualityManager.js",
-			"ttcv2/scripts/UIConstants.js"
-			], 
+			"js": ["inject.js", "ttcv2/scripts/UIButtonGroup.js", "ttcv2/scripts/additionalPlayerDetails.js", "ttcv2/scripts/visitsSnippet.js", "ttcv2/scripts/FAQSnippet.js", "ttcv2/scripts/feedbackSnippet.js", "ttcv2/scripts/tellAFriendSnippet.js", "ttcv2/scripts/UIConstants+QualityManager.js"], 
 			"css": ["ttcv2/css/classicStyle.css"],
 			"run_at": "document_idle",
-                        "world": "MAIN"
+            "world": "MAIN"
 		}
 	],
 
+
+
 	"web_accessible_resources": [{
 		"resources": [
-			"assets/colours/colour107-140.png", "assets/colours/colour107-140@2x.png", "assets/colours/colour107-200.png", "assets/colours/colour107-200@2x.png",
-			"assets/colours/colour107-320.png", "assets/colours/colour107-320@2x.png", "assets/colours/colour107Icon-26.png", "assets/colours/colour107Icon-26@2x.png",
-			"assets/colours/colour108-140.png", "assets/colours/colour108-140@2x.png", "assets/colours/colour108-200.png", "assets/colours/colour108-200@2x.png", "assets/colours/colour108-320.png",
-			"assets/colours/colour108-320@2x.png", "assets/colours/colour108Icon-26.png", "assets/colours/colour108Icon-26@2x.png", "assets/colours/colour109-140.png", "assets/colours/colour109-140@2x.png",
-			"assets/colours/colour109-200.png", "assets/colours/colour109-200@2x.png", "assets/colours/colour109-320.png", "assets/colours/colour109-320@2x.png", "assets/colours/colour109Icon-26.png",
-			"assets/colours/colour109Icon-26@2x.png", "assets/colours/colour110-140.png", "assets/colours/colour110-140@2x.png", "assets/colours/colour110-200.png", "assets/colours/colour110-200@2x.png",
-			"assets/colours/colour110-320.png", "assets/colours/colour110-320@2x.png", "assets/colours/colour110Icon-26.png", "assets/colours/colour110Icon-26@2x.png", "assets/colours/colour120-140.png",
-			"assets/colours/colour120-140@2x.png", "assets/colours/colour120-200.png", "assets/colours/colour120-200@2x.png", "assets/colours/colour120-320.png", "assets/colours/colour120-320@2x.png",
-			"assets/colours/colour120Icon-26.png", "assets/colours/colour120Icon-26@2x.png", "assets/colours/colour13-140.png", "assets/colours/colour13-140@2x.png", "assets/colours/colour13-200.png",
-			"assets/colours/colour13-200@2x.png", "assets/colours/colour13-320.png", "assets/colours/colour13-320@2x.png", "assets/colours/colour13Icon-26.png", "assets/colours/colour13Icon-26@2x.png",
-			"assets/colours/colour14-140.png", "assets/colours/colour14-140@2x.png", "assets/colours/colour14-200.png", "assets/colours/colour14-200@2x.png", "assets/colours/colour14-320.png",
-			"assets/colours/colour14-320@2x.png", "assets/colours/colour14Icon-26.png", "assets/colours/colour14Icon-26@2x.png", "assets/colours/colour150-140.png", "assets/colours/colour150-140@2x.png",
-			"assets/colours/colour150-200.png", "assets/colours/colour150-200@2x.png", "assets/colours/colour150-320.png", "assets/colours/colour150-320@2x.png", "assets/colours/colour150Icon-26.png",
-			"assets/colours/colour150Icon-26@2x.png", "assets/colours/colour151-140.png", "assets/colours/colour151-140@2x.png", "assets/colours/colour151-200.png", "assets/colours/colour151-200@2x.png",
-			"assets/colours/colour151-320.png", "assets/colours/colour151-320@2x.png", "assets/colours/colour151Icon-26.png", "assets/colours/colour151Icon-26@2x.png", "assets/colours/colour152-140.png",
-			"assets/colours/colour152-140@2x.png", "assets/colours/colour152-200.png", "assets/colours/colour152-200@2x.png", "assets/colours/colour152-320.png", "assets/colours/colour152-320@2x.png",
-			"assets/colours/colour152Icon-26.png", "assets/colours/colour152Icon-26@2x.png", "assets/colours/colour153-140.png", "assets/colours/colour153-140@2x.png", "assets/colours/colour153-200.png",
-			"assets/colours/colour153-200@2x.png", "assets/colours/colour153-320.png", "assets/colours/colour153-320@2x.png", "assets/colours/colour153Icon-26.png", "assets/colours/colour153Icon-26@2x.png",
-			"assets/colours/colour160-140.png", "assets/colours/colour160-140@2x.png", "assets/colours/colour160-200.png", "assets/colours/colour160-200@2x.png", "assets/colours/colour160-320.png",
-			"assets/colours/colour160-320@2x.png", "assets/colours/colour160Icon-26.png", "assets/colours/colour160Icon-26@2x.png", "assets/colours/colour161-140.png", "assets/colours/colour161-140@2x.png",
-			"assets/colours/colour161-200.png", "assets/colours/colour161-200@2x.png", "assets/colours/colour161-320.png", "assets/colours/colour161-320@2x.png", "assets/colours/colour161Icon-26.png",
-			"assets/colours/colour161Icon-26@2x.png", "assets/colours/colour162-140.png", "assets/colours/colour162-140@2x.png", "assets/colours/colour162-200.png", "assets/colours/colour162-200@2x.png", 
-			"assets/colours/colour162-320.png", "assets/colours/colour162-320@2x.png", "assets/colours/colour162Icon-26.png", "assets/colours/colour162Icon-26@2x.png", "assets/colours/colour163-140.png",
-			"assets/colours/colour163-140@2x.png", "assets/colours/colour163-200.png", "assets/colours/colour163-200@2x.png", "assets/colours/colour163-320.png", "assets/colours/colour163-320@2x.png",
-			"assets/colours/colour163Icon-26.png", "assets/colours/colour163Icon-26@2x.png", "assets/colours/colour164-140.png", "assets/colours/colour164-140@2x.png", "assets/colours/colour164-200.png",
-			"assets/colours/colour164-200@2x.png", "assets/colours/colour164-320.png", "assets/colours/colour164-320@2x.png", "assets/colours/colour164Icon-26.png", "assets/colours/colour164Icon-26@2x.png",
-			"assets/colours/colour165-140.png", "assets/colours/colour165-140@2x.png", "assets/colours/colour165-200.png", "assets/colours/colour165-200@2x.png", "assets/colours/colour165-320.png",
-			"assets/colours/colour165-320@2x.png", "assets/colours/colour165Icon-26.png", "assets/colours/colour165Icon-26@2x.png", "assets/colours/colour166-140.png", "assets/colours/colour166-140@2x.png",
-			"assets/colours/colour166-200.png", "assets/colours/colour166-200@2x.png", "assets/colours/colour166-320.png", "assets/colours/colour166-320@2x.png", "assets/colours/colour166Icon-26.png",
-			"assets/colours/colour166Icon-26@2x.png", "assets/colours/colour167-140.png", "assets/colours/colour167-140@2x.png", "assets/colours/colour167-200.png", "assets/colours/colour167-200@2x.png",
-			"assets/colours/colour167-320.png", "assets/colours/colour167-320@2x.png", "assets/colours/colour167Icon-26.png", "assets/colours/colour167Icon-26@2x.png", "assets/colours/colour42-140.png",
-			"assets/colours/colour42-140@2x.png", "assets/colours/colour42-200.png", "assets/colours/colour42-200@2x.png", "assets/colours/colour42-320.png", "assets/colours/colour42-320@2x.png",
-			"assets/colours/colour42Icon-26.png", "assets/colours/colour42Icon-26@2x.png", "assets/colours/colour43-140.png", "assets/colours/colour43-140@2x.png", "assets/colours/colour43-200.png",
-			"assets/colours/colour43-200@2x.png", "assets/colours/colour43-320.png", "assets/colours/colour43-320@2x.png", "assets/colours/colour43Icon-26.png", "assets/colours/colour43Icon-26@2x.png",
-			"assets/colours/colour45-140.png", "assets/colours/colour45-140@2x.png", "assets/colours/colour45-200.png", "assets/colours/colour45-200@2x.png", "assets/colours/colour45-320.png",
-			"assets/colours/colour45-320@2x.png", "assets/colours/colour45Icon-26.png", "assets/colours/colour45Icon-26@2x.png", "assets/colours/colour50-140.png", "assets/colours/colour50-140@2x.png",
-			"assets/colours/colour50-200.png", "assets/colours/colour50-200@2x.png", "assets/colours/colour50-320.png", "assets/colours/colour50-320@2x.png", "assets/colours/colour50Icon-26.png",
-			"assets/colours/colour50Icon-26@2x.png", "assets/colours/colour60-140.png", "assets/colours/colour60-140@2x.png", "assets/colours/colour60-200.png", "assets/colours/colour60-200@2x.png",
-			"assets/colours/colour60-320.png", "assets/colours/colour60-320@2x.png", "assets/colours/colour60Icon-26.png", "assets/colours/colour60Icon-26@2x.png", "assets/colours/colour61-140.png",
-			"assets/colours/colour61-140@2x.png", "assets/colours/colour61-200.png", "assets/colours/colour61-200@2x.png", "assets/colours/colour61-320.png", "assets/colours/colour61-320@2x.png",
-			"assets/colours/colour61Icon-26.png", "assets/colours/colour61Icon-26@2x.png",
-
-			"assets/backdoor/barrel28-140@2x.png", "assets/backdoor/barrel28-200@2x.png", "assets/backdoor/barrel28-320@2x.png", "assets/backdoor/barrel28-140.png", "assets/backdoor/barrel28-200.png", "assets/backdoor/barrel28-320.png",
-                        "assets/backdoor/barrel29-140@2x.png", "assets/backdoor/barrel29-200@2x.png", "assets/backdoor/barrel29-320@2x.png", "assets/backdoor/barrel29-140.png", "assets/backdoor/barrel29-200.png", "assets/backdoor/barrel29-320.png",
-                        "assets/backdoor/barrel30-140@2x.png", "assets/backdoor/barrel30-200@2x.png", "assets/backdoor/barrel30-320@2x.png", "assets/backdoor/barrel30-140.png", "assets/backdoor/barrel30-200.png", "assets/backdoor/barrel30-320.png",
-                        "assets/backdoor/barrel31-140@2x.png", "assets/backdoor/barrel31-200@2x.png", "assets/backdoor/barrel31-320@2x.png", "assets/backdoor/barrel31-140.png", "assets/backdoor/barrel31-200.png", "assets/backdoor/barrel31-320.png",
-                        "assets/backdoor/barrel32-140@2x.png", "assets/backdoor/barrel32-200@2x.png", "assets/backdoor/barrel32-320@2x.png", "assets/backdoor/barrel32-140.png", "assets/backdoor/barrel32-200.png", "assets/backdoor/barrel32-320.png",
-                        "assets/backdoor/barrel27-140@2x.png", "assets/backdoor/barrel27-200@2x.png", "assets/backdoor/barrel27-320@2x.png", "assets/backdoor/barrel27-140.png", "assets/backdoor/barrel27-200.png", "assets/backdoor/barrel27-320.png",
-			"assets/backdoor/front28-140@2x.png", "assets/backdoor/front28-200@2x.png", "assets/backdoor/front28-320@2x.png", "assets/backdoor/front28-140.png", "assets/backdoor/front28-200.png", "assets/backdoor/front28-320.png",
-                        "assets/backdoor/front29-140@2x.png", "assets/backdoor/front29-200@2x.png", "assets/backdoor/front29-320@2x.png", "assets/backdoor/front29-140.png", "assets/backdoor/front29-200.png", "assets/backdoor/front29-320.png",
-                        "assets/backdoor/front30-140@2x.png", "assets/backdoor/front30-200@2x.png", "assets/backdoor/front30-320@2x.png", "assets/backdoor/front30-140.png", "assets/backdoor/front30-200.png", "assets/backdoor/front30-320.png",
-                        "assets/backdoor/front27-140@2x.png", "assets/backdoor/front27-200@2x.png", "assets/backdoor/front27-320@2x.png", "assets/backdoor/front27-140.png", "assets/backdoor/front27-200.png", "assets/backdoor/front27-320.png",
-			"assets/backdoor/back28-140@2x.png", "assets/backdoor/back28-200@2x.png", "assets/backdoor/back28-320@2x.png", "assets/backdoor/back28-140.png", "assets/backdoor/back28-200.png", "assets/backdoor/back28-320.png",
-                        "assets/backdoor/back29-140@2x.png", "assets/backdoor/back29-200@2x.png", "assets/backdoor/back29-320@2x.png", "assets/backdoor/back29-140.png", "assets/backdoor/back29-200.png", "assets/backdoor/back29-320.png",
-                        "assets/backdoor/back30-140@2x.png", "assets/backdoor/back30-200@2x.png", "assets/backdoor/back30-320@2x.png", "assets/backdoor/back30-140.png", "assets/backdoor/back30-200.png", "assets/backdoor/back30-320.png",
-                        "assets/backdoor/back31-140@2x.png", "assets/backdoor/back31-200@2x.png", "assets/backdoor/back31-320@2x.png", "assets/backdoor/back31-140.png", "assets/backdoor/back31-200.png", "assets/backdoor/back31-320.png",
-                        "assets/backdoor/back32-140@2x.png", "assets/backdoor/back32-200@2x.png", "assets/backdoor/back32-320@2x.png", "assets/backdoor/back32-140.png", "assets/backdoor/back32-200.png", "assets/backdoor/back32-320.png",
-                        "assets/backdoor/back27-140@2x.png", "assets/backdoor/back27-200@2x.png", "assets/backdoor/back27-320@2x.png", "assets/backdoor/back27-140.png", "assets/backdoor/back27-200.png", "assets/backdoor/back27-320.png",
-                        "assets/backdoor/turret27-140@2x.png", "assets/backdoor/turret27-200@2x.png", "assets/backdoor/turret27-320@2x.png", "assets/backdoor/turret27-140.png", "assets/backdoor/turret27-200.png", "assets/backdoor/turret27-320.png",
-
-			"assets/header/background.png", "assets/header/background@2x.png", "assets/header/tab1.png", "assets/header/tab1@2x.png", "assets/header/tab1Selected.png",
-			"assets/header/tab1Selected@2x.png", "assets/header/tab2.png", "assets/header/tab2@2x.png", "assets/header/tab2Selected.png", "assets/header/tab2Selected@2x.png",
-			"assets/header/tab3.png", "assets/header/tab3@2x.png", "assets/header/tab3Selected.png", "assets/header/tab3Selected@2x.png", "assets/header/tab4.png",
-			"assets/header/tab4@2x.png", "assets/header/tab4Selected.png", "assets/header/tab4Selected@2x.png", "assets/header/tab5.png", "assets/header/tab5@2x.png",
-			"assets/header/tab5Selected.png", "assets/header/tab5Selected@2x.png",
-
-			"assets/game/game.png", "assets/game/game@2x.png", "assets/game/gameLobby.png", "assets/game/gameLobby@2x.png",
-
-			"assets/tankIcon/classicBaseShade-140@2x.png", "assets/tankIcon/classicBaseShade-140.png", "assets/tankIcon/classicBaseShade-200@2x.png", "assets/tankIcon/classicBaseShade-200.png",
-			"assets/tankIcon/classicBaseShade-320@2x.png", "assets/tankIcon/classicBaseShade-320.png", "assets/tankIcon/turretShade-140@2x.png", "assets/tankIcon/turretShade-140.png",
-			"assets/tankIcon/turretShade-200@2x.png", "assets/tankIcon/turretShade-200.png", "assets/tankIcon/turretShade-320@2x.png", "assets/tankIcon/turretShade-320.png",
-			"assets/tankIcon/barrelShade-140@2x.png", "assets/tankIcon/barrelShade-140.png", "assets/tankIcon/barrelShade-200@2x.png", "assets/tankIcon/barrelShade-200.png",
-			"assets/tankIcon/barrelShade-320@2x.png", "assets/tankIcon/barrelShade-320.png",
-
-			"/assets/other/waiting@2x.png", "/assets/other/waiting.png", "/assets/snippets/unseenMarker@2x.png",
-			"/assets/other/dimitrisEmporium@2x.png", "/assets/other/dimitrisEmporium.png",
-			"/assets/other/background@2x.png", "/assets/other/background.png",
-			"/assets/other/dimitri@2x.png", "/assets/other/dimitri.png",
-			"/assets/other/67Unlocked@2x.png", "/assets/other/67Unlocked.png",
-
-            "/assets/inputs/arrowKeys@2x.png", "/assets/inputs/arrowKeys.png", "/assets/inputs/arrowKeysActive@2x.png", "/assets/inputs/arrowKeysActive.png",
-            "/assets/inputs/WASDKeys@2x.png", "/assets/inputs/WASDKeys.png", "/assets/inputs/WASDKeysActive@2x.png", "/assets/inputs/WASDKeysActive.png",
-			"/assets/inputs/mouse@2x.png", "/assets/inputs/mouse.png", "/assets/inputs/mouseActive@2x.png", "/assets/inputs/mouseActive.png"
+			"ttcv2/scripts/*.js",
+			"assets/colours/*.png",
+			"assets/audio/*.m4a",
+			"assets/audio/*.mp3",
+			"assets/backdoor/*.png",
+			"assets/buttons/*.png",
+			"assets/header/*.png",
+			"assets/forum/*.png",
+			"assets/game/*.png",
+			"assets/game/*.json",
+			"assets/tankIcon/*.png",
+			"assets/tankInfo/*.png",
+			"assets/other/*.png",
+            "assets/inputs/*.png"
 		],
 		"matches": [ "*://*.tanktrouble.com/*" ]
 	}]

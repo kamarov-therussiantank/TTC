@@ -16,7 +16,7 @@
     }
   },
   {
-    "id": 2,
+    "id": 3,
     "priority": 1,
     "action": {
       "type": "redirect",
@@ -32,7 +32,7 @@
     }
   },
   {
-    "id": 3,
+    "id": 4,
     "priority": 1,
     "action": {
       "type": "redirect",
@@ -43,9 +43,280 @@
     "condition": {
       "urlFilter": "https://cdn.tanktrouble.com/*/assets/images/game/game.json",
       "resourceTypes": [
-      "main_frame",
-      "sub_frame"
-    ]
+        "xmlhttprequest"
+      ]
+    }
+  },
+  {
+    "id": 5,
+    "priority": 1,
+    "action": {
+      "type": "redirect",
+      "redirect": {
+        "extensionPath": "/assets/game/mazes@2x.png"
+      }
+    },
+    "condition": {
+      "urlFilter": "https://cdn.tanktrouble.com/*/assets/images/lobby/mazes@2x.png",
+      "resourceTypes": [
+        "image"
+      ]
+    }
+  },
+  {
+    "id": 6,
+    "priority": 1,
+    "action": {
+      "type": "redirect",
+      "redirect": {
+        "extensionPath": "/assets/game/mazes.png"
+      }
+    },
+    "condition": {
+      "urlFilter": "https://cdn.tanktrouble.com/*/assets/images/lobby/mazes.png",
+      "resourceTypes": [
+        "image"
+      ]
+    }
+  },
+  {
+    "id": 7,
+    "priority": 1,
+    "action": {
+      "type": "redirect",
+      "redirect": {
+        "extensionPath": "/assets/game/gameModes@2x.png"
+      }
+    },
+    "condition": {
+      "urlFilter": "https://cdn.tanktrouble.com/*/assets/images/lobby/gameModes@2x.png",
+      "resourceTypes": [
+        "image"
+      ]
+    }
+  },
+  {
+    "id": 9,
+    "priority": 1,
+    "action": {
+      "type": "redirect",
+      "redirect": {
+        "extensionPath": "/assets/game/gameModes.png"
+      }
+    },
+    "condition": {
+      "urlFilter": "https://cdn.tanktrouble.com/*/assets/images/lobby/gameModes.png",
+      "resourceTypes": [
+        "image"
+      ]
+    }
+  },
+  {
+    "id": 10,
+    "priority": 1,
+    "action": {
+      "type": "redirect",
+      "redirect": {
+        "extensionPath": "/assets/game/waitingModes@2x.png"
+      }
+    },
+    "condition": {
+      "urlFilter": "https://cdn.tanktrouble.com/*/assets/images/lobby/waitingModes@2x.png",
+      "resourceTypes": [
+        "image"
+      ]
+    }
+  },
+  {
+    "id": 11,
+    "priority": 1,
+    "action": {
+      "type": "redirect",
+      "redirect": {
+        "extensionPath": "/assets/game/waitingModes.png"
+      }
+    },
+    "condition": {
+      "urlFilter": "https://cdn.tanktrouble.com/*/assets/images/lobby/waitingModes.png",
+      "resourceTypes": [
+        "image"
+      ]
+    }
+  },
+  {
+    "id": 12,
+    "priority": 1,
+    "action": {
+      "type": "redirect",
+      "redirect": {
+        "extensionPath": "/assets/game/waitingModes.png"
+      }
+    },
+    "condition": {
+      "urlFilter": "https://cdn.tanktrouble.com/*/assets/images/lobby/waitingModes.png",
+      "resourceTypes": [
+        "image"
+      ]
+    }
+  },
+  {
+    "id": 13,
+    "priority": 1,
+    "action": {
+      "type": "redirect",
+      "redirect": {
+        "extensionPath": "/assets/game/disconnected@2x.png"
+      }
+    },
+    "condition": {
+      "urlFilter": "https://cdn.tanktrouble.com/*/assets/images/lobby/disconnected@2x.png",
+      "resourceTypes": [
+        "image"
+      ]
+    }
+  },
+  {
+    "id": 14,
+    "priority": 1,
+    "action": {
+      "type": "redirect",
+      "redirect": {
+        "extensionPath": "/assets/game/disconnected.png"
+      }
+    },
+    "condition": {
+      "urlFilter": "https://cdn.tanktrouble.com/*/assets/images/lobby/disconnected.png",
+      "resourceTypes": [
+        "image"
+      ]
+    }
+  },
+  {
+    "id": 15,
+    "priority": 1,
+    "action": {
+      "type": "redirect",
+      "redirect": {
+        "extensionPath": "/assets/game/addTank@2x.png"
+      }
+    },
+    "condition": {
+      "urlFilter": "https://cdn.tanktrouble.com/*/assets/images/lobby/addTank@2x.png",
+      "resourceTypes": [
+        "image"
+      ]
+    }
+  },
+  {
+    "id": 16,
+    "priority": 1,
+    "action": {
+      "type": "redirect",
+      "redirect": {
+        "extensionPath": "/assets/game/addTank.png"
+      }
+    },
+    "condition": {
+      "urlFilter": "https://cdn.tanktrouble.com/*/assets/images/lobby/addTank.png",
+      "resourceTypes": [
+        "image"
+      ]
+    }
+  },
+  {
+    "id": 17,
+    "priority": 1,
+    "action": {
+      "type": "redirect",
+      "redirect": {
+        "extensionPath": "/assets/game/playerPanel@2x.png"
+      }
+    },
+    "condition": {
+      "urlFilter": "https://cdn.tanktrouble.com/*/assets/images/playerPanel/playerPanel@2x.png",
+      "resourceTypes": [
+        "image"
+      ]
+    }
+  },
+  {
+    "id": 18,
+    "priority": 1,
+    "action": {
+      "type": "redirect",
+      "redirect": {
+        "extensionPath": "/assets/game/playerPanel.png"
+      }
+    },
+    "condition": {
+      "urlFilter": "https://cdn.tanktrouble.com/*/assets/images/playerPanel/playerPanel.png",
+      "resourceTypes": [
+        "image"
+      ]
+    }
+  },
+  {
+    "id": 19,
+    "priority": 1,
+    "action": {
+      "type": "redirect",
+      "redirect": {
+        "extensionPath": "/assets/game/storm0@2x.png"
+      }
+    },
+    "condition": {
+      "urlFilter": "https://cdn.tanktrouble.com/*/assets/images/game/storm0@2x.png",
+      "resourceTypes": [
+        "image"
+      ]
+    }
+  },
+  {
+    "id": 20,
+    "priority": 1,
+    "action": {
+      "type": "redirect",
+      "redirect": {
+        "extensionPath": "/assets/game/storm1@2x.png"
+      }
+    },
+    "condition": {
+      "urlFilter": "https://cdn.tanktrouble.com/*/assets/images/game/storm1@2x.png",
+      "resourceTypes": [
+        "image"
+      ]
+    }
+  },
+  {
+    "id": 21,
+    "priority": 1,
+    "action": {
+      "type": "redirect",
+      "redirect": {
+        "extensionPath": "/assets/game/storm0.png"
+      }
+    },
+    "condition": {
+      "urlFilter": "https://cdn.tanktrouble.com/*/assets/images/game/storm0.png",
+      "resourceTypes": [
+        "image"
+      ]
+    }
+  },
+  {
+    "id": 22,
+    "priority": 1,
+    "action": {
+      "type": "redirect",
+      "redirect": {
+        "extensionPath": "/assets/game/storm1.png"
+      }
+    },
+    "condition": {
+      "urlFilter": "https://cdn.tanktrouble.com/*/assets/images/game/storm1.png",
+      "resourceTypes": [
+        "image"
+      ]
     }
   }
 ]

@@ -1,0 +1,968 @@
+[
+ {
+    "id": 1,
+    "priority": 1,
+    "action": {
+      "type": "redirect",
+      "redirect": {
+        "extensionPath": "/assets/audio/Balalaika Blowout.m4a"
+      }
+    },
+    "condition": {
+      "urlFilter": "https://cdn.tanktrouble.com/*/assets/audio/PanzerPolka.m4a",
+      "resourceTypes": ["xmlhttprequest"]
+    }
+  },
+  {
+    "id": 2,
+    "priority": 1,
+    "action": {
+      "type": "redirect",
+      "redirect": {
+        "extensionPath": "/assets/audio/Balalaika Blowout.m4a"
+      }
+    },
+    "condition": {
+      "urlFilter": "https://cdn.tanktrouble.com/*/assets/audio/PanzerPolkaFiltered.m4a",
+      "resourceTypes": ["xmlhttprequest"]
+    }
+  },
+  {
+    "id": 3,
+    "priority": 1,
+    "action": {
+      "type": "redirect",
+      "redirect": {
+        "extensionPath": "/assets/audio/bulletBounce0.mp3"
+      }
+    },
+    "condition": {
+      "urlFilter": "https://cdn.tanktrouble.com/*/assets/audio/BulletBounce00.m4a",
+      "resourceTypes": ["xmlhttprequest"]
+    }
+  },
+  {
+    "id": 4,
+    "priority": 1,
+    "action": {
+      "type": "redirect",
+      "redirect": {
+        "extensionPath": "/assets/audio/bulletBounce1.mp3"
+      }
+    },
+    "condition": {
+      "urlFilter": "https://cdn.tanktrouble.com/*/assets/audio/BulletBounce01.m4a",
+      "resourceTypes": ["xmlhttprequest"]
+    }
+  },
+  {
+    "id": 5,
+    "priority": 1,
+    "action": {
+      "type": "redirect",
+      "redirect": {
+        "extensionPath": "/assets/audio/bulletBounce0.mp3"
+      }
+    },
+    "condition": {
+      "urlFilter": "https://cdn.tanktrouble.com/*/assets/audio/BulletBounce02.m4a",
+      "resourceTypes": ["xmlhttprequest"]
+    }
+  },
+  {
+    "id": 6,
+    "priority": 1,
+    "action": {
+      "type": "redirect",
+      "redirect": {
+        "extensionPath": "/assets/audio/bulletBounce0.mp3"
+      }
+    },
+    "condition": {
+      "urlFilter": "https://cdn.tanktrouble.com/*/assets/audio/BulletBounce03.m4a",
+      "resourceTypes": ["xmlhttprequest"]
+    }
+  },
+  {
+    "id": 7,
+    "priority": 1,
+    "action": {
+      "type": "redirect",
+      "redirect": {
+        "extensionPath": "/assets/audio/bulletBounce1.mp3"
+      }
+    },
+    "condition": {
+      "urlFilter": "https://cdn.tanktrouble.com/*/assets/audio/BulletBounce04.m4a",
+      "resourceTypes": ["xmlhttprequest"]
+    }
+  },
+  {
+    "id": 8,
+    "priority": 1,
+    "action": {
+      "type": "redirect",
+      "redirect": {
+        "extensionPath": "/assets/audio/bulletBounce1.mp3"
+      }
+    },
+    "condition": {
+      "urlFilter": "https://cdn.tanktrouble.com/*/assets/audio/BulletBounce05.m4a",
+      "resourceTypes": ["xmlhttprequest"]
+    }
+  },
+  {
+    "id": 9,
+    "priority": 1,
+    "action": {
+      "type": "redirect",
+      "redirect": {
+        "extensionPath": "/assets/audio/bulletBounce0.mp3"
+      }
+    },
+    "condition": {
+      "urlFilter": "https://cdn.tanktrouble.com/*/assets/audio/BulletBounce06.m4a",
+      "resourceTypes": ["xmlhttprequest"]
+    }
+  },
+  {
+    "id": 10,
+    "priority": 1,
+    "action": {
+      "type": "redirect",
+      "redirect": {
+        "extensionPath": "/assets/audio/bulletBounce0.mp3"
+      }
+    },
+    "condition": {
+      "urlFilter": "https://cdn.tanktrouble.com/*/assets/audio/BulletBounce07.m4a",
+      "resourceTypes": ["xmlhttprequest"]
+    }
+  },
+  {
+    "id": 11,
+    "priority": 1,
+    "action": {
+      "type": "redirect",
+      "redirect": {
+        "extensionPath": "/assets/audio/bulletBounce1.mp3"
+      }
+    },
+    "condition": {
+      "urlFilter": "https://cdn.tanktrouble.com/*/assets/audio/BulletBounce08.m4a",
+      "resourceTypes": ["xmlhttprequest"]
+    }
+  },
+  {
+    "id": 12,
+    "priority": 1,
+    "action": {
+      "type": "redirect",
+      "redirect": {
+        "extensionPath": "/assets/audio/bulletBounce1.mp3"
+      }
+    },
+    "condition": {
+      "urlFilter": "https://cdn.tanktrouble.com/*/assets/audio/BulletBounce09.m4a",
+      "resourceTypes": ["xmlhttprequest"]
+    }
+  },
+  {
+    "id": 13,
+    "priority": 1,
+    "action": {
+      "type": "redirect",
+      "redirect": {
+        "extensionPath": "/assets/audio/bulletBounce0.mp3"
+      }
+    },
+    "condition": {
+      "urlFilter": "https://cdn.tanktrouble.com/*/assets/audio/BulletBounce10.m4a",
+      "resourceTypes": ["xmlhttprequest"]
+    }
+  },
+  {
+    "id": 14,
+    "priority": 1,
+    "action": {
+      "type": "redirect",
+      "redirect": {
+        "extensionPath": "/assets/audio/bulletBounce1.mp3"
+      }
+    },
+    "condition": {
+      "urlFilter": "https://cdn.tanktrouble.com/*/assets/audio/BulletBounce11.m4a",
+      "resourceTypes": ["xmlhttprequest"]
+    }
+  },
+  {
+    "id": 15,
+    "priority": 1,
+    "action": {
+      "type": "redirect",
+      "redirect": {
+        "extensionPath": "/assets/audio/bulletPuff.mp3"
+      }
+    },
+    "condition": {
+      "urlFilter": "https://cdn.tanktrouble.com/*/assets/audio/BulletPuff00.m4a",
+      "resourceTypes": ["xmlhttprequest"]
+    }
+  },
+  {
+    "id": 16,
+    "priority": 1,
+    "action": {
+      "type": "redirect",
+      "redirect": {
+        "extensionPath": "/assets/audio/bulletPuff.mp3"
+      }
+    },
+    "condition": {
+      "urlFilter": "https://cdn.tanktrouble.com/*/assets/audio/BulletPuff01.m4a",
+      "resourceTypes": ["xmlhttprequest"]
+    }
+  },
+  {
+    "id": 17,
+    "priority": 1,
+    "action": {
+      "type": "redirect",
+      "redirect": {
+        "extensionPath": "/assets/audio/bulletPuff.mp3"
+      }
+    },
+    "condition": {
+      "urlFilter": "https://cdn.tanktrouble.com/*/assets/audio/BulletPuff02.m4a",
+      "resourceTypes": ["xmlhttprequest"]
+    }
+  },
+  {
+    "id": 18,
+    "priority": 1,
+    "action": {
+      "type": "redirect",
+      "redirect": {
+        "extensionPath": "/assets/audio/fireBullet.mp3"
+      }
+    },
+    "condition": {
+      "urlFilter": "https://cdn.tanktrouble.com/*/assets/audio/FireBullet00.m4a",
+      "resourceTypes": ["xmlhttprequest"]
+    }
+  },
+  {
+    "id": 19,
+    "priority": 1,
+    "action": {
+      "type": "redirect",
+      "redirect": {
+        "extensionPath": "/assets/audio/fireBullet.mp3"
+      }
+    },
+    "condition": {
+      "urlFilter": "https://cdn.tanktrouble.com/*/assets/audio/FireBullet01.m4a",
+      "resourceTypes": ["xmlhttprequest"]
+    }
+  },
+  {
+    "id": 20,
+    "priority": 1,
+    "action": {
+      "type": "redirect",
+      "redirect": {
+        "extensionPath": "/assets/audio/crateSpawn.mp3"
+      }
+    },
+    "condition": {
+      "urlFilter": "https://cdn.tanktrouble.com/*/assets/audio/CrateSpawn.m4a",
+      "resourceTypes": ["xmlhttprequest"]
+    }
+  },
+  {
+    "id": 21,
+    "priority": 1,
+    "action": {
+      "type": "redirect",
+      "redirect": {
+        "extensionPath": "/assets/audio/crateLand.mp3"
+      }
+    },
+    "condition": {
+      "urlFilter": "https://cdn.tanktrouble.com/*/assets/audio/CrateLand.m4a",
+      "resourceTypes": ["xmlhttprequest"]
+    }
+  },
+  {
+    "id": 22,
+    "priority": 1,
+    "action": {
+      "type": "redirect",
+      "redirect": {
+        "extensionPath": "/assets/audio/weaponPickup.mp3"
+      }
+    },
+    "condition": {
+      "urlFilter": "https://cdn.tanktrouble.com/*/assets/audio/LaserPickup.m4a",
+      "resourceTypes": ["xmlhttprequest"]
+    }
+  },
+  {
+    "id": 23,
+    "priority": 1,
+    "action": {
+      "type": "redirect",
+      "redirect": {
+        "extensionPath": "/assets/audio/weaponPickup.mp3"
+      }
+    },
+    "condition": {
+      "urlFilter": "https://cdn.tanktrouble.com/*/assets/audio/DoubleBarrelPickup.m4a",
+      "resourceTypes": ["xmlhttprequest"]
+    }
+  },
+  {
+    "id": 24,
+    "priority": 1,
+    "action": {
+      "type": "redirect",
+      "redirect": {
+        "extensionPath": "/assets/audio/weaponPickup.mp3"
+      }
+    },
+    "condition": {
+      "urlFilter": "https://cdn.tanktrouble.com/*/assets/audio/ShotgunPickup.m4a",
+      "resourceTypes": ["xmlhttprequest"]
+    }
+  },
+  {
+    "id": 25,
+    "priority": 1,
+    "action": {
+      "type": "redirect",
+      "redirect": {
+        "extensionPath": "/assets/audio/weaponPickup.mp3"
+      }
+    },
+    "condition": {
+      "urlFilter": "https://cdn.tanktrouble.com/*/assets/audio/MissilePickup.m4a",
+      "resourceTypes": ["xmlhttprequest"]
+    }
+  },
+  {
+    "id": 26,
+    "priority": 1,
+    "action": {
+      "type": "redirect",
+      "redirect": {
+        "extensionPath": "/assets/audio/weaponPickup.mp3"
+      }
+    },
+    "condition": {
+      "urlFilter": "https://cdn.tanktrouble.com/*/assets/audio/MinePickup.m4a",
+      "resourceTypes": ["xmlhttprequest"]
+    }
+  },
+  {
+    "id": 27,
+    "priority": 1,
+    "action": {
+      "type": "redirect",
+      "redirect": {
+        "extensionPath": "/assets/audio/weaponPickup.mp3"
+      }
+    },
+    "condition": {
+      "urlFilter": "https://cdn.tanktrouble.com/*/assets/audio/GatlingGunPickup.m4a",
+      "resourceTypes": ["xmlhttprequest"]
+    }
+  },
+  {
+    "id": 28,
+    "priority": 1,
+    "action": {
+      "type": "redirect",
+      "redirect": {
+        "extensionPath": "/assets/audio/weaponPickup.mp3"
+      }
+    },
+    "condition": {
+      "urlFilter": "https://cdn.tanktrouble.com/*/assets/audio/ShieldPickup.m4a",
+      "resourceTypes": ["xmlhttprequest"]
+    }
+  },
+  {
+    "id": 29,
+    "priority": 1,
+    "action": {
+      "type": "redirect",
+      "redirect": {
+        "extensionPath": "/assets/audio/weaponLoad.mp3"
+      }
+    },
+    "condition": {
+      "urlFilter": "https://cdn.tanktrouble.com/*/assets/audio/WeaponLoad.m4a",
+      "resourceTypes": ["xmlhttprequest"]
+    }
+  },
+  {
+    "id": 30,
+    "priority": 1,
+    "action": {
+      "type": "redirect",
+      "redirect": {
+        "extensionPath": "/assets/audio/fireLaser.mp3"
+      }
+    },
+    "condition": {
+      "urlFilter": "https://cdn.tanktrouble.com/*/assets/audio/FireLaser.m4a",
+      "resourceTypes": ["xmlhttprequest"]
+    }
+  },
+  {
+    "id": 31,
+    "priority": 1,
+    "action": {
+      "type": "redirect",
+      "redirect": {
+        "extensionPath": "/assets/audio/fireMine.mp3"
+      }
+    },
+    "condition": {
+      "urlFilter": "https://cdn.tanktrouble.com/*/assets/audio/FireMine.m4a",
+      "resourceTypes": ["xmlhttprequest"]
+    }
+  },
+  {
+    "id": 32,
+    "priority": 1,
+    "action": {
+      "type": "redirect",
+      "redirect": {
+        "extensionPath": "/assets/audio/fireMissile.mp3"
+      }
+    },
+    "condition": {
+      "urlFilter": "https://cdn.tanktrouble.com/*/assets/audio/FireMissile.m4a",
+      "resourceTypes": ["xmlhttprequest"]
+    }
+  },
+  {
+    "id": 33,
+    "priority": 1,
+    "action": {
+      "type": "redirect",
+      "redirect": {
+        "extensionPath": "/assets/audio/fireBulletBig.mp3"
+      }
+    },
+    "condition": {
+      "urlFilter": "https://cdn.tanktrouble.com/*/assets/audio/FireShotgun.m4a",
+      "resourceTypes": ["xmlhttprequest"]
+    }
+  },
+  {
+    "id": 34,
+    "priority": 1,
+    "action": {
+      "type": "redirect",
+      "redirect": {
+        "extensionPath": "/assets/audio/homingMissileTargetChange.mp3"
+      }
+    },
+    "condition": {
+      "urlFilter": "https://cdn.tanktrouble.com/*/assets/audio/HomingMissileTargetChange.m4a",
+      "resourceTypes": ["xmlhttprequest"]
+    }
+  },
+  {
+    "id": 35,
+    "priority": 1,
+    "action": {
+      "type": "redirect",
+      "redirect": {
+        "extensionPath": "/assets/audio/homingMissileTargeting.mp3"
+      }
+    },
+    "condition": {
+      "urlFilter": "https://cdn.tanktrouble.com/*/assets/audio/HomingMissileTargeting00.m4a",
+      "resourceTypes": ["xmlhttprequest"]
+    }
+  },
+  {
+    "id": 36,
+    "priority": 1,
+    "action": {
+      "type": "redirect",
+      "redirect": {
+        "extensionPath": "/assets/audio/homingMissileTargeting.mp3"
+      }
+    },
+    "condition": {
+      "urlFilter": "https://cdn.tanktrouble.com/*/assets/audio/HomingMissileTargeting01.m4a",
+      "resourceTypes": ["xmlhttprequest"]
+    }
+  },
+  {
+    "id": 37,
+    "priority": 1,
+    "action": {
+      "type": "redirect",
+      "redirect": {
+        "extensionPath": "/assets/audio/homingMissileTargeting.mp3"
+      }
+    },
+    "condition": {
+      "urlFilter": "https://cdn.tanktrouble.com/*/assets/audio/HomingMissileTargeting02.m4a",
+      "resourceTypes": ["xmlhttprequest"]
+    }
+  },
+  {
+    "id": 38,
+    "priority": 1,
+    "action": {
+      "type": "redirect",
+      "redirect": {
+        "extensionPath": "/assets/audio/homingMissileTargeting.mp3"
+      }
+    },
+    "condition": {
+      "urlFilter": "https://cdn.tanktrouble.com/*/assets/audio/HomingMissileTargeting03.m4a",
+      "resourceTypes": ["xmlhttprequest"]
+    }
+  },
+  {
+    "id": 39,
+    "priority": 1,
+    "action": {
+      "type": "redirect",
+      "redirect": {
+        "extensionPath": "/assets/audio/homingMissileTargeting.mp3"
+      }
+    },
+    "condition": {
+      "urlFilter": "https://cdn.tanktrouble.com/*/assets/audio/HomingMissileTargeting04.m4a",
+      "resourceTypes": ["xmlhttprequest"]
+    }
+  },
+  {
+    "id": 40,
+    "priority": 1,
+    "action": {
+      "type": "redirect",
+      "redirect": {
+        "extensionPath": "/assets/audio/homingMissileTargeting.mp3"
+      }
+    },
+    "condition": {
+      "urlFilter": "https://cdn.tanktrouble.com/*/assets/audio/HomingMissileTargeting05.m4a",
+      "resourceTypes": ["xmlhttprequest"]
+    }
+  },
+  {
+    "id": 41,
+    "priority": 1,
+    "action": {
+      "type": "redirect",
+      "redirect": {
+        "extensionPath": "/assets/audio/homingMissileTargeting.mp3"
+      }
+    },
+    "condition": {
+      "urlFilter": "https://cdn.tanktrouble.com/*/assets/audio/HomingMissileTargeting06.m4a",
+      "resourceTypes": ["xmlhttprequest"]
+    }
+  },
+  {
+    "id": 42,
+    "priority": 1,
+    "action": {
+      "type": "redirect",
+      "redirect": {
+        "extensionPath": "/assets/audio/homingMissileTargeting.mp3"
+      }
+    },
+    "condition": {
+      "urlFilter": "https://cdn.tanktrouble.com/*/assets/audio/HomingMissileTargeting07.m4a",
+      "resourceTypes": ["xmlhttprequest"]
+    }
+  },
+  {
+    "id": 43,
+    "priority": 1,
+    "action": {
+      "type": "redirect",
+      "redirect": {
+        "extensionPath": "/assets/audio/homingMissileTargeting.mp3"
+      }
+    },
+    "condition": {
+      "urlFilter": "https://cdn.tanktrouble.com/*/assets/audio/HomingMissileTargeting08.m4a",
+      "resourceTypes": ["xmlhttprequest"]
+    }
+  },
+  {
+    "id": 44,
+    "priority": 1,
+    "action": {
+      "type": "redirect",
+      "redirect": {
+        "extensionPath": "/assets/audio/homingMissileTargeting.mp3"
+      }
+    },
+    "condition": {
+      "urlFilter": "https://cdn.tanktrouble.com/*/assets/audio/HomingMissileTargeting09.m4a",
+      "resourceTypes": ["xmlhttprequest"]
+    }
+  },
+  {
+    "id": 45,
+    "priority": 1,
+    "action": {
+      "type": "redirect",
+      "redirect": {
+        "extensionPath": "/assets/audio/homingMissileTargeting.mp3"
+      }
+    },
+    "condition": {
+      "urlFilter": "https://cdn.tanktrouble.com/*/assets/audio/HomingMissileTargeting10.m4a",
+      "resourceTypes": ["xmlhttprequest"]
+    }
+  },
+  {
+    "id": 46,
+    "priority": 1,
+    "action": {
+      "type": "redirect",
+      "redirect": {
+        "extensionPath": "/assets/audio/mineActivate.mp3"
+      }
+    },
+    "condition": {
+      "urlFilter": "https://cdn.tanktrouble.com/*/assets/audio/MineActivate.m4a",
+      "resourceTypes": ["xmlhttprequest"]
+    }
+  },
+  {
+    "id": 47,
+    "priority": 1,
+    "action": {
+      "type": "redirect",
+      "redirect": {
+        "extensionPath": "/assets/audio/mineDetonate.mp3"
+      }
+    },
+    "condition": {
+      "urlFilter": "https://cdn.tanktrouble.com/*/assets/audio/MineDetonate.m4a",
+      "resourceTypes": ["xmlhttprequest"]
+    }
+  },
+  {
+    "id": 48,
+    "priority": 1,
+    "action": {
+      "type": "redirect",
+      "redirect": {
+        "extensionPath": "/assets/audio/mineTrip.mp3"
+      }
+    },
+    "condition": {
+      "urlFilter": "https://cdn.tanktrouble.com/*/assets/audio/MineTrip.m4a",
+      "resourceTypes": ["xmlhttprequest"]
+    }
+  },
+  {
+    "id": 49,
+    "priority": 1,
+    "action": {
+      "type": "redirect",
+      "redirect": {
+        "extensionPath": "/assets/audio/chargeGatlingGun.mp3"
+      }
+    },
+    "condition": {
+      "urlFilter": "https://cdn.tanktrouble.com/*/assets/audio/ChargeGatlingGun.m4a",
+      "resourceTypes": ["xmlhttprequest"]
+    }
+  },
+  {
+    "id": 50,
+    "priority": 1,
+    "action": {
+      "type": "redirect",
+      "redirect": {
+        "extensionPath": "/assets/audio/holdGatlingGun.mp3"
+      }
+    },
+    "condition": {
+      "urlFilter": "https://cdn.tanktrouble.com/*/assets/audio/holdGatlingGun.m4a",
+      "resourceTypes": ["xmlhttprequest"]
+    }
+  },
+  {
+    "id": 51,
+    "priority": 1,
+    "action": {
+      "type": "redirect",
+      "redirect": {
+        "extensionPath": "/assets/audio/dischargeGatlingGun.mp3"
+      }
+    },
+    "condition": {
+      "urlFilter": "https://cdn.tanktrouble.com/*/assets/audio/DischargeGatlingGun.m4a",
+      "resourceTypes": ["xmlhttprequest"]
+    }
+  },
+  {
+    "id": 52,
+    "priority": 1,
+    "action": {
+      "type": "redirect",
+      "redirect": {
+        "extensionPath": "/assets/audio/shrapnelHit.mp3"
+      }
+    },
+    "condition": {
+      "urlFilter": "https://cdn.tanktrouble.com/*/assets/audio/ShrapnelHit00.m4a",
+      "resourceTypes": ["xmlhttprequest"]
+    }
+  },
+  {
+    "id": 53,
+    "priority": 1,
+    "action": {
+      "type": "redirect",
+      "redirect": {
+        "extensionPath": "/assets/audio/shrapnelHit.mp3"
+      }
+    },
+    "condition": {
+      "urlFilter": "https://cdn.tanktrouble.com/*/assets/audio/ShrapnelHit01.m4a",
+      "resourceTypes": ["xmlhttprequest"]
+    }
+  },
+  {
+    "id": 54,
+    "priority": 1,
+    "action": {
+      "type": "redirect",
+      "redirect": {
+        "extensionPath": "/assets/audio/shrapnelHit.mp3"
+      }
+    },
+    "condition": {
+      "urlFilter": "https://cdn.tanktrouble.com/*/assets/audio/ShrapnelHit02.m4a",
+      "resourceTypes": ["xmlhttprequest"]
+    }
+  },
+  {
+    "id": 55,
+    "priority": 1,
+    "action": {
+      "type": "redirect",
+      "redirect": {
+        "extensionPath": "/assets/audio/shrapnelHit.mp3"
+      }
+    },
+    "condition": {
+      "urlFilter": "https://cdn.tanktrouble.com/*/assets/audio/ShrapnelHit03.m4a",
+      "resourceTypes": ["xmlhttprequest"]
+    }
+  },
+  {
+    "id": 56,
+    "priority": 1,
+    "action": {
+      "type": "redirect",
+      "redirect": {
+        "extensionPath": "/assets/audio/shrapnelHit.mp3"
+      }
+    },
+    "condition": {
+      "urlFilter": "https://cdn.tanktrouble.com/*/assets/audio/ShrapnelHit04.m4a",
+      "resourceTypes": ["xmlhttprequest"]
+    }
+  },
+  {
+    "id": 57,
+    "priority": 1,
+    "action": {
+      "type": "redirect",
+      "redirect": {
+        "extensionPath": "/assets/audio/shrapnelHit.mp3"
+      }
+    },
+    "condition": {
+      "urlFilter": "https://cdn.tanktrouble.com/*/assets/audio/ShrapnelHit05.m4a",
+      "resourceTypes": ["xmlhttprequest"]
+    }
+  },
+  {
+    "id": 65,
+    "priority": 1,
+    "action": {
+      "type": "redirect",
+      "redirect": {
+        "extensionPath": "/assets/audio/shrapnelHit.mp3"
+      }
+    },
+    "condition": {
+      "urlFilter": "https://cdn.tanktrouble.com/*/assets/audio/ShrapnelHit06.m4a",
+      "resourceTypes": ["xmlhttprequest"]
+    }
+  },
+  {
+    "id": 58,
+    "priority": 1,
+    "action": {
+      "type": "redirect",
+      "redirect": {
+        "extensionPath": "/assets/audio/tankExplosion.mp3"
+      }
+    },
+    "condition": {
+      "urlFilter": "https://cdn.tanktrouble.com/*/assets/audio/TankExplosion00.m4a",
+      "resourceTypes": ["xmlhttprequest"]
+    }
+  },
+  {
+    "id": 59,
+    "priority": 1,
+    "action": {
+      "type": "redirect",
+      "redirect": {
+        "extensionPath": "/assets/audio/tankExplosion.mp3"
+      }
+    },
+    "condition": {
+      "urlFilter": "https://cdn.tanktrouble.com/*/assets/audio/TankExplosion01.m4a",
+      "resourceTypes": ["xmlhttprequest"]
+    }
+  },
+  {
+    "id": 60,
+    "priority": 1,
+    "action": {
+      "type": "redirect",
+      "redirect": {
+        "extensionPath": "/assets/audio/tankExplosion.mp3"
+      }
+    },
+    "condition": {
+      "urlFilter": "https://cdn.tanktrouble.com/*/assets/audio/TankExplosion02.m4a",
+      "resourceTypes": ["xmlhttprequest"]
+    }
+  },
+  {
+    "id": 61,
+    "priority": 1,
+    "action": {
+      "type": "redirect",
+      "redirect": {
+        "extensionPath": "/assets/audio/emptyBarrel.mp3"
+      }
+    },
+    "condition": {
+      "urlFilter": "https://cdn.tanktrouble.com/*/assets/audio/EmptyBarrel01.m4a",
+      "resourceTypes": ["xmlhttprequest"]
+    }
+  },
+  {
+    "id": 62,
+    "priority": 1,
+    "action": {
+      "type": "redirect",
+      "redirect": {
+        "extensionPath": "/assets/audio/emptyBarrel.mp3"
+      }
+    },
+    "condition": {
+      "urlFilter": "https://cdn.tanktrouble.com/*/assets/audio/EmptyBarrel02.m4a",
+      "resourceTypes": ["xmlhttprequest"]
+    }
+  },
+  {
+    "id": 63,
+    "priority": 1,
+    "action": {
+      "type": "redirect",
+      "redirect": {
+        "extensionPath": "/assets/audio/emptyBarrel.mp3"
+      }
+    },
+    "condition": {
+      "urlFilter": "https://cdn.tanktrouble.com/*/assets/audio/EmptyBarrel03.m4a",
+      "resourceTypes": ["xmlhttprequest"]
+    }
+  },
+  {
+    "id": 64,
+    "priority": 1,
+    "action": {
+      "type": "redirect",
+      "redirect": {
+        "extensionPath": "/assets/audio/emptyBarrel.mp3"
+      }
+    },
+    "condition": {
+      "urlFilter": "https://cdn.tanktrouble.com/*/assets/audio/EmptyBarrel00.m4a",
+      "resourceTypes": ["xmlhttprequest"]
+    }
+  },
+  {
+    "id": 66,
+    "priority": 1,
+    "action": {
+      "type": "redirect",
+      "redirect": {
+        "extensionPath": "/assets/audio/tankLand.mp3"
+      }
+    },
+    "condition": {
+      "urlFilter": "https://cdn.tanktrouble.com/*/assets/audio/TankLand.m4a",
+      "resourceTypes": ["xmlhttprequest"]
+    }
+  },
+  {
+    "id": 67,
+    "priority": 1,
+    "action": {
+      "type": "redirect",
+      "redirect": {
+        "extensionPath": "/assets/audio/mineExplosion.mp3"
+      }
+    },
+    "condition": {
+      "urlFilter": "https://cdn.tanktrouble.com/*/assets/audio/MineExplosion00.m4a",
+      "resourceTypes": ["xmlhttprequest"]
+    }
+  },
+  {
+    "id": 68,
+    "priority": 1,
+    "action": {
+      "type": "redirect",
+      "redirect": {
+        "extensionPath": "/assets/audio/mineExplosion.mp3"
+      }
+    },
+    "condition": {
+      "urlFilter": "https://cdn.tanktrouble.com/*/assets/audio/MineExplosion01.m4a",
+      "resourceTypes": ["xmlhttprequest"]
+    }
+  },
+  {
+    "id": 69,
+    "priority": 1,
+    "action": {
+      "type": "redirect",
+      "redirect": {
+        "extensionPath": "/assets/audio/mineExplosion.mp3"
+      }
+    },
+    "condition": {
+      "urlFilter": "https://cdn.tanktrouble.com/*/assets/audio/MineExplosion02.m4a",
+      "resourceTypes": ["xmlhttprequest"]
+    }
+  }
+]

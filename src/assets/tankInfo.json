@@ -1,0 +1,422 @@
+[
+  {
+    "id": 1,
+    "priority": 1,
+    "action": {
+      "type": "redirect",
+      "redirect": {
+        "extensionPath": "/assets/tankInfo/account@2x.png"
+      }
+    },
+    "condition": {
+      "urlFilter": "https://cdn.tanktrouble.com/*/assets/images/tankInfo/account@2x.png",
+      "resourceTypes": ["image"]
+    }
+  },
+  {
+    "id": 2,
+    "priority": 1,
+    "action": {
+      "type": "redirect",
+      "redirect": {
+        "extensionPath": "/assets/tankInfo/account.png"
+      }
+    },
+    "condition": {
+      "urlFilter": "https://cdn.tanktrouble.com/*/assets/images/tankInfo/account.png",
+      "resourceTypes": ["image"]
+    }
+  },
+  {
+    "id": 3,
+    "priority": 1,
+    "action": {
+      "type": "redirect",
+      "redirect": {
+        "extensionPath": "/assets/tankInfo/achievements@2x.png"
+      }
+    },
+    "condition": {
+      "urlFilter": "https://cdn.tanktrouble.com/*/assets/images/tankInfo/achievements@2x.png",
+      "resourceTypes": ["image"]
+    }
+  },
+  {
+    "id": 4,
+    "priority": 1,
+    "action": {
+      "type": "redirect",
+      "redirect": {
+        "extensionPath": "/assets/tankInfo/achievements.png"
+      }
+    },
+    "condition": {
+      "urlFilter": "https://cdn.tanktrouble.com/*/assets/images/tankInfo/achievements.png",
+      "resourceTypes": ["image"]
+    }
+  },
+  {
+    "id": 5,
+    "priority": 1,
+    "action": {
+      "type": "redirect",
+      "redirect": {
+        "extensionPath": "/assets/tankInfo/garage@2x.png"
+      }
+    },
+    "condition": {
+      "urlFilter": "https://cdn.tanktrouble.com/*/assets/images/tankInfo/garage@2x.png",
+      "resourceTypes": ["image"]
+    }
+  },
+  {
+    "id": 6,
+    "priority": 1,
+    "action": {
+      "type": "redirect",
+      "redirect": {
+        "extensionPath": "/assets/tankInfo/garage.png"
+      }
+    },
+    "condition": {
+      "urlFilter": "https://cdn.tanktrouble.com/*/assets/images/tankInfo/garage.png",
+      "resourceTypes": ["image"]
+    }
+  },
+  {
+    "id": 7,
+    "priority": 1,
+    "action": {
+      "type": "redirect",
+      "redirect": {
+        "extensionPath": "/assets/tankInfo/logOut@2x.png"
+      }
+    },
+    "condition": {
+      "urlFilter": "https://cdn.tanktrouble.com/*/assets/images/tankInfo/logOut@2x.png",
+      "resourceTypes": ["image"]
+    }
+  },
+  {
+    "id": 8,
+    "priority": 1,
+    "action": {
+      "type": "redirect",
+      "redirect": {
+        "extensionPath": "/assets/tankInfo/logOut.png"
+      }
+    },
+    "condition": {
+      "urlFilter": "https://cdn.tanktrouble.com/*/assets/images/tankInfo/logOut.png",
+      "resourceTypes": ["image"]
+    }
+  },
+  {
+    "id": 9,
+    "priority": 1,
+    "action": {
+      "type": "redirect",
+      "redirect": {
+        "extensionPath": "/assets/tankInfo/gold@2x.png"
+      }
+    },
+    "condition": {
+      "urlFilter": "https://cdn.tanktrouble.com/*/assets/images/tankInfo/gold@2x.png",
+      "resourceTypes": ["image"]
+    }
+  },
+  {
+    "id": 10,
+    "priority": 1,
+    "action": {
+      "type": "redirect",
+      "redirect": {
+        "extensionPath": "/assets/tankInfo/gold.png"
+      }
+    },
+    "condition": {
+      "urlFilter": "https://cdn.tanktrouble.com/*/assets/images/tankInfo/gold.png",
+      "resourceTypes": ["image"]
+    }
+  },
+  {
+    "id": 11,
+    "priority": 1,
+    "action": {
+      "type": "redirect",
+      "redirect": {
+        "extensionPath": "/assets/tankInfo/diamond@2x.png"
+      }
+    },
+    "condition": {
+      "urlFilter": "https://cdn.tanktrouble.com/*/assets/images/tankInfo/diamond@2x.png",
+      "resourceTypes": ["image"]
+    }
+  },
+  {
+    "id": 12,
+    "priority": 1,
+    "action": {
+      "type": "redirect",
+      "redirect": {
+        "extensionPath": "/assets/tankInfo/diamond.png"
+      }
+    },
+    "condition": {
+      "urlFilter": "https://cdn.tanktrouble.com/*/assets/images/tankInfo/diamond.png",
+      "resourceTypes": ["image"]
+    }
+  },
+  {
+    "id": 13,
+    "priority": 1,
+    "action": {
+      "type": "redirect",
+      "redirect": {
+        "extensionPath": "/assets/tankInfo/achievements@2x.png"
+      }
+    },
+    "condition": {
+      "urlFilter": "https://cdn.tanktrouble.com/*/assets/images/tankInfo/achievementsActive@2x.png",
+      "resourceTypes": ["image"]
+    }
+  },
+  {
+    "id": 14,
+    "priority": 1,
+    "action": {
+      "type": "redirect",
+      "redirect": {
+        "extensionPath": "/assets/tankInfo/achievements.png"
+      }
+    },
+    "condition": {
+      "urlFilter": "https://cdn.tanktrouble.com/*/assets/images/tankInfo/achievementsActive.png",
+      "resourceTypes": ["image"]
+    }
+  },
+  {
+    "id": 15,
+    "priority": 1,
+    "action": {
+      "type": "redirect",
+      "redirect": {
+        "extensionPath": "/assets/tankInfo/account@2x.png"
+      }
+    },
+    "condition": {
+      "urlFilter": "https://cdn.tanktrouble.com/*/assets/images/tankInfo/accountActive@2x.png",
+      "resourceTypes": ["image"]
+    }
+  },
+  {
+    "id": 16,
+    "priority": 1,
+    "action": {
+      "type": "redirect",
+      "redirect": {
+        "extensionPath": "/assets/tankInfo/account.png"
+      }
+    },
+    "condition": {
+      "urlFilter": "https://cdn.tanktrouble.com/*/assets/images/tankInfo/accountActive.png",
+      "resourceTypes": ["image"]
+    }
+  },
+  {
+    "id": 17,
+    "priority": 1,
+    "action": {
+      "type": "redirect",
+      "redirect": {
+        "extensionPath": "/assets/tankInfo/garage@2x.png"
+      }
+    },
+    "condition": {
+      "urlFilter": "https://cdn.tanktrouble.com/*/assets/images/tankInfo/garageActive@2x.png",
+      "resourceTypes": ["image"]
+    }
+  },
+  {
+    "id": 18,
+    "priority": 1,
+    "action": {
+      "type": "redirect",
+      "redirect": {
+        "extensionPath": "/assets/tankInfo/garage.png"
+      }
+    },
+    "condition": {
+      "urlFilter": "https://cdn.tanktrouble.com/*/assets/images/tankInfo/garageActive.png",
+      "resourceTypes": ["image"]
+    }
+  },
+  {
+    "id": 19,
+    "priority": 1,
+    "action": {
+      "type": "redirect",
+      "redirect": {
+        "extensionPath": "/assets/tankInfo/joinDisabled@2x.png"
+      }
+    },
+    "condition": {
+      "urlFilter": "https://cdn.tanktrouble.com/*/assets/images/tankInfo/joinDisabled@2x.png",
+      "resourceTypes": ["image"]
+    }
+  },
+  {
+    "id": 20,
+    "priority": 1,
+    "action": {
+      "type": "redirect",
+      "redirect": {
+        "extensionPath": "/assets/tankInfo/joinDisabled.png"
+      }
+    },
+    "condition": {
+      "urlFilter": "https://cdn.tanktrouble.com/*/assets/images/tankInfo/joinDisabled.png",
+      "resourceTypes": ["image"]
+    }
+  },
+  {
+    "id": 21,
+    "priority": 1,
+    "action": {
+      "type": "redirect",
+      "redirect": {
+        "extensionPath": "/assets/tankInfo/shop@2x.png"
+      }
+    },
+    "condition": {
+      "urlFilter": "https://cdn.tanktrouble.com/*/assets/images/tankInfo/shop@2x.png",
+      "resourceTypes": ["image"]
+    }
+  },
+  {
+    "id": 22,
+    "priority": 1,
+    "action": {
+      "type": "redirect",
+      "redirect": {
+        "extensionPath": "/assets/tankInfo/shop.png"
+      }
+    },
+    "condition": {
+      "urlFilter": "https://cdn.tanktrouble.com/*/assets/images/tankInfo/shop.png",
+      "resourceTypes": ["image"]
+    }
+  },
+  {
+    "id": 23,
+    "priority": 1,
+    "action": {
+      "type": "redirect",
+      "redirect": {
+        "extensionPath": "/assets/tankInfo/shop@2x.png"
+      }
+    },
+    "condition": {
+      "urlFilter": "https://cdn.tanktrouble.com/*/assets/images/tankInfo/shopActive@2x.png",
+      "resourceTypes": ["image"]
+    }
+  },
+  {
+    "id": 24,
+    "priority": 1,
+    "action": {
+      "type": "redirect",
+      "redirect": {
+        "extensionPath": "/assets/tankInfo/shop.png"
+      }
+    },
+    "condition": {
+      "urlFilter": "https://cdn.tanktrouble.com/*/assets/images/tankInfo/shopActive.png",
+      "resourceTypes": ["image"]
+    }
+  },
+  {
+    "id": 25,
+    "priority": 1,
+    "action": {
+      "type": "redirect",
+      "redirect": {
+        "extensionPath": "/assets/tankInfo/shopFlicker@2x.png"
+      }
+    },
+    "condition": {
+      "urlFilter": "https://cdn.tanktrouble.com/*/assets/images/tankInfo/shopFlicker@2x.png",
+      "resourceTypes": ["image"]
+    }
+  },
+  {
+    "id": 26,
+    "priority": 1,
+    "action": {
+      "type": "redirect",
+      "redirect": {
+        "extensionPath": "/assets/tankInfo/shopFlicker.png"
+      }
+    },
+    "condition": {
+      "urlFilter": "https://cdn.tanktrouble.com/*/assets/images/tankInfo/shopFlicker.png",
+      "resourceTypes": ["image"]
+    }
+  },
+  {
+    "id": 27,
+    "priority": 1,
+    "action": {
+      "type": "redirect",
+      "redirect": {
+        "extensionPath": "/assets/tankInfo/shopFlicker@2x.png"
+      }
+    },
+    "condition": {
+      "urlFilter": "https://cdn.tanktrouble.com/*/assets/images/tankInfo/shopFlickerActive@2x.png",
+      "resourceTypes": ["image"]
+    }
+  },
+  {
+    "id": 28,
+    "priority": 1,
+    "action": {
+      "type": "redirect",
+      "redirect": {
+        "extensionPath": "/assets/tankInfo/shopFlicker.png"
+      }
+    },
+    "condition": {
+      "urlFilter": "https://cdn.tanktrouble.com/*/assets/images/tankInfo/shopFlickerActive.png",
+      "resourceTypes": ["image"]
+    }
+  },
+  {
+    "id": 29,
+    "priority": 1,
+    "action": {
+      "type": "redirect",
+      "redirect": {
+        "extensionPath": "/assets/tankInfo/logOut@2x.png"
+      }
+    },
+    "condition": {
+      "urlFilter": "https://cdn.tanktrouble.com/*/assets/images/tankInfo/logOutActive@2x.png",
+      "resourceTypes": ["image"]
+    }
+  },
+  {
+    "id": 30,
+    "priority": 1,
+    "action": {
+      "type": "redirect",
+      "redirect": {
+        "extensionPath": "/assets/tankInfo/logOut.png"
+      }
+    },
+    "condition": {
+      "urlFilter": "https://cdn.tanktrouble.com/*/assets/images/tankInfo/logOutActive.png",
+      "resourceTypes": ["image"]
+    }
+  }
+]
