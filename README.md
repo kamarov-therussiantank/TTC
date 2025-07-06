@@ -27,6 +27,3 @@ To install TTCV2:
 
 Still having problems with installation? Try the full documentation: [ttcv2-tutorial](https://bit.ly/TTCV2-tutorial)
 
-## Changelog
-
-Interested in the full release log of TTCV2? [Visit the changelog](https://github.com/kamarov-therussiantank/TTCV2/blob/main/CHANGELOG.md)
