@@ -23,5 +23,5 @@ To install TTCV2:
 7. Open it and click "TTCV2-main"  
 8. Click "Select Folder"
 
-Still having problems with installation? Try the full documentation: [ttcv2-tutorial](https://bit.ly/TTCV2-tutorial)
+Still having problems with installation? Try the full documentation [guide](https://bit.ly/ttcv2-installation-guide)
 
