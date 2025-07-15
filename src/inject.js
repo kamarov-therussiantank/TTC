@@ -10,17 +10,4 @@ style.textContent = `
 }
 `;
 document.head.appendChild(style);
-
-//Set Premium to "true"
-const { _updatePremium } = PremiumManager;
-PremiumManager.classFields({
-	get _updatePremium() {
-		_updatePremium(true);
-		return () => {};
-	},
-	set _updatePremium(value) {
-		return value;
-	}
-});
-
 })();

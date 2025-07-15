@@ -173,7 +173,7 @@
         "action": {
           "type": "redirect",
           "redirect": {
-            "extensionPath": "/assets/other/message@2x.png"
+            "extensionPath": "/assets/tankInfo/message@2x.png"
           }
         },
         "condition": {
@@ -187,7 +187,7 @@
         "action": {
           "type": "redirect",
           "redirect": {
-            "extensionPath": "/assets/other/message.png"
+            "extensionPath": "/assets/tankInfo/message.png"
           }
         },
         "condition": {
@@ -201,7 +201,7 @@
         "action": {
           "type": "redirect",
           "redirect": {
-            "extensionPath": "/assets/other/message@2x.png"
+            "extensionPath": "/assets/tankInfo/message@2x.png"
           }
         },
         "condition": {
@@ -215,7 +215,7 @@
         "action": {
           "type": "redirect",
           "redirect": {
-            "extensionPath": "/assets/other/message.png"
+            "extensionPath": "/assets/tankInfo/message.png"
           }
         },
         "condition": {
@@ -1088,6 +1088,118 @@
         },
         "condition": {
           "urlFilter": "https://cdn.tanktrouble.com/*/assets/images/header/volumeOffActive.png",
+          "resourceTypes": ["image"]
+        }
+      },
+      {
+        "id": 79,
+        "priority": 1,
+        "action": {
+          "type": "redirect",
+          "redirect": {
+            "extensionPath": "/assets/tankInfo/messageDisabled@2x.png"
+          }
+        },
+        "condition": {
+          "urlFilter": "https://cdn.tanktrouble.com/*/assets/images/tankInfo/messageDisabled@2x.png",
+          "resourceTypes": ["image"]
+        }
+      },
+      {
+        "id": 80,
+        "priority": 1,
+        "action": {
+          "type": "redirect",
+          "redirect": {
+            "extensionPath": "/assets/tankInfo/messageDisabled.png"
+          }
+        },
+        "condition": {
+          "urlFilter": "https://cdn.tanktrouble.com/*/assets/images/tankInfo/messageDisabled.png",
+          "resourceTypes": ["image"]
+        }
+      },
+      {
+        "id": 81,
+        "priority": 1,
+        "action": {
+          "type": "redirect",
+          "redirect": {
+            "extensionPath": "/assets/tankInfo/messageDisabled@2x.png"
+          }
+        },
+        "condition": {
+          "urlFilter": "https://cdn.tanktrouble.com/*/assets/images/tankInfo/messageDisabledActive@2x.png",
+          "resourceTypes": ["image"]
+        }
+      },
+      {
+        "id": 82,
+        "priority": 1,
+        "action": {
+          "type": "redirect",
+          "redirect": {
+            "extensionPath": "/assets/tankInfo/messageDisabled.png"
+          }
+        },
+        "condition": {
+          "urlFilter": "https://cdn.tanktrouble.com/*/assets/images/tankInfo/messageDisabledActive.png",
+          "resourceTypes": ["image"]
+        }
+      },
+      {
+        "id": 83,
+        "priority": 1,
+        "action": {
+          "type": "redirect",
+          "redirect": {
+            "extensionPath": "/assets/tankInfo/admin@2x.png"
+          }
+        },
+        "condition": {
+          "urlFilter": "https://cdn.tanktrouble.com/*/assets/images/tankInfo/admin@2x.png",
+          "resourceTypes": ["image"]
+        }
+      },
+      {
+        "id": 84,
+        "priority": 1,
+        "action": {
+          "type": "redirect",
+          "redirect": {
+            "extensionPath": "/assets/tankInfo/admin.png"
+          }
+        },
+        "condition": {
+          "urlFilter": "https://cdn.tanktrouble.com/*/assets/images/tankInfo/admin.png",
+          "resourceTypes": ["image"]
+        }
+      },
+      {
+        "id": 85,
+        "priority": 1,
+        "action": {
+          "type": "redirect",
+          "redirect": {
+            "extensionPath": "/assets/tankInfo/admin@2x.png"
+          }
+        },
+        "condition": {
+          "urlFilter": "https://cdn.tanktrouble.com/*/assets/images/tankInfo/adminActive@2x.png",
+          "resourceTypes": ["image"]
+        }
+      },
+      {
+        "id": 86,
+        "priority": 1,
+        "action": {
+          "type": "redirect",
+          "redirect": {
+            "extensionPath": "/assets/tankInfo/admin.png"
+          }
+        },
+        "condition": {
+          "urlFilter": "https://cdn.tanktrouble.com/*/assets/images/tankInfo/adminActive.png",
           "resourceTypes": ["image"]
         }
       }
