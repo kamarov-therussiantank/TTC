@@ -418,5 +418,62 @@
       "urlFilter": "https://cdn.tanktrouble.com/*/assets/images/tankInfo/logOutActive.png",
       "resourceTypes": ["image"]
     }
+  },
+  {
+    "id": 31,
+    "priority": 1,
+    "action": {
+      "type": "redirect",
+      "redirect": {
+        "extensionPath": "/assets/tankInfo/kills@2x.png"
+      }
+    },
+    "condition": {
+      "urlFilter": "https://cdn.tanktrouble.com/*/assets/images/tankInfo/kills@2x.png",
+      "resourceTypes": ["image"]
+    }
+  },
+  {
+    "id": 32,
+    "priority": 1,
+    "action": {
+      "type": "redirect",
+      "redirect": {
+        "extensionPath": "/assets/tankInfo/kills.png"
+      }
+    },
+    "condition": {
+      "urlFilter": "https://cdn.tanktrouble.com/*/assets/images/tankInfo/kills.png",
+      "resourceTypes": ["image"]
+    }
+  }
+,
+  {
+    "id": 33,
+    "priority": 1,
+    "action": {
+      "type": "redirect",
+      "redirect": {
+        "extensionPath": "/assets/tankInfo/victories@2x.png"
+      }
+    },
+    "condition": {
+      "urlFilter": "https://cdn.tanktrouble.com/*/assets/images/tankInfo/victories@2x.png",
+      "resourceTypes": ["image"]
+    }
+  },
+  {
+    "id": 34,
+    "priority": 1,
+    "action": {
+      "type": "redirect",
+      "redirect": {
+        "extensionPath": "/assets/tankInfo/victories.png"
+      }
+    },
+    "condition": {
+      "urlFilter": "https://cdn.tanktrouble.com/*/assets/images/tankInfo/victories.png",
+      "resourceTypes": ["image"]
+    }
   }
 ]
