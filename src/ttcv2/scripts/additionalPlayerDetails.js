@@ -74,7 +74,7 @@ class Loader {
     TankTrouble.TankInfoBox.infoDeathsDiv = $('<td class="deaths tooltipstered"/>');
     TankTrouble.TankInfoBox.infoDeaths = $(`
     <div class="statsContainer">
-        <img class="statsIcon" src="https://i.imgur.com/ze2jYnc.png" srcset="https://i.imgur.com/XIQFQn6.png 2x"/>
+        <img class="statsIcon" src="https://raw.githubusercontent.com/kamarov-therussiantank/TTCV2/refs/heads/main/src/assets/tankInfo/deaths.png" srcset="https://raw.githubusercontent.com/kamarov-therussiantank/TTCV2/refs/heads/main/src/assets/tankInfo/deaths@2x.png 2x"/>
         <div class="hasSVG">
             <svg version="1.1" width="58" height="34">
                 <text id="deathsTextOutline" x="1" y="22" text-anchor="start" font-family="TankTrouble" font-size="14" fill="none" stroke="black" stroke-linejoin="round" stroke-width="3" letter-spacing="1">N/A</text>
