@@ -5,7 +5,7 @@
       "action": {
         "type": "redirect",
         "redirect": {
-          "extensionPath": "/assets/forum/page@2x.png"
+          "extensionPath": "/assets/images/forum/page@2x.png"
         }
       },
       "condition": {
@@ -19,7 +19,7 @@
         "action": {
           "type": "redirect",
           "redirect": {
-            "extensionPath": "/assets/forum/page.png"
+            "extensionPath": "/assets/images/forum/page.png"
           }
         },
         "condition": {
@@ -33,7 +33,7 @@
         "action": {
           "type": "redirect",
           "redirect": {
-            "extensionPath": "/assets/forum/page@2x.png"
+            "extensionPath": "/assets/images/forum/page@2x.png"
           }
         },
         "condition": {
@@ -47,7 +47,7 @@
         "action": {
           "type": "redirect",
           "redirect": {
-            "extensionPath": "/assets/forum/page.png"
+            "extensionPath": "/assets/images/forum/page.png"
           }
         },
         "condition": {
@@ -61,7 +61,7 @@
         "action": {
           "type": "redirect",
           "redirect": {
-            "extensionPath": "/assets/forum/pageSelected@2x.png"
+            "extensionPath": "/assets/images/forum/pageSelected@2x.png"
           }
         },
         "condition": {
@@ -75,7 +75,7 @@
         "action": {
           "type": "redirect",
           "redirect": {
-            "extensionPath": "/assets/forum/pageSelected.png"
+            "extensionPath": "/assets/images/forum/pageSelected.png"
           }
         },
         "condition": {
@@ -89,7 +89,7 @@
         "action": {
           "type": "redirect",
           "redirect": {
-            "extensionPath": "/assets/forum/pageNewest@2x.png"
+            "extensionPath": "/assets/images/forum/pageNewest@2x.png"
           }
         },
         "condition": {
@@ -103,7 +103,7 @@
         "action": {
           "type": "redirect",
           "redirect": {
-            "extensionPath": "/assets/forum/pageNewest.png"
+            "extensionPath": "/assets/images/forum/pageNewest.png"
           }
         },
         "condition": {
@@ -117,7 +117,7 @@
         "action": {
           "type": "redirect",
           "redirect": {
-            "extensionPath": "/assets/forum/pageOldest@2x.png"
+            "extensionPath": "/assets/images/forum/pageOldest@2x.png"
           }
         },
         "condition": {
@@ -131,7 +131,7 @@
         "action": {
           "type": "redirect",
           "redirect": {
-            "extensionPath": "/assets/forum/pageOldest.png"
+            "extensionPath": "/assets/images/forum/pageOldest.png"
           }
         },
         "condition": {
@@ -145,7 +145,7 @@
         "action": {
           "type": "redirect",
           "redirect": {
-            "extensionPath": "/assets/forum/pageOldestSelected@2x.png"
+            "extensionPath": "/assets/images/forum/pageOldestSelected@2x.png"
           }
         },
         "condition": {
@@ -159,7 +159,7 @@
         "action": {
           "type": "redirect",
           "redirect": {
-            "extensionPath": "/assets/forum/pageOldestSelected.png"
+            "extensionPath": "/assets/images/forum/pageOldestSelected.png"
           }
         },
         "condition": {
@@ -173,7 +173,7 @@
         "action": {
           "type": "redirect",
           "redirect": {
-            "extensionPath": "/assets/forum/backActive@2x.png"
+            "extensionPath": "/assets/images/forum/backActive@2x.png"
           }
         },
         "condition": {
@@ -187,7 +187,7 @@
         "action": {
           "type": "redirect",
           "redirect": {
-            "extensionPath": "/assets/forum/backActive.png"
+            "extensionPath": "/assets/images/forum/backActive.png"
           }
         },
         "condition": {
@@ -201,7 +201,7 @@
         "action": {
           "type": "redirect",
           "redirect": {
-            "extensionPath": "/assets/forum/backActive@2x.png"
+            "extensionPath": "/assets/images/forum/backActive@2x.png"
           }
         },
         "condition": {
@@ -215,7 +215,7 @@
         "action": {
           "type": "redirect",
           "redirect": {
-            "extensionPath": "/assets/forum/backActive.png"
+            "extensionPath": "/assets/images/forum/backActive.png"
           }
         },
         "condition": {
@@ -229,7 +229,7 @@
         "action": {
           "type": "redirect",
           "redirect": {
-            "extensionPath": "/assets/forum/pageNewestSelected@2x.png"
+            "extensionPath": "/assets/images/forum/pageNewestSelected@2x.png"
           }
         },
         "condition": {
@@ -243,7 +243,7 @@
         "action": {
           "type": "redirect",
           "redirect": {
-            "extensionPath": "/assets/forum/pageNewestSelected.png"
+            "extensionPath": "/assets/images/forum/pageNewestSelected.png"
           }
         },
         "condition": {
@@ -257,7 +257,7 @@
         "action": {
           "type": "redirect",
           "redirect": {
-            "extensionPath": "/assets/forum/ellipsis@2x.png"
+            "extensionPath": "/assets/images/forum/ellipsis@2x.png"
           }
         },
         "condition": {
@@ -271,11 +271,235 @@
         "action": {
           "type": "redirect",
           "redirect": {
-            "extensionPath": "/assets/forum/ellipsis.png"
+            "extensionPath": "/assets/images/forum/ellipsis.png"
           }
         },
         "condition": {
           "urlFilter": "https://cdn.tanktrouble.com/*/assets/images/forum/ellipsis.png",
+          "resourceTypes": ["image"]
+        }
+      },
+      {
+        "id": 21,
+        "priority": 1,
+        "action": {
+          "type": "redirect",
+          "redirect": {
+            "extensionPath": "/assets/images/forum/edit@2x.png"
+          }
+        },
+        "condition": {
+          "urlFilter": "https://cdn.tanktrouble.com/*/assets/images/forum/edit@2x.png",
+          "resourceTypes": ["image"]
+        }
+      },
+      {
+        "id": 22,
+        "priority": 1,
+        "action": {
+          "type": "redirect",
+          "redirect": {
+            "extensionPath": "/assets/images/forum/edit.png"
+          }
+        },
+        "condition": {
+          "urlFilter": "https://cdn.tanktrouble.com/*/assets/images/forum/edit.png",
+          "resourceTypes": ["image"]
+        }
+      },
+      {
+        "id": 23,
+        "priority": 1,
+        "action": {
+          "type": "redirect",
+          "redirect": {
+            "extensionPath": "/assets/images/forum/edit@2x.png"
+          }
+        },
+        "condition": {
+          "urlFilter": "https://cdn.tanktrouble.com/*/assets/images/forum/editActive@2x.png",
+          "resourceTypes": ["image"]
+        }
+      },
+      {
+        "id": 24,
+        "priority": 1,
+        "action": {
+          "type": "redirect",
+          "redirect": {
+            "extensionPath": "/assets/images/forum/edit.png"
+          }
+        },
+        "condition": {
+          "urlFilter": "https://cdn.tanktrouble.com/*/assets/images/forum/editActive.png",
+          "resourceTypes": ["image"]
+        }
+      },
+      {
+        "id": 25,
+        "priority": 1,
+        "action": {
+          "type": "redirect",
+          "redirect": {
+            "extensionPath": "/assets/images/forum/locked@2x.png"
+          }
+        },
+        "condition": {
+          "urlFilter": "https://cdn.tanktrouble.com/*/assets/images/forum/locked@2x.png",
+          "resourceTypes": ["image"]
+        }
+      },
+      {
+        "id": 26,
+        "priority": 1,
+        "action": {
+          "type": "redirect",
+          "redirect": {
+            "extensionPath": "/assets/images/forum/locked.png"
+          }
+        },
+        "condition": {
+          "urlFilter": "https://cdn.tanktrouble.com/*/assets/images/forum/locked.png",
+          "resourceTypes": ["image"]
+        }
+      },
+      {
+        "id": 27,
+        "priority": 1,
+        "action": {
+          "type": "redirect",
+          "redirect": {
+            "extensionPath": "/assets/images/forum/pinned@2x.png"
+          }
+        },
+        "condition": {
+          "urlFilter": "https://cdn.tanktrouble.com/*/assets/images/forum/pinned@2x.png",
+          "resourceTypes": ["image"]
+        }
+      },
+      {
+        "id": 28,
+        "priority": 1,
+        "action": {
+          "type": "redirect",
+          "redirect": {
+            "extensionPath": "/assets/images/forum/pinned.png"
+          }
+        },
+        "condition": {
+          "urlFilter": "https://cdn.tanktrouble.com/*/assets/images/forum/pinned.png",
+          "resourceTypes": ["image"]
+        }
+      },
+      {
+        "id": 29,
+        "priority": 1,
+        "action": {
+          "type": "redirect",
+          "redirect": {
+            "extensionPath": "/assets/images/forum/acceptEdit@2x.png"
+          }
+        },
+        "condition": {
+          "urlFilter": "https://cdn.tanktrouble.com/*/assets/images/forum/acceptEdit@2x.png",
+          "resourceTypes": ["image"]
+        }
+      },
+      {
+        "id": 30,
+        "priority": 1,
+        "action": {
+          "type": "redirect",
+          "redirect": {
+            "extensionPath": "/assets/images/forum/acceptEdit.png"
+          }
+        },
+        "condition": {
+          "urlFilter": "https://cdn.tanktrouble.com/*/assets/images/forum/acceptEdit.png",
+          "resourceTypes": ["image"]
+        }
+      },
+      {
+        "id": 31,
+        "priority": 1,
+        "action": {
+          "type": "redirect",
+          "redirect": {
+            "extensionPath": "/assets/images/forum/acceptEdit@2x.png"
+          }
+        },
+        "condition": {
+          "urlFilter": "https://cdn.tanktrouble.com/*/assets/images/forum/acceptEditActive@2x.png",
+          "resourceTypes": ["image"]
+        }
+      },
+      {
+        "id": 32,
+        "priority": 1,
+        "action": {
+          "type": "redirect",
+          "redirect": {
+            "extensionPath": "/assets/images/forum/acceptEdit.png"
+          }
+        },
+        "condition": {
+          "urlFilter": "https://cdn.tanktrouble.com/*/assets/images/forum/acceptEditActive.png",
+          "resourceTypes": ["image"]
+        }
+      },
+      {
+        "id": 33,
+        "priority": 1,
+        "action": {
+          "type": "redirect",
+          "redirect": {
+            "extensionPath": "/assets/images/forum/cancelEdit@2x.png"
+          }
+        },
+        "condition": {
+          "urlFilter": "https://cdn.tanktrouble.com/*/assets/images/forum/cancelEdit@2x.png",
+          "resourceTypes": ["image"]
+        }
+      },
+      {
+        "id": 34,
+        "priority": 1,
+        "action": {
+          "type": "redirect",
+          "redirect": {
+            "extensionPath": "/assets/images/forum/cancelEdit.png"
+          }
+        },
+        "condition": {
+          "urlFilter": "https://cdn.tanktrouble.com/*/assets/images/forum/cancelEdit.png",
+          "resourceTypes": ["image"]
+        }
+      },
+      {
+        "id": 35,
+        "priority": 1,
+        "action": {
+          "type": "redirect",
+          "redirect": {
+            "extensionPath": "/assets/images/forum/cancelEdit@2x.png"
+          }
+        },
+        "condition": {
+          "urlFilter": "https://cdn.tanktrouble.com/*/assets/images/forum/cancelEditActive@2x.png",
+          "resourceTypes": ["image"]
+        }
+      },
+      {
+        "id": 36,
+        "priority": 1,
+        "action": {
+          "type": "redirect",
+          "redirect": {
+            "extensionPath": "/assets/images/forum/cancelEdit.png"
+          }
+        },
+        "condition": {
+          "urlFilter": "https://cdn.tanktrouble.com/*/assets/images/forum/cancelEditActive.png",
           "resourceTypes": ["image"]
         }
       }

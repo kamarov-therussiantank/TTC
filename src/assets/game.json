@@ -5,7 +5,7 @@
     "action": {
       "type": "redirect",
       "redirect": {
-        "extensionPath": "/assets/game/game@2x.png"
+        "extensionPath": "/assets/images/game/game@2x.png"
       }
     },
     "condition": {
@@ -21,7 +21,7 @@
     "action": {
       "type": "redirect",
       "redirect": {
-        "extensionPath": "/assets/game/game.png"
+        "extensionPath": "/assets/images/game/game.png"
       }
     },
     "condition": {
@@ -37,7 +37,7 @@
     "action": {
       "type": "redirect",
       "redirect": {
-        "extensionPath": "/assets/game/game.json"
+        "extensionPath": "/assets/images/game/game.json"
       }
     },
     "condition": {
@@ -53,7 +53,7 @@
     "action": {
       "type": "redirect",
       "redirect": {
-        "extensionPath": "/assets/game/mazes@2x.png"
+        "extensionPath": "/assets/images/game/mazes@2x.png"
       }
     },
     "condition": {
@@ -69,7 +69,7 @@
     "action": {
       "type": "redirect",
       "redirect": {
-        "extensionPath": "/assets/game/mazes.png"
+        "extensionPath": "/assets/images/game/mazes.png"
       }
     },
     "condition": {
@@ -85,7 +85,7 @@
     "action": {
       "type": "redirect",
       "redirect": {
-        "extensionPath": "/assets/game/gameModes@2x.png"
+        "extensionPath": "/assets/images/game/gameModes@2x.png"
       }
     },
     "condition": {
@@ -101,7 +101,7 @@
     "action": {
       "type": "redirect",
       "redirect": {
-        "extensionPath": "/assets/game/gameModes.png"
+        "extensionPath": "/assets/images/game/gameModes.png"
       }
     },
     "condition": {
@@ -117,7 +117,7 @@
     "action": {
       "type": "redirect",
       "redirect": {
-        "extensionPath": "/assets/game/waitingModes@2x.png"
+        "extensionPath": "/assets/images/game/waitingModes@2x.png"
       }
     },
     "condition": {
@@ -133,7 +133,7 @@
     "action": {
       "type": "redirect",
       "redirect": {
-        "extensionPath": "/assets/game/waitingModes.png"
+        "extensionPath": "/assets/images/game/waitingModes.png"
       }
     },
     "condition": {
@@ -149,7 +149,7 @@
     "action": {
       "type": "redirect",
       "redirect": {
-        "extensionPath": "/assets/game/waitingModes.png"
+        "extensionPath": "/assets/images/game/waitingModes.png"
       }
     },
     "condition": {
@@ -165,7 +165,7 @@
     "action": {
       "type": "redirect",
       "redirect": {
-        "extensionPath": "/assets/game/disconnected@2x.png"
+        "extensionPath": "/assets/images/game/disconnected@2x.png"
       }
     },
     "condition": {
@@ -181,7 +181,7 @@
     "action": {
       "type": "redirect",
       "redirect": {
-        "extensionPath": "/assets/game/disconnected.png"
+        "extensionPath": "/assets/images/game/disconnected.png"
       }
     },
     "condition": {
@@ -197,7 +197,7 @@
     "action": {
       "type": "redirect",
       "redirect": {
-        "extensionPath": "/assets/game/addTank@2x.png"
+        "extensionPath": "/assets/images/game/addTank@2x.png"
       }
     },
     "condition": {
@@ -213,7 +213,7 @@
     "action": {
       "type": "redirect",
       "redirect": {
-        "extensionPath": "/assets/game/addTank.png"
+        "extensionPath": "/assets/images/game/addTank.png"
       }
     },
     "condition": {
@@ -229,7 +229,7 @@
     "action": {
       "type": "redirect",
       "redirect": {
-        "extensionPath": "/assets/game/playerPanel@2x.png"
+        "extensionPath": "/assets/images/game/playerPanel@2x.png"
       }
     },
     "condition": {
@@ -245,7 +245,7 @@
     "action": {
       "type": "redirect",
       "redirect": {
-        "extensionPath": "/assets/game/playerPanel.png"
+        "extensionPath": "/assets/images/game/playerPanel.png"
       }
     },
     "condition": {
@@ -261,7 +261,7 @@
     "action": {
       "type": "redirect",
       "redirect": {
-        "extensionPath": "/assets/game/storm0@2x.png"
+        "extensionPath": "/assets/images/game/storm0@2x.png"
       }
     },
     "condition": {
@@ -277,7 +277,7 @@
     "action": {
       "type": "redirect",
       "redirect": {
-        "extensionPath": "/assets/game/storm1@2x.png"
+        "extensionPath": "/assets/images/game/storm1@2x.png"
       }
     },
     "condition": {
@@ -293,7 +293,7 @@
     "action": {
       "type": "redirect",
       "redirect": {
-        "extensionPath": "/assets/game/storm0.png"
+        "extensionPath": "/assets/images/game/storm0.png"
       }
     },
     "condition": {
@@ -309,7 +309,7 @@
     "action": {
       "type": "redirect",
       "redirect": {
-        "extensionPath": "/assets/game/storm1.png"
+        "extensionPath": "/assets/images/game/storm1.png"
       }
     },
     "condition": {

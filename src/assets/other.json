@@ -5,7 +5,7 @@
       "action": {
         "type": "redirect",
         "redirect": {
-          "extensionPath": "/assets/other/waiting@2x.png"
+          "extensionPath": "/assets/images/other/waiting@2x.png"
         }
       },
       "condition": {
@@ -19,7 +19,7 @@
         "action": {
           "type": "redirect",
           "redirect": {
-            "extensionPath": "/assets/other/waiting.png"
+            "extensionPath": "/assets/images/other/waiting.png"
           }
         },
         "condition": {
@@ -33,7 +33,7 @@
         "action": {
           "type": "redirect",
           "redirect": {
-            "extensionPath": "/assets/other/dimitrisEmporium@2x.png"
+            "extensionPath": "/assets/images/other/dimitrisEmporium@2x.png"
           }
         },
         "condition": {
@@ -47,7 +47,7 @@
         "action": {
           "type": "redirect",
           "redirect": {
-            "extensionPath": "/assets/other/dimitrisEmporium.png"
+            "extensionPath": "/assets/images/other/dimitrisEmporium.png"
           }
         },
         "condition": {
@@ -61,7 +61,7 @@
         "action": {
           "type": "redirect",
           "redirect": {
-            "extensionPath": "/assets/other/chat@2x.png"
+            "extensionPath": "/assets/images/other/chat@2x.png"
           }
         },
         "condition": {
@@ -75,7 +75,7 @@
         "action": {
           "type": "redirect",
           "redirect": {
-            "extensionPath": "/assets/other/chat.png"
+            "extensionPath": "/assets/images/other/chat.png"
           }
         },
         "condition": {
@@ -89,7 +89,7 @@
         "action": {
           "type": "redirect",
           "redirect": {
-            "extensionPath": "/assets/other/chatDisabled@2x.png"
+            "extensionPath": "/assets/images/other/chatDisabled@2x.png"
           }
         },
         "condition": {
@@ -103,7 +103,7 @@
         "action": {
           "type": "redirect",
           "redirect": {
-            "extensionPath": "/assets/other/chatDisabled.png"
+            "extensionPath": "/assets/images/other/chatDisabled.png"
           }
         },
         "condition": {
@@ -117,7 +117,7 @@
         "action": {
           "type": "redirect",
           "redirect": {
-            "extensionPath": "/assets/other/newMessageMarker@2x.png"
+            "extensionPath": "/assets/images/other/newMessageMarker@2x.png"
           }
         },
         "condition": {
@@ -131,7 +131,7 @@
         "action": {
           "type": "redirect",
           "redirect": {
-            "extensionPath": "/assets/other/newMessageMarker.png"
+            "extensionPath": "/assets/images/other/newMessageMarker.png"
           }
         },
         "condition": {
@@ -145,7 +145,7 @@
         "action": {
           "type": "redirect",
           "redirect": {
-            "extensionPath": "/assets/snippets/unseenMarker@2x.png"
+            "extensionPath": "/assets/images/snippets/unseenMarker@2x.png"
           }
         },
         "condition": {
@@ -159,7 +159,7 @@
         "action": {
           "type": "redirect",
           "redirect": {
-            "extensionPath": "/assets/snippets/unseenMarker.png"
+            "extensionPath": "/assets/images/snippets/unseenMarker.png"
           }
         },
         "condition": {
@@ -173,7 +173,7 @@
         "action": {
           "type": "redirect",
           "redirect": {
-            "extensionPath": "/assets/tankInfo/message@2x.png"
+            "extensionPath": "/assets/images/tankInfo/message@2x.png"
           }
         },
         "condition": {
@@ -187,7 +187,7 @@
         "action": {
           "type": "redirect",
           "redirect": {
-            "extensionPath": "/assets/tankInfo/message.png"
+            "extensionPath": "/assets/images/tankInfo/message.png"
           }
         },
         "condition": {
@@ -201,7 +201,7 @@
         "action": {
           "type": "redirect",
           "redirect": {
-            "extensionPath": "/assets/tankInfo/message@2x.png"
+            "extensionPath": "/assets/images/tankInfo/message@2x.png"
           }
         },
         "condition": {
@@ -215,7 +215,7 @@
         "action": {
           "type": "redirect",
           "redirect": {
-            "extensionPath": "/assets/tankInfo/message.png"
+            "extensionPath": "/assets/images/tankInfo/message.png"
           }
         },
         "condition": {
@@ -229,7 +229,7 @@
         "action": {
           "type": "redirect",
           "redirect": {
-            "extensionPath": "/assets/other/67Unlocked@2x.png"
+            "extensionPath": "/assets/images/other/67Unlocked@2x.png"
           }
         },
         "condition": {
@@ -243,7 +243,7 @@
         "action": {
           "type": "redirect",
           "redirect": {
-            "extensionPath": "/assets/other/67Unlocked.png"
+            "extensionPath": "/assets/images/other/67Unlocked.png"
           }
         },
         "condition": {
@@ -257,7 +257,7 @@
         "action": {
           "type": "redirect",
           "redirect": {
-            "extensionPath": "/assets/buttons/button52@2x.png"
+            "extensionPath": "/assets/images/buttons/button52@2x.png"
           }
         },
         "condition": {
@@ -271,7 +271,7 @@
         "action": {
           "type": "redirect",
           "redirect": {
-            "extensionPath": "/assets/buttons/button52.png"
+            "extensionPath": "/assets/images/buttons/button52.png"
           }
         },
         "condition": {
@@ -285,7 +285,7 @@
         "action": {
           "type": "redirect",
           "redirect": {
-            "extensionPath": "/assets/buttons/button34@2x.png"
+            "extensionPath": "/assets/images/buttons/button34@2x.png"
           }
         },
         "condition": {
@@ -299,7 +299,7 @@
         "action": {
           "type": "redirect",
           "redirect": {
-            "extensionPath": "/assets/buttons/button34.png"
+            "extensionPath": "/assets/images/buttons/button34.png"
           }
         },
         "condition": {
@@ -313,7 +313,7 @@
         "action": {
           "type": "redirect",
           "redirect": {
-            "extensionPath": "/assets/buttons/button24@2x.png"
+            "extensionPath": "/assets/images/buttons/button24@2x.png"
           }
         },
         "condition": {
@@ -327,7 +327,7 @@
         "action": {
           "type": "redirect",
           "redirect": {
-            "extensionPath": "/assets/buttons/button24.png"
+            "extensionPath": "/assets/images/buttons/button24.png"
           }
         },
         "condition": {
@@ -341,7 +341,7 @@
         "action": {
           "type": "redirect",
           "redirect": {
-            "extensionPath": "/assets/buttons/button52Active@2x.png"
+            "extensionPath": "/assets/images/buttons/button52Active@2x.png"
           }
         },
         "condition": {
@@ -355,7 +355,7 @@
         "action": {
           "type": "redirect",
           "redirect": {
-            "extensionPath": "/assets/buttons/button52Active.png"
+            "extensionPath": "/assets/images/buttons/button52Active.png"
           }
         },
         "condition": {
@@ -369,7 +369,7 @@
         "action": {
           "type": "redirect",
           "redirect": {
-            "extensionPath": "/assets/buttons/button34Active@2x.png"
+            "extensionPath": "/assets/images/buttons/button34Active@2x.png"
           }
         },
         "condition": {
@@ -383,7 +383,7 @@
         "action": {
           "type": "redirect",
           "redirect": {
-            "extensionPath": "/assets/buttons/button34Active.png"
+            "extensionPath": "/assets/images/buttons/button34Active.png"
           }
         },
         "condition": {
@@ -397,7 +397,7 @@
         "action": {
           "type": "redirect",
           "redirect": {
-            "extensionPath": "/assets/buttons/button24Active@2x.png"
+            "extensionPath": "/assets/images/buttons/button24Active@2x.png"
           }
         },
         "condition": {
@@ -411,7 +411,7 @@
         "action": {
           "type": "redirect",
           "redirect": {
-            "extensionPath": "/assets/buttons/button24Active.png"
+            "extensionPath": "/assets/images/buttons/button24Active.png"
           }
         },
         "condition": {
@@ -425,7 +425,7 @@
         "action": {
           "type": "redirect",
           "redirect": {
-            "extensionPath": "/assets/buttons/52Disabled@2x.png"
+            "extensionPath": "/assets/images/buttons/52Disabled@2x.png"
           }
         },
         "condition": {
@@ -439,7 +439,7 @@
         "action": {
           "type": "redirect",
           "redirect": {
-            "extensionPath": "/assets/buttons/52Disabled.png"
+            "extensionPath": "/assets/images/buttons/52Disabled.png"
           }
         },
         "condition": {
@@ -453,7 +453,7 @@
         "action": {
           "type": "redirect",
           "redirect": {
-            "extensionPath": "/assets/buttons/34Disabled@2x.png"
+            "extensionPath": "/assets/images/buttons/34Disabled@2x.png"
           }
         },
         "condition": {
@@ -467,7 +467,7 @@
         "action": {
           "type": "redirect",
           "redirect": {
-            "extensionPath": "/assets/buttons/34Disabled.png"
+            "extensionPath": "/assets/images/buttons/34Disabled.png"
           }
         },
         "condition": {
@@ -481,7 +481,7 @@
         "action": {
           "type": "redirect",
           "redirect": {
-            "extensionPath": "/assets/buttons/24Disabled@2x.png"
+            "extensionPath": "/assets/images/buttons/24Disabled@2x.png"
           }
         },
         "condition": {
@@ -495,7 +495,7 @@
         "action": {
           "type": "redirect",
           "redirect": {
-            "extensionPath": "/assets/buttons/24Disabled.png"
+            "extensionPath": "/assets/images/buttons/24Disabled.png"
           }
         },
         "condition": {
@@ -509,7 +509,7 @@
         "action": {
           "type": "redirect",
           "redirect": {
-            "extensionPath": "/assets/buttons/warning52@2x.png"
+            "extensionPath": "/assets/images/buttons/warning52@2x.png"
           }
         },
         "condition": {
@@ -523,7 +523,7 @@
         "action": {
           "type": "redirect",
           "redirect": {
-            "extensionPath": "/assets/buttons/warning52.png"
+            "extensionPath": "/assets/images/buttons/warning52.png"
           }
         },
         "condition": {
@@ -537,7 +537,7 @@
         "action": {
           "type": "redirect",
           "redirect": {
-            "extensionPath": "/assets/buttons/warning34@2x.png"
+            "extensionPath": "/assets/images/buttons/warning34@2x.png"
           }
         },
         "condition": {
@@ -551,7 +551,7 @@
         "action": {
           "type": "redirect",
           "redirect": {
-            "extensionPath": "/assets/buttons/warning34.png"
+            "extensionPath": "/assets/images/buttons/warning34.png"
           }
         },
         "condition": {
@@ -565,7 +565,7 @@
         "action": {
           "type": "redirect",
           "redirect": {
-            "extensionPath": "/assets/buttons/warning24@2x.png"
+            "extensionPath": "/assets/images/buttons/warning24@2x.png"
           }
         },
         "condition": {
@@ -579,7 +579,7 @@
         "action": {
           "type": "redirect",
           "redirect": {
-            "extensionPath": "/assets/buttons/warning24.png"
+            "extensionPath": "/assets/images/buttons/warning24.png"
           }
         },
         "condition": {
@@ -593,7 +593,7 @@
         "action": {
           "type": "redirect",
           "redirect": {
-            "extensionPath": "/assets/buttons/warning52Active@2x.png"
+            "extensionPath": "/assets/images/buttons/warning52Active@2x.png"
           }
         },
         "condition": {
@@ -607,7 +607,7 @@
         "action": {
           "type": "redirect",
           "redirect": {
-            "extensionPath": "/assets/buttons/warning52Active.png"
+            "extensionPath": "/assets/images/buttons/warning52Active.png"
           }
         },
         "condition": {
@@ -621,7 +621,7 @@
         "action": {
           "type": "redirect",
           "redirect": {
-            "extensionPath": "/assets/buttons/warning34Active@2x.png"
+            "extensionPath": "/assets/images/buttons/warning34Active@2x.png"
           }
         },
         "condition": {
@@ -635,7 +635,7 @@
         "action": {
           "type": "redirect",
           "redirect": {
-            "extensionPath": "/assets/buttons/warning34Active.png"
+            "extensionPath": "/assets/images/buttons/warning34Active.png"
           }
         },
         "condition": {
@@ -649,7 +649,7 @@
         "action": {
           "type": "redirect",
           "redirect": {
-            "extensionPath": "/assets/buttons/warning24Active@2x.png"
+            "extensionPath": "/assets/images/buttons/warning24Active@2x.png"
           }
         },
         "condition": {
@@ -663,7 +663,7 @@
         "action": {
           "type": "redirect",
           "redirect": {
-            "extensionPath": "/assets/buttons/warning24Active.png"
+            "extensionPath": "/assets/images/buttons/warning24Active.png"
           }
         },
         "condition": {
@@ -677,7 +677,7 @@
         "action": {
           "type": "redirect",
           "redirect": {
-            "extensionPath": "/assets/other/background@2x.png"
+            "extensionPath": "/assets/images/other/background@2x.png"
           }
         },
         "condition": {
@@ -691,7 +691,7 @@
         "action": {
           "type": "redirect",
           "redirect": {
-            "extensionPath": "/assets/other/background.png"
+            "extensionPath": "/assets/images/other/background.png"
           }
         },
         "condition": {
@@ -705,7 +705,7 @@
         "action": {
           "type": "redirect",
           "redirect": {
-            "extensionPath": "/assets/header/settings@2x.png"
+            "extensionPath": "/assets/images/header/settings@2x.png"
           }
         },
         "condition": {
@@ -719,7 +719,7 @@
         "action": {
           "type": "redirect",
           "redirect": {
-            "extensionPath": "/assets/header/settings.png"
+            "extensionPath": "/assets/images/header/settings.png"
           }
         },
         "condition": {
@@ -733,7 +733,7 @@
         "action": {
           "type": "redirect",
           "redirect": {
-            "extensionPath": "/assets/header/settings@2x.png"
+            "extensionPath": "/assets/images/header/settings@2x.png"
           }
         },
         "condition": {
@@ -747,7 +747,7 @@
         "action": {
           "type": "redirect",
           "redirect": {
-            "extensionPath": "/assets/header/settings.png"
+            "extensionPath": "/assets/images/header/settings.png"
           }
         },
         "condition": {
@@ -761,7 +761,7 @@
         "action": {
           "type": "redirect",
           "redirect": {
-            "extensionPath": "/assets/header/musicOn@2x.png"
+            "extensionPath": "/assets/images/header/musicOn@2x.png"
           }
         },
         "condition": {
@@ -775,7 +775,7 @@
         "action": {
           "type": "redirect",
           "redirect": {
-            "extensionPath": "/assets/header/musicOn.png"
+            "extensionPath": "/assets/images/header/musicOn.png"
           }
         },
         "condition": {
@@ -789,7 +789,7 @@
         "action": {
           "type": "redirect",
           "redirect": {
-            "extensionPath": "/assets/header/musicOn@2x.png"
+            "extensionPath": "/assets/images/header/musicOn@2x.png"
           }
         },
         "condition": {
@@ -803,7 +803,7 @@
         "action": {
           "type": "redirect",
           "redirect": {
-            "extensionPath": "/assets/header/musicOn.png"
+            "extensionPath": "/assets/images/header/musicOn.png"
           }
         },
         "condition": {
@@ -817,7 +817,7 @@
         "action": {
           "type": "redirect",
           "redirect": {
-            "extensionPath": "/assets/header/musicOff@2x.png"
+            "extensionPath": "/assets/images/header/musicOff@2x.png"
           }
         },
         "condition": {
@@ -831,7 +831,7 @@
         "action": {
           "type": "redirect",
           "redirect": {
-            "extensionPath": "/assets/header/musicOff.png"
+            "extensionPath": "/assets/images/header/musicOff.png"
           }
         },
         "condition": {
@@ -845,7 +845,7 @@
         "action": {
           "type": "redirect",
           "redirect": {
-            "extensionPath": "/assets/header/musicOff@2x.png"
+            "extensionPath": "/assets/images/header/musicOff@2x.png"
           }
         },
         "condition": {
@@ -859,7 +859,7 @@
         "action": {
           "type": "redirect",
           "redirect": {
-            "extensionPath": "/assets/header/musicOff.png"
+            "extensionPath": "/assets/images/header/musicOff.png"
           }
         },
         "condition": {
@@ -873,7 +873,7 @@
         "action": {
           "type": "redirect",
           "redirect": {
-            "extensionPath": "/assets/header/volumeHigh@2x.png"
+            "extensionPath": "/assets/images/header/volumeHigh@2x.png"
           }
         },
         "condition": {
@@ -887,7 +887,7 @@
         "action": {
           "type": "redirect",
           "redirect": {
-            "extensionPath": "/assets/header/volumeHigh.png"
+            "extensionPath": "/assets/images/header/volumeHigh.png"
           }
         },
         "condition": {
@@ -901,7 +901,7 @@
         "action": {
           "type": "redirect",
           "redirect": {
-            "extensionPath": "/assets/header/volumeHigh@2x.png"
+            "extensionPath": "/assets/images/header/volumeHigh@2x.png"
           }
         },
         "condition": {
@@ -915,7 +915,7 @@
         "action": {
           "type": "redirect",
           "redirect": {
-            "extensionPath": "/assets/header/volumeHigh.png"
+            "extensionPath": "/assets/images/header/volumeHigh.png"
           }
         },
         "condition": {
@@ -929,7 +929,7 @@
         "action": {
           "type": "redirect",
           "redirect": {
-            "extensionPath": "/assets/header/volumeMedium@2x.png"
+            "extensionPath": "/assets/images/header/volumeMedium@2x.png"
           }
         },
         "condition": {
@@ -943,7 +943,7 @@
         "action": {
           "type": "redirect",
           "redirect": {
-            "extensionPath": "/assets/header/volumeMedium.png"
+            "extensionPath": "/assets/images/header/volumeMedium.png"
           }
         },
         "condition": {
@@ -957,7 +957,7 @@
         "action": {
           "type": "redirect",
           "redirect": {
-            "extensionPath": "/assets/header/volumeMedium@2x.png"
+            "extensionPath": "/assets/images/header/volumeMedium@2x.png"
           }
         },
         "condition": {
@@ -971,7 +971,7 @@
         "action": {
           "type": "redirect",
           "redirect": {
-            "extensionPath": "/assets/header/volumeMedium.png"
+            "extensionPath": "/assets/images/header/volumeMedium.png"
           }
         },
         "condition": {
@@ -985,7 +985,7 @@
         "action": {
           "type": "redirect",
           "redirect": {
-            "extensionPath": "/assets/header/volumeLow@2x.png"
+            "extensionPath": "/assets/images/header/volumeLow@2x.png"
           }
         },
         "condition": {
@@ -999,7 +999,7 @@
         "action": {
           "type": "redirect",
           "redirect": {
-            "extensionPath": "/assets/header/volumeLow.png"
+            "extensionPath": "/assets/images/header/volumeLow.png"
           }
         },
         "condition": {
@@ -1013,7 +1013,7 @@
         "action": {
           "type": "redirect",
           "redirect": {
-            "extensionPath": "/assets/header/volumeLow@2x.png"
+            "extensionPath": "/assets/images/header/volumeLow@2x.png"
           }
         },
         "condition": {
@@ -1027,7 +1027,7 @@
         "action": {
           "type": "redirect",
           "redirect": {
-            "extensionPath": "/assets/header/volumeLow.png"
+            "extensionPath": "/assets/images/header/volumeLow.png"
           }
         },
         "condition": {
@@ -1041,7 +1041,7 @@
         "action": {
           "type": "redirect",
           "redirect": {
-            "extensionPath": "/assets/header/volumeOff@2x.png"
+            "extensionPath": "/assets/images/header/volumeOff@2x.png"
           }
         },
         "condition": {
@@ -1055,7 +1055,7 @@
         "action": {
           "type": "redirect",
           "redirect": {
-            "extensionPath": "/assets/header/volumeOff.png"
+            "extensionPath": "/assets/images/header/volumeOff.png"
           }
         },
         "condition": {
@@ -1069,7 +1069,7 @@
         "action": {
           "type": "redirect",
           "redirect": {
-            "extensionPath": "/assets/header/volumeOff@2x.png"
+            "extensionPath": "/assets/images/header/volumeOff@2x.png"
           }
         },
         "condition": {
@@ -1083,7 +1083,7 @@
         "action": {
           "type": "redirect",
           "redirect": {
-            "extensionPath": "/assets/header/volumeOff.png"
+            "extensionPath": "/assets/images/header/volumeOff.png"
           }
         },
         "condition": {
@@ -1097,11 +1097,11 @@
         "action": {
           "type": "redirect",
           "redirect": {
-            "extensionPath": "/assets/tankInfo/messageDisabled@2x.png"
+            "extensionPath": "/assets/images/tankInfo/messageDisabled@2x.png"
           }
         },
         "condition": {
-          "urlFilter": "https://cdn.tanktrouble.com/*/assets/images/tankInfo/messageDisabled@2x.png",
+          "urlFilter": "https://cdn.tanktrouble.com/*/assets/images/tankInfo/chatDisabled@2x.png",
           "resourceTypes": ["image"]
         }
       },
@@ -1111,11 +1111,11 @@
         "action": {
           "type": "redirect",
           "redirect": {
-            "extensionPath": "/assets/tankInfo/messageDisabled.png"
+            "extensionPath": "/assets/images/tankInfo/messageDisabled.png"
           }
         },
         "condition": {
-          "urlFilter": "https://cdn.tanktrouble.com/*/assets/images/tankInfo/messageDisabled.png",
+          "urlFilter": "https://cdn.tanktrouble.com/*/assets/images/tankInfo/chatDisabled.png",
           "resourceTypes": ["image"]
         }
       },
@@ -1125,11 +1125,11 @@
         "action": {
           "type": "redirect",
           "redirect": {
-            "extensionPath": "/assets/tankInfo/messageDisabled@2x.png"
+            "extensionPath": "/assets/images/tankInfo/messageDisabled@2x.png"
           }
         },
         "condition": {
-          "urlFilter": "https://cdn.tanktrouble.com/*/assets/images/tankInfo/messageDisabledActive@2x.png",
+          "urlFilter": "https://cdn.tanktrouble.com/*/assets/images/tankInfo/chatDisabledActive@2x.png",
           "resourceTypes": ["image"]
         }
       },
@@ -1139,11 +1139,11 @@
         "action": {
           "type": "redirect",
           "redirect": {
-            "extensionPath": "/assets/tankInfo/messageDisabled.png"
+            "extensionPath": "/assets/images/tankInfo/messageDisabled.png"
           }
         },
         "condition": {
-          "urlFilter": "https://cdn.tanktrouble.com/*/assets/images/tankInfo/messageDisabledActive.png",
+          "urlFilter": "https://cdn.tanktrouble.com/*/assets/images/tankInfo/chatDisabledActive.png",
           "resourceTypes": ["image"]
         }
       },
@@ -1153,7 +1153,7 @@
         "action": {
           "type": "redirect",
           "redirect": {
-            "extensionPath": "/assets/tankInfo/admin@2x.png"
+            "extensionPath": "/assets/images/tankInfo/admin@2x.png"
           }
         },
         "condition": {
@@ -1167,7 +1167,7 @@
         "action": {
           "type": "redirect",
           "redirect": {
-            "extensionPath": "/assets/tankInfo/admin.png"
+            "extensionPath": "/assets/images/tankInfo/admin.png"
           }
         },
         "condition": {
@@ -1181,7 +1181,7 @@
         "action": {
           "type": "redirect",
           "redirect": {
-            "extensionPath": "/assets/tankInfo/admin@2x.png"
+            "extensionPath": "/assets/images/tankInfo/admin@2x.png"
           }
         },
         "condition": {
@@ -1195,11 +1195,67 @@
         "action": {
           "type": "redirect",
           "redirect": {
-            "extensionPath": "/assets/tankInfo/admin.png"
+            "extensionPath": "/assets/images/tankInfo/admin.png"
           }
         },
         "condition": {
           "urlFilter": "https://cdn.tanktrouble.com/*/assets/images/tankInfo/adminActive.png",
+          "resourceTypes": ["image"]
+        }
+      },
+      {
+        "id": 87,
+        "priority": 1,
+        "action": {
+          "type": "redirect",
+          "redirect": {
+            "extensionPath": "/assets/images/other/laika@2x.png"
+          }
+        },
+        "condition": {
+          "urlFilter": "https://cdn.tanktrouble.com/*/assets/images/laika/laika@2x.png",
+          "resourceTypes": ["image"]
+        }
+      },
+      {
+        "id": 88,
+        "priority": 1,
+        "action": {
+          "type": "redirect",
+          "redirect": {
+            "extensionPath": "/assets/images/other/laika.png"
+          }
+        },
+        "condition": {
+          "urlFilter": "https://cdn.tanktrouble.com/*/assets/images/laika/laika.png",
+          "resourceTypes": ["image"]
+        }
+      },
+      {
+        "id": 89,
+        "priority": 1,
+        "action": {
+          "type": "redirect",
+          "redirect": {
+            "extensionPath": "/assets/images/other/dimitri@2x.png"
+          }
+        },
+        "condition": {
+          "urlFilter": "https://cdn.tanktrouble.com/*/assets/images/dimitri/dimitri@2x.png",
+          "resourceTypes": ["image"]
+        }
+      },
+      {
+        "id": 90,
+        "priority": 1,
+        "action": {
+          "type": "redirect",
+          "redirect": {
+            "extensionPath": "/assets/images/other/dimitri.png"
+          }
+        },
+        "condition": {
+          "urlFilter": "https://cdn.tanktrouble.com/*/assets/images/dimitri/dimitri.png",
           "resourceTypes": ["image"]
         }
       }

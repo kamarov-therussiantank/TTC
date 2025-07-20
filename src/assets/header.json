@@ -5,7 +5,7 @@
         "action": {
             "type": "redirect",
             "redirect": {
-                "extensionPath": "/assets/header/tab1.png"
+                "extensionPath": "/assets/images/header/tab1.png"
             }
         },
         "condition": {
@@ -19,7 +19,7 @@
         "action": {
             "type": "redirect",
             "redirect": {
-                "extensionPath": "/assets/header/tab1@2x.png"
+                "extensionPath": "/assets/images/header/tab1@2x.png"
             }
         },
         "condition": {
@@ -33,7 +33,7 @@
         "action": {
             "type": "redirect",
             "redirect": {
-                "extensionPath": "/assets/header/tab1Selected.png"
+                "extensionPath": "/assets/images/header/tab1Selected.png"
             }
         },
         "condition": {
@@ -47,7 +47,7 @@
         "action": {
             "type": "redirect",
             "redirect": {
-                "extensionPath": "/assets/header/tab1Selected@2x.png"
+                "extensionPath": "/assets/images/header/tab1Selected@2x.png"
             }
         },
         "condition": {
@@ -61,7 +61,7 @@
         "action": {
             "type": "redirect",
             "redirect": {
-                "extensionPath": "/assets/header/tab2.png"
+                "extensionPath": "/assets/images/header/tab2.png"
             }
         },
         "condition": {
@@ -75,7 +75,7 @@
         "action": {
             "type": "redirect",
             "redirect": {
-                "extensionPath": "/assets/header/tab2@2x.png"
+                "extensionPath": "/assets/images/header/tab2@2x.png"
             }
         },
         "condition": {
@@ -89,7 +89,7 @@
         "action": {
             "type": "redirect",
             "redirect": {
-                "extensionPath": "/assets/header/tab2Selected.png"
+                "extensionPath": "/assets/images/header/tab2Selected.png"
             }
         },
         "condition": {
@@ -103,7 +103,7 @@
         "action": {
             "type": "redirect",
             "redirect": {
-                "extensionPath": "/assets/header/tab2Selected@2x.png"
+                "extensionPath": "/assets/images/header/tab2Selected@2x.png"
             }
         },
         "condition": {
@@ -117,7 +117,7 @@
         "action": {
             "type": "redirect",
             "redirect": {
-                "extensionPath": "/assets/header/tab3.png"
+                "extensionPath": "/assets/images/header/tab3.png"
             }
         },
         "condition": {
@@ -131,7 +131,7 @@
         "action": {
             "type": "redirect",
             "redirect": {
-                "extensionPath": "/assets/header/tab3@2x.png"
+                "extensionPath": "/assets/images/header/tab3@2x.png"
             }
         },
         "condition": {
@@ -145,7 +145,7 @@
         "action": {
             "type": "redirect",
             "redirect": {
-                "extensionPath": "/assets/header/tab3Selected.png"
+                "extensionPath": "/assets/images/header/tab3Selected.png"
             }
         },
         "condition": {
@@ -159,7 +159,7 @@
         "action": {
             "type": "redirect",
             "redirect": {
-                "extensionPath": "/assets/header/tab3Selected@2x.png"
+                "extensionPath": "/assets/images/header/tab3Selected@2x.png"
             }
         },
         "condition": {
@@ -173,7 +173,7 @@
         "action": {
             "type": "redirect",
             "redirect": {
-                "extensionPath": "/assets/header/tab4.png"
+                "extensionPath": "/assets/images/header/tab4.png"
             }
         },
         "condition": {
@@ -187,7 +187,7 @@
         "action": {
             "type": "redirect",
             "redirect": {
-                "extensionPath": "/assets/header/tab4@2x.png"
+                "extensionPath": "/assets/images/header/tab4@2x.png"
             }
         },
         "condition": {
@@ -201,7 +201,7 @@
         "action": {
             "type": "redirect",
             "redirect": {
-                "extensionPath": "/assets/header/tab4Selected.png"
+                "extensionPath": "/assets/images/header/tab4Selected.png"
             }
         },
         "condition": {
@@ -215,7 +215,7 @@
         "action": {
             "type": "redirect",
             "redirect": {
-                "extensionPath": "/assets/header/tab4Selected@2x.png"
+                "extensionPath": "/assets/images/header/tab4Selected@2x.png"
             }
         },
         "condition": {
@@ -229,7 +229,7 @@
         "action": {
             "type": "redirect",
             "redirect": {
-                "extensionPath": "/assets/header/tab5.png"
+                "extensionPath": "/assets/images/header/tab5.png"
             }
         },
         "condition": {
@@ -243,7 +243,7 @@
         "action": {
             "type": "redirect",
             "redirect": {
-                "extensionPath": "/assets/header/tab5@2x.png"
+                "extensionPath": "/assets/images/header/tab5@2x.png"
             }
         },
         "condition": {
@@ -257,7 +257,7 @@
         "action": {
             "type": "redirect",
             "redirect": {
-                "extensionPath": "/assets/header/tab5Selected.png"
+                "extensionPath": "/assets/images/header/tab5Selected.png"
             }
         },
         "condition": {
@@ -271,7 +271,7 @@
         "action": {
             "type": "redirect",
             "redirect": {
-                "extensionPath": "/assets/header/tab5Selected@2x.png"
+                "extensionPath": "/assets/images/header/tab5Selected@2x.png"
             }
         },
         "condition": {
@@ -285,7 +285,7 @@
         "action": {
             "type": "redirect",
             "redirect": {
-                "extensionPath": "/assets/header/background.png"
+                "extensionPath": "/assets/images/header/background.png"
             }
         },
         "condition": {
@@ -299,7 +299,7 @@
         "action": {
             "type": "redirect",
             "redirect": {
-                "extensionPath": "/assets/header/background@2x.png"
+                "extensionPath": "/assets/images/header/background@2x.png"
             }
         },
         "condition": {

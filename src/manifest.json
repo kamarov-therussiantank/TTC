@@ -1,9 +1,9 @@
 {
-	"name": "TTCV2",
+	"name": "TTC",
 	"author": "kamarov",
-	"version": "2.1.0",
+	"version": "2.2.0",
 	"manifest_version": 3,
-	"description": "TTCV2 - Timeless mayhem - the blast from the past!",
+	"description": "TTC - Timeless mayhem - the blast from the past!",
 	"icons": {
 		"16": "icon/icon16.png",
 		"32": "icon/icon32.png",
@@ -26,12 +26,12 @@
 			{
 				"id": "4",
 				"enabled": true,
-				"path": "assets/tankIcon.json"
+				"path": "assets/garage.json"
 			},
 			{
 				"id": "5",
 				"enabled": true,
-				"path": "assets/accessories.json"
+				"path": "assets/boxes.json"
 			},
 			{
 				"id": "6",
@@ -77,8 +77,8 @@
 	"content_scripts": [
 		{
 			"matches": ["*://*.tanktrouble.com/*"],
-			"js": ["inject.js", "ttcv2/scripts/UIButtonGroup.js", "ttcv2/scripts/additionalPlayerDetails.js", "ttcv2/scripts/visitsSnippet.js", "ttcv2/scripts/FAQSnippet.js", "ttcv2/scripts/feedbackSnippet.js", "ttcv2/scripts/tellAFriendSnippet.js", "ttcv2/scripts/UIConstants+QualityManager.js"], 
-			"css": ["ttcv2/css/classicStyle.css"],
+			"js": ["inject.js", "ttc/scripts/UIButtonGroup.js", "ttc/scripts/additionalPlayerDetails.js", "ttc/scripts/visitsSnippet.js", "ttc/scripts/FAQSnippet.js", "ttc/scripts/feedbackSnippet.js", "ttc/scripts/tellAFriendSnippet.js", "ttc/scripts/UIConstants + QualityManager.js", "ttc/scripts/UITankIcon + UITankIconLoader.js"],
+			"css": ["ttc/css/classicStyle.css"],
 			"run_at": "document_idle",
             "world": "MAIN"
 		}
@@ -88,20 +88,22 @@
 
 	"web_accessible_resources": [{
 		"resources": [
-			"ttcv2/scripts/*.js",
-			"assets/colours/*.png",
+			"ttc/scripts/*.js",
+			"assets/images/colours/*.png",
 			"assets/audio/*.m4a",
 			"assets/audio/*.mp3",
-			"assets/backdoor/*.png",
-			"assets/buttons/*.png",
-			"assets/header/*.png",
-			"assets/forum/*.png",
-			"assets/game/*.png",
-			"assets/game/*.json",
-			"assets/tankIcon/*.png",
-			"assets/tankInfo/*.png",
-			"assets/other/*.png",
-            "assets/inputs/*.png"
+			"assets/images/accessories/*.png",
+			"assets/images/boxes/*.png",
+			"assets/images/buttons/*.png",
+			"assets/images/header/*.png",
+			"assets/images/forum/*.png",
+			"assets/images/game/*.png",
+			"assets/images/game/*.json",
+			"assets/images/garage/*.png",
+			"assets/images/tankIcon/*.png",
+			"assets/images/tankInfo/*.png",
+			"assets/images/other/*.png",
+            "assets/images/inputs/*.png"
 		],
 		"matches": [ "*://*.tanktrouble.com/*" ]
 	}]

@@ -5,7 +5,7 @@
     "action": {
       "type": "redirect",
       "redirect": {
-        "extensionPath": "/assets/tankInfo/account@2x.png"
+        "extensionPath": "/assets/images/tankInfo/account@2x.png"
       }
     },
     "condition": {
@@ -19,7 +19,7 @@
     "action": {
       "type": "redirect",
       "redirect": {
-        "extensionPath": "/assets/tankInfo/account.png"
+        "extensionPath": "/assets/images/tankInfo/account.png"
       }
     },
     "condition": {
@@ -33,7 +33,7 @@
     "action": {
       "type": "redirect",
       "redirect": {
-        "extensionPath": "/assets/tankInfo/achievements@2x.png"
+        "extensionPath": "/assets/images/tankInfo/achievements@2x.png"
       }
     },
     "condition": {
@@ -47,7 +47,7 @@
     "action": {
       "type": "redirect",
       "redirect": {
-        "extensionPath": "/assets/tankInfo/achievements.png"
+        "extensionPath": "/assets/images/tankInfo/achievements.png"
       }
     },
     "condition": {
@@ -61,7 +61,7 @@
     "action": {
       "type": "redirect",
       "redirect": {
-        "extensionPath": "/assets/tankInfo/garage@2x.png"
+        "extensionPath": "/assets/images/tankInfo/garage@2x.png"
       }
     },
     "condition": {
@@ -75,7 +75,7 @@
     "action": {
       "type": "redirect",
       "redirect": {
-        "extensionPath": "/assets/tankInfo/garage.png"
+        "extensionPath": "/assets/images/tankInfo/garage.png"
       }
     },
     "condition": {
@@ -89,7 +89,7 @@
     "action": {
       "type": "redirect",
       "redirect": {
-        "extensionPath": "/assets/tankInfo/logOut@2x.png"
+        "extensionPath": "/assets/images/tankInfo/logOut@2x.png"
       }
     },
     "condition": {
@@ -103,7 +103,7 @@
     "action": {
       "type": "redirect",
       "redirect": {
-        "extensionPath": "/assets/tankInfo/logOut.png"
+        "extensionPath": "/assets/images/tankInfo/logOut.png"
       }
     },
     "condition": {
@@ -117,7 +117,7 @@
     "action": {
       "type": "redirect",
       "redirect": {
-        "extensionPath": "/assets/tankInfo/gold@2x.png"
+        "extensionPath": "/assets/images/tankInfo/gold@2x.png"
       }
     },
     "condition": {
@@ -131,7 +131,7 @@
     "action": {
       "type": "redirect",
       "redirect": {
-        "extensionPath": "/assets/tankInfo/gold.png"
+        "extensionPath": "/assets/images/tankInfo/gold.png"
       }
     },
     "condition": {
@@ -145,7 +145,7 @@
     "action": {
       "type": "redirect",
       "redirect": {
-        "extensionPath": "/assets/tankInfo/diamond@2x.png"
+        "extensionPath": "/assets/images/tankInfo/diamond@2x.png"
       }
     },
     "condition": {
@@ -159,7 +159,7 @@
     "action": {
       "type": "redirect",
       "redirect": {
-        "extensionPath": "/assets/tankInfo/diamond.png"
+        "extensionPath": "/assets/images/tankInfo/diamond.png"
       }
     },
     "condition": {
@@ -173,7 +173,7 @@
     "action": {
       "type": "redirect",
       "redirect": {
-        "extensionPath": "/assets/tankInfo/achievements@2x.png"
+        "extensionPath": "/assets/images/tankInfo/achievements@2x.png"
       }
     },
     "condition": {
@@ -187,7 +187,7 @@
     "action": {
       "type": "redirect",
       "redirect": {
-        "extensionPath": "/assets/tankInfo/achievements.png"
+        "extensionPath": "/assets/images/tankInfo/achievements.png"
       }
     },
     "condition": {
@@ -201,7 +201,7 @@
     "action": {
       "type": "redirect",
       "redirect": {
-        "extensionPath": "/assets/tankInfo/account@2x.png"
+        "extensionPath": "/assets/images/tankInfo/account@2x.png"
       }
     },
     "condition": {
@@ -215,7 +215,7 @@
     "action": {
       "type": "redirect",
       "redirect": {
-        "extensionPath": "/assets/tankInfo/account.png"
+        "extensionPath": "/assets/images/tankInfo/account.png"
       }
     },
     "condition": {
@@ -229,7 +229,7 @@
     "action": {
       "type": "redirect",
       "redirect": {
-        "extensionPath": "/assets/tankInfo/garage@2x.png"
+        "extensionPath": "/assets/images/tankInfo/garage@2x.png"
       }
     },
     "condition": {
@@ -243,7 +243,7 @@
     "action": {
       "type": "redirect",
       "redirect": {
-        "extensionPath": "/assets/tankInfo/garage.png"
+        "extensionPath": "/assets/images/tankInfo/garage.png"
       }
     },
     "condition": {
@@ -257,7 +257,7 @@
     "action": {
       "type": "redirect",
       "redirect": {
-        "extensionPath": "/assets/tankInfo/joinDisabled@2x.png"
+        "extensionPath": "/assets/images/tankInfo/joinDisabled@2x.png"
       }
     },
     "condition": {
@@ -271,7 +271,7 @@
     "action": {
       "type": "redirect",
       "redirect": {
-        "extensionPath": "/assets/tankInfo/joinDisabled.png"
+        "extensionPath": "/assets/images/tankInfo/joinDisabled.png"
       }
     },
     "condition": {
@@ -285,7 +285,7 @@
     "action": {
       "type": "redirect",
       "redirect": {
-        "extensionPath": "/assets/tankInfo/shop@2x.png"
+        "extensionPath": "/assets/images/tankInfo/shop@2x.png"
       }
     },
     "condition": {
@@ -299,7 +299,7 @@
     "action": {
       "type": "redirect",
       "redirect": {
-        "extensionPath": "/assets/tankInfo/shop.png"
+        "extensionPath": "/assets/images/tankInfo/shop.png"
       }
     },
     "condition": {
@@ -313,7 +313,7 @@
     "action": {
       "type": "redirect",
       "redirect": {
-        "extensionPath": "/assets/tankInfo/shop@2x.png"
+        "extensionPath": "/assets/images/tankInfo/shop@2x.png"
       }
     },
     "condition": {
@@ -327,7 +327,7 @@
     "action": {
       "type": "redirect",
       "redirect": {
-        "extensionPath": "/assets/tankInfo/shop.png"
+        "extensionPath": "/assets/images/tankInfo/shop.png"
       }
     },
     "condition": {
@@ -341,7 +341,7 @@
     "action": {
       "type": "redirect",
       "redirect": {
-        "extensionPath": "/assets/tankInfo/shopFlicker@2x.png"
+        "extensionPath": "/assets/images/tankInfo/shopFlicker@2x.png"
       }
     },
     "condition": {
@@ -355,7 +355,7 @@
     "action": {
       "type": "redirect",
       "redirect": {
-        "extensionPath": "/assets/tankInfo/shopFlicker.png"
+        "extensionPath": "/assets/images/tankInfo/shopFlicker.png"
       }
     },
     "condition": {
@@ -369,7 +369,7 @@
     "action": {
       "type": "redirect",
       "redirect": {
-        "extensionPath": "/assets/tankInfo/shopFlicker@2x.png"
+        "extensionPath": "/assets/images/tankInfo/shopFlicker@2x.png"
       }
     },
     "condition": {
@@ -383,7 +383,7 @@
     "action": {
       "type": "redirect",
       "redirect": {
-        "extensionPath": "/assets/tankInfo/shopFlicker.png"
+        "extensionPath": "/assets/images/tankInfo/shopFlicker.png"
       }
     },
     "condition": {
@@ -397,7 +397,7 @@
     "action": {
       "type": "redirect",
       "redirect": {
-        "extensionPath": "/assets/tankInfo/logOut@2x.png"
+        "extensionPath": "/assets/images/tankInfo/logOut@2x.png"
       }
     },
     "condition": {
@@ -411,7 +411,7 @@
     "action": {
       "type": "redirect",
       "redirect": {
-        "extensionPath": "/assets/tankInfo/logOut.png"
+        "extensionPath": "/assets/images/tankInfo/logOut.png"
       }
     },
     "condition": {
@@ -425,7 +425,7 @@
     "action": {
       "type": "redirect",
       "redirect": {
-        "extensionPath": "/assets/tankInfo/kills@2x.png"
+        "extensionPath": "/assets/images/tankInfo/kills@2x.png"
       }
     },
     "condition": {
@@ -439,7 +439,7 @@
     "action": {
       "type": "redirect",
       "redirect": {
-        "extensionPath": "/assets/tankInfo/kills.png"
+        "extensionPath": "/assets/images/tankInfo/kills.png"
       }
     },
     "condition": {
@@ -454,7 +454,7 @@
     "action": {
       "type": "redirect",
       "redirect": {
-        "extensionPath": "/assets/tankInfo/victories@2x.png"
+        "extensionPath": "/assets/images/tankInfo/victories@2x.png"
       }
     },
     "condition": {
@@ -468,7 +468,7 @@
     "action": {
       "type": "redirect",
       "redirect": {
-        "extensionPath": "/assets/tankInfo/victories.png"
+        "extensionPath": "/assets/images/tankInfo/victories.png"
       }
     },
     "condition": {

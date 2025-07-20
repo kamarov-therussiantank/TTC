@@ -5,7 +5,7 @@
       "action": {
         "type": "redirect",
         "redirect": {
-          "extensionPath": "/assets/inputs/arrowKeys@2x.png"
+          "extensionPath": "/assets/images/inputs/arrowKeys@2x.png"
         }
       },
       "condition": {
@@ -19,7 +19,7 @@
         "action": {
           "type": "redirect",
           "redirect": {
-            "extensionPath": "/assets/inputs/arrowKeys.png"
+            "extensionPath": "/assets/images/inputs/arrowKeys.png"
           }
         },
         "condition": {
@@ -33,7 +33,7 @@
         "action": {
           "type": "redirect",
           "redirect": {
-            "extensionPath": "/assets/inputs/arrowKeysActive@2x.png"
+            "extensionPath": "/assets/images/inputs/arrowKeysActive@2x.png"
         }
       },
       "condition": {
@@ -47,7 +47,7 @@
         "action": {
           "type": "redirect",
           "redirect": {
-            "extensionPath": "/assets/inputs/arrowKeysActive.png"
+            "extensionPath": "/assets/images/inputs/arrowKeysActive.png"
         }
       },
       "condition": {
@@ -61,7 +61,7 @@
         "action": {
           "type": "redirect",
           "redirect": {
-            "extensionPath": "/assets/inputs/WASDKeys@2x.png"
+            "extensionPath": "/assets/images/inputs/WASDKeys@2x.png"
         }
       },
       "condition": {
@@ -75,7 +75,7 @@
         "action": {
           "type": "redirect",
           "redirect": {
-            "extensionPath": "/assets/inputs/WASDKeys.png"
+            "extensionPath": "/assets/images/inputs/WASDKeys.png"
         }
       },
       "condition": {
@@ -89,7 +89,7 @@
         "action": {
           "type": "redirect",
           "redirect": {
-            "extensionPath": "/assets/inputs/WASDKeysActive@2x.png"
+            "extensionPath": "/assets/images/inputs/WASDKeysActive@2x.png"
         }
       },
       "condition": {
@@ -103,7 +103,7 @@
         "action": {
           "type": "redirect",
           "redirect": {
-            "extensionPath": "/assets/inputs/WASDKeysActive.png"
+            "extensionPath": "/assets/images/inputs/WASDKeysActive.png"
         }
       },
       "condition": {
@@ -117,7 +117,7 @@
         "action": {
           "type": "redirect",
           "redirect": {
-            "extensionPath": "/assets/inputs/mouse@2x.png"
+            "extensionPath": "/assets/images/inputs/mouse@2x.png"
         }
       },
       "condition": {
@@ -131,7 +131,7 @@
         "action": {
           "type": "redirect",
           "redirect": {
-            "extensionPath": "/assets/inputs/mouse.png"
+            "extensionPath": "/assets/images/inputs/mouse.png"
         }
       },
       "condition": {
@@ -145,7 +145,7 @@
         "action": {
           "type": "redirect",
           "redirect": {
-            "extensionPath": "/assets/inputs/mouseActive@2x.png"
+            "extensionPath": "/assets/images/inputs/mouseActive@2x.png"
         }
       },
       "condition": {
@@ -159,7 +159,7 @@
         "action": {
           "type": "redirect",
           "redirect": {
-            "extensionPath": "/assets/inputs/mouseActive.png"
+            "extensionPath": "/assets/images/inputs/mouseActive.png"
         }
       },
       "condition": {
@@ -173,7 +173,7 @@
         "action": {
           "type": "redirect",
           "redirect": {
-            "extensionPath": "/assets/inputs/mouseActive@2x.png"
+            "extensionPath": "/assets/images/inputs/mouseActive@2x.png"
         }
       },
       "condition": {
@@ -187,7 +187,7 @@
         "action": {
           "type": "redirect",
           "redirect": {
-            "extensionPath": "/assets/inputs/mouseActive.png"
+            "extensionPath": "/assets/images/inputs/mouseActive.png"
         }
       },
       "condition": {
@@ -201,7 +201,7 @@
         "action": {
           "type": "redirect",
           "redirect": {
-            "extensionPath": "/assets/inputs/mouseActive@2x.png"
+            "extensionPath": "/assets/images/inputs/mouseActive@2x.png"
         }
       },
       "condition": {
@@ -215,7 +215,7 @@
         "action": {
           "type": "redirect",
           "redirect": {
-            "extensionPath": "/assets/inputs/mouseActive@2x.png"
+            "extensionPath": "/assets/images/inputs/mouseActive@2x.png"
         }
       },
       "condition": {
@@ -229,7 +229,7 @@
         "action": {
           "type": "redirect",
           "redirect": {
-            "extensionPath": "/assets/inputs/mouseActive.png"
+            "extensionPath": "/assets/images/inputs/mouseActive.png"
         }
       },
       "condition": {
@@ -243,7 +243,7 @@
         "action": {
           "type": "redirect",
           "redirect": {
-            "extensionPath": "/assets/inputs/WASDKeysActive@2x.png"
+            "extensionPath": "/assets/images/inputs/WASDKeysActive@2x.png"
         }
       },
       "condition": {
@@ -257,7 +257,7 @@
         "action": {
           "type": "redirect",
           "redirect": {
-            "extensionPath": "/assets/inputs/WASDKeysActive.png"
+            "extensionPath": "/assets/images/inputs/WASDKeysActive.png"
         }
       },
       "condition": {
@@ -271,7 +271,7 @@
         "action": {
           "type": "redirect",
           "redirect": {
-            "extensionPath": "/assets/inputs/WASDKeysActive@2x.png"
+            "extensionPath": "/assets/images/inputs/WASDKeysActive@2x.png"
         }
       },
       "condition": {
@@ -285,7 +285,7 @@
         "action": {
           "type": "redirect",
           "redirect": {
-            "extensionPath": "/assets/inputs/WASDKeysActive.png"
+            "extensionPath": "/assets/images/inputs/WASDKeysActive.png"
         }
       },
       "condition": {
@@ -299,7 +299,7 @@
         "action": {
           "type": "redirect",
           "redirect": {
-            "extensionPath": "/assets/inputs/arrowKeysActive@2x.png"
+            "extensionPath": "/assets/images/inputs/arrowKeysActive@2x.png"
         }
       },
       "condition": {
@@ -313,7 +313,7 @@
         "action": {
           "type": "redirect",
           "redirect": {
-            "extensionPath": "/assets/inputs/arrowKeysActive.png"
+            "extensionPath": "/assets/images/inputs/arrowKeysActive.png"
         }
       },
       "condition": {
@@ -327,7 +327,7 @@
         "action": {
           "type": "redirect",
           "redirect": {
-            "extensionPath": "/assets/inputs/arrowKeysActive@2x.png"
+            "extensionPath": "/assets/images/inputs/arrowKeysActive@2x.png"
         }
       },
       "condition": {
@@ -341,7 +341,7 @@
         "action": {
           "type": "redirect",
           "redirect": {
-            "extensionPath": "/assets/inputs/arrowKeysActive.png"
+            "extensionPath": "/assets/images/inputs/arrowKeysActive.png"
         }
       },
       "condition": {
