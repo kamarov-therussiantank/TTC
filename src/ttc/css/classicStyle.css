@@ -305,28 +305,28 @@ text {
     margin: 0px -3px;
 }
 #gameTab img {
-  background-image: image-set(url("https://raw.githubusercontent.com/kamarov-therussiantank/TTCV2/main/src/assets/header/tab1Selected@2x.png") 2x);
+  background-image: image-set(url("https://raw.githubusercontent.com/kamarov-therussiantank/TTC/main/src/assets/header/tab1Selected@2x.png") 2x);
 }
 #gameTab img.deselected {
-  background-image: image-set(url("https://raw.githubusercontent.com/kamarov-therussiantank/TTCV2/main/src/assets/header/tab1@2x.png") 2x);
+  background-image: image-set(url("https://raw.githubusercontent.com/kamarov-therussiantank/TTC/main/src/assets/header/tab1@2x.png") 2x);
 }
 #shopTab img {
-  background-image: image-set(url("https://raw.githubusercontent.com/kamarov-therussiantank/TTCV2/main/src/assets/header/tab2Selected@2x.png") 2x);
+  background-image: image-set(url("https://raw.githubusercontent.com/kamarov-therussiantank/TTC/main/src/assets/header/tab2Selected@2x.png") 2x);
 }
 #shopTab img.deselected {
-  background-image: image-set(url("https://raw.githubusercontent.com/kamarov-therussiantank/TTCV2/main/src/assets/header/tab2@2x.png") 2x);
+  background-image: image-set(url("https://raw.githubusercontent.com/kamarov-therussiantank/TTC/main/src/assets/header/tab2@2x.png") 2x);
 }
 #newsTab img {
-  background-image: image-set(url("https://raw.githubusercontent.com/kamarov-therussiantank/TTCV2/main/src/assets/header/tab3Selected@2x.png") 2x);
+  background-image: image-set(url("https://raw.githubusercontent.com/kamarov-therussiantank/TTC/main/src/assets/header/tab3Selected@2x.png") 2x);
 }
 #newsTab img.deselected {
-  background-image: image-set(url("https://raw.githubusercontent.com/kamarov-therussiantank/TTCV2/main/src/assets/header/tab3@2x.png") 2x);
+  background-image: image-set(url("https://raw.githubusercontent.com/kamarov-therussiantank/TTC/main/src/assets/header/tab3@2x.png") 2x);
 }
 #forumTab img {
-  background-image: image-set(url("https://raw.githubusercontent.com/kamarov-therussiantank/TTCV2/main/src/assets/header/tab4Selected@2x.png") 2x);
+  background-image: image-set(url("https://raw.githubusercontent.com/kamarov-therussiantank/TTC/main/src/assets/header/tab4Selected@2x.png") 2x);
 }
 #forumTab img.deselected {
-  background-image: image-set(url("https://raw.githubusercontent.com/kamarov-therussiantank/TTCV2/main/src/assets/header/tab4@2x.png") 2x);
+  background-image: image-set(url("https://raw.githubusercontent.com/kamarov-therussiantank/TTC/main/src/assets/header/tab4@2x.png") 2x);
 }
 .shopItem {
     background: repeating-radial-gradient(#ccc, #55555599 100px) !important;
