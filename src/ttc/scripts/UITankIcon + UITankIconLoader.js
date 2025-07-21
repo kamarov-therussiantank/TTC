@@ -15,9 +15,9 @@ UITankIcon.classMethod('loadPlayerTankIcon', function (canvas, size, playerId, o
             let badge = null;
             
             if (gmLevel > 0) {
-                if (gmLevel === 1) {
+                if (gmLevel === 0) {
                     badge = '0';
-                } else if (gmLevel === 2) {
+                } else if (gmLevel === 1) {
                     badge = '1';
                 } else {
                     badge = '2';
