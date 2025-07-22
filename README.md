@@ -30,5 +30,5 @@ To install TTC, follow the provided instructions:
 7. Open it and click "TTC-main"  
 8. Click "Select Folder"
 
-Still having problems with installation? Try the full [documentation guide](https://bit.ly/ttcv2-installation-guide)
+Still having problems with installation? Try the full [documentation guide](https://docs.google.com/document/d/1pUINNUEy3JgdezBD5TGeQRtzISMsBwzWc9YA0c4oE_E/edit?tab=t.0)
 
