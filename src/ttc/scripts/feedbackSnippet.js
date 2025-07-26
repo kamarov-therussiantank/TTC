@@ -20,7 +20,13 @@ whenContentInitialized().then(() => {
     <div id="feedbackSnippet" class="snippet">
             <div class="header">Got Feedback?</div>
             <div class="content">
-            Got ideas? Found bugs? Urge to praise us to the skies? Then give us your feedback
+            Got ideas?
+            <br>
+            Found bugs?
+            <br>
+            Urge to praise us to the skies?
+            <br>
+            Then give us your feedback
             <img src="https://raw.githubusercontent.com/kamarov-therussiantank/TTCV2/main/src/assets/images/snippets/envelope.png" style="height: auto; margin-top: 10px; position: relative; left: 26px; bottom: 3px;">
             </div>
     </div>

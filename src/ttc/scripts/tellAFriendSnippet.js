@@ -21,7 +21,7 @@ whenContentInitialized().then(() => {
     <a href="https://mail.google.com/" target="_blank" style="text-decoration: none;">
             <div class="header">Tell A Friend</div>
             <div class="content">
-            <img src="https://raw.githubusercontent.com/kamarov-therussiantank/TTCV2/main/src/assets/images/snippets/tellAFriend.png" style="position: relative; top: 6px; left: 20px; pointer-events: none;">
+            <img src="https://raw.githubusercontent.com/kamarov-therussiantank/TTCV2/main/src/assets/images/snippets/tellAFriend.png" style="position: relative; top: 5px; left: 15px; pointer-events: none;">
             </div>
     </div>
     `);

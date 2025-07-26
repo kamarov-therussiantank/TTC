@@ -18,7 +18,11 @@
     max-width: 1884px !important;
     width: calc(100%) !important;
 }
- 
+
+#tertiaryContent {
+    margin-right: 3px !important;
+}
+
 .horizontalAdSlot,
 .verticalAdSlot,
 #leftBanner,
@@ -37,11 +41,11 @@
 }
 .premium #header {
     background-image: url(../assets/images/header/background.png) !important;
-    background-size: 70px 70px !important;
+    background-size: 60px 60px !important;
 }
 #header {
     background-image: url(../assets/images/header/background.png);
-    background-size: 70px 70px !important;
+    background-size: 60px 60px !important;
 }
 #contentWrapper {
   margin-top: 0 !important;
@@ -94,15 +98,24 @@ text {
     font-family: 'TankTrouble';
 }
 .snippet .header {
-    font-family: 'Arial' !important;
-    font-weight: 600;
+    font-family: Arial, sans-serif !important;
+    font-size: 13px !important;
+    font-weight: bold;
+    padding: 2px 0 0px 0 !important;
+    height: 15px;
+}
+.snippet {
+    width: 120px !important;
 }
 .snippet.important {
   background: #ff0000 !important;
 }
 #wallOfFameSnippet {
-    border: 2px solid #000000 !important;
-    width: 134px !important;
+  border: 2px solid #000000 !important;
+  width: 124px !important;
+}
+#scrapyardSnippet .content {
+    margin-top: 5px !important;
 }
 #messagesSnippet {
   display: none !important;
@@ -116,7 +129,8 @@ text {
   font-family: Arial, sans-serif;
   border: 2px solid red;
   border-radius: 5px;
-  width: calc(100% - 6px) !important;
+  width: 116px !important;
+  font-size: 12px;
 }
 #teaser-25 .header {
   background: red !important;
@@ -128,29 +142,37 @@ text {
     font-weight: 800;
 }
 .snippet.standard,
-#visitsSnippet {
+#visitsSnippet,
+#modActivitySnippet {
   background: #ffffff !important;
-  color: #4a4a4a;
+  color: #666;
   font-family: Arial, sans-serif;
   border: 2px solid #d3d3d3;
   border-radius: 5px;
-  width: calc(100% - 6px) !important;
+  width: 116px !important;
+}
+#modActivitySnippet {
+  height: 173px !important;
+  width: 120px !important;
 }
 #FAQSnippet,
 #tellAFriendSnippet {
   background: #000000;
   border: 2px solid #000000;
-  color: #cacaca;
+  color: #ffffff;
   cursor: pointer;
+  font-size: 12px;
 }
 #feedbackSnippet {
   background: #ffffff;
   border: 2px solid #000000;
   color: #4a4a4a;
   cursor: pointer;
+  font-size: 12px;
 }
 .snippet.standard .header,
-#visitsSnippet .header {
+#visitsSnippet .header,
+#modActivitySnippet .header {
   background: #d3d3d3;
   margin-bottom: 4px;
 }
@@ -160,9 +182,13 @@ text {
   color: #ffffff;
   background: #000000;
 }
+#FAQSnippet .header  {
+  font-size: 16px !important;
+  margin-bottom: 5px;
+}
 #visitsSnippet #stats1, #stats2 {
   margin-bottom: 6px;
-  font-size: 13px;
+  font-size: 12px;
 }	
 #stats1 {
    margin-top: 10px;
@@ -176,7 +202,7 @@ text {
 }
 #visits {
   font-size: 16px;
-	margin-bottom: 5px;
+  margin-bottom: 5px;
 }
 .snippet.standard .content,
 #messagesSnippet .content {
@@ -346,8 +372,9 @@ text {
   background-image: image-set(url("https://raw.githubusercontent.com/kamarov-therussiantank/TTC/main/src/assets/images/header/tab4@2x.png") 2x);
 }
 .shopItem {
-    background: repeating-radial-gradient(#ccc, #55555599 100px) !important;
-    border: #55555599 dotted !important;
+    background: #eee !important;
+    border: none !important;
+    color: #000000 !important;
 }
 #overlay {
     background-color: #00000065 !important;
@@ -452,24 +479,6 @@ span.exp-text {
 #tankinfo .username {
     z-index: 2;
 }
-.adminBadge {
-    z-index: 1;
-    position: absolute;
-    top: -75px;
-    right: -22px;
-}
-.kickstarterBadge {
-    z-index: 1;
-    position: absolute;
-    top: -70px;
-    right: -22px;
-}
-.banned-Icon {
-    z-index: 1;
-    position: absolute;
-    top: -140px;
-    left: 10px;
-}
 tr.tooltipstered {
     display: none !important;
 }
@@ -518,11 +527,11 @@ tr.tooltipstered {
 }
 #tankinfo .xp .progress .bar {
     background-image: none !important;
-    background: repeating-linear-gradient(0deg, #a410b5, #fc2eff 30px) !important;
+    background: repeating-linear-gradient(0deg, #c54bd3, #fc2eff 30px) !important;
 }
 #tankinfo .rank .progress .bar {
     background-image: none !important;
-    background: repeating-linear-gradient(0deg, #b59910, #ffd22e 30px) !important;
+    background: repeating-linear-gradient(0deg, #b9a127, #ffd22e 30px) !important;
 }
 .action.like {
     display: none !important;
@@ -548,7 +557,7 @@ button:disabled {
     color: #ccc !important;
 }
 .note {
-    color: #eee !important;
+    color: #909090 !important;
 }
 .newsPost .wrapper {
     background: #fff !important;
@@ -592,4 +601,77 @@ button:disabled {
 .shopItem.info button.info {
     background: #466fff !important;
     color: #fff !important;
+}
+.shopItem svg text {
+    stroke: none !important;
+    text-anchor: middle;
+}
+.shopItem .price {
+    font-family: 'TankTrouble';
+    font-size: 15px;
+}
+.currencyIcon {
+    top: -5px !important;
+}
+.mod-entry {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 3px;
+  margin-left: 3px;
+  margin-right: 3px;
+}
+.mod-username {
+  font-size: 10px;
+}
+.mod-last-login {
+  font-size: 9px;
+}
+@keyframes disappear {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@keyframes appear {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.muteGlobalChat-button {
+    cursor: pointer;
+    position: absolute;
+    top: 72px;
+    right: -12px;
+    background: #e0e0e0;
+    border: 2px solid #ccc;
+    border-bottom-right-radius: 7px;
+    border-bottom-left-radius: 7px;
+    box-shadow: none;
+}
+.muteUserChat-button {
+    cursor: pointer;
+    position: absolute;
+    top: 40px;
+    right: -12px;
+    background: #e0e0e0;
+    border: 2px solid #ccc;
+    border-top-right-radius: 7px;
+    border-top-left-radius: 7px;
+    box-shadow: none;
+}
+#chat:not(.open) .clearChat-button,
+#chat:not(.open) .muteGlobalChat-button,
+#chat:not(.open) .muteUserChat-button {
+    animation: disappear 0.3s cubic-bezier(0.79, 0.02, 0.32, 0.98) forwards;
+}
+#chat:is(.opening, .open) .clearChat-button,
+#chat:is(.opening, .open) .muteGlobalChat-button,
+#chat:is(.opening, .open) .muteUserChat-button {
+    animation: appear 0.3s cubic-bezier(0.79, -0.02, 0.32, 0.98) forwards;
 }

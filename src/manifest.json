@@ -1,7 +1,7 @@
 {
 	"name": "TTC",
 	"author": "kamarov",
-	"version": "2.3.2",
+	"version": "2.3.4",
 	"manifest_version": 3,
 	"description": "TTC - Timeless mayhem - the blast from the past!",
 	"icons": {
@@ -19,42 +19,42 @@
 				"path": "assets/colours.json"
 			},
 			{
-				"id": "3",
+				"id": "2",
 				"enabled": true,
 				"path": "assets/game.json"
 			},
 			{
-				"id": "4",
+				"id": "3",
 				"enabled": true,
 				"path": "assets/garage.json"
 			},
 			{
-				"id": "5",
+				"id": "4",
 				"enabled": true,
 				"path": "assets/boxes.json"
 			},
 			{
-				"id": "6",
+				"id": "5",
 				"enabled": true,
 				"path": "assets/other.json"
 			},
 			{
-				"id": "8",
+				"id": "6",
 				"enabled": true,
 				"path": "assets/inputs.json"
 			},
 			{
-				"id": "9",
+				"id": "7",
 				"enabled": true,
 				"path": "assets/audio.json"
 			},
 			{
-				"id": "10",
+				"id": "8",
 				"enabled": true,
 				"path": "assets/tankInfo.json"
 			},
 			{
-				"id": "11",
+				"id": "9",
 				"enabled": true,
 				"path": "assets/forum.json"
 			}
@@ -77,7 +77,7 @@
 	"content_scripts": [
 		{
 			"matches": ["*://*.tanktrouble.com/*"],
-			"js": ["inject.js", "ttc/scripts/UIButtonGroup.js", "ttc/scripts/additionalPlayerDetails.js", "ttc/scripts/visitsSnippet.js", "ttc/scripts/FAQSnippet.js", "ttc/scripts/feedbackSnippet.js", "ttc/scripts/tellAFriendSnippet.js", "ttc/scripts/UIConstants + QualityManager.js", "ttc/scripts/UITankIcon + UITankIconLoader.js"],
+			"js": ["inject.js", "ttc/scripts/UIButtonGroup.js", "ttc/scripts/additionalPlayerDetails.js", "ttc/scripts/visitsSnippet.js", "ttc/scripts/FAQSnippet.js", "ttc/scripts/modActivitySnippet.js", "ttc/scripts/tellAFriendSnippet.js", "ttc/scripts/feedbackSnippet.js", "ttc/scripts/UIConstants + QualityManager.js", "ttc/scripts/UITankIcon + UITankIconLoader.js", "ttc/scripts/chatAdditions.js"],
 			"css": ["ttc/css/classicStyle.css"],
 			"run_at": "document_idle",
             "world": "MAIN"

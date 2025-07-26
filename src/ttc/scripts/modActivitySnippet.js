@@ -57,7 +57,7 @@ whenContentInitialized().then(() => {
     $('#tertiaryContent').append(snippet);
 
     const usernamesToLookup = [
-        'foxter', 'dalek-buster', 'george8888', 'rhak', 'quickninja', 'lichen',
+        'purup', 'bbc', 'foxter', 'dalek-buster', 'george8888', 'rhak', 'quickninja', 'lichen',
         'gentleman', 'redwind', 'triplestryke', 'kerosene', 'newthy32', 'blackhalo', 'amplitude',
         'nelfusion', 'giraffe', 'purplegnome', 'draculous', 'soulpanda', 'acehawk',
         'captainahvong', 'spiros04', 'onion', 'savageaimbot'
