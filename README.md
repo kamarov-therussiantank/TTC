@@ -27,8 +27,11 @@ To install TTC, follow the provided instructions:
 4. Find the "Developer mode" button and turn it on.  
 5. Click the "Load unpacked" button.  
 6. In the pop-up window, navigate to the folder you extracted.  
-7. Open it and click "TTC-main"  
-8. Click "Select Folder"
+7. Open "TTC-main"
+8. Find and select "src" folder 
+9. Click on "Select Folder"
+
+and thats it, you have successfully installed and loaded TTC.
 
 Still having problems with installation? Try the full [documentation guide](https://docs.google.com/document/d/1pUINNUEy3JgdezBD5TGeQRtzISMsBwzWc9YA0c4oE_E/edit?tab=t.0)
 
