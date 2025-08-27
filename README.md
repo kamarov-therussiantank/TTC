@@ -15,7 +15,7 @@ TTC aka Tanktrouble Classic (extension edition) is an extension which seeks to r
 
 ## What does the extension bring?
 
-TTC extension is the based on the [Classic TankTrouble](https://classic.tanktrouble.com/), very first version of this beautiful game called [TankTrouble](https://tanktrouble.com/). As the time passed TankTrouble improved alot. Each update brought something new to it. As the uptades were happening, Classic TankTrouble got completely replaced. Fear of losing it forever. I have made something that will try to bring the old TankTrouble graphics back to life as much as possible, I have made this extension.
+TTC extension is based on the [TankTrouble Classic ](https://classic.tanktrouble.com/), very first version of an beautiful game called [TankTrouble](https://tanktrouble.com/). As the time passed TankTrouble improved a lot. Each update brought something new to it. As the uptades were happening, TankTrouble Classic  slowly faded away, completely replaced at the end. Fear of losing it forever. I have TTC, and my aim with it is to try to bring the old TankTrouble Classic back in the modern version, from the graphic to the mechanic, as much as possible.
 
 ## Installation
 
@@ -30,8 +30,6 @@ To install TTC, follow the provided instructions:
 7. Open "TTC-main"
 8. Find and select "src" folder 
 9. Click on "Select Folder"
-
-and thats it, you have successfully installed and loaded TTC.
 
 Still having problems with installation? Try the full [documentation guide](https://docs.google.com/document/d/1pUINNUEy3JgdezBD5TGeQRtzISMsBwzWc9YA0c4oE_E/edit?tab=t.0)
 
