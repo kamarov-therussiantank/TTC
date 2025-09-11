@@ -3,9 +3,9 @@
     {
       "filename": "base",
       "frame": {
-        "x": 382,
-        "y": 326,
-        "w": 34,
+        "x": 363,
+        "y": 463,
+        "w": 32,
         "h": 42
       },
       "rotated": false,
@@ -13,11 +13,11 @@
       "spriteSourceSize": {
         "x": 0,
         "y": 0,
-        "w": 34,
+        "w": 32,
         "h": 42
       },
       "sourceSize": {
-        "w": 34,
+        "w": 32,
         "h": 42
       }
     },
@@ -234,8 +234,8 @@
     {
       "filename": "bullet",
       "frame": {
-        "x": 258,
-        "y": 390,
+        "x": 163,
+        "y": 495,
         "w": 10,
         "h": 10
       },
@@ -255,8 +255,8 @@
     {
       "filename": "chat",
       "frame": {
-        "x": 157,
-        "y": 436,
+        "x": 3,
+        "y": 511,
         "w": 25,
         "h": 25
       },
@@ -276,8 +276,8 @@
     {
       "filename": "countdown0",
       "frame": {
-        "x": 2,
-        "y": 134,
+        "x": 3,
+        "y": 137,
         "w": 120,
         "h": 120
       },
@@ -286,21 +286,21 @@
       "spriteSourceSize": {
         "x": 0,
         "y": 0,
-        "w": 100,
-        "h": 100
+        "w": 120,
+        "h": 120
       },
       "sourceSize": {
-        "w": 100,
-        "h": 100
+        "w": 112000,
+        "h": 120
       }
     },
     {
       "filename": "countdown1",
       "frame": {
-        "x": 126,
-        "y": 134,
-        "w": 120,
-        "h": 120
+        "x": 129,
+        "y": 277,
+        "w": 100,
+        "h": 100
       },
       "rotated": false,
       "trimmed": false,
@@ -318,10 +318,10 @@
     {
       "filename": "countdown2",
       "frame": {
-        "x": 2,
-        "y": 258,
-        "w": 120,
-        "h": 120
+        "x": 271,
+        "y": 3,
+        "w": 100,
+        "h": 100
       },
       "rotated": false,
       "trimmed": false,
@@ -339,10 +339,10 @@
     {
       "filename": "countdown3",
       "frame": {
-        "x": 126,
-        "y": 258,
-        "w": 120,
-        "h": 120
+        "x": 271,
+        "y": 109,
+        "w": 100,
+        "h": 100
       },
       "rotated": false,
       "trimmed": false,
@@ -360,8 +360,8 @@
     {
       "filename": "crate0-0",
       "frame": {
-        "x": 428,
-        "y": 2,
+        "x": 477,
+        "y": 96,
         "w": 32,
         "h": 32
       },
@@ -381,8 +381,8 @@
     {
       "filename": "crate0-1",
       "frame": {
-        "x": 428,
-        "y": 38,
+        "x": 477,
+        "y": 134,
         "w": 32,
         "h": 32
       },
@@ -402,8 +402,8 @@
     {
       "filename": "crate0-2",
       "frame": {
-        "x": 428,
-        "y": 74,
+        "x": 477,
+        "y": 172,
         "w": 32,
         "h": 32
       },
@@ -423,8 +423,8 @@
     {
       "filename": "crate0-3",
       "frame": {
-        "x": 428,
-        "y": 110,
+        "x": 477,
+        "y": 210,
         "w": 32,
         "h": 32
       },
@@ -444,8 +444,8 @@
     {
       "filename": "crate0-4",
       "frame": {
-        "x": 428,
-        "y": 146,
+        "x": 477,
+        "y": 248,
         "w": 32,
         "h": 32
       },
@@ -465,8 +465,8 @@
     {
       "filename": "crate0-5",
       "frame": {
-        "x": 426,
-        "y": 182,
+        "x": 477,
+        "y": 286,
         "w": 32,
         "h": 32
       },
@@ -486,8 +486,29 @@
     {
       "filename": "crate0-6",
       "frame": {
-        "x": 426,
-        "y": 218,
+        "x": 477,
+        "y": 324,
+        "w": 32,
+        "h": 32
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 32,
+        "h": 32
+      },
+      "sourceSize": {
+        "w": 32,
+        "h": 32
+      }
+    },
+    {
+      "filename": "crate0-7",
+      "frame": {
+        "x": 477,
+        "y": 362,
         "w": 32,
         "h": 32
       },
@@ -801,8 +822,8 @@
     {
       "filename": "diamond",
       "frame": {
-        "x": 354,
-        "y": 138,
+        "x": 373,
+        "y": 455,
         "w": 24,
         "h": 40
       },
@@ -843,50 +864,50 @@
     {
       "filename": "diamondRays",
       "frame": {
-        "x": 0,
-        "y": 0,
-        "w": 0,
-        "h": 0
+        "x": 407,
+        "y": 285,
+        "w": 60,
+        "h": 60
       },
       "rotated": false,
       "trimmed": false,
       "spriteSourceSize": {
         "x": 0,
         "y": 0,
-        "w": 0,
-        "h": 0
+        "w": 60,
+        "h": 60
       },
       "sourceSize": {
-        "w": 0,
-        "h": 0
+        "w": 60,
+        "h": 60
       }
     },
     {
       "filename": "dominatorTrophy",
       "frame": {
-        "x": 821,
-        "y": 695,
-        "w": 32,
-        "h": 28
+        "x": 0,
+        "y": 0,
+        "w": 0,
+        "h": 0
       },
       "rotated": false,
       "trimmed": false,
       "spriteSourceSize": {
         "x": 0,
         "y": 0,
-        "w": 32,
-        "h": 28
+        "w": 0,
+        "h": 0
       },
       "sourceSize": {
-        "w": 32,
-        "h": 28
+        "w": 0,
+        "h": 0
       }
     },
     {
       "filename": "doubleBarrel",
       "frame": {
-        "x": 258,
-        "y": 390,
+        "x": 163,
+        "y": 495,
         "w": 10,
         "h": 10
       },
@@ -906,8 +927,8 @@
     {
       "filename": "dust0",
       "frame": {
-        "x": 372,
-        "y": 372,
+        "x": 431,
+        "y": 463,
         "w": 40,
         "h": 40
       },
@@ -927,8 +948,8 @@
     {
       "filename": "dust1",
       "frame": {
-        "x": 372,
-        "y": 372,
+        "x": 431,
+        "y": 463,
         "w": 40,
         "h": 40
       },
@@ -948,8 +969,8 @@
     {
       "filename": "dust2",
       "frame": {
-        "x": 372,
-        "y": 372,
+        "x": 431,
+        "y": 463,
         "w": 40,
         "h": 40
       },
@@ -969,8 +990,8 @@
     {
       "filename": "explosion0",
       "frame": {
-        "x": 90,
-        "y": 382,
+        "x": 316,
+        "y": 215,
         "w": 50,
         "h": 50
       },
@@ -990,43 +1011,43 @@
     {
       "filename": "explosion1",
       "frame": {
-        "x": 90,
-        "y": 382,
-        "w": 50,
-        "h": 50
+        "x": 3,
+        "y": 389,
+        "w": 60,
+        "h": 60
       },
       "rotated": false,
       "trimmed": false,
       "spriteSourceSize": {
         "x": 0,
         "y": 0,
-        "w": 50,
-        "h": 50
+        "w": 60,
+        "h": 60
       },
       "sourceSize": {
-        "w": 50,
-        "h": 50
+        "w": 60,
+        "h": 60
       }
     },
     {
       "filename": "explosion2",
       "frame": {
-        "x": 90,
-        "y": 382,
-        "w": 50,
-        "h": 50
+        "x": 255,
+        "y": 215,
+        "w": 55,
+        "h": 55
       },
       "rotated": false,
       "trimmed": false,
       "spriteSourceSize": {
         "x": 0,
         "y": 0,
-        "w": 50,
-        "h": 50
+        "w": 55,
+        "h": 55
       },
       "sourceSize": {
-        "w": 50,
-        "h": 50
+        "w": 55,
+        "h": 55
       }
     },
     {
@@ -1116,8 +1137,8 @@
     {
       "filename": "floor0-0",
       "frame": {
-        "x": 250,
-        "y": 138,
+        "x": 235,
+        "y": 277,
         "w": 100,
         "h": 100
       },
@@ -1137,8 +1158,8 @@
     {
       "filename": "floor0-1",
       "frame": {
-        "x": 250,
-        "y": 138,
+        "x": 235,
+        "y": 277,
         "w": 100,
         "h": 100
       },
@@ -1158,8 +1179,8 @@
     {
       "filename": "storm0",
       "frame": {
-        "x": 2,
-        "y": 2,
+        "x": 3,
+        "y": 3,
         "w": 128,
         "h": 128
       },
@@ -1179,8 +1200,8 @@
     {
       "filename": "storm1",
       "frame": {
-        "x": 134,
-        "y": 2,
+        "x": 137,
+        "y": 3,
         "w": 128,
         "h": 128
       },
@@ -1534,10 +1555,53 @@
       }
     },
     {
+      "filename": "fragBomb",
+      "frame": {
+        "x": 477,
+        "y": 502,
+        "w": 10,
+        "h": 10
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 10,
+        "h": 10
+      },
+      "sourceSize": {
+        "w": 10,
+        "h": 10
+      }
+    },
+    
+    {
+      "filename": "fragBombShrapnel",
+      "frame": {
+        "x": 195,
+        "y": 495,
+        "w": 10,
+        "h": 10
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 10,
+        "h": 10
+      },
+      "sourceSize": {
+        "w": 10,
+        "h": 10
+      }
+    },
+    {
       "filename": "fragment0",
       "frame": {
-        "x": 354,
-        "y": 210,
+        "x": 449,
+        "y": 470,
         "w": 20,
         "h": 20
       },
@@ -1557,8 +1621,8 @@
     {
       "filename": "fragment1",
       "frame": {
-        "x": 186,
-        "y": 436,
+        "x": 471,
+        "y": 442,
         "w": 20,
         "h": 20
       },
@@ -1578,8 +1642,8 @@
     {
       "filename": "fragment2",
       "frame": {
-        "x": 210,
-        "y": 436,
+        "x": 475,
+        "y": 468,
         "w": 20,
         "h": 20
       },
@@ -1599,8 +1663,8 @@
     {
       "filename": "fragment3",
       "frame": {
-        "x": 234,
-        "y": 436,
+        "x": 3,
+        "y": 511,
         "w": 20,
         "h": 20
       },
@@ -1620,8 +1684,8 @@
     {
       "filename": "fragment4",
       "frame": {
-        "x": 426,
-        "y": 254,
+        "x": 29,
+        "y": 511,
         "w": 20,
         "h": 20
       },
@@ -1641,8 +1705,8 @@
     {
       "filename": "fragment5",
       "frame": {
-        "x": 426,
-        "y": 278,
+        "x": 55,
+        "y": 511,
         "w": 20,
         "h": 20
       },
@@ -1662,8 +1726,8 @@
     {
       "filename": "fragment6",
       "frame": {
-        "x": 426,
-        "y": 302,
+        "x": 81,
+        "y": 511,
         "w": 20,
         "h": 20
       },
@@ -1683,8 +1747,8 @@
     {
       "filename": "fragment7",
       "frame": {
-        "x": 426,
-        "y": 326,
+        "x": 107,
+        "y": 501,
         "w": 20,
         "h": 20
       },
@@ -1704,8 +1768,8 @@
     {
       "filename": "fragment8",
       "frame": {
-        "x": 426,
-        "y": 350,
+        "x": 133,
+        "y": 501,
         "w": 20,
         "h": 20
       },
@@ -1725,8 +1789,8 @@
     {
       "filename": "fragment9",
       "frame": {
-        "x": 426,
-        "y": 374,
+        "x": 159,
+        "y": 501,
         "w": 20,
         "h": 20
       },
@@ -1746,8 +1810,8 @@
     {
       "filename": "gatlingGun",
       "frame": {
-        "x": 334,
-        "y": 336,
+        "x": 243,
+        "y": 263,
         "w": 6,
         "h": 6
       },
@@ -1767,8 +1831,8 @@
     {
       "filename": "gold",
       "frame": {
-        "x": 382,
-        "y": 416,
+        "x": 473,
+        "y": 3,
         "w": 36,
         "h": 36
       },
@@ -1788,8 +1852,8 @@
     {
       "filename": "homingMissile",
       "frame": {
-        "x": 296,
-        "y": 444,
+        "x": 449,
+        "y": 442,
         "w": 16,
         "h": 22
       },
@@ -1809,7 +1873,7 @@
     {
       "filename": "mine",
       "frame": {
-        "x": 125,
+        "x": 477,
         "y": 436,
         "w": 28,
         "h": 28
@@ -1828,10 +1892,31 @@
       }
     },
     {
-      "filename": "mineGlow",
+      "filename": "mineGlow01",
       "frame": {
-        "x": 354,
-        "y": 182,
+        "x": 493,
+        "y": 470,
+        "w": 24,
+        "h": 24
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 24,
+        "h": 24
+      },
+      "sourceSize": {
+        "w": 24,
+        "h": 24
+      }
+    },
+    {
+      "filename": "mineGlow02",
+      "frame": {
+        "x": 493,
+        "y": 500,
         "w": 24,
         "h": 24
       },
@@ -1851,8 +1936,8 @@
     {
       "filename": "mineShrapnel",
       "frame": {
-        "x": 382,
-        "y": 456,
+        "x": 195,
+        "y": 495,
         "w": 10,
         "h": 10
       },
@@ -1935,8 +2020,8 @@
     {
       "filename": "rubble0",
       "frame": {
-        "x": 378,
-        "y": 126,
+        "x": 341,
+        "y": 271,
         "w": 8,
         "h": 8
       },
@@ -1956,8 +2041,8 @@
     {
       "filename": "rubble1",
       "frame": {
-        "x": 378,
-        "y": 126,
+        "x": 349,
+        "y": 407,
         "w": 8,
         "h": 8
       },
@@ -1977,8 +2062,8 @@
     {
       "filename": "rubble2",
       "frame": {
-        "x": 378,
-        "y": 126,
+        "x": 355,
+        "y": 271,
         "w": 8,
         "h": 8
       },
@@ -1998,8 +2083,8 @@
     {
       "filename": "shield",
       "frame": {
-        "x": 250,
-        "y": 242,
+        "x": 377,
+        "y": 3,
         "w": 90,
         "h": 90
       },
@@ -2166,8 +2251,8 @@
     {
       "filename": "shotgun",
       "frame": {
-        "x": 334,
-        "y": 336,
+        "x": 243,
+        "y": 263,
         "w": 6,
         "h": 6
       },
@@ -2187,50 +2272,50 @@
     {
       "filename": "smoke0",
       "frame": {
-        "x": 426,
-        "y": 398,
-        "w": 40,
-        "h": 40
+        "x": 316,
+        "y": 511,
+        "w": 20,
+        "h": 20
       },
       "rotated": false,
       "trimmed": false,
       "spriteSourceSize": {
         "x": 0,
         "y": 0,
-        "w": 40,
-        "h": 40
+        "w": 20,
+        "h": 20
       },
       "sourceSize": {
-        "w": 40,
-        "h": 40
+        "w": 20,
+        "h": 20
       }
     },
     {
       "filename": "smoke1",
       "frame": {
-        "x": 426,
-        "y": 398,
-        "w": 30,
-        "h": 30
+        "x": 316,
+        "y": 511,
+        "w": 20,
+        "h": 20
       },
       "rotated": false,
       "trimmed": false,
       "spriteSourceSize": {
         "x": 0,
         "y": 0,
-        "w": 30,
-        "h": 30
+        "w": 20,
+        "h": 20
       },
       "sourceSize": {
-        "w": 30,
-        "h": 30
+        "w": 20,
+        "h": 20
       }
     },
     {
       "filename": "smoke2",
       "frame": {
-        "x": 426,
-        "y": 398,
+        "x": 316,
+        "y": 511,
         "w": 20,
         "h": 20
       },
@@ -2460,8 +2545,8 @@
     {
       "filename": "spawnHole",
       "frame": {
-        "x": 2,
-        "y": 383,
+        "x": 377,
+        "y": 195,
         "w": 84,
         "h": 84
       },
@@ -2523,71 +2608,71 @@
     {
       "filename": "spawnSparkBolt0",
       "frame": {
-        "x": 0,
-        "y": 0,
-        "w": 0,
-        "h": 0
+        "x": 255,
+        "y": 137,
+        "w": 10,
+        "h": 26
       },
       "rotated": false,
       "trimmed": false,
       "spriteSourceSize": {
         "x": 0,
         "y": 0,
-        "w": 0,
-        "h": 0
+        "w": 10,
+        "h": 26
       },
       "sourceSize": {
-        "w": 0,
-        "h": 0
+        "w": 10,
+        "h": 26
       }
     },
     {
       "filename": "spawnSparkBolt1",
       "frame": {
-        "x": 0,
-        "y": 0,
-        "w": 0,
-        "h": 0
+        "x": 349,
+        "y": 407,
+        "w": 10,
+        "h": 26
       },
       "rotated": false,
       "trimmed": false,
       "spriteSourceSize": {
         "x": 0,
         "y": 0,
-        "w": 0,
-        "h": 0
+        "w": 10,
+        "h": 26
       },
       "sourceSize": {
-        "w": 0,
-        "h": 0
+        "w": 10,
+        "h": 26
       }
     },
     {
       "filename": "spawnSparkBolt2",
       "frame": {
-        "x": 0,
-        "y": 0,
-        "w": 0,
-        "h": 0
+        "x": 255,
+        "y": 169,
+        "w": 10,
+        "h": 26
       },
       "rotated": false,
       "trimmed": false,
       "spriteSourceSize": {
         "x": 0,
         "y": 0,
-        "w": 0,
-        "h": 0
+        "w": 10,
+        "h": 26
       },
       "sourceSize": {
-        "w": 0,
-        "h": 0
+        "w": 10,
+        "h": 26
       }
     },
     {
       "filename": "spawnSwirl0",
       "frame": {
-        "x": 265,
-        "y": 2,
+        "x": 129,
+        "y": 137,
         "w": 120,
         "h": 120
       },
@@ -2607,8 +2692,8 @@
     {
       "filename": "spawnSwirl1",
       "frame": {
-        "x": 265,
-        "y": 2,
+        "x": 3,
+        "y": 263,
         "w": 120,
         "h": 120
       },
@@ -2628,8 +2713,8 @@
     {
       "filename": "steam0",
       "frame": {
-        "x": 90,
-        "y": 436,
+        "x": 477,
+        "y": 400,
         "w": 31,
         "h": 30
       },
@@ -2649,8 +2734,8 @@
     {
       "filename": "steam1",
       "frame": {
-        "x": 90,
-        "y": 436,
+        "x": 477,
+        "y": 400,
         "w": 31,
         "h": 30
       },
@@ -2659,19 +2744,19 @@
       "spriteSourceSize": {
         "x": 0,
         "y": 0,
-        "w": 30,
+        "w": 31,
         "h": 30
       },
       "sourceSize": {
-        "w": 30,
+        "w": 31,
         "h": 30
       }
     },
     {
       "filename": "steam2",
       "frame": {
-        "x": 90,
-        "y": 436,
+        "x": 477,
+        "y": 400,
         "w": 31,
         "h": 30
       },
@@ -2680,11 +2765,11 @@
       "spriteSourceSize": {
         "x": 0,
         "y": 0,
-        "w": 30,
+        "w": 31,
         "h": 30
       },
       "sourceSize": {
-        "w": 30,
+        "w": 31,
         "h": 30
       }
     },
@@ -2712,9 +2797,9 @@
     {
       "filename": "tread",
       "frame": {
-        "x": 416,
-        "y": 372,
-        "w": 6,
+        "x": 255,
+        "y": 137,
+        "w": 7,
         "h": 40
       },
       "rotated": false,
@@ -2733,260 +2818,261 @@
     {
       "filename": "treadShade0",
       "frame": {
-        "x": 372,
-        "y": 416,
-        "w": 6,
-        "h": 40
+        "x": 0,
+        "y": 0,
+        "w": 0,
+        "h": 0
       },
       "rotated": false,
       "trimmed": false,
       "spriteSourceSize": {
         "x": 0,
         "y": 0,
-        "w": 6,
-        "h": 40
+        "w": 0,
+        "h": 0
       },
       "sourceSize": {
-        "w": 6,
-        "h": 40
+        "w": 0,
+        "h": 0
       }
     },
     {
       "filename": "treadShade1",
       "frame": {
-        "x": 372,
-        "y": 416,
-        "w": 6,
-        "h": 40
+        "x": 0,
+        "y": 0,
+        "w": 0,
+        "h": 0
       },
       "rotated": false,
       "trimmed": false,
       "spriteSourceSize": {
         "x": 0,
         "y": 0,
-        "w": 6,
-        "h": 40
+        "w": 0,
+        "h": 0
       },
       "sourceSize": {
-        "w": 6,
-        "h": 40
+        "w": 0,
+        "h": 0
       }
     },
+    
     {
       "filename": "treadShade2",
       "frame": {
-        "x": 372,
-        "y": 416,
-        "w": 6,
-        "h": 40
+        "x": 0,
+        "y": 0,
+        "w": 0,
+        "h": 0
       },
       "rotated": false,
       "trimmed": false,
       "spriteSourceSize": {
         "x": 0,
         "y": 0,
-        "w": 6,
-        "h": 40
+        "w": 0,
+        "h": 0
       },
       "sourceSize": {
-        "w": 6,
-        "h": 40
+        "w": 0,
+        "h": 0
       }
     },
     {
       "filename": "treadShade3",
       "frame": {
-        "x": 372,
-        "y": 416,
-        "w": 6,
-        "h": 40
+        "x": 0,
+        "y": 0,
+        "w": 0,
+        "h": 0
       },
       "rotated": false,
       "trimmed": false,
       "spriteSourceSize": {
         "x": 0,
         "y": 0,
-        "w": 6,
-        "h": 40
+        "w": 0,
+        "h": 0
       },
       "sourceSize": {
-        "w": 6,
-        "h": 40
+        "w": 0,
+        "h": 0
       }
     },
     {
       "filename": "treadShade4",
       "frame": {
-        "x": 372,
-        "y": 416,
-        "w": 6,
-        "h": 40
+        "x": 0,
+        "y": 0,
+        "w": 0,
+        "h": 0
       },
       "rotated": false,
       "trimmed": false,
       "spriteSourceSize": {
         "x": 0,
         "y": 0,
-        "w": 6,
-        "h": 40
+        "w": 0,
+        "h": 0
       },
       "sourceSize": {
-        "w": 6,
-        "h": 40
+        "w": 0,
+        "h": 0
       }
     },
     {
       "filename": "treadShade5",
       "frame": {
-        "x": 372,
-        "y": 416,
-        "w": 6,
-        "h": 40
+        "x": 0,
+        "y": 0,
+        "w": 0,
+        "h": 0
       },
       "rotated": false,
       "trimmed": false,
       "spriteSourceSize": {
         "x": 0,
         "y": 0,
-        "w": 6,
-        "h": 40
+        "w": 0,
+        "h": 0
       },
       "sourceSize": {
-        "w": 6,
-        "h": 40
+        "w": 0,
+        "h": 0
       }
     },
     {
       "filename": "treadShade6",
       "frame": {
-        "x": 372,
-        "y": 416,
-        "w": 6,
-        "h": 40
+        "x": 0,
+        "y": 0,
+        "w": 0,
+        "h": 0
       },
       "rotated": false,
       "trimmed": false,
       "spriteSourceSize": {
         "x": 0,
         "y": 0,
-        "w": 6,
-        "h": 40
+        "w": 0,
+        "h": 0
       },
       "sourceSize": {
-        "w": 6,
-        "h": 40
+        "w": 0,
+        "h": 0
       }
     },
     {
       "filename": "treadShade7",
       "frame": {
-        "x": 372,
-        "y": 416,
-        "w": 6,
-        "h": 40
+        "x": 0,
+        "y": 0,
+        "w": 0,
+        "h": 0
       },
       "rotated": false,
       "trimmed": false,
       "spriteSourceSize": {
         "x": 0,
         "y": 0,
-        "w": 6,
-        "h": 40
+        "w": 0,
+        "h": 0
       },
       "sourceSize": {
-        "w": 6,
-        "h": 40
+        "w": 0,
+        "h": 0
       }
     },
     {
       "filename": "treadShade8",
       "frame": {
-        "x": 372,
-        "y": 416,
-        "w": 6,
-        "h": 40
+        "x": 0,
+        "y": 0,
+        "w": 0,
+        "h": 0
       },
       "rotated": false,
       "trimmed": false,
       "spriteSourceSize": {
         "x": 0,
         "y": 0,
-        "w": 6,
-        "h": 40
+        "w": 0,
+        "h": 0
       },
       "sourceSize": {
-        "w": 6,
-        "h": 40
+        "w": 0,
+        "h": 0
       }
     },
     {
       "filename": "treadShade9",
       "frame": {
-        "x": 372,
-        "y": 416,
-        "w": 6,
-        "h": 40
+        "x": 0,
+        "y": 0,
+        "w": 0,
+        "h": 0
       },
       "rotated": false,
       "trimmed": false,
       "spriteSourceSize": {
         "x": 0,
         "y": 0,
-        "w": 6,
-        "h": 40
+        "w": 0,
+        "h": 0
       },
       "sourceSize": {
-        "w": 6,
-        "h": 40
+        "w": 0,
+        "h": 0
       }
     },
     {
       "filename": "treadShade10",
       "frame": {
-        "x": 372,
-        "y": 416,
-        "w": 6,
-        "h": 40
+        "x": 0,
+        "y": 0,
+        "w": 0,
+        "h": 0
       },
       "rotated": false,
       "trimmed": false,
       "spriteSourceSize": {
         "x": 0,
         "y": 0,
-        "w": 6,
-        "h": 40
+        "w": 0,
+        "h": 0
       },
       "sourceSize": {
-        "w": 6,
-        "h": 40
+        "w": 0,
+        "h": 0
       }
     },
     {
       "filename": "treadShade11",
       "frame": {
-        "x": 372,
-        "y": 416,
-        "w": 6,
-        "h": 40
+        "x": 0,
+        "y": 0,
+        "w": 0,
+        "h": 0
       },
       "rotated": false,
       "trimmed": false,
       "spriteSourceSize": {
         "x": 0,
         "y": 0,
-        "w": 6,
-        "h": 40
+        "w": 0,
+        "h": 0
       },
       "sourceSize": {
-        "w": 6,
-        "h": 40
+        "w": 0,
+        "h": 0
       }
     },
     {
       "filename": "turret0",
       "frame": {
-        "x": 344,
-        "y": 242,
+        "x": 69,
+        "y": 389,
         "w": 34,
         "h": 50
       },
@@ -2996,18 +3082,18 @@
         "x": 0,
         "y": 0,
         "w": 34,
-        "h": 41
+        "h": 50
       },
       "sourceSize": {
         "w": 34,
-        "h": 41
+        "h": 50
       }
     },
     {
       "filename": "turret1",
       "frame": {
-        "x": 344,
-        "y": 296,
+        "x": 109,
+        "y": 389,
         "w": 34,
         "h": 50
       },
@@ -3017,18 +3103,18 @@
         "x": 0,
         "y": 0,
         "w": 34,
-        "h": 41
+        "h": 50
       },
       "sourceSize": {
         "w": 34,
-        "h": 41
+        "h": 50
       }
     },
     {
       "filename": "turret2",
       "frame": {
-        "x": 296,
-        "y": 390,
+        "x": 83,
+        "y": 445,
         "w": 34,
         "h": 50
       },
@@ -3038,18 +3124,18 @@
         "x": 0,
         "y": 0,
         "w": 34,
-        "h": 41
+        "h": 50
       },
       "sourceSize": {
         "w": 34,
-        "h": 41
+        "h": 50
       }
     },
     {
       "filename": "turret3",
       "frame": {
-        "x": 334,
-        "y": 404,
+        "x": 163,
+        "y": 439,
         "w": 34,
         "h": 50
       },
@@ -3059,18 +3145,18 @@
         "x": 0,
         "y": 0,
         "w": 34,
-        "h": 41
+        "h": 50
       },
       "sourceSize": {
         "w": 34,
-        "h": 41
+        "h": 50
       }
     },
     {
       "filename": "turret4",
       "frame": {
-        "x": 390,
-        "y": 2,
+        "x": 203,
+        "y": 439,
         "w": 34,
         "h": 50
       },
@@ -3080,18 +3166,18 @@
         "x": 0,
         "y": 0,
         "w": 34,
-        "h": 41
+        "h": 50
       },
       "sourceSize": {
         "w": 34,
-        "h": 41
+        "h": 50
       }
     },
     {
       "filename": "turret5",
       "frame": {
-        "x": 390,
-        "y": 56,
+        "x": 243,
+        "y": 439,
         "w": 34,
         "h": 50
       },
@@ -3101,18 +3187,18 @@
         "x": 0,
         "y": 0,
         "w": 34,
-        "h": 41
+        "h": 50
       },
       "sourceSize": {
         "w": 34,
-        "h": 41
+        "h": 50
       }
     },
     {
       "filename": "turret6",
       "frame": {
-        "x": 390,
-        "y": 110,
+        "x": 283,
+        "y": 439,
         "w": 34,
         "h": 50
       },
@@ -3122,18 +3208,18 @@
         "x": 0,
         "y": 0,
         "w": 34,
-        "h": 41
+        "h": 50
       },
       "sourceSize": {
         "w": 34,
-        "h": 41
+        "h": 50
       }
     },
     {
       "filename": "turret7",
       "frame": {
-        "x": 382,
-        "y": 164,
+        "x": 323,
+        "y": 439,
         "w": 34,
         "h": 50
       },
@@ -3143,18 +3229,18 @@
         "x": 0,
         "y": 0,
         "w": 34,
-        "h": 41
+        "h": 50
       },
       "sourceSize": {
         "w": 34,
-        "h": 41
+        "h": 50
       }
     },
     {
       "filename": "turret8",
       "frame": {
-        "x": 382,
-        "y": 218,
+        "x": 363,
+        "y": 407,
         "w": 34,
         "h": 50
       },
@@ -3164,18 +3250,18 @@
         "x": 0,
         "y": 0,
         "w": 34,
-        "h": 41
+        "h": 50
       },
       "sourceSize": {
         "w": 34,
-        "h": 41
+        "h": 50
       }
     },
     {
       "filename": "turret9",
       "frame": {
-        "x": 382,
-        "y": 272,
+        "x": 403,
+        "y": 407,
         "w": 34,
         "h": 50
       },
@@ -3185,18 +3271,18 @@
         "x": 0,
         "y": 0,
         "w": 34,
-        "h": 41
+        "h": 50
       },
       "sourceSize": {
         "w": 34,
-        "h": 41
+        "h": 50
       }
     },
     {
       "filename": "turret10",
       "frame": {
-        "x": 144,
-        "y": 382,
+        "x": 149,
+        "y": 383,
         "w": 34,
         "h": 50
       },
@@ -3206,18 +3292,18 @@
         "x": 0,
         "y": 0,
         "w": 34,
-        "h": 41
+        "h": 50
       },
       "sourceSize": {
         "w": 34,
-        "h": 41
+        "h": 50
       }
     },
     {
       "filename": "turret11",
       "frame": {
-        "x": 182,
-        "y": 382,
+        "x": 189,
+        "y": 383,
         "w": 34,
         "h": 50
       },
@@ -3227,18 +3313,18 @@
         "x": 0,
         "y": 0,
         "w": 34,
-        "h": 41
+        "h": 50
       },
       "sourceSize": {
         "w": 34,
-        "h": 41
+        "h": 50
       }
     },
     {
       "filename": "turret12",
       "frame": {
-        "x": 220,
-        "y": 382,
+        "x": 229,
+        "y": 383,
         "w": 34,
         "h": 50
       },
@@ -3248,18 +3334,18 @@
         "x": 0,
         "y": 0,
         "w": 34,
-        "h": 41
+        "h": 50
       },
       "sourceSize": {
         "w": 34,
-        "h": 41
+        "h": 50
       }
     },
     {
       "filename": "turret13",
       "frame": {
-        "x": 258,
-        "y": 336,
+        "x": 269,
+        "y": 383,
         "w": 34,
         "h": 50
       },
@@ -3269,18 +3355,18 @@
         "x": 0,
         "y": 0,
         "w": 34,
-        "h": 41
+        "h": 50
       },
       "sourceSize": {
         "w": 34,
-        "h": 41
+        "h": 50
       }
     },
     {
       "filename": "turret14",
       "frame": {
-        "x": 296,
-        "y": 336,
+        "x": 309,
+        "y": 383,
         "w": 34,
         "h": 50
       },
@@ -3290,18 +3376,18 @@
         "x": 0,
         "y": 0,
         "w": 34,
-        "h": 41
+        "h": 50
       },
       "sourceSize": {
         "w": 34,
-        "h": 41
+        "h": 50
       }
     },
     {
       "filename": "turret15",
       "frame": {
-        "x": 334,
-        "y": 350,
+        "x": 349,
+        "y": 351,
         "w": 34,
         "h": 50
       },
@@ -3311,18 +3397,18 @@
         "x": 0,
         "y": 0,
         "w": 34,
-        "h": 41
+        "h": 50
       },
       "sourceSize": {
         "w": 34,
-        "h": 41
+        "h": 50
       }
     },
     {
       "filename": "turret16",
       "frame": {
-        "x": 258,
-        "y": 404,
+        "x": 389,
+        "y": 351,
         "w": 34,
         "h": 50
       },
@@ -3332,18 +3418,102 @@
         "x": 0,
         "y": 0,
         "w": 34,
-        "h": 41
+        "h": 50
       },
       "sourceSize": {
         "w": 34,
-        "h": 41
+        "h": 50
+      }
+    },
+    {
+      "filename": "turret17",
+      "frame": {
+        "x": 429,
+        "y": 351,
+        "w": 34,
+        "h": 50
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 34,
+        "h": 50
+      },
+      "sourceSize": {
+        "w": 34,
+        "h": 50
+      }
+    },
+    {
+      "filename": "turret18",
+      "frame": {
+        "x": 3,
+        "y": 455,
+        "w": 34,
+        "h": 50
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 34,
+        "h": 50
+      },
+      "sourceSize": {
+        "w": 34,
+        "h": 50
+      }
+    },
+    {
+      "filename": "turret19",
+      "frame": {
+        "x": 43,
+        "y": 455,
+        "w": 34,
+        "h": 50
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 34,
+        "h": 50
+      },
+      "sourceSize": {
+        "w": 34,
+        "h": 50
+      }
+    },
+    {
+      "filename": "turret20",
+      "frame": {
+        "x": 123,
+        "y": 445,
+        "w": 34,
+        "h": 50
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 34,
+        "h": 50
+      },
+      "sourceSize": {
+        "w": 34,
+        "h": 50
       }
     },
     {
       "filename": "wall0-0",
       "frame": {
-        "x": 266,
-        "y": 126,
+        "x": 129,
+        "y": 263,
         "w": 108,
         "h": 8
       },
