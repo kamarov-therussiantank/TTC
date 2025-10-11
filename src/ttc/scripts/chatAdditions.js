@@ -1,7 +1,7 @@
 function whenContentInitialized() {
     return new Promise(resolve => {
         const check = () => {
-            const container = document.querySelector('#tertiaryContent');
+            const container = document.readyState === 'complete';
             if (container && typeof TankTrouble !== "undefined") {
                 resolve();
             } else {
@@ -19,6 +19,7 @@ whenContentInitialized().then(() => {
     // Create buttons with text symbols instead of images
     const globalMuteButton = createButton('muteGlobalChat-button', '#', 'Mute Global Chat');
     const userMuteButton = createButton('muteUserChat-button', '@', 'Mute User Chat');
+    const muteSystemMessagesButton = createButton('muteSystemMessages-button', '<!>', 'Disable System Messages');
 
     // Container for buttons
     const buttonContainer = document.createElement('div');
@@ -29,15 +30,18 @@ whenContentInitialized().then(() => {
 
     buttonContainer.appendChild(globalMuteButton);
     buttonContainer.appendChild(userMuteButton);
+    buttonContainer.appendChild(muteSystemMessagesButton);
     container.appendChild(buttonContainer);
 
     // State variables
     let isGlobalMuted = false;
     let isUserMuted = false;
+    let isSystemMessagesMuted = false;
 
     // Save original methods
     const originalAddGlobal = TankTrouble.ChatBox.addGlobalChatMessage;
     const originalAddUser = TankTrouble.ChatBox.addUserChatMessage;
+    const originalAddSystem = TankTrouble.ChatBox.addSystemMessage;
 
     // Create button with text symbol instead of image
     function createButton(className, symbol, title) {
@@ -97,8 +101,28 @@ whenContentInitialized().then(() => {
         isUserMuted = !isUserMuted;
     }
 
+    function toggleMuteSystemMessages() {
+        if (isSystemMessagesMuted) {
+            TankTrouble.ChatBox.addSystemMessage = originalAddSystem;
+            TankTrouble.ChatBox.addSystemMessage(0, "System messages enabled");
+            muteSystemMessagesButton.style.backgroundColor = '';
+            muteSystemMessagesButton.style.border = '';
+            muteSystemMessagesButton.style.color = '#333';
+        } else {
+            TankTrouble.ChatBox.addSystemMessage = function (from, message, chatMessageId) {
+                console.log(String(from) + ": " + message);
+            };
+            TankTrouble.ChatBox.addSystemMessage(0, "System messages disabled");
+            muteSystemMessagesButton.style.backgroundColor = '#ff0000';
+            muteSystemMessagesButton.style.border = '2px solid #c40000ff';
+            muteSystemMessagesButton.style.color = '#fff';
+        }
+        isSystemMessagesMuted = !isSystemMessagesMuted;
+    }
+
     globalMuteButton.addEventListener('click', toggleMuteGlobalChat);
     userMuteButton.addEventListener('click', toggleMuteUserChat);
+    muteSystemMessagesButton.addEventListener('click', toggleMuteSystemMessages);
 
     // Show/hide buttons based on chat visibility
     const chatElement = document.querySelector('#chat');

@@ -140,34 +140,6 @@
         }
       },
       {
-        "id": 11,
-        "priority": 1,
-        "action": {
-          "type": "redirect",
-          "redirect": {
-            "extensionPath": "/assets/images/snippets/unseenMarker@2x.png"
-          }
-        },
-        "condition": {
-          "urlFilter": "https://cdn.tanktrouble.com/*/assets/images/snippets/unseenMarker@2x.png",
-          "resourceTypes": ["image"]
-        }
-      },
-      {
-        "id": 12,
-        "priority": 1,
-        "action": {
-          "type": "redirect",
-          "redirect": {
-            "extensionPath": "/assets/images/snippets/unseenMarker.png"
-          }
-        },
-        "condition": {
-          "urlFilter": "https://cdn.tanktrouble.com/*/assets/images/snippets/unseenMarker.png",
-          "resourceTypes": ["image"]
-        }
-      },
-      {
         "id": 13,
         "priority": 1,
         "action": {

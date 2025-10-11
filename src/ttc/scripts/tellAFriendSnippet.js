@@ -1,19 +1,5 @@
-//Visits Snippet
-function whenContentInitialized() {
-    return new Promise(resolve => {
-        const check = () => {
-            const container = document.querySelector('#tertiaryContent');
-            if (container && typeof TankTrouble !== "undefined") {
-                resolve();
-            } else {
-                setTimeout(check, 100);
-            }
-        };
-        check();
-    });
-}
-
-
+// Tell A Friend snippet
+// Enables users to tell a friend about Tank Trouble via email
 whenContentInitialized().then(() => {
 
     var snippet = $(`
@@ -21,7 +7,7 @@ whenContentInitialized().then(() => {
     <a href="https://mail.google.com/" target="_blank" style="text-decoration: none;">
             <div class="header">Tell A Friend</div>
             <div class="content">
-            <img src="https://raw.githubusercontent.com/kamarov-therussiantank/TTCV2/main/src/assets/images/snippets/tellAFriend.png" style="position: relative; top: 5px; left: 15px; pointer-events: none;">
+            <img src="https://raw.githubusercontent.com/kamarov-therussiantank/TTC/main/src/assets/images/snippets/tellAFriend.png" style="position: relative; top: 5px; left: 15px; pointer-events: none;">
             </div>
     </div>
     `);

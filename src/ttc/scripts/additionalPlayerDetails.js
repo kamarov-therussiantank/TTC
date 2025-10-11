@@ -1,16 +1,8 @@
-class Loader {
-	static interceptFunction(context, funcName, handler, attributes) {
-		const original = Reflect.get(context, funcName);
-		if (typeof original !== 'function') throw new Error('Item passed is not typeof function');
-
-		Reflect.defineProperty(context, funcName, {
-			value: (...args) => handler(original.bind(context), ...args),
-			...attributes
-		});
-	}
-}
-
+// Additional Player Details
+// Adds an experience progress bar (for classic players), player ID display under their username, and banned player information if banned.
+// Also adds more details to the account overlay such as account creation date, country, verification status, news subscription status, player ID, lifetime in hours, and last login time.
 (() => {
+	// TankInfoBox init
 	Loader.interceptFunction(TankTrouble.TankInfoBox, '_initialize', (original, ...args) => {
 		original(...args);
 
@@ -20,9 +12,10 @@ class Loader {
 		TankTrouble.TankInfoBox.infoExpBorder = $('<div class="border"/>');
 		TankTrouble.TankInfoBox.infoExpBar = $('<div class="exp-bar"/>');
 		TankTrouble.TankInfoBox.infoExpText = $('<span class="exp-text"/>');
-		TankTrouble.TankInfoBox.infoExpTextDiv.append(TankTrouble.TankInfoBox.infoExpBorder);
-		TankTrouble.TankInfoBox.infoExpTextDiv.append(TankTrouble.TankInfoBox.infoExpBar);
-		TankTrouble.TankInfoBox.infoExpTextDiv.append(TankTrouble.TankInfoBox.infoExpText);
+		TankTrouble.TankInfoBox.infoExpTextDiv
+			.append(TankTrouble.TankInfoBox.infoExpBorder)
+			.append(TankTrouble.TankInfoBox.infoExpBar)
+			.append(TankTrouble.TankInfoBox.infoExpText);
 		TankTrouble.TankInfoBox.infoExpDiv.append(TankTrouble.TankInfoBox.infoExpTextDiv);
 		TankTrouble.TankInfoBox.infoExpDiv.insertAfter(TankTrouble.TankInfoBox.infoRank);
 
@@ -42,27 +35,7 @@ class Loader {
 		TankTrouble.TankInfoBox.infoBannedPlayerDiv.append(TankTrouble.TankInfoBox.infoBannedPlayerTextDiv);
 		TankTrouble.TankInfoBox.infoBannedPlayerDiv.insertAfter(TankTrouble.TankInfoBox.infoRank);
 
-		// Create a container for the icon and text
-		TankTrouble.TankInfoBox.infoDeathsDiv = $('<td class="deaths tooltipstered"/>');
-		TankTrouble.TankInfoBox.infoDeaths = $(`
-			<div class="statsContainer">
-				<img class="statsIcon" src="https://raw.githubusercontent.com/kamarov-therussiantank/TTC/refs/heads/main/src/assets/images/tankInfo/deaths.png" srcset="https://raw.githubusercontent.com/kamarov-therussiantank/TTC/refs/heads/main/src/assets/images/tankInfo/deaths@2x.png 2x"/>
-				<div class="hasSVG">
-					<svg version="1.1" width="58" height="34">
-						<text id="deathsTextOutline" x="1" y="22" text-anchor="start" font-family="TankTrouble" font-size="14" fill="none" stroke="black" stroke-linejoin="round" stroke-width="3" letter-spacing="1">N/A</text>
-						<text id="deathsText" x="1" y="22" text-anchor="start" font-family="TankTrouble" font-size="14" fill="white" letter-spacing="1">N/A</text>
-					</svg>
-				</div>
-			</div>
-		`);
-		TankTrouble.TankInfoBox.infoDeathsDiv.append(TankTrouble.TankInfoBox.infoDeaths);
-		TankTrouble.TankInfoBox.infoDeathsDiv.tooltipster({
-			content: 'Deaths',
-			position: 'left',
-			offsetX: 5
-		});
-		TankTrouble.TankInfoBox.infoDeathsDiv.insertAfter(TankTrouble.TankInfoBox.infoKillsAndVictoriesTableRow);
-
+		// Init tooltip
 		TankTrouble.TankInfoBox.infoExpDiv.tooltipster({
 			position: 'right',
 			offsetX: 5
@@ -72,69 +45,141 @@ class Loader {
 		TankTrouble.TankInfoBox.infoExpDiv.hide();
 	});
 
-	Loader.interceptFunction(TankTrouble.TankInfoBox, 'show', (original, ...args) => {
-		original(...args);
+	// TankInfoBox show
+Loader.interceptFunction(TankTrouble.TankInfoBox, 'show', (original, ...args) => {
+    original(...args);
 
-		TankTrouble.TankInfoBox.infoExpDiv.tooltipster('content', 'Classic EXP');
-		const [,, playerId] = args;
+    TankTrouble.TankInfoBox.infoExpDiv.tooltipster('content', 'Classic EXP');
+    const [,, playerId] = args;
 
-		Backend.getInstance().getPlayerDetails(result => {
-			if (typeof result === 'object') {
-				const playerId = result.getPlayerId();
-				const username = result.getUsername();
-				const banned = result.getBanned();
-				const classicPlayer = result.getExperience();
-				const deaths = result.getDeaths();
+    Backend.getInstance().getPlayerDetails(result => {
+        if (typeof result === 'object') {
+            const resultPlayerId = result.getPlayerId();
+            const username = result.getUsername();
+            const banned = result.getBanned();
+            const classicPlayer = result.getExperience();
+            const kills = result.getKills();
+            const victories = result.getVictories();
+            const exp = kills + victories + classicPlayer;
 
-				$("#deathsTextOutline").text(deaths);
-				$("#deathsText").text(deaths);
+            if (classicPlayer && classicPlayer > 0) {
+                TankTrouble.TankInfoBox.infoExpDiv.show();
 
-				const fontSize = deaths > 100000 ? "12" : "14";
-				$("#deathsTextOutline").attr("font-size", fontSize);
-				$("#deathsText").attr("font-size", fontSize);
+			// Define tiers
+			const tiers = [
+    			{ name: 'Recruit',   min: 0,       max: 109 },
+    			{ name: 'Corporal',  min: 100,     max: 1099 },
+    			{ name: 'Sergeant', min: 1000,    max: 10999 },
+    			{ name: 'Captain',    min: 10000,   max: 109999 },
+    			{ name: 'Colonel',  min: 100000,  max: 599999 },
+    			{ name: 'Marshal',   min: 500000, max: Infinity },
+				{ name: 'Legend',   min: 1000000, max: Infinity },
+			];
 
-				// Classic EXP bar
-				if (classicPlayer) {
-					TankTrouble.TankInfoBox.infoExpDiv.show();
-					TankTrouble.TankInfoBox.infoExpText.text(`EXP: ${classicPlayer}`);
-					const expTextElement = TankTrouble.TankInfoBox.infoExpText[0];
+			// Find current tier
+			let currentTier = tiers.slice().reverse().find(t => exp >= t.min) || tiers[0];
+			const currentMin = currentTier.min;
+			const currentMax = currentTier.max;
 
-					if (classicPlayer <= 99) expTextElement.style.left = '37%';
-					else if (classicPlayer <= 999) expTextElement.style.left = '35%';
-					else if (classicPlayer <= 9999) expTextElement.style.left = '34%';
-					else if (classicPlayer <= 99999) expTextElement.style.left = '32%';
-					else if (classicPlayer <= 999999) expTextElement.style.left = '29%';
-					else expTextElement.style.left = '27%';
-				} else {
-					TankTrouble.TankInfoBox.infoExpDiv.hide();
-				}
+			// For Infinity max, set progress as 100%
+			let progressPercent;
+			let requiredPoints;
+			if (currentMax === Infinity) {
+   				progressPercent = 100;
+    			requiredPoints = 'Maxed out';
+			} else {
+    			requiredPoints = currentMax - currentMin + 1;
+    			progressPercent = Math.min(100, ((exp - currentMin) / requiredPoints) * 100);
+			}
+
+			// Update the bar and text
+			TankTrouble.TankInfoBox.infoExpBar.css({ width: `${progressPercent}%` });
+			TankTrouble.TankInfoBox.infoExpText.text(currentTier.name);
+
+			// Tooltip with breakdown
+			TankTrouble.TankInfoBox.infoExpDiv.tooltipster(
+    			'content',
+    			`Classic EXP\n(${exp}/${requiredPoints})`
+			);
+
+                // Keep label centered
+                TankTrouble.TankInfoBox.infoExpText[0].style.left = '39%';
+            } else {
+                TankTrouble.TankInfoBox.infoExpDiv.hide();
+            }
 
 				// Banned handling
 				if (banned) {
 					TankTrouble.TankInfoBox.infoAboutDiv.show();
-					TankTrouble.TankInfoBox.infoAboutText.text(`#${playerId}`);
+					TankTrouble.TankInfoBox.infoAboutText.text(`#${resultPlayerId}`);
 					TankTrouble.TankInfoBox.infoBannedPlayerDiv.show();
-					TankTrouble.TankInfoBox.infoBannedPlayerText.text(`Player has been permanently banned because of rules violation. Player statistics are counted towards the scrapyard.`);
-					document.querySelector(".about-container").style.color = "#fff";
-					document.querySelector("#tankinfo .rank").style.display = "none";
-					document.querySelector("#tankinfo .xp").style.display = "none";
-					document.querySelector(".exp.tooltipstered").style.display = "none";
-					document.querySelector("#tankinfo table").style.display = "none";
-					document.querySelector(".actions.centered").style.display = "none";
-				} else if (playerId) {
+					TankTrouble.TankInfoBox.infoBannedPlayerText.text(
+						`Player has been permanently banned because of rules violation. Player statistics are counted towards the scrapyard.`
+					);
+
+					document.querySelector(".about-container")?.style && (document.querySelector(".about-container").style.color = "#fff");
+					document.querySelector("#tankinfo .rank")?.style && (document.querySelector("#tankinfo .rank").style.display = "none");
+					document.querySelector("#tankinfo .xp")?.style && (document.querySelector("#tankinfo .xp").style.display = "none");
+					document.querySelector(".exp.tooltipstered")?.style && (document.querySelector(".exp.tooltipstered").style.display = "none");
+					document.querySelector("#tankinfo table")?.style && (document.querySelector("#tankinfo table").style.display = "none");
+					document.querySelector(".actions.centered")?.style && (document.querySelector(".actions.centered").style.display = "none");
+				} else if (resultPlayerId) {
 					TankTrouble.TankInfoBox.infoBannedPlayerDiv.hide();
 					TankTrouble.TankInfoBox.infoAboutDiv.show();
-					TankTrouble.TankInfoBox.infoAboutText.text(`#${playerId}`);
-					document.querySelector(".about-container").style.color = "";
-					document.querySelector("#tankinfo .rank").style.display = "";
-					document.querySelector("#tankinfo .xp").style.display = "";
-					document.querySelector("#tankinfo table").style.display = "";
-					document.querySelector(".actions.centered").style.display = "";
+					TankTrouble.TankInfoBox.infoAboutText.text(`#${resultPlayerId}`);
+
+					document.querySelector(".about-container")?.style && (document.querySelector(".about-container").style.color = "");
+					document.querySelector("#tankinfo .rank")?.style && (document.querySelector("#tankinfo .rank").style.display = "");
+					document.querySelector("#tankinfo .xp")?.style && (document.querySelector("#tankinfo .xp").style.display = "");
+					document.querySelector("#tankinfo table")?.style && (document.querySelector("#tankinfo table").style.display = "");
+					document.querySelector(".actions.centered")?.style && (document.querySelector(".actions.centered").style.display = "");
 				} else {
 					TankTrouble.TankInfoBox.infoAboutDiv.hide();
-					document.querySelector(".exp.tooltipstered").style.display = "";
+					document.querySelector(".exp.tooltipstered")?.style && (document.querySelector(".exp.tooltipstered").style.display = "");
 				}
 			}
 		}, () => {}, () => {}, playerId, Caches.getPlayerDetailsCache());
+	});
+})();
+
+(() => {
+	Loader.interceptFunction(TankTrouble.AccountOverlay, '_initialize', (original, ...args) => {
+		original(...args);
+
+		// Create container div
+		TankTrouble.AccountOverlay.accountContainer = $('<div class="account-details"></div>');
+		TankTrouble.AccountOverlay.accountContainer.insertAfter(TankTrouble.AccountOverlay.accountHeadline);
+
+		// Create and append each detail div inside the container
+		TankTrouble.AccountOverlay.accountCreated = $('<div></div>').appendTo(TankTrouble.AccountOverlay.accountContainer);
+		TankTrouble.AccountOverlay.accountCountry = $('<div></div>').appendTo(TankTrouble.AccountOverlay.accountContainer);
+		TankTrouble.AccountOverlay.accountID = $('<div></div>').appendTo(TankTrouble.AccountOverlay.accountContainer);
+		TankTrouble.AccountOverlay.accountVerification = $('<div></div>').appendTo(TankTrouble.AccountOverlay.accountContainer);
+		TankTrouble.AccountOverlay.accountNewsSubscriber = $('<div></div>').appendTo(TankTrouble.AccountOverlay.accountContainer);
+		TankTrouble.AccountOverlay.accountLastLogin = $('<div></div>').appendTo(TankTrouble.AccountOverlay.accountContainer);
+	});
+
+	Loader.interceptFunction(TankTrouble.AccountOverlay, 'show', (original, ...args) => {
+		original(...args);
+
+	Backend.getInstance().getPlayerDetails(result => {
+            if (typeof result === 'object') {
+                const accountVerification = result.getVerified();
+                const accountID = result.getPlayerId();
+                const created = new Date(result.getCreated() * 1000);
+                const accountCountry = result.getCountry();
+                const accountNewsSubscriber = result.getNewsSubscriber();
+                const accountLastLogin = result.getLastLogin();
+
+                const formatted = new Intl.DateTimeFormat('en-GB', { dateStyle: 'full' }).format(created);
+
+                TankTrouble.AccountOverlay.accountCreated.text(`Created: ${formatted}`);
+                TankTrouble.AccountOverlay.accountCountry.text(`Country: ${accountCountry ? accountCountry : 'Siberia’s tourist (Unknown)'}`);
+                TankTrouble.AccountOverlay.accountID.text(`Player ID: #${accountID}`);
+                TankTrouble.AccountOverlay.accountVerification.text(`Verified: ${accountVerification ? 'Yes' : 'No'}`);
+                TankTrouble.AccountOverlay.accountNewsSubscriber.text(`News Subscriber: ${accountNewsSubscriber ? 'Yes' : 'No'}`);
+                TankTrouble.AccountOverlay.accountLastLogin.text(`Last login: ${accountLastLogin ? getTimeAgo(accountLastLogin) : 'Never'}`);
+            }
+        }, () => {}, () => {}, TankTrouble.AccountOverlay.playerId, Caches.getPlayerDetailsCache());
 	});
 })();

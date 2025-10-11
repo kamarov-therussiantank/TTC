@@ -1,19 +1,5 @@
-//Visits Snippet
-function whenContentInitialized() {
-    return new Promise(resolve => {
-        const check = () => {
-            const container = document.querySelector('#secondaryContent');
-            if (container && typeof TankTrouble !== "undefined") {
-                resolve();
-            } else {
-                setTimeout(check, 100);
-            }
-        };
-        check();
-    });
-}
-
-
+// Visits Snippet
+// Displays number of visits, tank owners, online players, and games made
 whenContentInitialized().then(() => {
 
     var snippet = $(`
@@ -51,4 +37,3 @@ whenContentInitialized().then(() => {
 $('#secondaryContent').append(snippet);
 
 });
-

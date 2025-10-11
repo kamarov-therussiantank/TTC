@@ -250,6 +250,7 @@ text {
 }
 #chat:is(.opening, .open) form {
     z-index: -1 !important;
+    left: 5px;
     position: relative !important;
     padding-right: 0 !important;
     animation: moveRight 0.3s cubic-bezier(0.79, -0.02, 0.32, 0.98) forwards !important;
@@ -262,7 +263,8 @@ text {
     filter: drop-shadow(rgba(0, 0, 0, 0.5) 0px 1px 2px) !important;
 }
 .body.ui-resizable {
-    width: 305px !important;
+    width: 310px !important;
+    left: 5px;
 }
 #chat.opening textarea, #chat.open textarea {
     width: 290px !important;
@@ -473,8 +475,10 @@ span.exp-text {
     font-family: 'TankTrouble';
     font-size: 12px;
     font-weight: bold;
-    color: #fff;
-    text-shadow: -1.4px -1.4px 0 black, 1.4px -1.4px 0 black, -1.4px 1.4px 0 black, 1.4px 1.4px 0 black;
+    color: #fff;                    
+    -webkit-text-stroke: 3px black;
+    paint-order: stroke fill;
+    stroke-linejoin: round;
 }
 #tankinfo .username {
     z-index: 2;
@@ -650,8 +654,6 @@ button:disabled {
     right: -12px;
     background: #e0e0e0;
     border: 2px solid #ccc;
-    border-bottom-right-radius: 7px;
-    border-bottom-left-radius: 7px;
     box-shadow: none;
 }
 .muteUserChat-button {
@@ -665,13 +667,78 @@ button:disabled {
     border-top-left-radius: 7px;
     box-shadow: none;
 }
+.muteSystemMessages-button {
+    cursor: pointer;
+    position: absolute;
+    top: 104px;
+    right: -12px;
+    background: #e0e0e0;
+    border: 2px solid #ccc;
+    border-bottom-right-radius: 7px;
+    border-bottom-left-radius: 7px;
+    box-shadow: none;
+}
 #chat:not(.open) .clearChat-button,
 #chat:not(.open) .muteGlobalChat-button,
-#chat:not(.open) .muteUserChat-button {
+#chat:not(.open) .muteUserChat-button,
+#chat:not(.open) .muteSystemMessages-button {
     animation: disappear 0.3s cubic-bezier(0.79, 0.02, 0.32, 0.98) forwards;
 }
 #chat:is(.opening, .open) .clearChat-button,
 #chat:is(.opening, .open) .muteGlobalChat-button,
-#chat:is(.opening, .open) .muteUserChat-button {
+#chat:is(.opening, .open) .muteUserChat-button,
+#chat:is(.opening, .open) .muteSystemMessages-button {
     animation: appear 0.3s cubic-bezier(0.79, -0.02, 0.32, 0.98) forwards;
+}
+#tankinfo .glow {
+    display: none !important;
+}
+.faq.centre {
+    padding: 200px !important
+}
+#faq-content {
+    background: #fff;
+    color: #000;
+    border-radius: 10px;
+    border: #d7d7d7 3px solid;
+    padding: 10px;
+}
+#faq-header {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+#overlay .messageSpacingBottom {
+    display: none !important;
+}
+.premium.halloween #header {
+    background-image: url(https://raw.githubusercontent.com/kamarov-therussiantank/TTC/main/src/assets/images/header/background1%402x.png) !important;
+    background-size: 60px 60px !important
+}
+.premium.halloween #header {
+    background-image: url(https://raw.githubusercontent.com/kamarov-therussiantank/TTC/main/src/assets/images/header/background1.png) !important;
+    background-size: 60px 60px !important
+}
+.halloween #header {
+    background-image: url(https://raw.githubusercontent.com/kamarov-therussiantank/TTC/main/src/assets/images/header/background1%402x.png) !important;
+    background-size: 60px 60px !important
+}
+.halloween #header {
+    background-image: url(https://raw.githubusercontent.com/kamarov-therussiantank/TTC/main/src/assets/images/header/background1.png) !important;
+    background-size: 60px 60px !important
+}
+.premium.christmas #header {
+    background-image: url(https://raw.githubusercontent.com/kamarov-therussiantank/TTC/main/src/assets/images/header/background2%402x.png) !important;
+    background-size: 60px 60px !important
+}
+.premium.christmas #header {
+    background-image: url(https://raw.githubusercontent.com/kamarov-therussiantank/TTC/main/src/assets/images/header/background2.png) !important;
+    background-size: 60px 60px !important
+}
+.christmas #header {
+    background-image: url(https://raw.githubusercontent.com/kamarov-therussiantank/TTC/main/src/assets/images/header/background2%402x.png) !important;
+    background-size: 60px 60px !important
+}
+.christmas #header {
+    background-image: url(https://raw.githubusercontent.com/kamarov-therussiantank/TTC/main/src/assets/images/header/background2.png) !important;
+    background-size: 60px 60px !important
 }

@@ -1,3 +1,4 @@
+//UI Button Group
 UIButtonGroup = function(game, x, y, type, size, text, pressedFunction, context, minWidth, keyboardShortcut) {
     Phaser.Group.call(this, game, null);
     this.x = x;

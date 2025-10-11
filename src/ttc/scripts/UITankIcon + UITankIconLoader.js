@@ -1,9 +1,10 @@
-
+// UI Tank Icon and Loader
 // Load a player's tank icon
 UITankIcon.classMethod('loadPlayerTankIcon', function (canvas, size, playerId, onReady, context) {
     Backend.getInstance().getPlayerDetails(function (result) {
         if (typeof result === 'object') {
             const gmLevel = result.getGmLevel();
+            const kickstarterBacker = result.getBackAccessory();
             const turretColour = result.getTurretColour();
             const treadColour = result.getTreadColour();
             const baseColour = result.getBaseColour();
@@ -11,17 +12,10 @@ UITankIcon.classMethod('loadPlayerTankIcon', function (canvas, size, playerId, o
             const barrelAccessory = result.getBarrelAccessory();
             const frontAccessory = result.getFrontAccessory();
             const backAccessory = result.getBackAccessory();
-
             let badge = null;
             
-            if (gmLevel > 0) {
-                if (gmLevel === 0) {
-                    badge = '0';
-                } else if (gmLevel === 1) {
-                    badge = '1';
-                } else {
-                    badge = '2';
-                }
+            if (gmLevel >= 1) {
+                badge = '1';
             }
 
             const isComplete = (
@@ -30,7 +24,6 @@ UITankIcon.classMethod('loadPlayerTankIcon', function (canvas, size, playerId, o
                 frontAccessory && backAccessory
             );
 
-            // If they're not admin, don't require badge for loading
             if (!isComplete) return;
 
             UITankIcon.loadTankIcon(
@@ -42,7 +35,6 @@ UITankIcon.classMethod('loadPlayerTankIcon', function (canvas, size, playerId, o
                 context || self
             );
         } else {
-            // Load unavailable tank icon if no player data
             UITankIcon.loadTankIcon(
                 canvas, size,
                 UIConstants.TANK_UNAVAILABLE_COLOUR,
@@ -57,7 +49,6 @@ UITankIcon.classMethod('loadPlayerTankIcon', function (canvas, size, playerId, o
     }, function () {}, function () {}, playerId, Caches.getPlayerDetailsCache());
 });
 
-// Load full tank icon image with queued resources
 UITankIcon.classMethod('loadTankIcon', function (
     canvas, size,
     turretColour, treadColour, baseColour,
@@ -80,13 +71,14 @@ UITankIcon.classMethod('loadTankIcon', function (
     loader.queueAccessory(UIConstants.TANK_ICON_ACCESSORY_PARTS.TREAD, treadAccessory);
     loader.queueAccessory(UIConstants.TANK_ICON_ACCESSORY_PARTS.BACKGROUND, backgroundAccessory);
     loader.queueAccessory(UIConstants.TANK_ICON_ACCESSORY_PARTS.BADGE, badge);
+    
 
     loader.onReady(onReady, context);
     loader.start();
 });
 
 // Queue accessory image if applicable
-UITankIconLoader.method('queueAddons', function (part, accessory) {
+UITankIconLoader.method('queueTTC', function (part, accessory) {
     if (
         accessory !== null &&
         accessory !== undefined &&

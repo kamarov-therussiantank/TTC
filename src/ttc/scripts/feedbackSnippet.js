@@ -1,8 +1,7 @@
-//Visits Snippet
 function whenContentInitialized() {
     return new Promise(resolve => {
         const check = () => {
-            const container = document.querySelector('#tertiaryContent');
+            const container = document.readyState === 'complete';
             if (container && typeof TankTrouble !== "undefined") {
                 resolve();
             } else {
@@ -12,7 +11,6 @@ function whenContentInitialized() {
         check();
     });
 }
-
 
 whenContentInitialized().then(() => {
 
@@ -27,7 +25,7 @@ whenContentInitialized().then(() => {
             Urge to praise us to the skies?
             <br>
             Then give us your feedback
-            <img src="https://raw.githubusercontent.com/kamarov-therussiantank/TTCV2/main/src/assets/images/snippets/envelope.png" style="height: auto; margin-top: 10px; position: relative; left: 26px; bottom: 3px;">
+            <img src="https://raw.githubusercontent.com/kamarov-therussiantank/TTC/main/src/assets/images/snippets/envelope.png" style="height: auto; margin-top: 10px; position: relative; left: 26px; bottom: 3px;">
             </div>
     </div>
     `);
