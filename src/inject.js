@@ -19,12 +19,20 @@
 
   function applySeasonalStyles() {
     const currentMonth = new Date().getMonth();
-    let image = "";
+    let imageSelected = "";
     if (currentMonth === 9) {
-      image = "tab1Selected0-1";
+      imageSelected = "tab1Selected0-1";
     } else if (currentMonth === 11) {
-      image = "tab1Selected0-2";
+      imageSelected = "tab1Selected0-2";
     }
+
+    let imageDeselected = "";
+    if (currentMonth === 9) {
+      imageDeselected = "tab1-1";
+    } else if (currentMonth === 11) {
+      imageDeselected = "tab1-2";
+    }
+
     const hasPremium = window.hasPremium ?? false;
     const isHalloween = window.isHalloween ?? (currentMonth === 9);
     const isChristmas = window.isChristmas ?? (currentMonth === 11);
@@ -49,17 +57,17 @@
         #gameTab .deselected, 
         #gameTab .selected {
           background-image: -webkit-image-set(
-            url(https://raw.githubusercontent.com/kamarov-therussiantank/TTC/main/src/assets/images/header/${image}.png) 1x,
-            url(https://raw.githubusercontent.com/kamarov-therussiantank/TTC/main/src/assets/images/header/${image}@2x.png) 2x
-          ) !important;
-          background-image: image-set(
-            url(https://raw.githubusercontent.com/kamarov-therussiantank/TTC/main/src/assets/images/header/${image}.png) 1x,
-            url(https://raw.githubusercontent.com/kamarov-therussiantank/TTC/main/src/assets/images/header/${image}@2x.png) 2x
+            url(https://raw.githubusercontent.com/kamarov-therussiantank/TTC/main/src/assets/images/header/${imageSelected}.png) 1x,
+            url(https://raw.githubusercontent.com/kamarov-therussiantank/TTC/main/src/assets/images/header/${imageSelected}@2x.png) 2x
           ) !important;
           background-size: cover !important;
         }
 
         #gameTab .deselected {
+          background-image: image-set(
+            url(https://raw.githubusercontent.com/kamarov-therussiantank/TTC/main/src/assets/images/header/${imageDeselected}.png) 1x,
+            url(https://raw.githubusercontent.com/kamarov-therussiantank/TTC/main/src/assets/images/header/${imageDeselected}@2x.png) 2x
+          ) !important;
           padding: 60px 0 0 368px !important;
         }
       `;
