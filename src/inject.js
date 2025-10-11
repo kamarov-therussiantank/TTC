@@ -51,7 +51,7 @@
       }
     }
 
-    if (image) {
+    if (imageSelected && imageDeselected) {
       const seasonalStyle = document.createElement("style");
       seasonalStyle.textContent = `
         #gameTab .deselected, 
