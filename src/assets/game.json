@@ -37,6 +37,22 @@
     "action": {
       "type": "redirect",
       "redirect": {
+        "extensionPath": "/assets/images/game/game@2x.json"
+      }
+    },
+    "condition": {
+      "urlFilter": "https://cdn.tanktrouble.com/*/assets/images/game/game@2x.json",
+      "resourceTypes": [
+        "xmlhttprequest"
+      ]
+    }
+  },
+  {
+    "id": 4,
+    "priority": 1,
+    "action": {
+      "type": "redirect",
+      "redirect": {
         "extensionPath": "/assets/images/game/game.json"
       }
     },
