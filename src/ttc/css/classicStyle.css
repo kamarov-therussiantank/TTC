@@ -313,7 +313,7 @@ text {
 #navigation .tab.selected {
     z-index: 1;
     filter: drop-shadow(rgba(0, 0, 0, 0.5) 0px 0px 4px);
-    margin: 0 -6px;
+    margin: 0 -3px;
 }
 #navigation .tab img.deselected {
     margin: 0 3px;
@@ -457,6 +457,23 @@ button.warning {
     background: repeating-linear-gradient(0deg, #3475dd, #649cf7 30px) !important;
     height: 100%;
 }
+.exp-text {
+  position: absolute;
+  font-family: 'TankTrouble';
+  font-size: 12px;
+  font-weight: bold;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  width: 100%;
+  font-weight: bold;
+  color: white;
+  -webkit-text-stroke: 3px black;
+  paint-order: stroke fill;
+  stroke-linejoin: round;
+  pointer-events: none;
+}
 .about-container {
     position: relative;
     z-index: 2;
@@ -467,18 +484,6 @@ button.warning {
     z-index: 2;
     font-size: 12px;
     margin: 20px 0 20px 0;
-}
-span.exp-text {
-    position: absolute;
-    top: 5px;
-    left: 32%;
-    font-family: 'TankTrouble';
-    font-size: 12px;
-    font-weight: bold;
-    color: #fff;                    
-    -webkit-text-stroke: 3px black;
-    paint-order: stroke fill;
-    stroke-linejoin: round;
 }
 #tankinfo .username {
     z-index: 2;

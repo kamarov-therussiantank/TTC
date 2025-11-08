@@ -65,45 +65,9 @@ Loader.interceptFunction(TankTrouble.TankInfoBox, 'show', (original, ...args) =>
             if (classicPlayer && classicPlayer > 0) {
                 TankTrouble.TankInfoBox.infoExpDiv.show();
 
-			// Define tiers
-			const tiers = [
-    			{ name: 'Recruit',   min: 0,       max: 109 },
-    			{ name: 'Corporal',  min: 100,     max: 1099 },
-    			{ name: 'Sergeant', min: 1000,    max: 10999 },
-    			{ name: 'Captain',    min: 10000,   max: 109999 },
-    			{ name: 'Colonel',  min: 100000,  max: 599999 },
-    			{ name: 'Marshal',   min: 500000, max: Infinity },
-				{ name: 'Legend',   min: 1000000, max: Infinity },
-			];
-
-			// Find current tier
-			let currentTier = tiers.slice().reverse().find(t => exp >= t.min) || tiers[0];
-			const currentMin = currentTier.min;
-			const currentMax = currentTier.max;
-
-			// For Infinity max, set progress as 100%
-			let progressPercent;
-			let requiredPoints;
-			if (currentMax === Infinity) {
-   				progressPercent = 100;
-    			requiredPoints = 'Maxed out';
-			} else {
-    			requiredPoints = currentMax - currentMin + 1;
-    			progressPercent = Math.min(100, ((exp - currentMin) / requiredPoints) * 100);
-			}
-
 			// Update the bar and text
-			TankTrouble.TankInfoBox.infoExpBar.css({ width: `${progressPercent}%` });
-			TankTrouble.TankInfoBox.infoExpText.text(currentTier.name);
-
-			// Tooltip with breakdown
-			TankTrouble.TankInfoBox.infoExpDiv.tooltipster(
-    			'content',
-    			`Classic EXP\n(${exp}/${requiredPoints})`
-			);
-
-                // Keep label centered
-                TankTrouble.TankInfoBox.infoExpText[0].style.left = '39%';
+			TankTrouble.TankInfoBox.infoExpText.text(`${exp}`);
+			
             } else {
                 TankTrouble.TankInfoBox.infoExpDiv.hide();
             }
