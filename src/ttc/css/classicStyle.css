@@ -142,17 +142,23 @@ text {
     font-weight: 800;
 }
 .snippet.standard,
-#visitsSnippet,
 #modActivitySnippet {
   background: #ffffff !important;
   color: #666;
   font-family: Arial, sans-serif;
   border: 2px solid #d3d3d3;
   border-radius: 5px;
-  width: 116px !important;
+}
+#visitsSnippet {
+  background: #ffffff !important;
+  color: #666;
+  font-family: Arial, sans-serif;
+  border: 2px solid #d3d3d3;
+  border-radius: 5px;
+  width: 117px !important;
 }
 #modActivitySnippet {
-  height: 173px !important;
+  height: 170px !important;
   width: 120px !important;
 }
 #FAQSnippet,
@@ -190,6 +196,9 @@ text {
   margin-bottom: 6px;
   font-size: 12px;
 }	
+#toggleStats {
+   margin-top: 5px;
+}
 #stats1 {
    margin-top: 10px;
 }

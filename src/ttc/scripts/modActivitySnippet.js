@@ -84,7 +84,26 @@ whenContentInitialized().then(() => {
         });
     }
 
+    let nextRefreshTimestamp = null;
+
+    function scheduleNextRealTimeRefresh() {
+        const now = Date.now();
+        const nextMinute = new Date(now);
+
+        nextMinute.setSeconds(0);
+        nextMinute.setMilliseconds(0);
+        nextMinute.setMinutes(nextMinute.getMinutes() + 1);
+
+        nextRefreshTimestamp = nextMinute.getTime();
+        const delay = nextRefreshTimestamp - now;
+
+        setTimeout(() => {
+            fetchModDataAndUpdateUI();
+            scheduleNextRealTimeRefresh();
+        }, delay);
+    }
     fetchModDataAndUpdateUI();
+    scheduleNextRealTimeRefresh();
+
     setInterval(updateTimeAgoEntries, 60000);
-    setInterval(fetchModDataAndUpdateUI, 60000);
 });
