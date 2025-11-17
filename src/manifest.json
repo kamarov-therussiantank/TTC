@@ -1,7 +1,7 @@
 {
 	"name": "TTC",
 	"author": "kamarov",
-	"version": "2.6.7",
+	"version": "2.6.8",
 	"manifest_version": 3,
 	"description": "TTC - Timeless mayhem - the blast from the past!",
 	"icons": {
@@ -74,7 +74,7 @@
 	"content_scripts": [
 		{
 			"matches": ["*://*.tanktrouble.com/*"],
-			"js": ["inject.js", "ttc/utils/gameUtils.js", "ttc/utils/timeUtils.js", "ttc/scripts/UIButtonGroup.js", "ttc/scripts/settings.js", "ttc/scripts/additionalPlayerDetails.js", "ttc/scripts/visitsSnippet.js", "ttc/scripts/FAQSnippet.js", "ttc/scripts/modActivitySnippet.js", "ttc/scripts/tellAFriendSnippet.js", "ttc/scripts/feedbackSnippet.js", "ttc/scripts/UIConstants.js", "ttc/scripts/QualityManager.js", "ttc/scripts/UITankIcon + UITankIconLoader.js", "ttc/scripts/chatAdditions.js", "ttc/scripts/UITankSprite.js", "ttc/scripts/UIScoreGroup.js", "ttc/scripts/UIMineSprite.js", "ttc/scripts/UIEmitter.js", "ttc/scripts/UICountDownImage.js", "ttc/scripts/constants.js"],
+			"js": ["inject.js", "ttc/utils/gameUtils.js", "ttc/utils/timeUtils.js", "ttc/scripts/UIButtonGroup.js", "ttc/scripts/UIGameIconImage + Settings.js", "ttc/scripts/additionalPlayerDetails.js", "ttc/scripts/visitsSnippet.js", "ttc/scripts/FAQSnippet.js", "ttc/scripts/modActivitySnippet.js", "ttc/scripts/tellAFriendSnippet.js", "ttc/scripts/feedbackSnippet.js", "ttc/scripts/UIConstants.js", "ttc/scripts/QualityManager.js", "ttc/scripts/UITankIcon + UITankIconLoader.js", "ttc/scripts/chatAdditions.js", "ttc/scripts/UITankSprite.js", "ttc/scripts/UIScoreGroup.js", "ttc/scripts/UIMineSprite.js", "ttc/scripts/UIEmitter.js", "ttc/scripts/UICountDownImage.js", "ttc/scripts/constants.js"],
 			"css": ["ttc/css/classicStyle.css"],
 			"run_at": "document_idle",
             "world": "MAIN"
