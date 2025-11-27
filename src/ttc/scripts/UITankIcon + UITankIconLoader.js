@@ -4,7 +4,6 @@ UITankIcon.classMethod('loadPlayerTankIcon', function (canvas, size, playerId, o
     Backend.getInstance().getPlayerDetails(function (result) {
         if (typeof result === 'object') {
             const gmLevel = result.getGmLevel();
-            const kickstarterBacker = result.getBackAccessory();
             const turretColour = result.getTurretColour();
             const treadColour = result.getTreadColour();
             const baseColour = result.getBaseColour();
@@ -57,13 +56,9 @@ UITankIcon.classMethod('loadTankIcon', function (
     onReady, context
 ) {
     const loader = UITankIconLoader.create(canvas, size);
-
-    // Queue colour parts
     loader.queueColour(UIConstants.TANK_ICON_TINT_PARTS.TURRET, turretColour);
     loader.queueColour(UIConstants.TANK_ICON_TINT_PARTS.TREAD, treadColour);
     loader.queueColour(UIConstants.TANK_ICON_TINT_PARTS.BASE, baseColour);
-
-    // Queue accessory parts
     loader.queueAccessory(UIConstants.TANK_ICON_ACCESSORY_PARTS.TURRET, turretAccessory);
     loader.queueAccessory(UIConstants.TANK_ICON_ACCESSORY_PARTS.BARREL, barrelAccessory);
     loader.queueAccessory(UIConstants.TANK_ICON_ACCESSORY_PARTS.FRONT, frontAccessory);
@@ -71,13 +66,10 @@ UITankIcon.classMethod('loadTankIcon', function (
     loader.queueAccessory(UIConstants.TANK_ICON_ACCESSORY_PARTS.TREAD, treadAccessory);
     loader.queueAccessory(UIConstants.TANK_ICON_ACCESSORY_PARTS.BACKGROUND, backgroundAccessory);
     loader.queueAccessory(UIConstants.TANK_ICON_ACCESSORY_PARTS.BADGE, badge);
-    
-
     loader.onReady(onReady, context);
     loader.start();
 });
 
-// Queue accessory image if applicable
 UITankIconLoader.method('queueTTC', function (part, accessory) {
     if (
         accessory !== null &&
@@ -88,7 +80,6 @@ UITankIconLoader.method('queueTTC', function (part, accessory) {
     }
 });
 
-// Draw the tank icon to a canvas
 UITankIcon.classMethod('drawTankIcon', function (
     canvas,
     turretColour, treadColour, baseColour,
@@ -98,8 +89,6 @@ UITankIcon.classMethod('drawTankIcon', function (
     treadAccessory, backgroundAccessory, badge
 ) {
     const context = canvas.getContext('2d');
-
-    // Resize buffers if necessary
     if (canvas.width !== this.compositedBuffer.width || canvas.height !== this.compositedBuffer.height) {
         this.compositedBuffer.width = canvas.width;
         this.compositedBuffer.height = canvas.height;
@@ -116,7 +105,6 @@ UITankIcon.classMethod('drawTankIcon', function (
     const tintedContext = this.tintedBuffer.getContext('2d');
     tintedContext.clearRect(0, 0, canvas.width, canvas.height);
 
-    // Draw layers in order
     if (backAccessory instanceof HTMLImageElement) {
         compositedContext.drawImage(backAccessory, 0, 0, canvas.width, canvas.height);
     }
@@ -144,14 +132,12 @@ UITankIcon.classMethod('drawTankIcon', function (
     drawLayer(treadColour, rightTread, rightTreadShade);
     drawLayer(turretColour, barrel, barrelShade);
 
-    // Draw accessories
     [turretAccessory, frontAccessory, barrelAccessory, badge].forEach(image => {
         if (image instanceof HTMLImageElement) {
             compositedContext.drawImage(image, 0, 0, canvas.width, canvas.height);
         }
     });
 
-    // Outline buffer drawing
     if (canvas.width !== this.outlineBuffer.width || canvas.height !== this.outlineBuffer.height) {
         this.outlineBuffer.width = canvas.width;
         this.outlineBuffer.height = canvas.height;
@@ -176,7 +162,6 @@ UITankIcon.classMethod('drawTankIcon', function (
         context.drawImage(this.compositedBuffer, 0, 0);
 });
 
-// Internal function to queue image resources
 UITankIconLoader.method('_queueImage', function (basePath, part, image, output, customKey) {
     const key = customKey !== undefined ? customKey : part;
     const cacheKey = part + image + '-' + this.size;

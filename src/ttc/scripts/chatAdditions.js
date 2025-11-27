@@ -1,17 +1,3 @@
-function whenContentInitialized() {
-    return new Promise(resolve => {
-        const check = () => {
-            const container = document.readyState === 'complete';
-            if (container && typeof TankTrouble !== "undefined") {
-                resolve();
-            } else {
-                setTimeout(check, 100);
-            }
-        };
-        check();
-    });
-}
-
 whenContentInitialized().then(() => {
     const container = document.querySelector('#chat');
     if (!container) return;
