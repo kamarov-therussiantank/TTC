@@ -4,6 +4,7 @@ UITankIcon.classMethod('loadPlayerTankIcon', function (canvas, size, playerId, o
     Backend.getInstance().getPlayerDetails(function (result) {
         if (typeof result === 'object') {
             const gmLevel = result.getGmLevel();
+            const username = result.getUsername();
             const turretColour = result.getTurretColour();
             const treadColour = result.getTreadColour();
             const baseColour = result.getBaseColour();
@@ -12,10 +13,33 @@ UITankIcon.classMethod('loadPlayerTankIcon', function (canvas, size, playerId, o
             const frontAccessory = result.getFrontAccessory();
             const backAccessory = result.getBackAccessory();
             let badge = null;
-            
-            if (gmLevel >= 1) {
+
+            Backend.getInstance().ajax.getBackers(backerResult => {
+
+            const backers = backerResult.result.data;
+            let badge = null;
+
+            const admin = gmLevel >= 1;
+            const kicktarter = backers.includes(username);
+
+            if (kicktarter && admin) {
+                badge = '3';
+            } else if (kicktarter) {
+                badge = '2';
+            } else if (admin) {
                 badge = '1';
             }
+
+            UITankIcon.loadTankIcon(
+                canvas, size,
+                turretColour, treadColour, baseColour,
+                turretAccessory, barrelAccessory, frontAccessory, backAccessory,
+                null, null, badge,
+                onReady || function () {},
+                context || self
+            );
+
+        });
 
             const isComplete = (
                 turretColour && treadColour && baseColour &&
