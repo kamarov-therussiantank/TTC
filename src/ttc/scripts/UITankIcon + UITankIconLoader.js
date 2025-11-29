@@ -12,7 +12,6 @@ UITankIcon.classMethod('loadPlayerTankIcon', function (canvas, size, playerId, o
             const barrelAccessory = result.getBarrelAccessory();
             const frontAccessory = result.getFrontAccessory();
             const backAccessory = result.getBackAccessory();
-            let badge = null;
 
             const isComplete = (
                 turretColour && treadColour && baseColour &&
@@ -22,26 +21,17 @@ UITankIcon.classMethod('loadPlayerTankIcon', function (canvas, size, playerId, o
 
             if (!isComplete) return;
 
-            UITankIcon.loadTankIcon(
-                canvas, size,
-                turretColour, treadColour, baseColour,
-                turretAccessory, barrelAccessory, frontAccessory, backAccessory,
-                null, null, badge,
-                onReady || function () {},
-                context || self
-            );
-
             Backend.getInstance().ajax.getBackers(backerResult => {
 
             const backers = backerResult.result.data;
             let badge = null;
 
             const admin = gmLevel >= 1;
-            const kicktarter = backers.includes(username);
+            const kickstarter = backers.includes(username);
 
-            if (kicktarter && admin) {
+            if (kickstarter && admin) {
                 badge = '3';
-            } else if (kicktarter) {
+            } else if (kickstarter) {
                 badge = '2';
             } else if (admin) {
                 badge = '1';
