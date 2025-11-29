@@ -30,7 +30,7 @@ UITankIcon.classMethod('loadPlayerTankIcon', function (canvas, size, playerId, o
             const kickstarter = backers.includes(username);
 
             if (kickstarter && admin) {
-                badge = '3';
+                badge = '1';
             } else if (kickstarter) {
                 badge = '2';
             } else if (admin) {
