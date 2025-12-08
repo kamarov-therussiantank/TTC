@@ -475,5 +475,33 @@
       "urlFilter": "https://cdn.tanktrouble.com/*/assets/images/tankInfo/victories.png",
       "resourceTypes": ["image"]
     }
+  },
+  {
+    "id": 35,
+    "priority": 1,
+    "action": {
+      "type": "redirect",
+      "redirect": {
+        "extensionPath": "/assets/images/tankInfo/unseenMarker.png"
+      }
+    },
+    "condition": {
+      "urlFilter": "https://cdn.tanktrouble.com/*/assets/images/tankInfo/unseenMarker.png",
+      "resourceTypes": ["image"]
+    }
+  },
+  {
+    "id": 36,
+    "priority": 1,
+    "action": {
+      "type": "redirect",
+      "redirect": {
+        "extensionPath": "/assets/images/tankInfo/unseenMarker@2x.png"
+      }
+    },
+    "condition": {
+      "urlFilter": "https://cdn.tanktrouble.com/*/assets/images/tankInfo/unseenMarker@2x.png",
+      "resourceTypes": ["image"]
+    }
   }
 ]

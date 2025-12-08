@@ -308,23 +308,23 @@ TankTrouble.SettingsBox = {
         }
         this.settingsServerForm.append(this.settingsServerSelect);
 
-        for (var i = 0; i < this.settingsQualityOptions.length; ++i) {
-            this.settingsQualitySelect.append(this.settingsQualityOptions[i]);
-        }
-        this.settingsQualityForm.append(this.settingsQualitySelect);
-
         for (var i = 0; i < this.settingsGameCountOptions.length; ++i) {
             this.settingsGameCountSelect.append(this.settingsGameCountOptions[i]);
         }
         this.settingsGameCountForm.append(this.settingsGameCountSelect);
 
+        for (var i = 0; i < this.settingsQualityOptions.length; ++i) {
+            this.settingsQualitySelect.append(this.settingsQualityOptions[i]);
+        }
+        this.settingsQualityForm.append(this.settingsQualitySelect);
+
         this.settingsContent.append(this.settingsTabTop);
         this.settingsContent.append(this.settingsServerTitleDiv);
         this.settingsContent.append(this.settingsServerForm);
-        this.settingsContent.append(this.settingsQualityTitleDiv);
-        this.settingsContent.append(this.settingsQualityForm);
         this.settingsContent.append(this.settingsGameCountDiv);
         this.settingsContent.append(this.settingsGameCountForm);
+        this.settingsContent.append(this.settingsQualityTitleDiv);
+        this.settingsContent.append(this.settingsQualityForm);
 
         this.settings.append(this.settingsContent);
         $("body").append(this.settingsBackground);
@@ -344,7 +344,7 @@ TankTrouble.SettingsBox = {
         this.settingsQualitySelect.css("width", UIConstants.SETTINGS_WIDTH - 10);
         this.settingsQualitySelect.css("height", UIConstants.SETTINGS_QUALITY_SELECT_HEIGHT);
         this.settingsGameCountSelect.css("width", UIConstants.SETTINGS_WIDTH - 10);
-        this.settingsGameCountSelect.css("height", UIConstants.SETTINGS_QUALITY_SELECT_HEIGHT);
+        this.settingsGameCountSelect.css("height", UIConstants.SETTINGS_GAME_COUNT_SELECT_HEIGHT);
 
         if (Cookies.get('multiplayerserverid')) {
             this.settingsServerSelect.val(Cookies.get('multiplayerserverid'));
@@ -377,7 +377,7 @@ TankTrouble.SettingsBox = {
             change: function(event, ui) {
                 self._changeGameCount(event, ui);
             }
-        }).iconselectmenu("menuWidget").addClass("ui-menu-icons").css("max-height", UIConstants.SETTINGS_QUALITY_MAX_OPTION_HEIGHT);
+        }).iconselectmenu("menuWidget").addClass("ui-menu-icons").css("max-height", UIConstants.SETTINGS_GAME_COUNT_MAX_OPTION_HEIGHT);
 
         this.initialized = true;
         QualityManager.addEventListener(this._qualityEventHandler, this);

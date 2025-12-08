@@ -41,11 +41,11 @@
 }
 .premium #header {
     background-image: url(../assets/images/header/background.png) !important;
-    background-size: 60px 60px !important;
+    background-size: 80px 80px !important;
 }
 #header {
     background-image: url(../assets/images/header/background.png);
-    background-size: 60px 60px !important;
+    background-size: 80px 80px !important;
 }
 #contentWrapper {
   margin-top: 0 !important;
@@ -726,33 +726,33 @@ button:disabled {
 }
 .premium.halloween #header {
     background-image: url(https://raw.githubusercontent.com/kamarov-therussiantank/TTC/main/src/assets/images/header/background1%402x.png) !important;
-    background-size: 60px 60px !important
+    background-size: 80px 80px !important
 }
 .premium.halloween #header {
     background-image: url(https://raw.githubusercontent.com/kamarov-therussiantank/TTC/main/src/assets/images/header/background1.png) !important;
-    background-size: 60px 60px !important
+    background-size: 80px 80px !important
 }
 .halloween #header {
     background-image: url(https://raw.githubusercontent.com/kamarov-therussiantank/TTC/main/src/assets/images/header/background1%402x.png) !important;
-    background-size: 60px 60px !important
+    background-size: 80px 80px !important
 }
 .halloween #header {
     background-image: url(https://raw.githubusercontent.com/kamarov-therussiantank/TTC/main/src/assets/images/header/background1.png) !important;
-    background-size: 60px 60px !important
+    background-size: 80px 80px !important
 }
 .premium.christmas #header {
     background-image: url(https://raw.githubusercontent.com/kamarov-therussiantank/TTC/main/src/assets/images/header/background2%402x.png) !important;
-    background-size: 60px 60px !important
+    background-size: 80px 80px !important
 }
 .premium.christmas #header {
     background-image: url(https://raw.githubusercontent.com/kamarov-therussiantank/TTC/main/src/assets/images/header/background2.png) !important;
-    background-size: 60px 60px !important
+    background-size: 80px 80px !important
 }
 .christmas #header {
     background-image: url(https://raw.githubusercontent.com/kamarov-therussiantank/TTC/main/src/assets/images/header/background2%402x.png) !important;
-    background-size: 60px 60px !important
+    background-size: 80px 80px !important
 }
 .christmas #header {
     background-image: url(https://raw.githubusercontent.com/kamarov-therussiantank/TTC/main/src/assets/images/header/background2.png) !important;
-    background-size: 60px 60px !important
+    background-size: 80px 80px !important
 }
