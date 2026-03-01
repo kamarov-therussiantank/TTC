@@ -18,8 +18,8 @@ UITankIconScoreGroup = function(game) {
     this.items = null;
     this.centerIndex = null;
     this.log = Log.create('UITankIconScoreGroup');
-}
-;
+};
+
 UITankIconScoreGroup.prototype = Object.create(Phaser.Group.prototype);
 UITankIconScoreGroup.prototype.constructor = UITankIconScoreGroup;
 UITankIconScoreGroup.prototype._gameEventHandler = function(self, id, evt, data) {
@@ -36,8 +36,8 @@ UITankIconScoreGroup.prototype._gameEventHandler = function(self, id, evt, data)
             break;
         }
     }
-}
-;
+};
+
 UITankIconScoreGroup.prototype._clientStateChangeHandler = function(self, oldState, newState, data, msg) {
     self.log.debug("Client state: " + newState + ": " + msg);
     switch (newState) {
@@ -47,8 +47,8 @@ UITankIconScoreGroup.prototype._clientStateChangeHandler = function(self, oldSta
             break;
         }
     }
-}
-;
+};
+
 UITankIconScoreGroup.prototype._updateItemsWithLatestGameState = function() {
     if (!this.game) {
         return;
@@ -136,8 +136,8 @@ UITankIconScoreGroup.prototype._updateItemsWithLatestGameState = function() {
         }
         this._updateItemPositions(true);
     }
-}
-;
+};
+
 UITankIconScoreGroup.prototype._updateItemPositions = function(animate) {
     var centerItem = this.items[this.centerIndex];
     this._updateItemPosition(centerItem, 0, animate);
@@ -160,8 +160,8 @@ UITankIconScoreGroup.prototype._updateItemPositions = function(animate) {
         this._updateItemPosition(item, itemX, animate);
         offsetX += itemWidth + 2 * itemPadding;
     }
-}
-;
+};
+
 UITankIconScoreGroup.prototype._updateItemPosition = function(item, posX, animate) {
     if (animate) {
         this.game.add.tween(item.displayObject).to({
@@ -170,8 +170,7 @@ UITankIconScoreGroup.prototype._updateItemPosition = function(item, posX, animat
     } else {
         item.displayObject.x = posX;
     }
-}
-;
+};
 UITankIconScoreGroup.prototype._updateScore = function(item, newValue) {
     var textField = item.displayObject;
     var oldValue = textField.text;
@@ -189,8 +188,8 @@ UITankIconScoreGroup.prototype._updateScore = function(item, newValue) {
         }
     }
     textField.setText(newValue);
-}
-;
+};
+
 UITankIconScoreGroup.prototype._updateEmblem = function(item, show) {
     if (show) {
         if (item.removeTween) {
@@ -213,29 +212,29 @@ UITankIconScoreGroup.prototype._updateEmblem = function(item, show) {
         }, UIConstants.ELEMENT_GLIDE_OUT_TIME, Phaser.Easing.Linear.None);
         item.removeTween.start();
     }
-}
-;
+};
+
 UITankIconScoreGroup.prototype._clearItems = function() {
     this.latestGameState = null;
     this.items = null;
     this.centerIndex = null;
     this.itemGroup.setAll('pendingDestroy', true);
-}
-;
+};
+
 UITankIconScoreGroup.prototype.update = function() {
     if (!this.exists) {
         return;
     }
     Phaser.Group.prototype.update.call(this);
-}
-;
+};
+
 UITankIconScoreGroup.prototype.postUpdate = function() {
     if (!this.exists) {
         return;
     }
     Phaser.Group.prototype.postUpdate.call(this);
-}
-;
+};
+
 UITankIconScoreGroup.prototype.spawn = function(x, y, playerId) {
     this.exists = true;
     this.visible = true;
@@ -251,8 +250,8 @@ UITankIconScoreGroup.prototype.spawn = function(x, y, playerId) {
         x: 1.0,
         y: 1.0
     }, UIConstants.ELEMENT_POP_IN_TIME, Phaser.Easing.Back.Out, true, delay);
-}
-;
+};
+
 UITankIconScoreGroup.prototype.refresh = function(x, y) {
     if (x !== undefined) {
         this.game.add.tween(this).to({
@@ -264,8 +263,8 @@ UITankIconScoreGroup.prototype.refresh = function(x, y) {
             y: y
         }, UIConstants.ELEMENT_MOVE_TIME, Phaser.Easing.Quadratic.InOut, true);
     }
-}
-;
+};
+
 UITankIconScoreGroup.prototype.remove = function() {
     this.removeTween = this.game.add.tween(this.scale).to({
         x: 0.0,
@@ -276,13 +275,12 @@ UITankIconScoreGroup.prototype.remove = function() {
         this.exists = false;
         this.visible = false;
     }, this);
-}
-;
+};
+
 UITankIconScoreGroup.prototype.retire = function() {
     this._clearItems();
     this.exists = false;
     this.visible = false;
     GameManager.removeGameEventListener(this._gameEventHandler, this);
     ClientManager.getClient().removeStateChangeListener(this._clientStateChangeHandler, this);
-}
-;
+};

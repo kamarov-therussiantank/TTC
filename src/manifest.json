@@ -1,9 +1,9 @@
 {
 	"name": "TTC",
 	"author": "kamarov",
-	"version": "2.7.3",
+	"version": "2.8.0",
 	"manifest_version": 3,
-	"description": "TTC - Timeless mayhem - the blast from the past!",
+	"description": "TTC - Dive into the retro mayhem once again!",
 	"icons": {
 		"128": "icon/icon128.png"
 	},
@@ -13,45 +13,50 @@
 			{
 				"id": "1",
 				"enabled": true,
-				"path": "assets/colours.json"
+				"path": "assets/accessories.json"
 			},
 			{
 				"id": "2",
 				"enabled": true,
-				"path": "assets/game.json"
+				"path": "assets/colours.json"
 			},
 			{
 				"id": "3",
 				"enabled": true,
-				"path": "assets/garage.json"
+				"path": "assets/game.json"
 			},
 			{
 				"id": "4",
 				"enabled": true,
-				"path": "assets/boxes.json"
+				"path": "assets/garage.json"
 			},
 			{
 				"id": "5",
 				"enabled": true,
-				"path": "assets/other.json"
+				"path": "assets/boxes.json"
 			},
 			{
 				"id": "6",
 				"enabled": true,
-				"path": "assets/inputs.json"
+				"path": "assets/other.json"
 			},
 			{
 				"id": "7",
 				"enabled": true,
-				"path": "assets/audio.json"
+				"path": "assets/inputs.json"
 			},
 			{
 				"id": "8",
 				"enabled": true,
-				"path": "assets/tankInfo.json"
+				"path": "assets/audio.json"
 			},
 			{
 				"id": "9",
+				"enabled": true,
+				"path": "assets/tankInfo.json"
+			},
+			{
+				"id": "10",
 				"enabled": true,
 				"path": "assets/forum.json"
 			}
@@ -74,7 +79,30 @@
 	"content_scripts": [
 		{
 			"matches": ["*://*.tanktrouble.com/*"],
-			"js": ["ttc/utils/gameUtils.js", "ttc/utils/timeUtils.js", "ttc/scripts/Styles + Themes.js", "ttc/scripts/UIButtonGroup.js", "ttc/scripts/UIGameIconImage + Settings.js", "ttc/scripts/additionalAccountDetails.js", "ttc/scripts/additionalPlayerDetails.js", "ttc/scripts/visitsSnippet.js", "ttc/scripts/FAQSnippet.js", "ttc/scripts/modActivitySnippet.js", "ttc/scripts/tellAFriendSnippet.js", "ttc/scripts/feedbackSnippet.js", "ttc/scripts/UIConstants.js", "ttc/scripts/QualityManager.js", "ttc/scripts/UITankIcon + UITankIconLoader.js", "ttc/scripts/chatAdditions.js", "ttc/scripts/UITankSprite.js", "ttc/scripts/UIScoreGroup.js", "ttc/scripts/UIMineSprite.js", "ttc/scripts/UIEmitter.js", "ttc/scripts/UICountDownImage.js", "ttc/scripts/Constants.js"],
+			"js": [
+			 "ttc/utils/gameUtils.js",
+			 "ttc/utils/timeUtils.js",
+			 "ttc/scripts/Styles + Themes.js",
+			 "ttc/scripts/visitsSnippet.js",
+			 "ttc/scripts/FAQSnippet.js",
+			 "ttc/scripts/leaderboardSnippet.js",
+			 "ttc/scripts/modActivitySnippet.js",
+			 "ttc/scripts/tellAFriendSnippet.js",
+			 "ttc/scripts/feedbackSnippet.js",
+			 "ttc/scripts/gameIconLoader.js",
+			 "ttc/scripts/tankIconLoader.js",
+			 "ttc/scripts/settingsAdditions.js",
+			 "ttc/scripts/forumAdditions.js",
+			 "ttc/scripts/chatAdditions.js",
+			 "ttc/scripts/additionalPlayerDetails.js",
+			 "ttc/scripts/UIConstants.js",
+			 "ttc/scripts/UITankSprite.js",
+			 "ttc/scripts/UIMineSprite.js",
+			 "ttc/scripts/UIEmitter.js",
+			 "ttc/scripts/UIButtonGroup.js",
+			 "ttc/scripts/UIScoreGroup.js",
+			 "ttc/scripts/countdownImageLoader.js"
+			],
 			"css": ["ttc/css/classicStyle.css"],
 			"run_at": "document_idle",
             "world": "MAIN"

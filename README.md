@@ -11,11 +11,11 @@
 
 </div>
 
-TTC aka Tanktrouble Classic (extension edition) is an extension which seeks to reconstruct the visual aesthetic of [TankTrouble Classic](https://classic.tanktrouble.com) — to bring the old to the new.
+TTC aka Tanktrouble Classic (extension edition) is an extension which seeks to reconstruct the visual aesthetic of [TankTrouble Classic](https://classic.tanktrouble.com) in the modern world of TankTrouble. 
 
 ## What does the extension bring?
 
-TTC extension is the based on the [Classic TankTrouble](https://classic.tanktrouble.com/), very first version of this beautiful game called [TankTrouble](https://tanktrouble.com/). As the time passed TankTrouble improved alot. Each update brought something new to it. As the uptades were happening, Classic TankTrouble got completely replaced. Fear of losing it forever. I have made something that will try to bring the old TankTrouble graphics back to life as much as possible, I have made this extension.
+TTC extension is the based on the [Classic TankTrouble](https://classic.tanktrouble.com/), very first version of this beautiful game called [TankTrouble](https://tanktrouble.com/). As the time passed, TankTrouble was improving rapidly each day. Each update brought something new to it. As the uptades were happening, Classic TankTrouble got completely replaced by the Online version. Fear of losing it forever. I have made this extension to keep up the old. TTC replaces current visuals with the old classic looking ones completely! and not only that, TTC adds new features as well! 
 
 ## Installation
 

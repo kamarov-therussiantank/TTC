@@ -1,12 +1,11 @@
 // Visits Snippet
-// Displays number of visits, tank owners, online players, and games made
 whenContentInitialized().then(() => {
 
     const snippet = $(`
     <div id="visitsSnippet" class="snippet">
         <div class="header">Visits</div>
         <div id="stats1">
-            Since 2007-12-16
+            Since 2007-12-16:
             <div id="visits">Fetching...</div>
             Tank Owners:
             <div id="tankOwners">...</div>

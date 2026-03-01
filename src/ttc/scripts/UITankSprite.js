@@ -1,5 +1,4 @@
 //UI Tank Sprite
-//UI Tank in-game sprites and animations
 UITankSprite = function(game, gameController, emptyBarrelSounds, fireBulletSounds, fireLaserSound, fireShotgunSound, fireMissileSound, fireMineSound, chargeGatlingGunSound, holdGatlingGunSound, dischargeGatlingGunSound, pickupLaserSound, pickupDoubleBarrelSound, pickupShotgunSound, pickupMissileSound, pickupMineSound, pickupGatlingGunSound, pickupShieldSound, loadWeaponSound, dustEmitter, launchEmitter) {
     Phaser.Sprite.call(this, game, 0, 0, 'game', 'base');
     this.gameController = gameController;
@@ -31,13 +30,13 @@ UITankSprite = function(game, gameController, emptyBarrelSounds, fireBulletSound
     this.body.collides([UIUtils.fragmentCollisionGroup, UIUtils.rayCollisionGroup]);
     this.scale.setTo(UIConstants.GAME_ASSET_SCALE, UIConstants.GAME_ASSET_SCALE);
     this.leftTread = this.addChild(new Phaser.Image(game,UIConstants.TANK_LEFT_TREAD_X,0,'game','tread'));
-    this.leftTread.anchor.setTo(0.4, 0.5);
+    this.leftTread.anchor.setTo(0.3, 0.5);
     this.leftTreadShade = this.addChild(new Phaser.Image(game,UIConstants.TANK_LEFT_TREAD_X,0,'game','treadShade0'));
-    this.leftTreadShade.anchor.setTo(0.4, 0.5);
+    this.leftTreadShade.anchor.setTo(0.3, 0.5);
     this.rightTread = this.addChild(new Phaser.Image(game,UIConstants.TANK_RIGHT_TREAD_X,0,'game','tread'));
-    this.rightTread.anchor.setTo(0.6, 0.5);
+    this.rightTread.anchor.setTo(0.4, 0.5);
     this.rightTreadShade = this.addChild(new Phaser.Image(game,UIConstants.TANK_RIGHT_TREAD_X,0,'game','treadShade0'));
-    this.rightTreadShade.anchor.setTo(0.6, 0.5);
+    this.rightTreadShade.anchor.setTo(0.4, 0.5);
     this.turret = this.addChild(new Phaser.Image(game,0,UIConstants.TANK_TURRET_Y,'game','turret0'));
     this.turret.animations.add('idleBullet', ['turret0'], 24, false);
     this.turret.animations.add('fireBullet', ['turret1', 'turret2'], 24, false).onComplete.add(function() {

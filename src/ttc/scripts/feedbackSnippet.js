@@ -1,5 +1,5 @@
+// Feedback Snippet
 whenContentInitialized().then(() => {
-
     var snippet = $(`
     <div id="feedbackSnippet" class="snippet">
             <div class="header">Got Feedback?</div>
@@ -15,12 +15,9 @@ whenContentInitialized().then(() => {
             </div>
     </div>
     `);
-
-    var content = $('<div></div>');
-
+ var content = $('<div></div>');
  snippet.append(content);
 $('#tertiaryContent').append(snippet);
-
 $("#feedbackSnippet").mousedown(function(event) {
         if (Users.hasAdminRole(UIConstants.ADMIN_ROLE_WRITE_MESSAGES)) {
             OverlayManager.pushOverlay(

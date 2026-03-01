@@ -503,5 +503,89 @@
       "urlFilter": "https://cdn.tanktrouble.com/*/assets/images/tankInfo/unseenMarker@2x.png",
       "resourceTypes": ["image"]
     }
+  },
+  {
+    "id": 37,
+    "priority": 1,
+    "action": {
+      "type": "redirect",
+      "redirect": {
+        "extensionPath": "/assets/images/tankInfo/placeholder-140.png"
+      }
+    },
+    "condition": {
+      "urlFilter": "https://cdn.tanktrouble.com/*/assets/images/tankIcon/placeholder-140.png",
+      "resourceTypes": ["image"]
+    }
+  },
+  {
+    "id": 38,
+    "priority": 1,
+    "action": {
+      "type": "redirect",
+      "redirect": {
+        "extensionPath": "/assets/images/tankInfo/placeholder-140@2x.png"
+      }
+    },
+    "condition": {
+      "urlFilter": "https://cdn.tanktrouble.com/*/assets/images/tankIcon/placeholder-140@2x.png",
+      "resourceTypes": ["image"]
+    }
+  },
+  {
+    "id": 39,
+    "priority": 1,
+    "action": {
+      "type": "redirect",
+      "redirect": {
+        "extensionPath": "/assets/images/tankInfo/placeholder-200.png"
+      }
+    },
+    "condition": {
+      "urlFilter": "https://cdn.tanktrouble.com/*/assets/images/tankIcon/placeholder-200.png",
+      "resourceTypes": ["image"]
+    }
+  },
+  {
+    "id": 40,
+    "priority": 1,
+    "action": {
+      "type": "redirect",
+      "redirect": {
+        "extensionPath": "/assets/images/tankInfo/placeholder-200@2x.png"
+      }
+    },
+    "condition": {
+      "urlFilter": "https://cdn.tanktrouble.com/*/assets/images/tankIcon/placeholder-200@2x.png",
+      "resourceTypes": ["image"]
+    }
+  },
+  {
+    "id": 41,
+    "priority": 1,
+    "action": {
+      "type": "redirect",
+      "redirect": {
+        "extensionPath": "/assets/images/tankInfo/placeholder-320.png"
+      }
+    },
+    "condition": {
+      "urlFilter": "https://cdn.tanktrouble.com/*/assets/images/tankIcon/placeholder-320.png",
+      "resourceTypes": ["image"]
+    }
+  },
+  {
+    "id": 42,
+    "priority": 1,
+    "action": {
+      "type": "redirect",
+      "redirect": {
+        "extensionPath": "/assets/images/tankInfo/placeholder-320@2x.png"
+      }
+    },
+    "condition": {
+      "urlFilter": "https://cdn.tanktrouble.com/*/assets/images/tankIcon/placeholder-320@2x.png",
+      "resourceTypes": ["image"]
+    }
   }
 ]

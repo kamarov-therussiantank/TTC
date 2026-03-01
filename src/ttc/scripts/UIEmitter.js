@@ -1,7 +1,4 @@
 //UI Emitter
-//UI Particle Emitters and Particles
-
-//Emits smoke particles
 UISmokeEmitter = function(game, targetSprite) {
     Phaser.Particles.Arcade.Emitter.call(this, game, 0, 0, 15);
     this.targetSprite = targetSprite;

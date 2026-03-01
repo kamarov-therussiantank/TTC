@@ -5,1434 +5,6 @@
       "action": {
           "type": "redirect",
           "redirect": {
-              "extensionPath": "/assets/images/colours/colour13-140@2x.png"
-          }
-      },
-      "condition": {
-          "urlFilter": "https://cdn.tanktrouble.com/*/assets/images/colours/colour13-140@2x.png",
-          "resourceTypes": ["image"]
-      }
-  },
-  {
-      "id": 2,
-      "priority": 1,
-      "action": {
-          "type": "redirect",
-          "redirect": {
-              "extensionPath": "/assets/images/colours/colour13-200@2x.png"
-          }
-      },
-      "condition": {
-          "urlFilter": "https://cdn.tanktrouble.com/*/assets/images/colours/colour13-200@2x.png",
-          "resourceTypes": ["image"]
-      }
-  },
-  {
-      "id": 3,
-      "priority": 1,
-      "action": {
-          "type": "redirect",
-          "redirect": {
-              "extensionPath": "/assets/images/colours/colour13-320@2x.png"
-          }
-      },
-      "condition": {
-          "urlFilter": "https://cdn.tanktrouble.com/*/assets/images/colours/colour13-320@2x.png",
-          "resourceTypes": ["image"]
-      }
-  },
-  {
-      "id": 4,
-      "priority": 1,
-      "action": {
-          "type": "redirect",
-          "redirect": {
-              "extensionPath": "/assets/images/colours/colour14-140@2x.png"
-          }
-      },
-      "condition": {
-          "urlFilter": "https://cdn.tanktrouble.com/*/assets/images/colours/colour14-140@2x.png",
-          "resourceTypes": ["image"]
-      }
-  },
-  {
-      "id": 5,
-      "priority": 1,
-      "action": {
-          "type": "redirect",
-          "redirect": {
-              "extensionPath": "/assets/images/colours/colour14-200@2x.png"
-          }
-      },
-      "condition": {
-          "urlFilter": "https://cdn.tanktrouble.com/*/assets/images/colours/colour14-200@2x.png",
-          "resourceTypes": ["image"]
-      }
-  },
-  {
-      "id": 6,
-      "priority": 1,
-      "action": {
-          "type": "redirect",
-          "redirect": {
-              "extensionPath": "/assets/images/colours/colour14-320@2x.png"
-          }
-      },
-      "condition": {
-          "urlFilter": "https://cdn.tanktrouble.com/*/assets/images/colours/colour14-320@2x.png",
-          "resourceTypes": ["image"]
-      }
-  },
-  {
-      "id": 7,
-      "priority": 1,
-      "action": {
-          "type": "redirect",
-          "redirect": {
-              "extensionPath": "/assets/images/colours/colour13-140.png"
-          }
-      },
-      "condition": {
-          "urlFilter": "https://cdn.tanktrouble.com/*/assets/images/colours/colour13-140.png",
-          "resourceTypes": ["image"]
-      }
-  },
-  {
-      "id": 8,
-      "priority": 1,
-      "action": {
-          "type": "redirect",
-          "redirect": {
-              "extensionPath": "/assets/images/colours/colour13-200.png"
-          }
-      },
-      "condition": {
-          "urlFilter": "https://cdn.tanktrouble.com/*/assets/images/colours/colour13-200.png",
-          "resourceTypes": ["image"]
-      }
-  },
-  {
-      "id": 9,
-      "priority": 1,
-      "action": {
-          "type": "redirect",
-          "redirect": {
-              "extensionPath": "/assets/images/colours/colour13-320.png"
-          }
-      },
-      "condition": {
-          "urlFilter": "https://cdn.tanktrouble.com/*/assets/images/colours/colour13-320.png",
-          "resourceTypes": ["image"]
-      }
-  },
-  {
-      "id": 10,
-      "priority": 1,
-      "action": {
-          "type": "redirect",
-          "redirect": {
-              "extensionPath": "/assets/images/colours/colour14-140.png"
-          }
-      },
-      "condition": {
-          "urlFilter": "https://cdn.tanktrouble.com/*/assets/images/colours/colour14-140.png",
-          "resourceTypes": ["image"]
-      }
-  },
-  {
-      "id": 11,
-      "priority": 1,
-      "action": {
-          "type": "redirect",
-          "redirect": {
-              "extensionPath": "/assets/images/colours/colour14-200.png"
-          }
-      },
-      "condition": {
-          "urlFilter": "https://cdn.tanktrouble.com/*/assets/images/colours/colour14-200.png",
-          "resourceTypes": ["image"]
-      }
-  },
-  {
-      "id": 12,
-      "priority": 1,
-      "action": {
-          "type": "redirect",
-          "redirect": {
-              "extensionPath": "/assets/images/colours/colour14-320.png"
-          }
-      },
-      "condition": {
-          "urlFilter": "https://cdn.tanktrouble.com/*/assets/images/colours/colour14-320.png",
-          "resourceTypes": ["image"]
-      }
-  },
-  {
-      "id": 13,
-      "priority": 1,
-      "action": {
-          "type": "redirect",
-          "redirect": {
-              "extensionPath": "/assets/images/colours/colour42-140@2x.png"
-          }
-      },
-      "condition": {
-          "urlFilter": "https://cdn.tanktrouble.com/*/assets/images/colours/colour42-140@2x.png",
-          "resourceTypes": ["image"]
-      }
-  },
-  {
-      "id": 14,
-      "priority": 1,
-      "action": {
-          "type": "redirect",
-          "redirect": {
-              "extensionPath": "/assets/images/colours/colour42-200@2x.png"
-          }
-      },
-      "condition": {
-          "urlFilter": "https://cdn.tanktrouble.com/*/assets/images/colours/colour42-200@2x.png",
-          "resourceTypes": ["image"]
-      }
-  },
-  {
-      "id": 15,
-      "priority": 1,
-      "action": {
-          "type": "redirect",
-          "redirect": {
-              "extensionPath": "/assets/images/colours/colour42-320@2x.png"
-          }
-      },
-      "condition": {
-          "urlFilter": "https://cdn.tanktrouble.com/*/assets/images/colours/colour42-320@2x.png",
-          "resourceTypes": ["image"]
-      }
-  },
-  {
-      "id": 16,
-      "priority": 1,
-      "action": {
-          "type": "redirect",
-          "redirect": {
-              "extensionPath": "/assets/images/colours/colour43-140@2x.png"
-          }
-      },
-      "condition": {
-          "urlFilter": "https://cdn.tanktrouble.com/*/assets/images/colours/colour43-140@2x.png",
-          "resourceTypes": ["image"]
-      }
-  },
-  {
-      "id": 17,
-      "priority": 1,
-      "action": {
-          "type": "redirect",
-          "redirect": {
-              "extensionPath": "/assets/images/colours/colour43-200@2x.png"
-          }
-      },
-      "condition": {
-          "urlFilter": "https://cdn.tanktrouble.com/*/assets/images/colours/colour43-200@2x.png",
-          "resourceTypes": ["image"]
-      }
-  },
-  {
-      "id": 18,
-      "priority": 1,
-      "action": {
-          "type": "redirect",
-          "redirect": {
-              "extensionPath": "/assets/images/colours/colour43-320@2x.png"
-          }
-      },
-      "condition": {
-          "urlFilter": "https://cdn.tanktrouble.com/*/assets/images/colours/colour43-320@2x.png",
-          "resourceTypes": ["image"]
-      }
-  },
-  {
-      "id": 19,
-      "priority": 1,
-      "action": {
-          "type": "redirect",
-          "redirect": {
-              "extensionPath": "/assets/images/colours/colour61-140@2x.png"
-          }
-      },
-      "condition": {
-          "urlFilter": "https://cdn.tanktrouble.com/*/assets/images/colours/colour61-140@2x.png",
-          "resourceTypes": ["image"]
-      }
-  },
-  {
-      "id": 20,
-      "priority": 1,
-      "action": {
-          "type": "redirect",
-          "redirect": {
-              "extensionPath": "/assets/images/colours/colour61-200@2x.png"
-          }
-      },
-      "condition": {
-          "urlFilter": "https://cdn.tanktrouble.com/*/assets/images/colours/colour61-200@2x.png",
-          "resourceTypes": ["image"]
-      }
-  },
-  {
-      "id": 21,
-      "priority": 1,
-      "action": {
-          "type": "redirect",
-          "redirect": {
-              "extensionPath": "/assets/images/colours/colour61-320@2x.png"
-          }
-      },
-      "condition": {
-          "urlFilter": "https://cdn.tanktrouble.com/*/assets/images/colours/colour61-320@2x.png",
-          "resourceTypes": ["image"]
-      }
-  },
-  {
-      "id": 22,
-      "priority": 1,
-      "action": {
-          "type": "redirect",
-          "redirect": {
-              "extensionPath": "/assets/images/colours/colour42-140.png"
-          }
-      },
-      "condition": {
-          "urlFilter": "https://cdn.tanktrouble.com/*/assets/images/colours/colour42-140.png",
-          "resourceTypes": ["image"]
-      }
-  },
-  {
-      "id": 23,
-      "priority": 1,
-      "action": {
-          "type": "redirect",
-          "redirect": {
-              "extensionPath": "/assets/images/colours/colour42-200.png"
-          }
-      },
-      "condition": {
-          "urlFilter": "https://cdn.tanktrouble.com/*/assets/images/colours/colour42-200.png",
-          "resourceTypes": ["image"]
-      }
-  },
-  {
-      "id": 24,
-      "priority": 1,
-      "action": {
-          "type": "redirect",
-          "redirect": {
-              "extensionPath": "/assets/images/colours/colour42-320.png"
-          }
-      },
-      "condition": {
-          "urlFilter": "https://cdn.tanktrouble.com/*/assets/images/colours/colour42-320.png",
-          "resourceTypes": ["image"]
-      }
-  },
-  {
-      "id": 25,
-      "priority": 1,
-      "action": {
-          "type": "redirect",
-          "redirect": {
-              "extensionPath": "/assets/images/colours/colour43-140.png"
-          }
-      },
-      "condition": {
-          "urlFilter": "https://cdn.tanktrouble.com/*/assets/images/colours/colour43-140.png",
-          "resourceTypes": ["image"]
-      }
-  },
-  {
-      "id": 26,
-      "priority": 1,
-      "action": {
-          "type": "redirect",
-          "redirect": {
-              "extensionPath": "/assets/images/colours/colour43-200.png"
-          }
-      },
-      "condition": {
-          "urlFilter": "https://cdn.tanktrouble.com/*/assets/images/colours/colour43-200.png",
-          "resourceTypes": ["image"]
-      }
-  },
-  {
-      "id": 27,
-      "priority": 1,
-      "action": {
-          "type": "redirect",
-          "redirect": {
-              "extensionPath": "/assets/images/colours/colour43-320.png"
-          }
-      },
-      "condition": {
-          "urlFilter": "https://cdn.tanktrouble.com/*/assets/images/colours/colour43-320.png",
-          "resourceTypes": ["image"]
-      }
-  },
-  {
-      "id": 28,
-      "priority": 1,
-      "action": {
-          "type": "redirect",
-          "redirect": {
-              "extensionPath": "/assets/images/colours/colour61-140.png"
-          }
-      },
-      "condition": {
-          "urlFilter": "https://cdn.tanktrouble.com/*/assets/images/colours/colour61-140.png",
-          "resourceTypes": ["image"]
-      }
-  },
-  {
-      "id": 29,
-      "priority": 1,
-      "action": {
-          "type": "redirect",
-          "redirect": {
-              "extensionPath": "/assets/images/colours/colour61-200.png"
-          }
-      },
-      "condition": {
-          "urlFilter": "https://cdn.tanktrouble.com/*/assets/images/colours/colour61-200.png",
-          "resourceTypes": ["image"]
-      }
-  },
-  {
-      "id": 30,
-      "priority": 1,
-      "action": {
-          "type": "redirect",
-          "redirect": {
-              "extensionPath": "/assets/images/colours/colour61-320.png"
-          }
-      },
-      "condition": {
-          "urlFilter": "https://cdn.tanktrouble.com/*/assets/images/colours/colour61-320.png",
-          "resourceTypes": ["image"]
-      }
-  },
-  {
-      "id": 31,
-      "priority": 1,
-      "action": {
-          "type": "redirect",
-          "redirect": {
-              "extensionPath": "/assets/images/colours/colour45-140@2x.png"
-          }
-      },
-      "condition": {
-          "urlFilter": "https://cdn.tanktrouble.com/*/assets/images/colours/colour45-140@2x.png",
-          "resourceTypes": ["image"]
-      }
-  },
-  {
-      "id": 32,
-      "priority": 1,
-      "action": {
-          "type": "redirect",
-          "redirect": {
-              "extensionPath": "/assets/images/colours/colour45-200@2x.png"
-          }
-      },
-      "condition": {
-          "urlFilter": "https://cdn.tanktrouble.com/*/assets/images/colours/colour45-200@2x.png",
-          "resourceTypes": ["image"]
-      }
-  },
-  {
-      "id": 33,
-      "priority": 1,
-      "action": {
-          "type": "redirect",
-          "redirect": {
-              "extensionPath": "/assets/images/colours/colour45-320@2x.png"
-          }
-      },
-      "condition": {
-          "urlFilter": "https://cdn.tanktrouble.com/*/assets/images/colours/colour45-320@2x.png",
-          "resourceTypes": ["image"]
-      }
-  },
-  {
-      "id": 34,
-      "priority": 1,
-      "action": {
-          "type": "redirect",
-          "redirect": {
-              "extensionPath": "/assets/images/colours/colour50-140@2x.png"
-          }
-      },
-      "condition": {
-          "urlFilter": "https://cdn.tanktrouble.com/*/assets/images/colours/colour50-140@2x.png",
-          "resourceTypes": ["image"]
-      }
-  },
-  {
-      "id": 35,
-      "priority": 1,
-      "action": {
-          "type": "redirect",
-          "redirect": {
-              "extensionPath": "/assets/images/colours/colour50-200@2x.png"
-          }
-      },
-      "condition": {
-          "urlFilter": "https://cdn.tanktrouble.com/*/assets/images/colours/colour50-200@2x.png",
-          "resourceTypes": ["image"]
-      }
-  },
-  {
-      "id": 36,
-      "priority": 1,
-      "action": {
-          "type": "redirect",
-          "redirect": {
-              "extensionPath": "/assets/images/colours/colour50-320@2x.png"
-          }
-      },
-      "condition": {
-          "urlFilter": "https://cdn.tanktrouble.com/*/assets/images/colours/colour50-320@2x.png",
-          "resourceTypes": ["image"]
-      }
-  },
-  {
-      "id": 37,
-      "priority": 1,
-      "action": {
-          "type": "redirect",
-          "redirect": {
-              "extensionPath": "/assets/images/colours/colour60-140@2x.png"
-          }
-      },
-      "condition": {
-          "urlFilter": "https://cdn.tanktrouble.com/*/assets/images/colours/colour60-140@2x.png",
-          "resourceTypes": ["image"]
-      }
-  },
-  {
-      "id": 38,
-      "priority": 1,
-      "action": {
-          "type": "redirect",
-          "redirect": {
-              "extensionPath": "/assets/images/colours/colour60-200@2x.png"
-          }
-      },
-      "condition": {
-          "urlFilter": "https://cdn.tanktrouble.com/*/assets/images/colours/colour60-200@2x.png",
-          "resourceTypes": ["image"]
-      }
-  },
-  {
-      "id": 39,
-      "priority": 1,
-      "action": {
-          "type": "redirect",
-          "redirect": {
-              "extensionPath": "/assets/images/colours/colour60-320@2x.png"
-          }
-      },
-      "condition": {
-          "urlFilter": "https://cdn.tanktrouble.com/*/assets/images/colours/colour60-320@2x.png",
-          "resourceTypes": ["image"]
-      }
-  },
-  {
-      "id": 40,
-      "priority": 1,
-      "action": {
-          "type": "redirect",
-          "redirect": {
-              "extensionPath": "/assets/images/colours/colour45-140.png"
-          }
-      },
-      "condition": {
-          "urlFilter": "https://cdn.tanktrouble.com/*/assets/images/colours/colour45-140.png",
-          "resourceTypes": ["image"]
-      }
-  },
-  {
-      "id": 41,
-      "priority": 1,
-      "action": {
-          "type": "redirect",
-          "redirect": {
-              "extensionPath": "/assets/images/colours/colour45-200.png"
-          }
-      },
-      "condition": {
-          "urlFilter": "https://cdn.tanktrouble.com/*/assets/images/colours/colour45-200.png",
-          "resourceTypes": ["image"]
-      }
-  },
-  {
-      "id": 42,
-      "priority": 1,
-      "action": {
-          "type": "redirect",
-          "redirect": {
-              "extensionPath": "/assets/images/colours/colour45-320.png"
-          }
-      },
-      "condition": {
-          "urlFilter": "https://cdn.tanktrouble.com/*/assets/images/colours/colour45-320.png",
-          "resourceTypes": ["image"]
-      }
-  },
-  {
-      "id": 43,
-      "priority": 1,
-      "action": {
-          "type": "redirect",
-          "redirect": {
-              "extensionPath": "/assets/images/colours/colour50-140.png"
-          }
-      },
-      "condition": {
-          "urlFilter": "https://cdn.tanktrouble.com/*/assets/images/colours/colour50-140.png",
-          "resourceTypes": ["image"]
-      }
-  },
-  {
-      "id": 44,
-      "priority": 1,
-      "action": {
-          "type": "redirect",
-          "redirect": {
-              "extensionPath": "/assets/images/colours/colour50-200.png"
-          }
-      },
-      "condition": {
-          "urlFilter": "https://cdn.tanktrouble.com/*/assets/images/colours/colour50-200.png",
-          "resourceTypes": ["image"]
-      }
-  },
-  {
-      "id": 45,
-      "priority": 1,
-      "action": {
-          "type": "redirect",
-          "redirect": {
-              "extensionPath": "/assets/images/colours/colour50-320.png"
-          }
-      },
-      "condition": {
-          "urlFilter": "https://cdn.tanktrouble.com/*/assets/images/colours/colour50-320.png",
-          "resourceTypes": ["image"]
-      }
-  },
-  {
-      "id": 46,
-      "priority": 1,
-      "action": {
-          "type": "redirect",
-          "redirect": {
-              "extensionPath": "/assets/images/colours/colour60-140.png"
-          }
-      },
-      "condition": {
-          "urlFilter": "https://cdn.tanktrouble.com/*/assets/images/colours/colour60-140.png",
-          "resourceTypes": ["image"]
-      }
-  },
-  {
-      "id": 47,
-      "priority": 1,
-      "action": {
-          "type": "redirect",
-          "redirect": {
-              "extensionPath": "/assets/images/colours/colour60-200.png"
-          }
-      },
-      "condition": {
-          "urlFilter": "https://cdn.tanktrouble.com/*/assets/images/colours/colour60-200.png",
-          "resourceTypes": ["image"]
-      }
-  },
-  {
-      "id": 48,
-      "priority": 1,
-      "action": {
-          "type": "redirect",
-          "redirect": {
-              "extensionPath": "/assets/images/colours/colour60-320.png"
-          }
-      },
-      "condition": {
-          "urlFilter": "https://cdn.tanktrouble.com/*/assets/images/colours/colour60-320.png",
-          "resourceTypes": ["image"]
-      }
-  },
-  {
-      "id": 49,
-      "priority": 1,
-      "action": {
-          "type": "redirect",
-          "redirect": {
-              "extensionPath": "/assets/images/colours/colour107-140@2x.png"
-          }
-      },
-      "condition": {
-          "urlFilter": "https://cdn.tanktrouble.com/*/assets/images/colours/colour107-140@2x.png",
-          "resourceTypes": ["image"]
-      }
-  },
-  {
-      "id": 50,
-      "priority": 1,
-      "action": {
-          "type": "redirect",
-          "redirect": {
-              "extensionPath": "/assets/images/colours/colour107-200@2x.png"
-          }
-      },
-      "condition": {
-          "urlFilter": "https://cdn.tanktrouble.com/*/assets/images/colours/colour107-200@2x.png",
-          "resourceTypes": ["image"]
-      }
-  },
-  {
-      "id": 51,
-      "priority": 1,
-      "action": {
-          "type": "redirect",
-          "redirect": {
-              "extensionPath": "/assets/images/colours/colour107-320@2x.png"
-          }
-      },
-      "condition": {
-          "urlFilter": "https://cdn.tanktrouble.com/*/assets/images/colours/colour107-320@2x.png",
-          "resourceTypes": ["image"]
-      }
-  },
-  {
-      "id": 52,
-      "priority": 1,
-      "action": {
-          "type": "redirect",
-          "redirect": {
-              "extensionPath": "/assets/images/colours/colour108-140@2x.png"
-          }
-      },
-      "condition": {
-          "urlFilter": "https://cdn.tanktrouble.com/*/assets/images/colours/colour108-140@2x.png",
-          "resourceTypes": ["image"]
-      }
-  },
-  {
-      "id": 53,
-      "priority": 1,
-      "action": {
-          "type": "redirect",
-          "redirect": {
-              "extensionPath": "/assets/images/colours/colour108-200@2x.png"
-          }
-      },
-      "condition": {
-          "urlFilter": "https://cdn.tanktrouble.com/*/assets/images/colours/colour108-200@2x.png",
-          "resourceTypes": ["image"]
-      }
-  },
-  {
-      "id": 54,
-      "priority": 1,
-      "action": {
-          "type": "redirect",
-          "redirect": {
-              "extensionPath": "/assets/images/colours/colour108-320@2x.png"
-          }
-      },
-      "condition": {
-          "urlFilter": "https://cdn.tanktrouble.com/*/assets/images/colours/colour108-320@2x.png",
-          "resourceTypes": ["image"]
-      }
-  },
-  {
-      "id": 55,
-      "priority": 1,
-      "action": {
-          "type": "redirect",
-          "redirect": {
-              "extensionPath": "/assets/images/colours/colour109-140@2x.png"
-          }
-      },
-      "condition": {
-          "urlFilter": "https://cdn.tanktrouble.com/*/assets/images/colours/colour109-140@2x.png",
-          "resourceTypes": ["image"]
-      }
-  },
-  {
-      "id": 56,
-      "priority": 1,
-      "action": {
-          "type": "redirect",
-          "redirect": {
-              "extensionPath": "/assets/images/colours/colour109-200@2x.png"
-          }
-      },
-      "condition": {
-          "urlFilter": "https://cdn.tanktrouble.com/*/assets/images/colours/colour109-200@2x.png",
-          "resourceTypes": ["image"]
-      }
-  },
-  {
-      "id": 57,
-      "priority": 1,
-      "action": {
-          "type": "redirect",
-          "redirect": {
-              "extensionPath": "/assets/images/colours/colour109-320@2x.png"
-          }
-      },
-      "condition": {
-          "urlFilter": "https://cdn.tanktrouble.com/*/assets/images/colours/colour109-320@2x.png",
-          "resourceTypes": ["image"]
-      }
-  },
-  {
-      "id": 58,
-      "priority": 1,
-      "action": {
-          "type": "redirect",
-          "redirect": {
-              "extensionPath": "/assets/images/colours/colour107-140.png"
-          }
-      },
-      "condition": {
-          "urlFilter": "https://cdn.tanktrouble.com/*/assets/images/colours/colour107-140.png",
-          "resourceTypes": ["image"]
-      }
-  },
-  {
-      "id": 59,
-      "priority": 1,
-      "action": {
-          "type": "redirect",
-          "redirect": {
-              "extensionPath": "/assets/images/colours/colour107-200.png"
-          }
-      },
-      "condition": {
-          "urlFilter": "https://cdn.tanktrouble.com/*/assets/images/colours/colour107-200.png",
-          "resourceTypes": ["image"]
-      }
-  },
-  {
-      "id": 60,
-      "priority": 1,
-      "action": {
-          "type": "redirect",
-          "redirect": {
-              "extensionPath": "/assets/images/colours/colour107-320.png"
-          }
-      },
-      "condition": {
-          "urlFilter": "https://cdn.tanktrouble.com/*/assets/images/colours/colour107-320.png",
-          "resourceTypes": ["image"]
-      }
-  },
-  {
-      "id": 61,
-      "priority": 1,
-      "action": {
-          "type": "redirect",
-          "redirect": {
-              "extensionPath": "/assets/images/colours/colour108-140.png"
-          }
-      },
-      "condition": {
-          "urlFilter": "https://cdn.tanktrouble.com/*/assets/images/colours/colour108-140.png",
-          "resourceTypes": ["image"]
-      }
-  },
-  {
-      "id": 62,
-      "priority": 1,
-      "action": {
-          "type": "redirect",
-          "redirect": {
-              "extensionPath": "/assets/images/colours/colour108-200.png"
-          }
-      },
-      "condition": {
-          "urlFilter": "https://cdn.tanktrouble.com/*/assets/images/colours/colour108-200.png",
-          "resourceTypes": ["image"]
-      }
-  },
-  {
-      "id": 63,
-      "priority": 1,
-      "action": {
-          "type": "redirect",
-          "redirect": {
-              "extensionPath": "/assets/images/colours/colour108-320.png"
-          }
-      },
-      "condition": {
-          "urlFilter": "https://cdn.tanktrouble.com/*/assets/images/colours/colour108-320.png",
-          "resourceTypes": ["image"]
-      }
-  },
-  {
-      "id": 64,
-      "priority": 1,
-      "action": {
-          "type": "redirect",
-          "redirect": {
-              "extensionPath": "/assets/images/colours/colour109-140.png"
-          }
-      },
-      "condition": {
-          "urlFilter": "https://cdn.tanktrouble.com/*/assets/images/colours/colour109-140.png",
-          "resourceTypes": ["image"]
-      }
-  },
-  {
-      "id": 65,
-      "priority": 1,
-      "action": {
-          "type": "redirect",
-          "redirect": {
-              "extensionPath": "/assets/images/colours/colour109-200.png"
-          }
-      },
-      "condition": {
-          "urlFilter": "https://cdn.tanktrouble.com/*/assets/images/colours/colour109-200.png",
-          "resourceTypes": ["image"]
-      }
-  },
-  {
-      "id": 66,
-      "priority": 1,
-      "action": {
-          "type": "redirect",
-          "redirect": {
-              "extensionPath": "/assets/images/colours/colour109-320.png"
-          }
-      },
-      "condition": {
-          "urlFilter": "https://cdn.tanktrouble.com/*/assets/images/colours/colour109-320.png",
-          "resourceTypes": ["image"]
-      }
-  },
-  {
-      "id": 67,
-      "priority": 1,
-      "action": {
-          "type": "redirect",
-          "redirect": {
-              "extensionPath": "/assets/images/colours/colour110-140@2x.png"
-          }
-      },
-      "condition": {
-          "urlFilter": "https://cdn.tanktrouble.com/*/assets/images/colours/colour110-140@2x.png",
-          "resourceTypes": ["image"]
-      }
-  },
-  {
-      "id": 68,
-      "priority": 1,
-      "action": {
-          "type": "redirect",
-          "redirect": {
-              "extensionPath": "/assets/images/colours/colour110-200@2x.png"
-          }
-      },
-      "condition": {
-          "urlFilter": "https://cdn.tanktrouble.com/*/assets/images/colours/colour110-200@2x.png",
-          "resourceTypes": ["image"]
-      }
-  },
-  {
-      "id": 69,
-      "priority": 1,
-      "action": {
-          "type": "redirect",
-          "redirect": {
-              "extensionPath": "/assets/images/colours/colour110-320@2x.png"
-          }
-      },
-      "condition": {
-          "urlFilter": "https://cdn.tanktrouble.com/*/assets/images/colours/colour110-320@2x.png",
-          "resourceTypes": ["image"]
-      }
-  },
-  {
-      "id": 70,
-      "priority": 1,
-      "action": {
-          "type": "redirect",
-          "redirect": {
-              "extensionPath": "/assets/images/colours/colour120-140@2x.png"
-          }
-      },
-      "condition": {
-          "urlFilter": "https://cdn.tanktrouble.com/*/assets/images/colours/colour120-140@2x.png",
-          "resourceTypes": ["image"]
-      }
-  },
-  {
-      "id": 71,
-      "priority": 1,
-      "action": {
-          "type": "redirect",
-          "redirect": {
-              "extensionPath": "/assets/images/colours/colour120-200@2x.png"
-          }
-      },
-      "condition": {
-          "urlFilter": "https://cdn.tanktrouble.com/*/assets/images/colours/colour120-200@2x.png",
-          "resourceTypes": ["image"]
-      }
-  },
-  {
-      "id": 72,
-      "priority": 1,
-      "action": {
-          "type": "redirect",
-          "redirect": {
-              "extensionPath": "/assets/images/colours/colour120-320@2x.png"
-          }
-      },
-      "condition": {
-          "urlFilter": "https://cdn.tanktrouble.com/*/assets/images/colours/colour120-320@2x.png",
-          "resourceTypes": ["image"]
-      }
-  },
-  {
-      "id": 73,
-      "priority": 1,
-      "action": {
-          "type": "redirect",
-          "redirect": {
-              "extensionPath": "/assets/images/colours/colour150-140@2x.png"
-          }
-      },
-      "condition": {
-          "urlFilter": "https://cdn.tanktrouble.com/*/assets/images/colours/colour150-140@2x.png",
-          "resourceTypes": ["image"]
-      }
-  },
-  {
-      "id": 74,
-      "priority": 1,
-      "action": {
-          "type": "redirect",
-          "redirect": {
-              "extensionPath": "/assets/images/colours/colour150-200@2x.png"
-          }
-      },
-      "condition": {
-          "urlFilter": "https://cdn.tanktrouble.com/*/assets/images/colours/colour150-200@2x.png",
-          "resourceTypes": ["image"]
-      }
-  },
-  {
-      "id": 75,
-      "priority": 1,
-      "action": {
-          "type": "redirect",
-          "redirect": {
-              "extensionPath": "/assets/images/colours/colour150-320@2x.png"
-          }
-      },
-      "condition": {
-          "urlFilter": "https://cdn.tanktrouble.com/*/assets/images/colours/colour150-320@2x.png",
-          "resourceTypes": ["image"]
-      }
-  },
-  {
-      "id": 76,
-      "priority": 1,
-      "action": {
-          "type": "redirect",
-          "redirect": {
-              "extensionPath": "/assets/images/colours/colour110-140.png"
-          }
-      },
-      "condition": {
-          "urlFilter": "https://cdn.tanktrouble.com/*/assets/images/colours/colour110-140.png",
-          "resourceTypes": ["image"]
-      }
-  },
-  {
-      "id": 77,
-      "priority": 1,
-      "action": {
-          "type": "redirect",
-          "redirect": {
-              "extensionPath": "/assets/images/colours/colour110-200.png"
-          }
-      },
-      "condition": {
-          "urlFilter": "https://cdn.tanktrouble.com/*/assets/images/colours/colour110-200.png",
-          "resourceTypes": ["image"]
-      }
-  },
-  {
-      "id": 78,
-      "priority": 1,
-      "action": {
-          "type": "redirect",
-          "redirect": {
-              "extensionPath": "/assets/images/colours/colour110-320.png"
-          }
-      },
-      "condition": {
-          "urlFilter": "https://cdn.tanktrouble.com/*/assets/images/colours/colour110-320.png",
-          "resourceTypes": ["image"]
-      }
-  },
-  {
-      "id": 79,
-      "priority": 1,
-      "action": {
-          "type": "redirect",
-          "redirect": {
-              "extensionPath": "/assets/images/colours/colour120-140.png"
-          }
-      },
-      "condition": {
-          "urlFilter": "https://cdn.tanktrouble.com/*/assets/images/colours/colour120-140.png",
-          "resourceTypes": ["image"]
-      }
-  },
-  {
-      "id": 80,
-      "priority": 1,
-      "action": {
-          "type": "redirect",
-          "redirect": {
-              "extensionPath": "/assets/images/colours/colour120-200.png"
-          }
-      },
-      "condition": {
-          "urlFilter": "https://cdn.tanktrouble.com/*/assets/images/colours/colour120-200.png",
-          "resourceTypes": ["image"]
-      }
-  },
-  {
-      "id": 81,
-      "priority": 1,
-      "action": {
-          "type": "redirect",
-          "redirect": {
-              "extensionPath": "/assets/images/colours/colour120-320.png"
-          }
-      },
-      "condition": {
-          "urlFilter": "https://cdn.tanktrouble.com/*/assets/images/colours/colour120-320.png",
-          "resourceTypes": ["image"]
-      }
-  },
-  {
-      "id": 82,
-      "priority": 1,
-      "action": {
-          "type": "redirect",
-          "redirect": {
-              "extensionPath": "/assets/images/colours/colour150-140.png"
-          }
-      },
-      "condition": {
-          "urlFilter": "https://cdn.tanktrouble.com/*/assets/images/colours/colour150-140.png",
-          "resourceTypes": ["image"]
-      }
-  },
-  {
-      "id": 83,
-      "priority": 1,
-      "action": {
-          "type": "redirect",
-          "redirect": {
-              "extensionPath": "/assets/images/colours/colour150-200.png"
-          }
-      },
-      "condition": {
-          "urlFilter": "https://cdn.tanktrouble.com/*/assets/images/colours/colour150-200.png",
-          "resourceTypes": ["image"]
-      }
-  },
-  {
-      "id": 84,
-      "priority": 1,
-      "action": {
-          "type": "redirect",
-          "redirect": {
-              "extensionPath": "/assets/images/colours/colour150-320.png"
-          }
-      },
-      "condition": {
-          "urlFilter": "https://cdn.tanktrouble.com/*/assets/images/colours/colour150-320.png",
-          "resourceTypes": ["image"]
-      }
-  },
-  {
-      "id": 85,
-      "priority": 1,
-      "action": {
-          "type": "redirect",
-          "redirect": {
-              "extensionPath": "/assets/images/colours/colour151-140@2x.png"
-          }
-      },
-      "condition": {
-          "urlFilter": "https://cdn.tanktrouble.com/*/assets/images/colours/colour151-140@2x.png",
-          "resourceTypes": ["image"]
-      }
-  },
-  {
-      "id": 86,
-      "priority": 1,
-      "action": {
-          "type": "redirect",
-          "redirect": {
-              "extensionPath": "/assets/images/colours/colour151-200@2x.png"
-          }
-      },
-      "condition": {
-          "urlFilter": "https://cdn.tanktrouble.com/*/assets/images/colours/colour151-200@2x.png",
-          "resourceTypes": ["image"]
-      }
-  },
-  {
-      "id": 87,
-      "priority": 1,
-      "action": {
-          "type": "redirect",
-          "redirect": {
-              "extensionPath": "/assets/images/colours/colour151-320@2x.png"
-          }
-      },
-      "condition": {
-          "urlFilter": "https://cdn.tanktrouble.com/*/assets/images/colours/colour151-320@2x.png",
-          "resourceTypes": ["image"]
-      }
-  },
-  {
-      "id": 88,
-      "priority": 1,
-      "action": {
-          "type": "redirect",
-          "redirect": {
-              "extensionPath": "/assets/images/colours/colour152-140@2x.png"
-          }
-      },
-      "condition": {
-          "urlFilter": "https://cdn.tanktrouble.com/*/assets/images/colours/colour152-140@2x.png",
-          "resourceTypes": ["image"]
-      }
-  },
-  {
-      "id": 89,
-      "priority": 1,
-      "action": {
-          "type": "redirect",
-          "redirect": {
-              "extensionPath": "/assets/images/colours/colour152-200@2x.png"
-          }
-      },
-      "condition": {
-          "urlFilter": "https://cdn.tanktrouble.com/*/assets/images/colours/colour152-200@2x.png",
-          "resourceTypes": ["image"]
-      }
-  },
-  {
-      "id": 90,
-      "priority": 1,
-      "action": {
-          "type": "redirect",
-          "redirect": {
-              "extensionPath": "/assets/images/colours/colour152-320@2x.png"
-          }
-      },
-      "condition": {
-          "urlFilter": "https://cdn.tanktrouble.com/*/assets/images/colours/colour152-320@2x.png",
-          "resourceTypes": ["image"]
-      }
-  },
-  {
-      "id": 91,
-      "priority": 1,
-      "action": {
-          "type": "redirect",
-          "redirect": {
-              "extensionPath": "/assets/images/colours/colour153-140@2x.png"
-          }
-      },
-      "condition": {
-          "urlFilter": "https://cdn.tanktrouble.com/*/assets/images/colours/colour153-140@2x.png",
-          "resourceTypes": ["image"]
-      }
-  },
-  {
-      "id": 92,
-      "priority": 1,
-      "action": {
-          "type": "redirect",
-          "redirect": {
-              "extensionPath": "/assets/images/colours/colour153-200@2x.png"
-          }
-      },
-      "condition": {
-          "urlFilter": "https://cdn.tanktrouble.com/*/assets/images/colours/colour153-200@2x.png",
-          "resourceTypes": ["image"]
-      }
-  },
-  {
-      "id": 93,
-      "priority": 1,
-      "action": {
-          "type": "redirect",
-          "redirect": {
-              "extensionPath": "/assets/images/colours/colour153-320@2x.png"
-          }
-      },
-      "condition": {
-          "urlFilter": "https://cdn.tanktrouble.com/*/assets/images/colours/colour153-320@2x.png",
-          "resourceTypes": ["image"]
-      }
-  },
-  {
-      "id": 94,
-      "priority": 1,
-      "action": {
-          "type": "redirect",
-          "redirect": {
-              "extensionPath": "/assets/images/colours/colour151-140.png"
-          }
-      },
-      "condition": {
-          "urlFilter": "https://cdn.tanktrouble.com/*/assets/images/colours/colour151-140.png",
-          "resourceTypes": ["image"]
-      }
-  },
-  {
-      "id": 95,
-      "priority": 1,
-      "action": {
-          "type": "redirect",
-          "redirect": {
-              "extensionPath": "/assets/images/colours/colour151-200.png"
-          }
-      },
-      "condition": {
-          "urlFilter": "https://cdn.tanktrouble.com/*/assets/images/colours/colour151-200.png",
-          "resourceTypes": ["image"]
-      }
-  },
-  {
-      "id": 96,
-      "priority": 1,
-      "action": {
-          "type": "redirect",
-          "redirect": {
-              "extensionPath": "/assets/images/colours/colour151-320.png"
-          }
-      },
-      "condition": {
-          "urlFilter": "https://cdn.tanktrouble.com/*/assets/images/colours/colour151-320.png",
-          "resourceTypes": ["image"]
-      }
-  },
-  {
-      "id": 97,
-      "priority": 1,
-      "action": {
-          "type": "redirect",
-          "redirect": {
-              "extensionPath": "/assets/images/colours/colour152-140.png"
-          }
-      },
-      "condition": {
-          "urlFilter": "https://cdn.tanktrouble.com/*/assets/images/colours/colour152-140.png",
-          "resourceTypes": ["image"]
-      }
-  },
-  {
-      "id": 98,
-      "priority": 1,
-      "action": {
-          "type": "redirect",
-          "redirect": {
-              "extensionPath": "/assets/images/colours/colour152-200.png"
-          }
-      },
-      "condition": {
-          "urlFilter": "https://cdn.tanktrouble.com/*/assets/images/colours/colour152-200.png",
-          "resourceTypes": ["image"]
-      }
-  },
-  {
-      "id": 99,
-      "priority": 1,
-      "action": {
-          "type": "redirect",
-          "redirect": {
-              "extensionPath": "/assets/images/colours/colour152-320.png"
-          }
-      },
-      "condition": {
-          "urlFilter": "https://cdn.tanktrouble.com/*/assets/images/colours/colour152-320.png",
-          "resourceTypes": ["image"]
-      }
-  },
-  {
-      "id": 100,
-      "priority": 1,
-      "action": {
-          "type": "redirect",
-          "redirect": {
-              "extensionPath": "/assets/images/colours/colour153-140.png"
-          }
-      },
-      "condition": {
-          "urlFilter": "https://cdn.tanktrouble.com/*/assets/images/colours/colour153-140.png",
-          "resourceTypes": ["image"]
-      }
-  },
-  {
-      "id": 101,
-      "priority": 1,
-      "action": {
-          "type": "redirect",
-          "redirect": {
-              "extensionPath": "/assets/images/colours/colour153-200.png"
-          }
-      },
-      "condition": {
-          "urlFilter": "https://cdn.tanktrouble.com/*/assets/images/colours/colour153-200.png",
-          "resourceTypes": ["image"]
-      }
-  },
-  {
-      "id": 102,
-      "priority": 1,
-      "action": {
-          "type": "redirect",
-          "redirect": {
-              "extensionPath": "/assets/images/colours/colour153-320.png"
-          }
-      },
-      "condition": {
-          "urlFilter": "https://cdn.tanktrouble.com/*/assets/images/colours/colour153-320.png",
-          "resourceTypes": ["image"]
-      }
-  },
-  {
-      "id": 103,
-      "priority": 1,
-      "action": {
-          "type": "redirect",
-          "redirect": {
               "extensionPath": "/assets/images/colours/colour13Icon-26@2x.png"
           }
       },
@@ -1442,7 +14,7 @@
       }
   },
   {
-      "id": 104,
+      "id": 2,
       "priority": 1,
       "action": {
           "type": "redirect",
@@ -1456,7 +28,7 @@
       }
   },
   {
-      "id": 105,
+      "id": 3,
       "priority": 1,
       "action": {
           "type": "redirect",
@@ -1470,7 +42,7 @@
       }
   },
   {
-      "id": 106,
+      "id": 4,
       "priority": 1,
       "action": {
           "type": "redirect",
@@ -1484,7 +56,7 @@
       }
   },
   {
-      "id": 107,
+      "id": 5,
       "priority": 1,
       "action": {
           "type": "redirect",
@@ -1498,7 +70,7 @@
       }
   },
   {
-      "id": 108,
+      "id": 6,
       "priority": 1,
       "action": {
           "type": "redirect",
@@ -1512,7 +84,7 @@
       }
   },
   {
-      "id": 109,
+      "id": 7,
       "priority": 1,
       "action": {
           "type": "redirect",
@@ -1526,7 +98,7 @@
       }
   },
   {
-      "id": 110,
+      "id": 8,
       "priority": 1,
       "action": {
           "type": "redirect",
@@ -1540,7 +112,7 @@
       }
   },
   {
-      "id": 111,
+      "id": 9,
       "priority": 1,
       "action": {
           "type": "redirect",
@@ -1554,7 +126,7 @@
       }
   },
   {
-      "id": 112,
+      "id": 10,
       "priority": 1,
       "action": {
           "type": "redirect",
@@ -1568,7 +140,7 @@
       }
   },
   {
-      "id": 113,
+      "id": 11,
       "priority": 1,
       "action": {
           "type": "redirect",
@@ -1582,7 +154,7 @@
       }
   },
   {
-      "id": 114,
+      "id": 12,
       "priority": 1,
       "action": {
           "type": "redirect",
@@ -1596,7 +168,7 @@
       }
   },
   {
-      "id": 115,
+      "id": 13,
       "priority": 1,
       "action": {
           "type": "redirect",
@@ -1610,7 +182,7 @@
       }
   },
   {
-      "id": 116,
+      "id": 14,
       "priority": 1,
       "action": {
           "type": "redirect",
@@ -1624,7 +196,7 @@
       }
   },
   {
-      "id": 117,
+      "id": 15,
       "priority": 1,
       "action": {
           "type": "redirect",
@@ -1638,7 +210,7 @@
       }
   },
   {
-      "id": 118,
+      "id": 16,
       "priority": 1,
       "action": {
           "type": "redirect",
@@ -1652,7 +224,7 @@
       }
   },
   {
-      "id": 119,
+      "id": 17,
       "priority": 1,
       "action": {
           "type": "redirect",
@@ -1666,7 +238,7 @@
       }
   },
   {
-      "id": 120,
+      "id": 18,
       "priority": 1,
       "action": {
           "type": "redirect",
@@ -1680,7 +252,7 @@
       }
   },
   {
-      "id": 121,
+      "id": 19,
       "priority": 1,
       "action": {
           "type": "redirect",
@@ -1694,7 +266,7 @@
       }
   },
   {
-      "id": 122,
+      "id": 20,
       "priority": 1,
       "action": {
           "type": "redirect",
@@ -1708,7 +280,7 @@
       }
   },
   {
-      "id": 123,
+      "id": 21,
       "priority": 1,
       "action": {
           "type": "redirect",
@@ -1722,7 +294,7 @@
       }
   },
   {
-      "id": 124,
+      "id": 22,
       "priority": 1,
       "action": {
           "type": "redirect",
@@ -1736,7 +308,7 @@
       }
   },
   {
-      "id": 125,
+      "id": 23,
       "priority": 1,
       "action": {
           "type": "redirect",
@@ -1750,7 +322,7 @@
       }
   },
   {
-      "id": 126,
+      "id": 24,
       "priority": 1,
       "action": {
           "type": "redirect",
@@ -1764,7 +336,7 @@
       }
   },
   {
-      "id": 127,
+      "id": 25,
       "priority": 1,
       "action": {
           "type": "redirect",
@@ -1778,7 +350,7 @@
       }
   },
   {
-      "id": 128,
+      "id": 26,
       "priority": 1,
       "action": {
           "type": "redirect",
@@ -1792,7 +364,7 @@
       }
   },
   {
-      "id": 129,
+      "id": 27,
       "priority": 1,
       "action": {
           "type": "redirect",
@@ -1806,7 +378,7 @@
       }
   },
   {
-      "id": 130,
+      "id": 28,
       "priority": 1,
       "action": {
           "type": "redirect",
@@ -1820,7 +392,7 @@
       }
   },
   {
-      "id": 131,
+      "id": 29,
       "priority": 1,
       "action": {
           "type": "redirect",
@@ -1834,7 +406,7 @@
       }
   },
   {
-      "id": 132,
+      "id": 30,
       "priority": 1,
       "action": {
           "type": "redirect",
@@ -1848,7 +420,7 @@
       }
   },
   {
-      "id": 133,
+      "id": 31,
       "priority": 1,
       "action": {
           "type": "redirect",
@@ -1862,7 +434,7 @@
       }
   },
   {
-      "id": 134,
+      "id": 32,
       "priority": 1,
       "action": {
           "type": "redirect",
@@ -1876,7 +448,7 @@
       }
   },
   {
-      "id": 135,
+      "id": 33,
       "priority": 1,
       "action": {
           "type": "redirect",
@@ -1890,7 +462,7 @@
       }
   },
   {
-      "id": 136,
+      "id": 34,
       "priority": 1,
       "action": {
           "type": "redirect",
@@ -1904,105 +476,7 @@
       }
   },
   {
-      "id": 137,
-      "priority": 1,
-      "action": {
-          "type": "redirect",
-          "redirect": {
-              "extensionPath": "/assets/images/colours/colour160-140.png"
-          }
-      },
-      "condition": {
-          "urlFilter": "https://cdn.tanktrouble.com/*/assets/images/colours/colour160-140.png",
-          "resourceTypes": ["image"]
-      }
-  },
-  {
-      "id": 138,
-      "priority": 1,
-      "action": {
-          "type": "redirect",
-          "redirect": {
-              "extensionPath": "/assets/images/colours/colour160-200.png"
-          }
-      },
-      "condition": {
-          "urlFilter": "https://cdn.tanktrouble.com/*/assets/images/colours/colour160-200.png",
-          "resourceTypes": ["image"]
-      }
-  },
-  {
-      "id": 139,
-      "priority": 1,
-      "action": {
-          "type": "redirect",
-          "redirect": {
-              "extensionPath": "/assets/images/colours/colour160-320.png"
-          }
-      },
-      "condition": {
-          "urlFilter": "https://cdn.tanktrouble.com/*/assets/images/colours/colour160-320.png",
-          "resourceTypes": ["image"]
-      }
-  },
-  {
-      "id": 140,
-      "priority": 1,
-      "action": {
-          "type": "redirect",
-          "redirect": {
-              "extensionPath": "/assets/images/colours/colour160-140@2x.png"
-          }
-      },
-      "condition": {
-          "urlFilter": "https://cdn.tanktrouble.com/*/assets/images/colours/colour160-140@2x.png",
-          "resourceTypes": ["image"]
-      }
-  },
-  {
-      "id": 141,
-      "priority": 1,
-      "action": {
-          "type": "redirect",
-          "redirect": {
-              "extensionPath": "/assets/images/colours/colour160-200@2x.png"
-          }
-      },
-      "condition": {
-          "urlFilter": "https://cdn.tanktrouble.com/*/assets/images/colours/colour160-200@2x.png",
-          "resourceTypes": ["image"]
-      }
-  },
-  {
-      "id": 142,
-      "priority": 1,
-      "action": {
-          "type": "redirect",
-          "redirect": {
-              "extensionPath": "/assets/images/colours/colour160-320@2x.png"
-          }
-      },
-      "condition": {
-          "urlFilter": "https://cdn.tanktrouble.com/*/assets/images/colours/colour160-320@2x.png",
-          "resourceTypes": ["image"]
-      }
-  },
-  {
-      "id": 143,
-      "priority": 1,
-      "action": {
-          "type": "redirect",
-          "redirect": {
-              "extensionPath": "/assets/images/colours/colour160Icon-26.png"
-          }
-      },
-      "condition": {
-          "urlFilter": "https://cdn.tanktrouble.com/*/assets/images/colours/colour160Icon-26.png",
-          "resourceTypes": ["image"]
-      }
-  },
-  {
-      "id": 144,
+      "id": 35,
       "priority": 1,
       "action": {
           "type": "redirect",
@@ -2016,105 +490,21 @@
       }
   },
   {
-      "id": 145,
+      "id": 36,
       "priority": 1,
       "action": {
           "type": "redirect",
           "redirect": {
-              "extensionPath": "/assets/images/colours/colour161-140.png"
+              "extensionPath": "/assets/images/colours/colour160Icon-26.png"
           }
       },
       "condition": {
-          "urlFilter": "https://cdn.tanktrouble.com/*/assets/images/colours/colour161-140.png",
+          "urlFilter": "https://cdn.tanktrouble.com/*/assets/images/colours/colour160Icon-26.png",
           "resourceTypes": ["image"]
       }
   },
   {
-      "id": 146,
-      "priority": 1,
-      "action": {
-          "type": "redirect",
-          "redirect": {
-              "extensionPath": "/assets/images/colours/colour161-200.png"
-          }
-      },
-      "condition": {
-          "urlFilter": "https://cdn.tanktrouble.com/*/assets/images/colours/colour161-200.png",
-          "resourceTypes": ["image"]
-      }
-  },
-  {
-      "id": 147,
-      "priority": 1,
-      "action": {
-          "type": "redirect",
-          "redirect": {
-              "extensionPath": "/assets/images/colours/colour161-320.png"
-          }
-      },
-      "condition": {
-          "urlFilter": "https://cdn.tanktrouble.com/*/assets/images/colours/colour161-320.png",
-          "resourceTypes": ["image"]
-      }
-  },
-  {
-      "id": 148,
-      "priority": 1,
-      "action": {
-          "type": "redirect",
-          "redirect": {
-              "extensionPath": "/assets/images/colours/colour161-140@2x.png"
-          }
-      },
-      "condition": {
-          "urlFilter": "https://cdn.tanktrouble.com/*/assets/images/colours/colour161-140@2x.png",
-          "resourceTypes": ["image"]
-      }
-  },
-  {
-      "id": 149,
-      "priority": 1,
-      "action": {
-          "type": "redirect",
-          "redirect": {
-              "extensionPath": "/assets/images/colours/colour161-200@2x.png"
-          }
-      },
-      "condition": {
-          "urlFilter": "https://cdn.tanktrouble.com/*/assets/images/colours/colour161-200@2x.png",
-          "resourceTypes": ["image"]
-      }
-  },
-  {
-      "id": 150,
-      "priority": 1,
-      "action": {
-          "type": "redirect",
-          "redirect": {
-              "extensionPath": "/assets/images/colours/colour161-320@2x.png"
-          }
-      },
-      "condition": {
-          "urlFilter": "https://cdn.tanktrouble.com/*/assets/images/colours/colour161-320@2x.png",
-          "resourceTypes": ["image"]
-      }
-  },
-  {
-      "id": 151,
-      "priority": 1,
-      "action": {
-          "type": "redirect",
-          "redirect": {
-              "extensionPath": "/assets/images/colours/colour161Icon-26.png"
-          }
-      },
-      "condition": {
-          "urlFilter": "https://cdn.tanktrouble.com/*/assets/images/colours/colour161Icon-26.png",
-          "resourceTypes": ["image"]
-      }
-  },
-  {
-      "id": 152,
+      "id": 37,
       "priority": 1,
       "action": {
           "type": "redirect",
@@ -2128,106 +518,21 @@
       }
   },
   {
-      "id": 153,
+      "id": 38,
       "priority": 1,
       "action": {
           "type": "redirect",
           "redirect": {
-              "extensionPath": "/assets/images/colours/colour162-140.png"
+              "extensionPath": "/assets/images/colours/colour161Icon-26.png"
           }
       },
       "condition": {
-          "urlFilter": "https://cdn.tanktrouble.com/*/assets/images/colours/colour162-140.png",
+          "urlFilter": "https://cdn.tanktrouble.com/*/assets/images/colours/colour161Icon-26.png",
           "resourceTypes": ["image"]
       }
   },
   {
-      "id": 154,
-      "priority": 1,
-      "action": {
-          "type": "redirect",
-          "redirect": {
-              "extensionPath": "/assets/images/colours/colour162-200.png"
-          }
-      },
-      "condition": {
-          "urlFilter": "https://cdn.tanktrouble.com/*/assets/images/colours/colour162-200.png",
-          "resourceTypes": ["image"]
-      }
-  },
-  {
-      "id": 155,
-      "priority": 1,
-      "action": {
-          "type": "redirect",
-          "redirect": {
-              "extensionPath": "/assets/images/colours/colour162-320.png"
-          }
-      },
-      "condition": {
-          "urlFilter": "https://cdn.tanktrouble.com/*/assets/images/colours/colour162-320.png",
-          "resourceTypes": ["image"]
-      }
-  },
-  {
-      "id": 156,
-      "priority": 1,
-      "action": {
-          "type": "redirect",
-          "redirect": {
-              "extensionPath": "/assets/images/colours/colour162-140@2x.png"
-          }
-      },
-      "condition": {
-          "urlFilter": "https://cdn.tanktrouble.com/*/assets/images/colours/colour162-140@2x.png",
-          "resourceTypes": ["image"]
-      }
-  },
-  {
-      "id": 157,
-      "priority": 1,
-      "action": {
-          "type": "redirect",
-          "redirect": {
-              "extensionPath": "/assets/images/colours/colour162-200@2x.png"
-          }
-      },
-      "condition": {
-          "urlFilter": "https://cdn.tanktrouble.com/*/assets/images/colours/colour162-200@2x.png",
-          "resourceTypes": ["image"]
-      }
-  },
-
-  {
-      "id": 158,
-      "priority": 1,
-      "action": {
-          "type": "redirect",
-          "redirect": {
-              "extensionPath": "/assets/images/colours/colour162-320@2x.png"
-          }
-      },
-      "condition": {
-          "urlFilter": "https://cdn.tanktrouble.com/*/assets/images/colours/colour162-320@2x.png",
-          "resourceTypes": ["image"]
-      }
-  },
-  {
-      "id": 159,
-      "priority": 1,
-      "action": {
-          "type": "redirect",
-          "redirect": {
-              "extensionPath": "/assets/images/colours/colour162Icon-26.png"
-          }
-      },
-      "condition": {
-          "urlFilter": "https://cdn.tanktrouble.com/*/assets/images/colours/colour162Icon-26.png",
-          "resourceTypes": ["image"]
-      }
-  },
-  {
-      "id": 160,
+      "id": 40,
       "priority": 1,
       "action": {
           "type": "redirect",
@@ -2241,91 +546,35 @@
       }
   },
   {
-      "id": 161,
+      "id": 41,
       "priority": 1,
       "action": {
           "type": "redirect",
           "redirect": {
-              "extensionPath": "/assets/images/colours/colour163-140.png"
+              "extensionPath": "/assets/images/colours/colour162Icon-26.png"
           }
       },
       "condition": {
-          "urlFilter": "https://cdn.tanktrouble.com/*/assets/images/colours/colour163-140.png",
+          "urlFilter": "https://cdn.tanktrouble.com/*/assets/images/colours/colour162Icon-26.png",
           "resourceTypes": ["image"]
       }
   },
   {
-      "id": 162,
+      "id": 42,
       "priority": 1,
       "action": {
           "type": "redirect",
           "redirect": {
-              "extensionPath": "/assets/images/colours/colour163-200.png"
+              "extensionPath": "/assets/images/colours/colour163Icon-26@2x.png"
           }
       },
       "condition": {
-          "urlFilter": "https://cdn.tanktrouble.com/*/assets/images/colours/colour163-200.png",
+          "urlFilter": "https://cdn.tanktrouble.com/*/assets/images/colours/colour163Icon-26@2x.png",
           "resourceTypes": ["image"]
       }
   },
   {
-      "id": 163,
-      "priority": 1,
-      "action": {
-          "type": "redirect",
-          "redirect": {
-              "extensionPath": "/assets/images/colours/colour163-320.png"
-          }
-      },
-      "condition": {
-          "urlFilter": "https://cdn.tanktrouble.com/*/assets/images/colours/colour163-320.png",
-          "resourceTypes": ["image"]
-      }
-  },
-  {
-      "id": 164,
-      "priority": 1,
-      "action": {
-          "type": "redirect",
-          "redirect": {
-              "extensionPath": "/assets/images/colours/colour163-140@2x.png"
-          }
-      },
-      "condition": {
-          "urlFilter": "https://cdn.tanktrouble.com/*/assets/images/colours/colour163-140@2x.png",
-          "resourceTypes": ["image"]
-      }
-  },
-  {
-      "id": 165,
-      "priority": 1,
-      "action": {
-          "type": "redirect",
-          "redirect": {
-              "extensionPath": "/assets/images/colours/colour163-200@2x.png"
-          }
-      },
-      "condition": {
-          "urlFilter": "https://cdn.tanktrouble.com/*/assets/images/colours/colour163-200@2x.png",
-          "resourceTypes": ["image"]
-      }
-  },
-  {
-      "id": 166,
-      "priority": 1,
-      "action": {
-          "type": "redirect",
-          "redirect": {
-              "extensionPath": "/assets/images/colours/colour163-320@2x.png"
-          }
-      },
-      "condition": {
-          "urlFilter": "https://cdn.tanktrouble.com/*/assets/images/colours/colour163-320@2x.png",
-          "resourceTypes": ["image"]
-      }
-  },
-  {
-      "id": 167,
+      "id": 43,
       "priority": 1,
       "action": {
           "type": "redirect",
@@ -2339,105 +588,7 @@
       }
   },
   {
-      "id": 168,
-      "priority": 1,
-      "action": {
-          "type": "redirect",
-          "redirect": {
-              "extensionPath": "/assets/images/colours/colour164-140.png"
-          }
-      },
-      "condition": {
-          "urlFilter": "https://cdn.tanktrouble.com/*/assets/images/colours/colour164-140.png",
-          "resourceTypes": ["image"]
-      }
-  },
-  {
-      "id": 169,
-      "priority": 1,
-      "action": {
-          "type": "redirect",
-          "redirect": {
-              "extensionPath": "/assets/images/colours/colour164-200.png"
-          }
-      },
-      "condition": {
-          "urlFilter": "https://cdn.tanktrouble.com/*/assets/images/colours/colour164-200.png",
-          "resourceTypes": ["image"]
-      }
-  },
-  {
-      "id": 170,
-      "priority": 1,
-      "action": {
-          "type": "redirect",
-          "redirect": {
-              "extensionPath": "/assets/images/colours/colour164-320.png"
-          }
-      },
-      "condition": {
-          "urlFilter": "https://cdn.tanktrouble.com/*/assets/images/colours/colour164-320.png",
-          "resourceTypes": ["image"]
-      }
-  },
-  {
-      "id": 171,
-      "priority": 1,
-      "action": {
-          "type": "redirect",
-          "redirect": {
-              "extensionPath": "/assets/images/colours/colour164-140@2x.png"
-          }
-      },
-      "condition": {
-          "urlFilter": "https://cdn.tanktrouble.com/*/assets/images/colours/colour164-140@2x.png",
-          "resourceTypes": ["image"]
-      }
-  },
-  {
-      "id": 172,
-      "priority": 1,
-      "action": {
-          "type": "redirect",
-          "redirect": {
-              "extensionPath": "/assets/images/colours/colour164-200@2x.png"
-          }
-      },
-      "condition": {
-          "urlFilter": "https://cdn.tanktrouble.com/*/assets/images/colours/colour164-200@2x.png",
-          "resourceTypes": ["image"]
-      }
-  },
-  {
-      "id": 173,
-      "priority": 1,
-      "action": {
-          "type": "redirect",
-          "redirect": {
-              "extensionPath": "/assets/images/colours/colour164-320@2x.png"
-          }
-      },
-      "condition": {
-          "urlFilter": "https://cdn.tanktrouble.com/*/assets/images/colours/colour164-320@2x.png",
-          "resourceTypes": ["image"]
-      }
-  },
-  {
-      "id": 174,
-      "priority": 1,
-      "action": {
-          "type": "redirect",
-          "redirect": {
-              "extensionPath": "/assets/images/colours/colour164Icon-26.png"
-          }
-      },
-      "condition": {
-          "urlFilter": "https://cdn.tanktrouble.com/*/assets/images/colours/colour164Icon-26.png",
-          "resourceTypes": ["image"]
-      }
-  },
-  {
-      "id": 175,
+      "id": 44,
       "priority": 1,
       "action": {
           "type": "redirect",
@@ -2451,105 +602,21 @@
       }
   },
   {
-      "id": 176,
+      "id": 45,
       "priority": 1,
       "action": {
           "type": "redirect",
           "redirect": {
-              "extensionPath": "/assets/images/colours/colour166-140.png"
+              "extensionPath": "/assets/images/colours/colour164Icon-26.png"
           }
       },
       "condition": {
-          "urlFilter": "https://cdn.tanktrouble.com/*/assets/images/colours/colour165-140.png",
+          "urlFilter": "https://cdn.tanktrouble.com/*/assets/images/colours/colour164Icon-26.png",
           "resourceTypes": ["image"]
       }
   },
   {
-      "id": 177,
-      "priority": 1,
-      "action": {
-          "type": "redirect",
-          "redirect": {
-              "extensionPath": "/assets/images/colours/colour165-200.png"
-          }
-      },
-      "condition": {
-          "urlFilter": "https://cdn.tanktrouble.com/*/assets/images/colours/colour165-200.png",
-          "resourceTypes": ["image"]
-      }
-  },
-  {
-      "id": 178,
-      "priority": 1,
-      "action": {
-          "type": "redirect",
-          "redirect": {
-              "extensionPath": "/assets/images/colours/colour165-320.png"
-          }
-      },
-      "condition": {
-          "urlFilter": "https://cdn.tanktrouble.com/*/assets/images/colours/colour165-320.png",
-          "resourceTypes": ["image"]
-      }
-  },
-  {
-      "id": 179,
-      "priority": 1,
-      "action": {
-          "type": "redirect",
-          "redirect": {
-              "extensionPath": "/assets/images/colours/colour165-140@2x.png"
-          }
-      },
-      "condition": {
-          "urlFilter": "https://cdn.tanktrouble.com/*/assets/images/colours/colour165-140@2x.png",
-          "resourceTypes": ["image"]
-      }
-  },
-  {
-      "id": 180,
-      "priority": 1,
-      "action": {
-          "type": "redirect",
-          "redirect": {
-              "extensionPath": "/assets/images/colours/colour165-200@2x.png"
-          }
-      },
-      "condition": {
-          "urlFilter": "https://cdn.tanktrouble.com/*/assets/images/colours/colour165-200@2x.png",
-          "resourceTypes": ["image"]
-      }
-  },
-  {
-      "id": 181,
-      "priority": 1,
-      "action": {
-          "type": "redirect",
-          "redirect": {
-              "extensionPath": "/assets/images/colours/colour165-320@2x.png"
-          }
-      },
-      "condition": {
-          "urlFilter": "https://cdn.tanktrouble.com/*/assets/images/colours/colour165-320@2x.png",
-          "resourceTypes": ["image"]
-      }
-  },
-  {
-      "id": 182,
-      "priority": 1,
-      "action": {
-          "type": "redirect",
-          "redirect": {
-              "extensionPath": "/assets/images/colours/colour165Icon-26.png"
-          }
-      },
-      "condition": {
-          "urlFilter": "https://cdn.tanktrouble.com/*/assets/images/colours/colour165Icon-26.png",
-          "resourceTypes": ["image"]
-      }
-  },
-  {
-      "id": 183,
+      "id": 46,
       "priority": 1,
       "action": {
           "type": "redirect",
@@ -2563,105 +630,21 @@
       }
   },
   {
-      "id": 184,
+      "id": 47,
       "priority": 1,
       "action": {
           "type": "redirect",
           "redirect": {
-              "extensionPath": "/assets/images/colours/colour166-140.png"
+              "extensionPath": "/assets/images/colours/colour165Icon-26.png"
           }
       },
       "condition": {
-          "urlFilter": "https://cdn.tanktrouble.com/*/assets/images/colours/colour166-140.png",
+          "urlFilter": "https://cdn.tanktrouble.com/*/assets/images/colours/colour165Icon-26.png",
           "resourceTypes": ["image"]
       }
   },
   {
-      "id": 185,
-      "priority": 1,
-      "action": {
-          "type": "redirect",
-          "redirect": {
-              "extensionPath": "/assets/images/colours/colour166-200.png"
-          }
-      },
-      "condition": {
-          "urlFilter": "https://cdn.tanktrouble.com/*/assets/images/colours/colour166-200.png",
-          "resourceTypes": ["image"]
-      }
-  },
-  {
-      "id": 186,
-      "priority": 1,
-      "action": {
-          "type": "redirect",
-          "redirect": {
-              "extensionPath": "/assets/images/colours/colour166-320.png"
-          }
-      },
-      "condition": {
-          "urlFilter": "https://cdn.tanktrouble.com/*/assets/images/colours/colour166-320.png",
-          "resourceTypes": ["image"]
-      }
-  },
-  {
-      "id": 187,
-      "priority": 1,
-      "action": {
-          "type": "redirect",
-          "redirect": {
-              "extensionPath": "/assets/images/colours/colour166-140@2x.png"
-          }
-      },
-      "condition": {
-          "urlFilter": "https://cdn.tanktrouble.com/*/assets/images/colours/colour166-140@2x.png",
-          "resourceTypes": ["image"]
-      }
-  },
-  {
-      "id": 188,
-      "priority": 1,
-      "action": {
-          "type": "redirect",
-          "redirect": {
-              "extensionPath": "/assets/images/colours/colour166-200@2x.png"
-          }
-      },
-      "condition": {
-          "urlFilter": "https://cdn.tanktrouble.com/*/assets/images/colours/colour166-200@2x.png",
-          "resourceTypes": ["image"]
-      }
-  },
-  {
-      "id": 189,
-      "priority": 1,
-      "action": {
-          "type": "redirect",
-          "redirect": {
-              "extensionPath": "/assets/images/colours/colour166-320@2x.png"
-          }
-      },
-      "condition": {
-          "urlFilter": "https://cdn.tanktrouble.com/*/assets/images/colours/colour166-320@2x.png",
-          "resourceTypes": ["image"]
-      }
-  },
-  {
-      "id": 190,
-      "priority": 1,
-      "action": {
-          "type": "redirect",
-          "redirect": {
-              "extensionPath": "/assets/images/colours/colour166Icon-26.png"
-          }
-      },
-      "condition": {
-          "urlFilter": "https://cdn.tanktrouble.com/*/assets/images/colours/colour166Icon-26.png",
-          "resourceTypes": ["image"]
-      }
-  },
-  {
-      "id": 191,
+      "id": 48,
       "priority": 1,
       "action": {
           "type": "redirect",
@@ -2675,105 +658,21 @@
       }
   },
   {
-      "id": 192,
+      "id": 49,
       "priority": 1,
       "action": {
           "type": "redirect",
           "redirect": {
-              "extensionPath": "/assets/images/colours/colour167-140.png"
+              "extensionPath": "/assets/images/colours/colour166Icon-26.png"
           }
       },
       "condition": {
-          "urlFilter": "https://cdn.tanktrouble.com/*/assets/images/colours/colour167-140.png",
+          "urlFilter": "https://cdn.tanktrouble.com/*/assets/images/colours/colour166Icon-26.png",
           "resourceTypes": ["image"]
       }
   },
   {
-      "id": 193,
-      "priority": 1,
-      "action": {
-          "type": "redirect",
-          "redirect": {
-              "extensionPath": "/assets/images/colours/colour167-200.png"
-          }
-      },
-      "condition": {
-          "urlFilter": "https://cdn.tanktrouble.com/*/assets/images/colours/colour167-200.png",
-          "resourceTypes": ["image"]
-      }
-  },
-  {
-      "id": 194,
-      "priority": 1,
-      "action": {
-          "type": "redirect",
-          "redirect": {
-              "extensionPath": "/assets/images/colours/colour167-320.png"
-          }
-      },
-      "condition": {
-          "urlFilter": "https://cdn.tanktrouble.com/*/assets/images/colours/colour167-320.png",
-          "resourceTypes": ["image"]
-      }
-  },
-  {
-      "id": 195,
-      "priority": 1,
-      "action": {
-          "type": "redirect",
-          "redirect": {
-              "extensionPath": "/assets/images/colours/colour167-140@2x.png"
-          }
-      },
-      "condition": {
-          "urlFilter": "https://cdn.tanktrouble.com/*/assets/images/colours/colour167-140@2x.png",
-          "resourceTypes": ["image"]
-      }
-  },
-  {
-      "id": 196,
-      "priority": 1,
-      "action": {
-          "type": "redirect",
-          "redirect": {
-              "extensionPath": "/assets/images/colours/colour167-200@2x.png"
-          }
-      },
-      "condition": {
-          "urlFilter": "https://cdn.tanktrouble.com/*/assets/images/colours/colour167-200@2x.png",
-          "resourceTypes": ["image"]
-      }
-  },
-  {
-      "id": 197,
-      "priority": 1,
-      "action": {
-          "type": "redirect",
-          "redirect": {
-              "extensionPath": "/assets/images/colours/colour167-320@2x.png"
-          }
-      },
-      "condition": {
-          "urlFilter": "https://cdn.tanktrouble.com/*/assets/images/colours/colour167-320@2x.png",
-          "resourceTypes": ["image"]
-      }
-  },
-  {
-      "id": 198,
-      "priority": 1,
-      "action": {
-          "type": "redirect",
-          "redirect": {
-              "extensionPath": "/assets/images/colours/colour167Icon-26.png"
-          }
-      },
-      "condition": {
-          "urlFilter": "https://cdn.tanktrouble.com/*/assets/images/colours/colour167Icon-26.png",
-          "resourceTypes": ["image"]
-      }
-  },
-  {
-      "id": 199,
+      "id": 50,
       "priority": 1,
       "action": {
           "type": "redirect",
@@ -2783,6 +682,20 @@
       },
       "condition": {
           "urlFilter": "https://cdn.tanktrouble.com/*/assets/images/colours/colour167Icon-26@2x.png",
+          "resourceTypes": ["image"]
+      }
+  },
+  {
+      "id": 51,
+      "priority": 1,
+      "action": {
+          "type": "redirect",
+          "redirect": {
+              "extensionPath": "/assets/images/colours/colour167Icon-26.png"
+          }
+      },
+      "condition": {
+          "urlFilter": "https://cdn.tanktrouble.com/*/assets/images/colours/colour167Icon-26.png",
           "resourceTypes": ["image"]
       }
   }

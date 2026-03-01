@@ -1,5 +1,4 @@
 // Mod Activity Snippet
-// Displays recent activity of game moderators
 whenContentInitialized().then(() => {
     const snippet = $(`
         <div id="modActivitySnippet" class="snippet">

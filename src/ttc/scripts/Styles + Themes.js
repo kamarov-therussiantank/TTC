@@ -1,4 +1,5 @@
-// We are injecting this script to override styles before the content gets initialized
+// We are injecting this script before every other
+// just so we can override styles before the content gets initialized
 (() => {
   if (!window.location.hostname.endsWith('tanktrouble.com')) return;
   const fontStyle = document.createElement("style");

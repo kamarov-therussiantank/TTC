@@ -1,5 +1,5 @@
+// FAQ Snippet
 whenContentInitialized().then(() => {
-
     var snippet = $(`
     <div id="FAQSnippet" class="snippet">
     <a style="text-decoration: none;">
@@ -7,12 +7,9 @@ whenContentInitialized().then(() => {
             <div style="font-size: 9px;">Check the F.A.Q</div>
     </a>
     `);
-
     var content = $('<div></div>');
-
  snippet.append(content);
 $('#tertiaryContent').append(snippet);
-
 $("#FAQSnippet").mousedown(function(event) {
         if (Users.hasAdminRole(UIConstants.ADMIN_ROLE_WRITE_MESSAGES)) {
             OverlayManager.pushOverlay(
@@ -27,11 +24,8 @@ $("#FAQSnippet").mousedown(function(event) {
         }
         event.stopPropagation();
     });
-
 });
-
 var TankTrouble = TankTrouble || {};
-
 TankTrouble.faqOverlay = {
     wrapper: null,
     initialized: false,
@@ -40,14 +34,8 @@ TankTrouble.faqOverlay = {
         if (this.initialized) {
             return;
         }
-
-        // Create main wrapper
         this.wrapper = $("<div class='faq centre'/>");
-
-        // FAQ header
         this.wrapper.append("<div id='faq-header'>F.A.Q</div>");
-
-        // Create content block
         var content = $("<div id='faq-content'/>").append(
             "<div class='question'>What happened to the Classic TankTrouble?</div>",
             $("<div class='answer'/>").append(
@@ -156,32 +144,23 @@ TankTrouble.faqOverlay = {
                 "Laika is a ferocious USSR space lady! She’s out of our control and out to destroy you!"
             ),
         );
-
-        // Append content to wrapper
         this.wrapper.append(content);
 
         this.initialized = true;
     },
-
     show: function (params) {
         this._initialize();
-        // likely show logic goes here
     },
-
     hide: function () {
         this._initialize();
-        // likely hide logic goes here
     },
-
     getContents: function () {
         this._initialize();
         return this.wrapper;
     },
-
     shouldHide: function () {
         return true;
     },
-
     canBeCancelled: function () {
         return true;
     }

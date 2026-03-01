@@ -1,5 +1,4 @@
 // Tell A Friend snippet
-// Enables users to tell a friend about Tank Trouble via email
 whenContentInitialized().then(() => {
 
     var snippet = $(`
