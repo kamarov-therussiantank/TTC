@@ -1,7 +1,7 @@
 {
 	"name": "TTC",
 	"author": "kamarov",
-	"version": "2.8.0",
+	"version": "2.8.2",
 	"manifest_version": 3,
 	"description": "TTC - Dive into the retro mayhem once again!",
 	"icons": {
@@ -82,7 +82,7 @@
 			"js": [
 			 "ttc/utils/gameUtils.js",
 			 "ttc/utils/timeUtils.js",
-			 "ttc/scripts/Styles + Themes.js",
+			 "ttc/scripts/patches.js",
 			 "ttc/scripts/visitsSnippet.js",
 			 "ttc/scripts/FAQSnippet.js",
 			 "ttc/scripts/leaderboardSnippet.js",

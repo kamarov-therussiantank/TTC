@@ -1,5 +1,26 @@
-// We are injecting this script before every other
-// just so we can override styles before the content gets initialized
+//We patch the game to unlock FPS via delta timing, and also apply seasonal styles and effects before the game loads.
+(function () {
+    function applyFPSpatch() {
+        if (!window.Phaser || !Phaser.Time) {
+            requestAnimationFrame(applyFPSpatch);
+            return;
+        }
+        if (Phaser.Time.prototype.__fpsUnlocked) return;
+        Phaser.Time.prototype.__fpsUnlocked = true;
+        Object.defineProperty(Phaser.Time.prototype, 'physicsElapsed', {
+            get: function () {return this.delta / 1000},
+            set: function (value) {this.delta = value * 1000},
+            configurable: true
+        });
+        Object.defineProperty(Phaser.Time.prototype, 'physicsElapsedMS', {
+            get: function () { return this.delta},
+            set: function (value) {this.delta = value},
+            configurable: true
+        });
+    }
+    applyFPSpatch();
+})();
+
 (() => {
   if (!window.location.hostname.endsWith('tanktrouble.com')) return;
   const fontStyle = document.createElement("style");

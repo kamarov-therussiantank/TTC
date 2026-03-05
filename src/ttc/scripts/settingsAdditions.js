@@ -124,15 +124,12 @@ TankTrouble.SettingsBox = {
         }
         const displayAllGamesEnabled = Cookies.get("displayAllGames") === "true";
         UIConstants.GAME_ICON_COUNT = displayAllGamesEnabled ? 6 : 4;
-
         const cameraShakeDisabled = Cookies.get("disableCameraShake") === "true";
         UIConstants.MAX_CAMERA_SHAKE = cameraShakeDisabled ? 0 : UIConstants.MAX_CAMERA_SHAKE;
         UIConstants.MINE_EXPLOSION_CAMERA_SHAKE = cameraShakeDisabled ? 0 : UIConstants.MINE_EXPLOSION_CAMERA_SHAKE;
         UIConstants.TANK_EXPLOSION_CAMERA_SHAKE = cameraShakeDisabled ? 0 : UIConstants.TANK_EXPLOSION_CAMERA_SHAKE;
-
         const tankBadgesDisabled = Cookies.get("disableTankBadges") === "true";
         UIConstants.DISABLE_TANK_BADGES = tankBadgesDisabled;
-
         this.settingsServerSelect.iconselectmenu({
             change: function(event, ui) {
                 self._changeServer(event, ui);
