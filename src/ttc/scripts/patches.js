@@ -1,25 +1,67 @@
-//We patch the game to unlock FPS via delta timing, and also apply seasonal styles and effects before the game loads.
+//patches.js
+//Various patches to improve game performance and add seasonal styles
 (function () {
+    const TARGET_FPS = 240;
+    function getFrameDeltaMS(time) {
+        const elapsedMS = Number(time.elapsedMS);
+        if (Number.isFinite(elapsedMS) && elapsedMS > 0) return elapsedMS;
+        const delta = Number(time.delta);
+        if (Number.isFinite(delta) && delta > 0) return delta;
+        return 1000 / 60;
+    }
     function applyFPSpatch() {
-        if (!window.Phaser || !Phaser.Time) {
+        if (!window.Phaser || !Phaser.Time || !Phaser.Game) {
             requestAnimationFrame(applyFPSpatch);
             return;
         }
         if (Phaser.Time.prototype.__fpsUnlocked) return;
         Phaser.Time.prototype.__fpsUnlocked = true;
         Object.defineProperty(Phaser.Time.prototype, 'physicsElapsed', {
-            get: function () {return this.delta / 1000},
-            set: function (value) {this.delta = value * 1000},
+            get: function () {
+                return getFrameDeltaMS(this) / 1000;
+            },
+            set: function (value) {
+                const ms = Number(value) * 1000;
+                if (Number.isFinite(ms)) {
+                    this.elapsedMS = ms;
+                    this.delta = ms;
+                }
+            },
             configurable: true
         });
         Object.defineProperty(Phaser.Time.prototype, 'physicsElapsedMS', {
-            get: function () { return this.delta},
-            set: function (value) {this.delta = value},
+            get: function () {
+                return getFrameDeltaMS(this);
+            },
+            set: function (value) {
+                const ms = Number(value);
+                if (Number.isFinite(ms)) {
+                    this.elapsedMS = ms;
+                    this.delta = ms;
+                }
+            },
             configurable: true
         });
+        if (!Phaser.Game.prototype.__fpsUnlockWrapped && typeof Phaser.Game.prototype.update === 'function') {
+            const originalUpdate = Phaser.Game.prototype.update;
+            Phaser.Game.prototype.__fpsUnlockWrapped = true;
+            Phaser.Game.prototype.update = function (time) {
+                if (this.time) {
+                    const currentFps = Number(this.time.desiredFps);
+                    const desiredFps = Number.isFinite(currentFps) ? Math.max(currentFps, TARGET_FPS) : TARGET_FPS;
+                    this.time.desiredFps = desiredFps;
+                    this.time.desiredFpsMult = 1 / desiredFps;
+                    if (typeof this.forceSingleUpdate === 'boolean') {
+                        this.forceSingleUpdate = true;
+                    }
+                }
+                return originalUpdate.call(this, time);
+            };
+        }
     }
     applyFPSpatch();
 })();
+
 
 (() => {
   if (!window.location.hostname.endsWith('tanktrouble.com')) return;
