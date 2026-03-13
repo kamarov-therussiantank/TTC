@@ -10,6 +10,8 @@ whenContentInitialized().then(() => {
     var content = $('<div></div>');
  snippet.append(content);
 $('#tertiaryContent').append(snippet);
+
+//Script
 $("#FAQSnippet").mousedown(function(event) {
         if (Users.hasAdminRole(UIConstants.ADMIN_ROLE_WRITE_MESSAGES)) {
             OverlayManager.pushOverlay(

@@ -101,3 +101,95 @@ whenContentInitialized().then(() => {
         return result;
     });
 });
+
+whenContentInitialized().then(() => {
+    let storedThreads = JSON.parse(localStorage.getItem('ttForumThreads')) || [];
+    const injectSearchBar = () => {
+        const threadsWrapper = $('#threadsWrapper');
+        let searchBar = $('#forumSearchBar');
+        if (threadsWrapper.length && !searchBar.length) {
+            searchBar = $(`
+                <div id="forumSearchBar" style="margin:8px 0; position:relative;">
+                    <input type="text" id="forumSearchInput" placeholder="Search...">
+                    <div id="forumSearchSuggestions"></div>
+                </div>
+            `);
+            threadsWrapper.before(searchBar);
+        }
+        searchBar.toggle(threadsWrapper.is(':visible'));
+        function storeThreads() {
+            let changed = false;
+            $('.thread').each(function () {
+                const threadId = parseInt($(this).attr('id')?.replace('thread-', '') || 0, 10);
+                const header = $(this).find('.header').text().trim();
+                if (threadId && header) {
+                    if (!storedThreads.some(t => t.id === threadId)) {
+                        storedThreads.push({ id: threadId, header });
+                        changed = true;
+                    }
+                }
+            });
+            if (changed) localStorage.setItem('ttForumThreads', JSON.stringify(storedThreads));
+        }
+        storeThreads();
+        const originalThreadListChanged = ForumView.getMethod('threadListChanged');
+        ForumView.method('threadListChanged', function (...args) {
+            const result = originalThreadListChanged.apply(this, args);
+            storeThreads();
+            return result;
+        });
+        const input = $('#forumSearchInput');
+        const suggestions = $('#forumSearchSuggestions');
+        function performSearch() {
+            const query = input.val().toLowerCase().trim();
+            if (!query) {
+                suggestions.hide();
+                return;
+            }
+            const match = storedThreads.find(t =>
+                t.header.toLowerCase().includes(query)
+            );
+            if (!match) {
+                suggestions.hide();
+                return;
+            }
+            window.location.href = `https://tanktrouble.com/forum?threadId=${match.id}`;
+            suggestions.hide();
+        }
+        input.off('input').on('input', function () {
+            const query = $(this).val().toLowerCase().trim();
+            suggestions.empty();
+            if (!query) {
+                suggestions.hide();
+                return;
+            }
+            const matches = storedThreads.filter(t =>
+                t.header.toLowerCase().includes(query)
+            );
+            if (!matches.length) {
+                suggestions.hide();
+                return;
+            }
+            matches.forEach(thread => {
+                const item = $(`<div style="padding:6px; cursor:pointer;">${thread.header}</div>`);
+                item.on('click', () => {
+                    window.location.href = `https://tanktrouble.com/forum?threadId=${thread.id}`;
+                });
+                suggestions.append(item);
+            });
+            suggestions.show();
+        });
+        input.off('keypress').on('keypress', function (e) {
+            if (e.key === 'Enter') performSearch();
+        });
+
+        $(document).on('click', function (e) {
+            if (!$(e.target).closest('#forumSearchBar').length) {
+                suggestions.hide();
+            }
+        });
+    };
+    injectSearchBar();
+    const observer = new MutationObserver(() => injectSearchBar());
+    observer.observe(document.body, { childList: true, subtree: true });
+});

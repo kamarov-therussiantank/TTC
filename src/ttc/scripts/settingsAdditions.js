@@ -12,14 +12,12 @@ const reloadGame = () => {
         const newGameInstance = GameManager.insertGame($('#game'));
     }
 };
-
 const reloadPlayerPanel = () => {
     if (!UIPlayerPanel.phaserInstance) return;
         const parent = $(UIPlayerPanel.phaserInstance.parent);
         UIPlayerPanel.removePanel();
         UIPlayerPanel.insertPanel(parent);
 };
-
 var TankTrouble = TankTrouble || {};
 TankTrouble.SettingsBox = {
     settings: null,
@@ -68,7 +66,6 @@ TankTrouble.SettingsBox = {
         this.settingsForm.append(this.displayAllGamesCheckbox);
         this.settingsForm.append(this.disableCameraShakeCheckbox);
         this.settingsForm.append(this.disableTankBadgesCheckbox);
-        this.settingsForm.append(this.reduceUIEffectsCheckbox);
         this.settingsServerTitleDiv = $("<div class='spaced'>Server:</div>");
         this.settingsServerForm = $("<form class='spaced'></form>");
         this.settingsServerSelect = $("<select/>");
@@ -122,14 +119,6 @@ TankTrouble.SettingsBox = {
         if (Cookies.get('quality')) {
             this.settingsQualitySelect.val(Cookies.get('quality'));
         }
-        const displayAllGamesEnabled = Cookies.get("displayAllGames") === "true";
-        UIConstants.GAME_ICON_COUNT = displayAllGamesEnabled ? 6 : 4;
-        const cameraShakeDisabled = Cookies.get("disableCameraShake") === "true";
-        UIConstants.MAX_CAMERA_SHAKE = cameraShakeDisabled ? 0 : UIConstants.MAX_CAMERA_SHAKE;
-        UIConstants.MINE_EXPLOSION_CAMERA_SHAKE = cameraShakeDisabled ? 0 : UIConstants.MINE_EXPLOSION_CAMERA_SHAKE;
-        UIConstants.TANK_EXPLOSION_CAMERA_SHAKE = cameraShakeDisabled ? 0 : UIConstants.TANK_EXPLOSION_CAMERA_SHAKE;
-        const tankBadgesDisabled = Cookies.get("disableTankBadges") === "true";
-        UIConstants.DISABLE_TANK_BADGES = tankBadgesDisabled;
         this.settingsServerSelect.iconselectmenu({
             change: function(event, ui) {
                 self._changeServer(event, ui);
@@ -149,31 +138,17 @@ TankTrouble.SettingsBox = {
         setTimeout(function() {
             self._refreshServerStats();
         }, UIConstants.INITIAL_SERVER_STATS_DELAY);
-        this.displayAllGamesCheckbox.find("input")
-            .prop("checked", displayAllGamesEnabled)
-            .on("change", function() {
-            const enabled = this.checked;
-            UIConstants.GAME_ICON_COUNT = enabled ? 6 : 4;
-            Cookies.set("displayAllGames", enabled, { expires: 365 });
-            try { reloadGame(); } catch(e){}
+        this._setGamecount(Cookies.get("displayAllGames") === "true");
+        this._setCameraShake(Cookies.get("disableCameraShake") === "true");
+        this._setTankBadges(Cookies.get("disableTankBadges") === "true");
+        this.displayAllGamesCheckbox.find("input").on("change", function() {
+            self._setGamecount(this.checked);
         });
-        this.disableCameraShakeCheckbox.find("input")
-        .prop("checked", cameraShakeDisabled)
-        .on("change", function() {
-            const enabled = this.checked;
-            UIConstants.MAX_CAMERA_SHAKE = enabled ? 0 : UIConstants.MAX_CAMERA_SHAKE;
-            UIConstants.MINE_EXPLOSION_CAMERA_SHAKE = enabled ? 0 : UIConstants.MINE_EXPLOSION_CAMERA_SHAKE;
-            UIConstants.TANK_EXPLOSION_CAMERA_SHAKE = enabled ? 0 : UIConstants.TANK_EXPLOSION_CAMERA_SHAKE;
-            Cookies.set("disableCameraShake", enabled, { expires: 365 });
+        this.disableCameraShakeCheckbox.find("input").on("change", function() {
+            self._setCameraShake(this.checked);
         });
-        this.disableTankBadgesCheckbox.find("input")
-        .prop("checked", tankBadgesDisabled)
-        .on("change", function() {
-            const enabled = this.checked;
-            UIConstants.DISABLE_TANK_BADGES = enabled;
-            Cookies.set("disableTankBadges", enabled, { expires: 365 });
-            try { reloadGame(); } catch(e){}
-            try { reloadPlayerPanel(); } catch(e){}
+        this.disableTankBadgesCheckbox.find("input").on("change", function() {
+            self._setTankBadges(this.checked);
         });
     },
     show: function(x, y, preferredRadius) {
@@ -282,6 +257,26 @@ TankTrouble.SettingsBox = {
     _setQuality: function(quality) {
         this.settingsQualitySelect.val(quality);
         this.settingsQualitySelect.iconselectmenu("refresh");
+    },
+    _setGamecount: function(enabled) {
+        this.displayAllGamesCheckbox.find("input").prop("checked", enabled);
+        UIConstants.GAME_ICON_COUNT = enabled ? 6 : 4;
+        Cookies.set("displayAllGames", enabled, { expires: 365 });
+        try { reloadGame(); } catch(e) {}
+    },
+    _setCameraShake: function(disabled) {
+        this.disableCameraShakeCheckbox.find("input").prop("checked", disabled);
+        UIConstants.MAX_CAMERA_SHAKE = disabled ? 0 : UIConstants.MAX_CAMERA_SHAKE;
+        UIConstants.MINE_EXPLOSION_CAMERA_SHAKE = disabled ? 0 : UIConstants.MINE_EXPLOSION_CAMERA_SHAKE;
+        UIConstants.TANK_EXPLOSION_CAMERA_SHAKE = disabled ? 0 : UIConstants.TANK_EXPLOSION_CAMERA_SHAKE;
+        Cookies.set("disableCameraShake", disabled, { expires: 365 });
+    },
+    _setTankBadges: function(disabled) {
+        this.disableTankBadgesCheckbox.find("input").prop("checked", disabled);
+        UIConstants.DISABLE_TANK_BADGES = disabled;
+        Cookies.set("disableTankBadges", disabled, { expires: 365 });
+        try { reloadGame(); } catch(e) {}
+        try { reloadPlayerPanel(); } catch(e) {}
     },
     _updateFps: function(fps) {
         var option = this.settingsQualitySelect.find("option[value='auto']");

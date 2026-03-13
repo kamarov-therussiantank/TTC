@@ -20,7 +20,7 @@
     z-index: 1 !important;
 }
 #tertiaryContent {
-    margin-right: 3px !important;
+    margin-right: 1px !important;
 }
 #game {
     top: 0 !important;
@@ -91,25 +91,36 @@
 text {
     font-family: 'TankTrouble';
 }
+.snippet {
+  background: #ffffff !important;
+  color: #666 !important;
+  font-family: Arial, sans-serif;
+  border: 2px solid #d3d3d3;
+  border-radius: 5px;
+  width: 116px !important;
+}
 .snippet .header {
     font-family: Arial, sans-serif !important;
     font-size: 13px !important;
     font-weight: bold;
     padding: 2px 0 0px 0 !important;
     height: 15px;
-}
-.snippet {
-    width: 120px !important;
+    background: #d3d3d3;
+    margin-bottom: 4px;
 }
 .snippet.important {
-  background: #ff0000 !important;
+  background: red !important;
+  color: #ffffff;
+  font-family: Arial, sans-serif;
+  border: 2px solid red;
+  border-radius: 5px;
+  font-size: 12px;
+  width: 116px !important;
 }
-#wallOfFameSnippet {
-  border: 2px solid #000000 !important;
-  width: 124px !important;
-}
-#scrapyardSnippet .content {
-    margin-top: 5px !important;
+.snippet.important .header {
+  background: red !important;
+  color: #ffffff;
+  font-family: Arial, sans-serif;
 }
 #messagesSnippet {
   display: none !important;
@@ -119,63 +130,48 @@ text {
 }
 #teaser-25 {
   background: red !important;
-  color: #ffffff;
+  color: #ffffff !important;
   font-family: Arial, sans-serif;
   border: 2px solid red;
-  border-radius: 5px;
-  width: 116px !important;
-  font-size: 12px;
 }
 #teaser-25 .header {
-  background: red !important;
-  color: #ffffff;
-  font-family: Arial, sans-serif;
+  background: red;
+  color: #ffffff !important;
 }
 #teaser-25 .mode {
     font-family: Arial, sans-serif !important;
-    font-weight: 800;
+    font-weight: bold;
 }
-.snippet.standard,
-#visitsSnippet,
-#modActivitySnippet,
-#leaderboardSnippet {
+#feedbackSnippet {
   background: #ffffff !important;
   color: #666;
   font-family: Arial, sans-serif;
-  border: 2px solid #d3d3d3;
+  border: 2px solid #000000;
   border-radius: 5px;
 }
 #modActivitySnippet {
   height: 165px !important;
-  width: 120px !important;
+}
+#wallOfFameSnippet,
+#scrapyardSnippet {
+    width: 120px !important;
 }
 #FAQSnippet,
-#tellAFriendSnippet {
-  background: #000000;
-  border: 2px solid #000000;
-  color: #ffffff;
+#tellAFriendSnippet,
+#wallOfFameSnippet,
+#scrapyardSnippet {
+  background: #000000 !important;
+  border: 2px solid #000000 !important;
+  color: #ffffff !important;
   cursor: pointer;
   font-size: 12px;
-}
-#feedbackSnippet {
-  background: #ffffff;
-  border: 2px solid #000000;
-  color: #4a4a4a;
-  cursor: pointer;
-  font-size: 12px;
-}
-.snippet.standard .header,
-#visitsSnippet .header,
-#modActivitySnippet .header,
-#leaderboardSnippet .header {
-  background: #d3d3d3;
-  margin-bottom: 4px;
 }
 #FAQSnippet .header,
 #feedbackSnippet .header,
-#tellAFriendSnippet .header  {
+#tellAFriendSnippet .header,
+#scrapyardSnippet .header  {
   color: #ffffff;
-  background: #000000;
+  background: #000000 !important;
 }
 #FAQSnippet .header  {
   font-size: 16px !important;
@@ -277,6 +273,30 @@ text {
 #chat .handle {
     display: none !important;
 }
+#forumSearchBar {
+    width: 60%;
+    position: relative;
+    left: 32%;
+}
+#forumSearchInput {
+    width: 60%;
+    position: relative;
+    border: #d5d5d5 2px solid !important;
+    border-radius: 5px;
+}
+#forumSearchSuggestions {
+    position:absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background: #fff;
+    border: 1px solid #ccc;
+    display:none;
+    z-index: 999;
+    max-height: 250px;
+    overflow-y:auto;
+    width: 61%;
+}
 .forum .bubble {
     border: #000 2px solid !important;
     background-color: #ffffff !important;
@@ -288,15 +308,15 @@ text {
 }
 .forum .thread .tanks.tankCount3 {
     position: relative;
-    left: 18%;
+    left: 16%;
 }
 .forum .thread .tankCount2 ~ .container .bubble {
     left: 8% !important;
     width: 92% !important;
 }
 .forum .thread .tankCount3 ~ .container .bubble {
-    left: 18% !important;
-    width: 82% !important;
+    left: 16% !important;
+    width: 84% !important;
 }
 .forum .reply {
     margin-bottom: 30px !important;
@@ -685,7 +705,7 @@ button:disabled {
     color: #ccc !important;
 }
 .note {
-    color: #909090 !important;
+    color: #d5d5d5 !important;
 }
 .newsPost .wrapper {
     background: #fff !important;

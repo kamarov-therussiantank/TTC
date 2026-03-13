@@ -1,7 +1,7 @@
 {
 	"name": "TTC",
 	"author": "kamarov",
-	"version": "2.8.3",
+	"version": "2.8.4",
 	"manifest_version": 3,
 	"description": "TTC - Dive into the retro mayhem once again!",
 	"icons": {
@@ -83,6 +83,7 @@
 			 "ttc/utils/gameUtils.js",
 			 "ttc/utils/timeUtils.js",
 			 "ttc/scripts/patches.js",
+			 "ttc/scripts/settingsAdditions.js",
 			 "ttc/scripts/visitsSnippet.js",
 			 "ttc/scripts/FAQSnippet.js",
 			 "ttc/scripts/leaderboardSnippet.js",
@@ -91,7 +92,6 @@
 			 "ttc/scripts/feedbackSnippet.js",
 			 "ttc/scripts/gameIconLoader.js",
 			 "ttc/scripts/tankIconLoader.js",
-			 "ttc/scripts/settingsAdditions.js",
 			 "ttc/scripts/forumAdditions.js",
 			 "ttc/scripts/chatAdditions.js",
 			 "ttc/scripts/additionalPlayerDetails.js",
@@ -103,7 +103,7 @@
 			 "ttc/scripts/UIScoreGroup.js",
 			 "ttc/scripts/countdownImageLoader.js"
 			],
-			"css": ["ttc/css/classicStyle.css"],
+			"css": ["ttc/css/style.css"],
 			"run_at": "document_idle",
             "world": "MAIN"
 		}

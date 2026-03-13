@@ -1,6 +1,5 @@
 // Tell A Friend snippet
 whenContentInitialized().then(() => {
-
     var snippet = $(`
     <div id="tellAFriendSnippet" class="snippet">
     <a href="https://mail.google.com/" target="_blank" style="text-decoration: none;">
@@ -10,11 +9,8 @@ whenContentInitialized().then(() => {
             </div>
     </div>
     `);
-
     var content = $('<div></div>');
-
  snippet.append(content);
 $('#tertiaryContent').append(snippet);
-
 });
 

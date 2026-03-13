@@ -13,7 +13,9 @@ whenContentInitialized().then(async () => {
         </select>
     `;
     document.querySelector("#tertiaryContent").appendChild(snippet);
-    const statSelect = document.getElementById("snippetStat");
+
+//Script
+const statSelect = document.getElementById("snippetStat");
     await loadAndRenderLeaderboard(statSelect.value);
     statSelect.addEventListener("change", e => {
         loadAndRenderLeaderboard(e.target.value);

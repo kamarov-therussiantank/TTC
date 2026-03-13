@@ -18,6 +18,8 @@ whenContentInitialized().then(() => {
  var content = $('<div></div>');
  snippet.append(content);
 $('#tertiaryContent').append(snippet);
+
+//Script
 $("#feedbackSnippet").mousedown(function(event) {
         if (Users.hasAdminRole(UIConstants.ADMIN_ROLE_WRITE_MESSAGES)) {
             OverlayManager.pushOverlay(
@@ -32,6 +34,5 @@ $("#feedbackSnippet").mousedown(function(event) {
         }
         event.stopPropagation();
     });
-
 });
 
