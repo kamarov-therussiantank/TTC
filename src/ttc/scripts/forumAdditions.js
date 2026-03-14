@@ -122,9 +122,19 @@ whenContentInitialized().then(() => {
             $('.thread').each(function () {
                 const threadId = parseInt($(this).attr('id')?.replace('thread-', '') || 0, 10);
                 const header = $(this).find('.header').text().trim();
-                if (threadId && header) {
-                    if (!storedThreads.some(t => t.id === threadId)) {
-                        storedThreads.push({ id: threadId, header });
+                const creator = $(this).find('.playerUsername').text().trim().toLowerCase();
+                if (!creator) return;
+                const existing = storedThreads.find(t => t.id === threadId);
+                if (!existing) {
+                    storedThreads.push({ id: threadId, header, creator });
+                    changed = true;
+                } else {
+                   if (existing.creator !== creator) {
+                        existing.creator = creator;
+                        changed = true;
+                    }
+                    if (existing.header !== header) {
+                        existing.header = header;
                         changed = true;
                     }
                 }
@@ -163,9 +173,12 @@ whenContentInitialized().then(() => {
                 suggestions.hide();
                 return;
             }
-            const matches = storedThreads.filter(t =>
-                t.header.toLowerCase().includes(query)
+            let matches = storedThreads.filter(t =>
+                t.creator && t.creator.includes(query)
             );
+            if (!matches.length) {
+                matches = storedThreads.filter(t => t.header.toLowerCase().includes(query));
+            }
             if (!matches.length) {
                 suggestions.hide();
                 return;
