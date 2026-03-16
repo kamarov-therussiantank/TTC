@@ -184,9 +184,19 @@ whenContentInitialized().then(() => {
                 return;
             }
             matches.forEach(thread => {
-                const item = $(`<div style="padding:6px; cursor:pointer;">${thread.header}</div>`);
+                const item = $(`<div style="padding:6px; cursor:pointer; display:flex; justify-content:space-between; align-items:center;">
+                                    <span class="threadTitle">${thread.header}</span>
+                                    <div class="deleteSuggestion" style="margin-left:8px;">✖</div>
+                                </div>
+                `);
                 item.on('click', () => {
                     window.location.href = `https://tanktrouble.com/forum?threadId=${thread.id}`;
+                });
+                item.find('.deleteSuggestion').on('click', (e) => {
+                e.stopPropagation();
+                storedThreads = storedThreads.filter(t => t.id !== thread.id);
+                localStorage.setItem('ttForumThreads', JSON.stringify(storedThreads));
+                item.remove();
                 });
                 suggestions.append(item);
             });

@@ -280,6 +280,7 @@ text {
 }
 #forumSearchInput {
     width: 60%;
+    padding: 3px;
     position: relative;
     border: #d5d5d5 2px solid !important;
     border-radius: 5px;
@@ -296,6 +297,10 @@ text {
     max-height: 250px;
     overflow-y:auto;
     width: 61%;
+}
+#forumSearchSuggestions :hover {
+        background-color: #62aeff;
+        color: white;
 }
 .forum .bubble {
     border: #000 2px solid !important;
