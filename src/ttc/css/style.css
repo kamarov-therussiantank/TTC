@@ -806,49 +806,6 @@ button:disabled {
     opacity: 1;
   }
 }
-.muteGlobalChat-button {
-    cursor: pointer;
-    position: absolute;
-    top: 72px;
-    right: -12px;
-    background: #e0e0e0;
-    border: 2px solid #ccc;
-    box-shadow: none;
-}
-.muteUserChat-button {
-    cursor: pointer;
-    position: absolute;
-    top: 40px;
-    right: -12px;
-    background: #e0e0e0;
-    border: 2px solid #ccc;
-    border-top-right-radius: 7px;
-    border-top-left-radius: 7px;
-    box-shadow: none;
-}
-.muteSystemMessages-button {
-    cursor: pointer;
-    position: absolute;
-    top: 104px;
-    right: -12px;
-    background: #e0e0e0;
-    border: 2px solid #ccc;
-    border-bottom-right-radius: 7px;
-    border-bottom-left-radius: 7px;
-    box-shadow: none;
-}
-#chat:not(.open) .clearChat-button,
-#chat:not(.open) .muteGlobalChat-button,
-#chat:not(.open) .muteUserChat-button,
-#chat:not(.open) .muteSystemMessages-button {
-    animation: disappear 0.3s cubic-bezier(0.79, 0.02, 0.32, 0.98) forwards;
-}
-#chat:is(.opening, .open) .clearChat-button,
-#chat:is(.opening, .open) .muteGlobalChat-button,
-#chat:is(.opening, .open) .muteUserChat-button,
-#chat:is(.opening, .open) .muteSystemMessages-button {
-    animation: appear 0.3s cubic-bezier(0.79, -0.02, 0.32, 0.98) forwards;
-}
 #tankinfo .glow {
     display: none !important;
 }
