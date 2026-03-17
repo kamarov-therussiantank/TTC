@@ -11,11 +11,28 @@ whenContentInitialized().then(() => {
     //Script
     const usernamesToLookup = TankTrouble.WallOfFame.admins;
     let modEntries = [];
+    let emptyMessageIndex = 0;
+    const emptyMessage = [
+        "Fetching.",
+        "Fetching..",
+        "Fetching...",
+    ];
     function fetchModDataAndUpdateUI() {
         const playerDetailsList = [];
         let completedRequests = 0;
         modEntries = [];
         snippet.find('#mod-activity').empty();
+        snippet.find('#mod-activity').html(`<p class="empty" id="modActivityEmpty"></p>`);
+        const msgElement = document.getElementById("modActivityEmpty");
+        function setNextMessage() {
+            if (msgElement) {
+                msgElement.textContent = emptyMessage[emptyMessageIndex];
+                emptyMessageIndex = (emptyMessageIndex + 1) % emptyMessage.length;
+            }
+        }
+        setNextMessage();
+        clearInterval(window.modActivityEmptyInterval);
+        window.modActivityEmptyInterval = setInterval(setNextMessage, 1000);
         usernamesToLookup.forEach(username => {
             Backend.getInstance().getPlayerDetailsByUsername(
                 (result) => {
@@ -30,10 +47,25 @@ whenContentInitialized().then(() => {
                         playerDetailsList.push(result);
                     }
                     if (completedRequests === usernamesToLookup.length) {
+                    clearInterval(window.modActivityEmptyInterval);
+                    snippet.find('#mod-activity').empty();
                         playerDetailsList
+                        const sorted = playerDetailsList
                             .sort((a, b) => b.getLastLogin() - a.getLastLogin())
                             .slice(0, 10)
-                            .forEach(player => {
+                            if (!sorted.length) {
+                            snippet.find('#mod-activity').html(`<p class="empty" id="modActivityEmpty"></p>`);
+                            const msgElement = document.getElementById("modActivityEmpty");
+                            function setNextMessage() {
+                                msgElement.textContent = emptyMessage[emptyMessageIndex];
+                                emptyMessageIndex = (emptyMessageIndex + 1) % emptyMessage.length;
+                            }
+                            setNextMessage();
+                            clearInterval(window.modActivityEmptyInterval);
+                            window.modActivityEmptyInterval = setInterval(setNextMessage, 1000);
+                            return;
+                            }
+                            sorted.forEach(player => {
                                 const username = player.getUsername();
                                 const lastLogin = parseInt(player.getLastLogin(), 10);
                                 const userRow = $(`
