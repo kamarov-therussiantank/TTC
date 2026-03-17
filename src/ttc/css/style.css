@@ -916,7 +916,7 @@ label.subheadline {
     margin: 0;
 }
 .leaderboard-snippet-list li {
-    font-size: 10px;
+    font-size: 9px;
     display: flex;
     justify-content: space-between;
     align-items: center;
