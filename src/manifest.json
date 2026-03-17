@@ -93,7 +93,6 @@
 			 "ttc/scripts/gameIconLoader.js",
 			 "ttc/scripts/tankIconLoader.js",
 			 "ttc/scripts/forumAdditions.js",
-			 "ttc/scripts/chatAdditions.js",
 			 "ttc/scripts/additionalPlayerDetails.js",
 			 "ttc/scripts/UIConstants.js",
 			 "ttc/scripts/UITankSprite.js",
