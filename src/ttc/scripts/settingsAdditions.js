@@ -62,9 +62,11 @@ TankTrouble.SettingsBox = {
         this.settingsForm = $("<form class='spaced'></form>");
         this.displayAllGamesCheckbox = $("<div><input id='displayAllGames' type='checkbox'/><label class='subheadline' for='displayAllGames'>Display all games</label></div>");
         this.disableCameraShakeCheckbox = $("<div><input id='disableCameraShake' type='checkbox'/><label class='subheadline' for='disableCameraShake'>Disable Camera Shake</label></div>");
-        this.disableTankBadgesCheckbox = $("<div><input id='disableTankBadges' type='checkbox'/><label class='subheadline' for='disableTankBadges'>Disable badges</label></div>");
+        this.disableTankBadgesCheckbox = $("<div><input id='disableTankBadges' type='checkbox'/><label class='subheadline' for='disableTankBadges'>Hide tank badges</label></div>");
+        this.disableSystemMessagesCheckbox = $("<div><input id='disableSystemMessages' type='checkbox'/><label class='subheadline' for='disableSystemMessages'>Disable system messages</label></div>");
         this.settingsForm.append(this.displayAllGamesCheckbox);
         this.settingsForm.append(this.disableCameraShakeCheckbox);
+        this.settingsForm.append(this.disableSystemMessagesCheckbox);
         this.settingsForm.append(this.disableTankBadgesCheckbox);
         this.settingsServerTitleDiv = $("<div class='spaced'>Server:</div>");
         this.settingsServerForm = $("<form class='spaced'></form>");
@@ -141,6 +143,11 @@ TankTrouble.SettingsBox = {
         this._setGamecount(Cookies.get("displayAllGames") === "true");
         this._setCameraShake(Cookies.get("disableCameraShake") === "true");
         this._setTankBadges(Cookies.get("disableTankBadges") === "true");
+        if (!TankTrouble.ChatBox._originalAddSystemMessage) {
+            TankTrouble.ChatBox._originalAddSystemMessage = TankTrouble.ChatBox.addSystemMessage;
+        }
+        this._setSystemMessages(Cookies.get("disableSystemMessages") === "true");
+        
         this.displayAllGamesCheckbox.find("input").on("change", function() {
             self._setGamecount(this.checked);
         });
@@ -149,6 +156,9 @@ TankTrouble.SettingsBox = {
         });
         this.disableTankBadgesCheckbox.find("input").on("change", function() {
             self._setTankBadges(this.checked);
+        });
+        this.disableSystemMessagesCheckbox.find("input").on("change", function() {
+            self._setSystemMessages(this.checked);
         });
     },
     show: function(x, y, preferredRadius) {
@@ -277,6 +287,16 @@ TankTrouble.SettingsBox = {
         Cookies.set("disableTankBadges", disabled, { expires: 365 });
         try { reloadGame(); } catch(e) {}
         try { reloadPlayerPanel(); } catch(e) {}
+    },
+    _setSystemMessages: function(disabled) {
+        this.disableSystemMessagesCheckbox.find("input").prop("checked", disabled);
+        Cookies.set("disableSystemMessages", disabled, { expires: 365 });
+        if (disabled) {
+            TankTrouble.ChatBox.addSystemMessage = function(from, message, chatMessageId) {
+            };
+        } else {
+            TankTrouble.ChatBox.addSystemMessage = TankTrouble.ChatBox._originalAddSystemMessage;
+        }
     },
     _updateFps: function(fps) {
         var option = this.settingsQualitySelect.find("option[value='auto']");
