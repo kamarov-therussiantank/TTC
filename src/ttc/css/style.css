@@ -274,9 +274,13 @@ text {
     display: none !important;
 }
 #forumSearchBar {
+    margin: 8px 0 !important;
     width: 60%;
     position: relative;
     left: 32%;
+}
+#forumSearchInputWrapper {
+    display: flex;
 }
 #forumSearchInput {
     width: 60%;

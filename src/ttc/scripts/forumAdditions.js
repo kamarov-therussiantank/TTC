@@ -109,8 +109,11 @@ whenContentInitialized().then(() => {
         let searchBar = $('#forumSearchBar');
         if (threadsWrapper.length && !searchBar.length) {
             searchBar = $(`
-                <div id="forumSearchBar" style="margin:8px 0; position:relative;">
-                    <input type="text" id="forumSearchInput" placeholder="Search...">
+                <div id="forumSearchBar">
+                    <div id="forumSearchInputWrapper">
+                        <input type="text" id="forumSearchInput" placeholder="Search...">
+                            <img src="https://raw.githubusercontent.com/kamarov-therussiantank/TTC/main/src/assets/images/forum/search.png" srcset="https://raw.githubusercontent.com/kamarov-therussiantank/TTC/main/src/assets/images/forum/search@2x.png 2x">
+                    </div>
                     <div id="forumSearchSuggestions"></div>
                 </div>
             `);
