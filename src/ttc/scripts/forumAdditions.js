@@ -1,18 +1,15 @@
-// Forum Additions
+//Forum Additions script
 whenContentInitialized().then(() => {
+    let hooked = false;
     const coCreators = (thread, threadElement) => {
         threadElement.find('.reply-row').remove();
-
         const creators = {
             creator: thread.creator,
             ...(thread.coCreator1 && { coCreator1: thread.coCreator1 }),
             ...(thread.coCreator2 && { coCreator2: thread.coCreator2 })
         };
-
         const container = threadElement.find('.container');
-        const row = $('<div/>')
-            .addClass('reply-row')
-            .insertBefore(container);
+        const row = $('<div/>').addClass('reply-row').insertBefore(container);
         const tanks = $('<div/>')
             .addClass(`tanks tankCount${Object.keys(creators).length}`)
             .appendTo(row);
@@ -44,7 +41,6 @@ whenContentInitialized().then(() => {
                 UIConstants.TANK_ICON_SIZES.SMALL,
                 playerId
             );
-
             tank.append(canvas);
         }
         Backend.getInstance().getPlayerDetails(result => {
@@ -58,17 +54,15 @@ whenContentInitialized().then(() => {
                 .appendTo(tanks.find('.tank.creator'));
         }, () => {}, () => {}, creators.creator, Caches.getPlayerDetailsCache());
     };
-    const hyperlinks = (_threadOrReply, threadOrReplyElement) => {
-		const threadOrReplyContent = threadOrReplyElement.find('.bubble .content');
-		if (threadOrReplyContent.length) {
-			const urlRegex = /(?<_>https?:\/\/[\w\-_]+(?:\.[\w\-_]+)+(?:[\w\-.,@?^=%&amp;:/~+#]*[\w\-@?^=%&amp;/~+#])?)/gu;
-			const links = threadOrReplyContent.html().replace(urlRegex, '<a href="$1" target="_blank">$1</a>');
-			threadOrReplyContent.html(links);
-		}
-	};
+    const hyperlinks = (_threadOrReply, el) => {
+        const content = el.find('.bubble .content');
+        if (!content.length) return;
+        const urlRegex = /(?<_>https?:\/\/[\w\-_]+(?:\.[\w\-_]+)+(?:[\w\-.,@?^=%&:/~+#]*[\w\-@?^=%&/~+#])?)/gu;
+        content.html(content.html().replace(urlRegex, '<a href="$1" target="_blank">$1</a>'));
+    };
     const handleItems = item => {
         if (!item || !item.html) return;
-        const [key] = Object.keys(item.html);
+        const key = Object.keys(item.html).find(k => k !== 'backup');
         const html = item.html[key];
         if (typeof html === 'string') {
             const el = $($.parseHTML(html));
@@ -82,140 +76,122 @@ whenContentInitialized().then(() => {
             item.html[key] = el;
         }
     };
-    const tlc = ForumView.getMethod('threadListChanged');
-    ForumView.method('threadListChanged', function (...args) {
-        const list = args.shift();
-        list.forEach(handleItems);
-        return tlc.apply(this, [list, ...args]);
-    });
-    const rlc = ForumView.getMethod('replyListChanged');
-    ForumView.method('replyListChanged', function (...args) {
-        const list = args.shift();
-        list.forEach(handleItems);
-        return rlc.apply(this, [list, ...args]);
-    });
-    const gst = ForumModel.getMethod('getSelectedThread');
-    ForumModel.method('getSelectedThread', function (...args) {
-        const result = gst.apply(this, args);
-        handleItems(result);
-        return result;
-    });
-});
-
-whenContentInitialized().then(() => {
     let storedThreads = JSON.parse(localStorage.getItem('ttForumThreads')) || [];
-    const injectSearchBar = () => {
-        const threadsWrapper = $('#threadsWrapper');
-        let searchBar = $('#forumSearchBar');
-        if (threadsWrapper.length && !searchBar.length) {
-            searchBar = $(`
-                <div id="forumSearchBar">
-                    <div id="forumSearchInputWrapper">
-                        <input type="text" id="forumSearchInput" placeholder="Search...">
-                            <img src="https://raw.githubusercontent.com/kamarov-therussiantank/TTC/main/src/assets/images/forum/search.png" srcset="https://raw.githubusercontent.com/kamarov-therussiantank/TTC/main/src/assets/images/forum/search@2x.png 2x">
-                    </div>
-                    <div id="forumSearchSuggestions"></div>
-                </div>
-            `);
-            threadsWrapper.before(searchBar);
-        }
-        searchBar.toggle(threadsWrapper.is(':visible'));
-        function storeThreads() {
-            let changed = false;
-            $('.thread').each(function () {
-                const threadId = parseInt($(this).attr('id')?.replace('thread-', '') || 0, 10);
-                const header = $(this).find('.header').text().trim();
-                const creator = $(this).find('.playerUsername').text().trim().toLowerCase();
-                if (!creator) return;
-                const existing = storedThreads.find(t => t.id === threadId);
-                if (!existing) {
-                    storedThreads.push({ id: threadId, header, creator });
+    function storeThreads() {
+        let changed = false;
+        $('.thread').each(function () {
+            const threadId = parseInt($(this).attr('id')?.replace('thread-', '') || 0, 10);
+            const header = $(this).find('.header').text().trim();
+            const creator = $(this).find('.playerUsername').text().trim().toLowerCase();
+            if (!creator) return;
+            const existing = storedThreads.find(t => t.id === threadId);
+            if (!existing) {
+                storedThreads.push({ id: threadId, header, creator });
+                changed = true;
+            } else {
+                if (existing.creator !== creator || existing.header !== header) {
+                    existing.creator = creator;
+                    existing.header = header;
                     changed = true;
-                } else {
-                   if (existing.creator !== creator) {
-                        existing.creator = creator;
-                        changed = true;
-                    }
-                    if (existing.header !== header) {
-                        existing.header = header;
-                        changed = true;
-                    }
                 }
-            });
-            if (changed) localStorage.setItem('ttForumThreads', JSON.stringify(storedThreads));
+            }
+        });
+        if (changed) {
+            localStorage.setItem('ttForumThreads', JSON.stringify(storedThreads));
         }
-        storeThreads();
-        const originalThreadListChanged = ForumView.getMethod('threadListChanged');
+    }
+    if (!hooked) {
+        hooked = true;
+        const tlc = ForumView.getMethod('threadListChanged');
         ForumView.method('threadListChanged', function (...args) {
-            const result = originalThreadListChanged.apply(this, args);
+            const list = args[0];
+            list.forEach(handleItems);
+            const result = tlc.apply(this, args);
             storeThreads();
             return result;
         });
+        const rlc = ForumView.getMethod('replyListChanged');
+        ForumView.method('replyListChanged', function (...args) {
+            const list = args[0];
+            list.forEach(handleItems);
+            return rlc.apply(this, args);
+        });
+        const gst = ForumModel.getMethod('getSelectedThread');
+        ForumModel.method('getSelectedThread', function (...args) {
+            const result = gst.apply(this, args);
+            handleItems(result);
+            return result;
+        });
+    }
+    function injectSearchBar() {
+        const threadsWrapper = $('#threadsWrapper');
+        if (!threadsWrapper.length || $('#forumSearchBar').length) return;
+        const searchBar = $(`
+            <div id="forumSearchBar">
+                <div id="forumSearchInputWrapper">
+                    <input type="text" id="forumSearchInput" placeholder="Search...">
+                    <img src="https://raw.githubusercontent.com/kamarov-therussiantank/TTC/main/src/assets/images/forum/search.png">
+                </div>
+                <div id="forumSearchSuggestions"></div>
+            </div>
+        `);
+        threadsWrapper.before(searchBar);
         const input = $('#forumSearchInput');
         const suggestions = $('#forumSearchSuggestions');
         function performSearch() {
             const query = input.val().toLowerCase().trim();
-            if (!query) {
-                suggestions.hide();
-                return;
-            }
+            if (!query) return suggestions.hide();
             const match = storedThreads.find(t =>
                 t.header.toLowerCase().includes(query)
             );
-            if (!match) {
-                suggestions.hide();
-                return;
+            if (match) {
+                window.location.href = `https://tanktrouble.com/forum?threadId=${match.id}`;
             }
-            window.location.href = `https://tanktrouble.com/forum?threadId=${match.id}`;
             suggestions.hide();
         }
-        input.off('input').on('input', function () {
+        input.on('input', function () {
             const query = $(this).val().toLowerCase().trim();
             suggestions.empty();
-            if (!query) {
-                suggestions.hide();
-                return;
-            }
+            if (!query) return suggestions.hide();
             let matches = storedThreads.filter(t =>
                 t.creator && t.creator.includes(query)
             );
             if (!matches.length) {
-                matches = storedThreads.filter(t => t.header.toLowerCase().includes(query));
+                matches = storedThreads.filter(t =>
+                    t.header.toLowerCase().includes(query)
+                );
             }
-            if (!matches.length) {
-                suggestions.hide();
-                return;
-            }
+            if (!matches.length) return suggestions.hide();
             matches.forEach(thread => {
-                const item = $(`<div style="padding:6px; cursor:pointer; display:flex; justify-content:space-between; align-items:center;">
-                                    <span class="threadTitle">${thread.header}</span>
-                                    <div class="deleteSuggestion" style="margin-left:8px;">✖</div>
-                                </div>
+                const item = $(`
+                    <div style="padding:6px; cursor:pointer; display:flex; justify-content:space-between;">
+                        <span>${thread.header}</span>
+                        <div class="deleteSuggestion">✖</div>
+                    </div>
                 `);
                 item.on('click', () => {
                     window.location.href = `https://tanktrouble.com/forum?threadId=${thread.id}`;
                 });
                 item.find('.deleteSuggestion').on('click', (e) => {
-                e.stopPropagation();
-                storedThreads = storedThreads.filter(t => t.id !== thread.id);
-                localStorage.setItem('ttForumThreads', JSON.stringify(storedThreads));
-                item.remove();
+                    e.stopPropagation();
+                    storedThreads = storedThreads.filter(t => t.id !== thread.id);
+                    localStorage.setItem('ttForumThreads', JSON.stringify(storedThreads));
+                    item.remove();
                 });
                 suggestions.append(item);
             });
             suggestions.show();
         });
-        input.off('keypress').on('keypress', function (e) {
+        input.on('keypress', e => {
             if (e.key === 'Enter') performSearch();
         });
-
-        $(document).on('click', function (e) {
+        $(document).on('click', e => {
             if (!$(e.target).closest('#forumSearchBar').length) {
                 suggestions.hide();
             }
         });
-    };
+    }
     injectSearchBar();
-    const observer = new MutationObserver(() => injectSearchBar());
-    observer.observe(document.body, { childList: true, subtree: true });
+    new MutationObserver(() => injectSearchBar())
+        .observe(document.body, { childList: true, subtree: true });
 });
