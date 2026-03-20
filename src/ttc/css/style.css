@@ -230,9 +230,11 @@ text {
 }
 #chat.global form {
     background: #68c5ff !important;
+    border: #4aa5dd 3px solid !important;
 }
 #chat.user form {
     background: #08ef0a !important;
+    border: #06cc0a 3px solid !important;
 }
 #chat:not(.open) form{
     z-index: -1 !important;
