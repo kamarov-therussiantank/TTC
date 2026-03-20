@@ -191,7 +191,23 @@ whenContentInitialized().then(() => {
             }
         });
     }
+    function updateSearchBarVisibility() {
+        const searchBar = $('#forumSearchBar');
+        const threadsWrapper = $('#threadsWrapper');
+        const repliesWrapper = $('#repliesWrapper');
+        if (!searchBar.length) return;
+        const threadsVisible = threadsWrapper.css('display') !== 'none';
+        const repliesVisible = repliesWrapper.css('display') !== 'none';
+        if (repliesVisible && !threadsVisible) {
+            searchBar.hide();
+        } else {
+            searchBar.show();
+        }
+    }
     injectSearchBar();
-    new MutationObserver(() => injectSearchBar())
-        .observe(document.body, { childList: true, subtree: true });
+    new MutationObserver(() => {
+        injectSearchBar();
+        updateSearchBarVisibility();
+    })
+    .observe(document.body, { childList: true, subtree: true });
 });
