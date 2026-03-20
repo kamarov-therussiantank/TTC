@@ -91,6 +91,7 @@
 			 "ttc/scripts/tellAFriendSnippet.js",
 			 "ttc/scripts/feedbackSnippet.js",
 			 "ttc/scripts/gameIconLoader.js",
+			 "ttc/scripts/chatMessageTranslation.js",
 			 "ttc/scripts/tankIconLoader.js",
 			 "ttc/scripts/forumAdditions.js",
 			 "ttc/scripts/additionalPlayerDetails.js",
