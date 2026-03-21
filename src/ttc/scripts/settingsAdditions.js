@@ -33,7 +33,7 @@ TankTrouble.SettingsBox = {
     settingsQualityOptions: [],
     settingsExtraTitleDiv: null,
     settingsExtraForm: null,
-    disableCameraShakeCheckbox: null,
+    cameraShakeCheckbox: null,
     settingsBackground: null,
     refreshServerStatsInterval: null,
     showing: false,
@@ -61,13 +61,13 @@ TankTrouble.SettingsBox = {
         this.settingsTitleDiv = $("<div class='spaced'>Settings:</div>");
         this.settingsForm = $("<form class='spaced'></form>");
         this.displayAllGamesCheckbox = $("<div><input id='displayAllGames' type='checkbox'/><label class='subheadline' for='displayAllGames'>Display all games</label></div>");
-        this.disableCameraShakeCheckbox = $("<div><input id='disableCameraShake' type='checkbox'/><label class='subheadline' for='disableCameraShake'>Disable Camera Shake</label></div>");
-        this.disableTankBadgesCheckbox = $("<div><input id='disableTankBadges' type='checkbox'/><label class='subheadline' for='disableTankBadges'>Hide tank badges</label></div>");
-        this.disableSystemMessagesCheckbox = $("<div><input id='disableSystemMessages' type='checkbox'/><label class='subheadline' for='disableSystemMessages'>Disable system messages</label></div>");
+        this.cameraShakeCheckbox = $("<div><input id='cameraShake' type='checkbox'/><label class='subheadline' for='cameraShake'>Camera Shake</label></div>");
+        this.tankBadgesCheckbox = $("<div><input id='tankBadges' type='checkbox'/><label class='subheadline' for='tankBadges'>Tank badges</label></div>");
+        this.systemMessagesCheckbox = $("<div><input id='systemMessages' type='checkbox'/><label class='subheadline' for='systemMessages'>System messages</label></div>");
         this.settingsForm.append(this.displayAllGamesCheckbox);
-        this.settingsForm.append(this.disableCameraShakeCheckbox);
-        this.settingsForm.append(this.disableSystemMessagesCheckbox);
-        this.settingsForm.append(this.disableTankBadgesCheckbox);
+        this.settingsForm.append(this.cameraShakeCheckbox);
+        this.settingsForm.append(this.systemMessagesCheckbox);
+        this.settingsForm.append(this.tankBadgesCheckbox);
         this.settingsServerTitleDiv = $("<div class='spaced'>Server:</div>");
         this.settingsServerForm = $("<form class='spaced'></form>");
         this.settingsServerSelect = $("<select/>");
@@ -141,23 +141,23 @@ TankTrouble.SettingsBox = {
             self._refreshServerStats();
         }, UIConstants.INITIAL_SERVER_STATS_DELAY);
         this._setGamecount(Cookies.get("displayAllGames") === "true");
-        this._setCameraShake(Cookies.get("disableCameraShake") === "true");
-        this._setTankBadges(Cookies.get("disableTankBadges") === "true");
+        this._setCameraShake(Cookies.get("cameraShake") === "true");
+        this._setTankBadges(Cookies.get("tankBadges") === "true");
         if (!TankTrouble.ChatBox._originalAddSystemMessage) {
             TankTrouble.ChatBox._originalAddSystemMessage = TankTrouble.ChatBox.addSystemMessage;
         }
-        this._setSystemMessages(Cookies.get("disableSystemMessages") === "true");
+        this._setSystemMessages(Cookies.get("systemMessages") === "true");
         
         this.displayAllGamesCheckbox.find("input").on("change", function() {
             self._setGamecount(this.checked);
         });
-        this.disableCameraShakeCheckbox.find("input").on("change", function() {
+        this.cameraShakeCheckbox.find("input").on("change", function() {
             self._setCameraShake(this.checked);
         });
-        this.disableTankBadgesCheckbox.find("input").on("change", function() {
+        this.tankBadgesCheckbox.find("input").on("change", function() {
             self._setTankBadges(this.checked);
         });
-        this.disableSystemMessagesCheckbox.find("input").on("change", function() {
+        this.systemMessagesCheckbox.find("input").on("change", function() {
             self._setSystemMessages(this.checked);
         });
     },
@@ -275,22 +275,22 @@ TankTrouble.SettingsBox = {
         try { reloadGame(); } catch(e) {}
     },
     _setCameraShake: function(disabled) {
-        this.disableCameraShakeCheckbox.find("input").prop("checked", disabled);
+        this.cameraShakeCheckbox.find("input").prop("checked", disabled);
         UIConstants.MAX_CAMERA_SHAKE = disabled ? 0 : UIConstants.MAX_CAMERA_SHAKE;
         UIConstants.MINE_EXPLOSION_CAMERA_SHAKE = disabled ? 0 : UIConstants.MINE_EXPLOSION_CAMERA_SHAKE;
         UIConstants.TANK_EXPLOSION_CAMERA_SHAKE = disabled ? 0 : UIConstants.TANK_EXPLOSION_CAMERA_SHAKE;
-        Cookies.set("disableCameraShake", disabled, { expires: 365 });
+        Cookies.set("cameraShake", disabled, { expires: 365 });
     },
     _setTankBadges: function(disabled) {
-        this.disableTankBadgesCheckbox.find("input").prop("checked", disabled);
+        this.tankBadgesCheckbox.find("input").prop("checked", disabled);
         UIConstants.DISABLE_TANK_BADGES = disabled;
-        Cookies.set("disableTankBadges", disabled, { expires: 365 });
+        Cookies.set("tankBadges", disabled, { expires: 365 });
         try { reloadGame(); } catch(e) {}
         try { reloadPlayerPanel(); } catch(e) {}
     },
     _setSystemMessages: function(disabled) {
-        this.disableSystemMessagesCheckbox.find("input").prop("checked", disabled);
-        Cookies.set("disableSystemMessages", disabled, { expires: 365 });
+        this.systemMessagesCheckbox.find("input").prop("checked", disabled);
+        Cookies.set("systemMessages", disabled, { expires: 365 });
         if (disabled) {
             TankTrouble.ChatBox.addSystemMessage = function(from, message, chatMessageId) {
             };
