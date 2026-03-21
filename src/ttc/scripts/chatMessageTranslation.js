@@ -7,7 +7,9 @@ whenContentInitialized().then(() => {
     async function translateText(text, target = targetLanguage) {
         if (!translationEnabled) return text;
         if (!text || text.length < 2) return text;
-        if (/^[.\sw]+$/.test(text)) return text;
+        if (text.length <= 3) return text;
+        if (!text.includes(" ")) return text;
+        if (/^[a-zA-Z]+$/.test(text) && text.length < 5) return text;
 
         if (translationCache.has(text)) {
             return translationCache.get(text);
@@ -31,21 +33,28 @@ whenContentInitialized().then(() => {
             return text;
         }
     }
+    const originalParse = TankTrouble.ChatBox._parseChat;
+    TankTrouble.ChatBox._parseChat = function () {
+        let message = this.chatInput.val().trim();
+        if (message.toLowerCase() === "/t") {
+            translationEnabled = !translationEnabled;
+            localStorage.setItem("tt_translationEnabled", translationEnabled);
+            const statusMsg = translationEnabled
+                ? "Chat translation enabled"
+                : "Chat translation disabled";
+            this.addSystemMessage([], statusMsg);
+            this.chatInput.val("");
+            this.chatInput.outerHeight(16);
+            return;
+        }
+        return originalParse.call(this);
+    };
     const originalRender = TankTrouble.ChatBox._renderChatMessage;
     TankTrouble.ChatBox._renderChatMessage = async function(
         from, to, usernameMap, addRecipients,
         textColor, strokeColor, message, chatMessageId,
         reported, animateHeight, animateFadeIn
     ) {
-        if (message.trim().toLowerCase() === "/translate") {
-            translationEnabled = !translationEnabled;
-            localStorage.setItem("tt_translationEnabled", translationEnabled);
-            const statusMsg = translationEnabled
-                ? "Chat translation enabled"
-                : "Chat translation disabled";
-            TankTrouble.ChatBox.addSystemMessage(0, statusMsg);
-            return;
-        }
         const translatedMessage = await translateText(message, targetLanguage);
         originalRender.call(
             this,
