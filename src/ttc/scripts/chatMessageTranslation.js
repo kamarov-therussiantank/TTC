@@ -41,8 +41,8 @@ whenContentInitialized().then(() => {
             translationEnabled = !translationEnabled;
             localStorage.setItem("tt_translationEnabled", translationEnabled);
             const statusMsg = translationEnabled
-                ? "Translation enabled"
-                : "Translation disabled";
+                ? "Chat translation enabled"
+                : "Chat translation disabled";
             TankTrouble.ChatBox.addSystemMessage(0, statusMsg);
             return;
         }
