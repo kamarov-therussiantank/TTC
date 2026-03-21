@@ -1,7 +1,11 @@
+// Chat Message Translation Script
 whenContentInitialized().then(() => {
     const targetLanguage = "en";
     const translationCache = new Map();
+    let translationEnabled = localStorage.getItem("tt_translationEnabled");
+    translationEnabled = translationEnabled === null ? true : translationEnabled === "true";
     async function translateText(text, target = targetLanguage) {
+        if (!translationEnabled) return text;
         if (!text || text.length < 2) return text;
         if (/^[.\sw]+$/.test(text)) return text;
 
@@ -14,7 +18,7 @@ whenContentInitialized().then(() => {
             );
             const data = await res.json();
             if (!data || !data[0]) return text;
-            const detectedLang = data[2]; 
+            const detectedLang = data[2];
             if (detectedLang === 'en') {
                 translationCache.set(text, text);
                 return text;
@@ -22,7 +26,6 @@ whenContentInitialized().then(() => {
             const translated = data[0].map(x => x[0]).join("");
             translationCache.set(text, translated);
             return translated;
-
         } catch (e) {
             console.warn("Translation failed:", e);
             return text;
@@ -34,7 +37,15 @@ whenContentInitialized().then(() => {
         textColor, strokeColor, message, chatMessageId,
         reported, animateHeight, animateFadeIn
     ) {
-        const originalMessage = message;
+        if (message.trim().toLowerCase() === "/translate") {
+            translationEnabled = !translationEnabled;
+            localStorage.setItem("tt_translationEnabled", translationEnabled);
+            const statusMsg = translationEnabled
+                ? "Translation enabled"
+                : "Translation disabled";
+            TankTrouble.ChatBox.addSystemMessage(0, statusMsg);
+            return;
+        }
         const translatedMessage = await translateText(message, targetLanguage);
         originalRender.call(
             this,
