@@ -61,7 +61,7 @@ TankTrouble.SettingsBox = {
         this.settingsTitleDiv = $("<div class='spaced'>Settings:</div>");
         this.settingsForm = $("<form class='spaced'></form>");
         this.displayAllGamesCheckbox = $("<div><input id='displayAllGames' type='checkbox'/><label class='subheadline' for='displayAllGames'>Display all games</label></div>");
-        this.cameraShakeCheckbox = $("<div><input id='cameraShake' type='checkbox'/><label class='subheadline' for='cameraShake'>Camera Shake</label></div>");
+        this.cameraShakeCheckbox = $("<div><input id='cameraShake' type='checkbox'/><label class='subheadline' for='cameraShake'>Camera shake</label></div>");
         this.tankBadgesCheckbox = $("<div><input id='tankBadges' type='checkbox'/><label class='subheadline' for='tankBadges'>Tank badges</label></div>");
         this.systemMessagesCheckbox = $("<div><input id='systemMessages' type='checkbox'/><label class='subheadline' for='systemMessages'>System messages</label></div>");
         this.settingsForm.append(this.displayAllGamesCheckbox);
