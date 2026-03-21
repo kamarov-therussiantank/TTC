@@ -1678,5 +1678,33 @@
           "urlFilter": "https://cdn.tanktrouble.com/*/assets/images/virtualShopItems/779Preview@2x.png",
           "resourceTypes": ["image"]
         }
+      },
+      {
+        "id": 123,
+        "priority": 1,
+        "action": {
+          "type": "redirect",
+          "redirect": {
+            "extensionPath": "/assets/images/other/resizeHandleBottomRight.png"
+          }
+        },
+        "condition": {
+          "urlFilter": "https://cdn.tanktrouble.com/*/assets/images/chat/resizeHandleBottomRight.png",
+          "resourceTypes": ["image"]
+        }
+      },
+      {
+        "id": 124,
+        "priority": 1,
+        "action": {
+          "type": "redirect",
+          "redirect": {
+            "extensionPath": "/assets/images/other/resizeHandleBottomRight@2x.png"
+          }
+        },
+        "condition": {
+          "urlFilter": "https://cdn.tanktrouble.com/*/assets/images/chat/resizeHandleBottomRight@2x.png",
+          "resourceTypes": ["image"]
+        }
       }
 ]

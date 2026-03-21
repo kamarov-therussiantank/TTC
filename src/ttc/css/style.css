@@ -222,11 +222,7 @@ text {
     background: #eee !important;
     margin-left: 20px !important;
     padding: 1px !important;
-    width: 300px !important;
-}
-#chat form .autocomplete-dropdown{
-    margin-left: 255px !important;
-    margin-top: -1px !important;
+    width: 220px !important;
 }
 #chat.global form {
     background: #68c5ff !important;
@@ -249,18 +245,17 @@ text {
     animation: moveRight 0.3s cubic-bezier(0.79, -0.02, 0.32, 0.98) forwards !important;
 }
 #chat:is(.opening, .open) .content, #chat:is(.opening, .open) textarea {
-    width: 230px !important;
+    width: 220px !important;
 }
 #chat {
     -webkit-filter: drop-shadow(0 7px 4px rgba(0, 0, 0, .5)) !important;
     filter: drop-shadow(rgba(0, 0, 0, 0.5) 0px 1px 2px) !important;
 }
 .body.ui-resizable {
-    width: 310px !important;
     left: 5px;
 }
 #chat.opening textarea, #chat.open textarea {
-    width: 290px !important;
+    width: 210px !important;
     margin-left: -20px !important;
     font-family: 'TankTrouble';
     font-size: 12px;
@@ -268,9 +263,6 @@ text {
 }
 #chat:not(.opening) textarea, #chat:not(.open) textarea {
     margin-left: -20px !important;
-}
-#chat .handle {
-    display: none !important;
 }
 #forumSearchBar {
     margin: 8px 0 !important;
