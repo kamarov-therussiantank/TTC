@@ -20,7 +20,7 @@ UIGameIconImage.prototype.spawn = function(x, y, gameState, favouriteActiveQueue
     this.ranked = gameState.getRanked();
     this.symmetric = gameState.getSymmetric();
     this.premium = gameState.getPremium();
-	this.playerStates = gameState.getPlayerStates().slice(0, 6);
+	this.playerStates = gameState.getPlayerStates().slice(0, 6).sort((a, b) => a.getPlayerId() - b.getPlayerId());
     this.favouriteActiveQueuedCounts = favouriteActiveQueuedCounts;
     const count = Math.min(this.playerStates.length, 6);
     let radiusX = 90;
@@ -53,7 +53,7 @@ UIGameIconImage.prototype.refresh = function(gameState, favouriteActiveQueuedCou
     this.ranked = gameState.getRanked();
     this.symmetric = gameState.getSymmetric();
     this.premium = gameState.getPremium();
-    this.playerStates = gameState.getPlayerStates();
+    this.playerStates = gameState.getPlayerStates().slice(0, 6).sort((a, b) => a.getPlayerId() - b.getPlayerId());
     this.favouriteActiveQueuedCounts = favouriteActiveQueuedCounts;
     const count = Math.min(this.playerStates.length, 6);
     let radiusX = 90;
