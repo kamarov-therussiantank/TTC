@@ -100,7 +100,6 @@
 			 "ttc/scripts/UIConstants.js",
 			 "ttc/scripts/UITankSprite.js",
 			 "ttc/scripts/UIMineSprite.js",
-			 "ttc/scripts/UIEmitter.js",
 			 "ttc/scripts/UIButtonGroup.js",
 			 "ttc/scripts/UIScoreGroup.js",
 			 "ttc/scripts/countdownImageLoader.js"
