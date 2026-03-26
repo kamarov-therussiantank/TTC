@@ -898,3 +898,51 @@ select#snippetStat {
 select#snippetStat:hover {
     border: 2px solid #000000;
 }
+#wardrobe {
+    position: relative;
+    display: grid;
+    border: 3px solid #00000050 !important;
+    background: #00000050;
+    grid-template-columns: repeat(3, 1fr);
+    margin-top: -50%;
+    gap: 10px;
+    overflow-y: auto;
+    width: 175%;
+    left: -40%;
+    max-height: 200px;
+    padding: 10px;
+    -webkit-mask-image: linear-gradient(to bottom, transparent 0%, black 10%, black 90%, transparent 100%);
+    -webkit-mask-repeat: no-repeat;
+    -webkit-mask-size: 100% 100%;
+    mask-image: linear-gradient(to bottom, transparent 0%, black 10%, black 90%, transparent 100%);
+    mask-repeat: no-repeat;
+    mask-size: 100% 100%;
+    border-radius: 5px;
+}
+#wardrobe::-webkit-scrollbar {
+    width: 8px;
+}
+#wardrobe::-webkit-scrollbar-track {
+    background: transparent;
+}
+#wardrobe::-webkit-scrollbar-thumb {
+    background: #d3d3d3;
+    border-radius: 5px;
+}
+.wardrobe-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 120px;
+    margin: auto;
+}
+#wardrobe-buttons {
+    width: max-content;
+}
+#delete-btn {
+    background: red !important;
+    color: white !important;
+}
+canvas {
+    image-rendering: pixelated;
+}
