@@ -82,6 +82,7 @@
 			"js": [
 			 "ttc/utils/gameUtils.js",
 			 "ttc/utils/timeUtils.js",
+			 "ttc/scripts/sharp.js",
 			 "ttc/scripts/patches.js",
 			 "ttc/scripts/settingsAdditions.js",
 			 "ttc/scripts/visitsSnippet.js",
@@ -92,7 +93,6 @@
 			 "ttc/scripts/feedbackSnippet.js",
 			 "ttc/scripts/gameIconLoader.js",
 			 "ttc/scripts/tankIconLoader.js",
-			 "ttc/scripts/test.js",
 			 "ttc/scripts/chatMessageTranslation.js",
 			 "ttc/scripts/tankWardrobe.js",
 			 "ttc/scripts/forumAdditions.js",
