@@ -19,7 +19,6 @@ canvas {
     shape-rendering: crispEdges;
 }
 img {
-    image-rendering: pixelated;
     shape-rendering: crispEdges;
 }
 #content {
