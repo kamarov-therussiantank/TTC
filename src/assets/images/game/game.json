@@ -822,22 +822,22 @@
     {
       "filename": "diamondGlow",
       "frame": {
-        "x": 0,
-        "y": 0,
-        "w": 0,
-        "h": 0
+        "x": 538,
+        "y": 677,
+        "w": 60,
+        "h": 60
       },
       "rotated": false,
       "trimmed": false,
       "spriteSourceSize": {
         "x": 0,
         "y": 0,
-        "w": 0,
-        "h": 0
+        "w": 60,
+        "h": 60
       },
       "sourceSize": {
-        "w": 0,
-        "h": 0
+        "w": 60,
+        "h": 60
       }
     },
     {
@@ -3260,7 +3260,7 @@
       "filename": "turret12",
       "frame": {
         "x": 282,
-        "y": 683,
+        "y": 682,
         "w": 34,
         "h": 51
       },

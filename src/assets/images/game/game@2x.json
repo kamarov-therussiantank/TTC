@@ -822,22 +822,22 @@
     {
       "filename": "diamondGlow",
       "frame": {
-        "x": 0,
-        "y": 0,
-        "w": 0,
-        "h": 0
+        "x": 832,
+        "y": 1251,
+        "w": 120,
+        "h": 120
       },
       "rotated": false,
       "trimmed": false,
       "spriteSourceSize": {
         "x": 0,
         "y": 0,
-        "w": 0,
-        "h": 0
+        "w": 120,
+        "h": 120
       },
       "sourceSize": {
-        "w": 0,
-        "h": 0
+        "w": 120,
+        "h": 120
       }
     },
     {

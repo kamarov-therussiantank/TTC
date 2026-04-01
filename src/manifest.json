@@ -82,7 +82,7 @@
 			"js": [
 			 "ttc/utils/gameUtils.js",
 			 "ttc/utils/timeUtils.js",
-			 "ttc/scripts/sharp.js",
+			 "ttc/scripts/pixi.js",
 			 "ttc/scripts/patches.js",
 			 "ttc/scripts/settingsAdditions.js",
 			 "ttc/scripts/visitsSnippet.js",

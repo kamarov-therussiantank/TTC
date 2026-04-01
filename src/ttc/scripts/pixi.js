@@ -89,4 +89,4 @@ setInterval(() => {
         fR(game);
         pT(game);
     }
-}, 500);
+}, 100);
