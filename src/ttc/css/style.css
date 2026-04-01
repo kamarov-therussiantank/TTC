@@ -14,6 +14,14 @@
     transform: translateX(0) scale(1);
   }
 }
+canvas {
+    image-rendering: pixelated;
+    shape-rendering: crispEdges;
+}
+img {
+    image-rendering: pixelated;
+    shape-rendering: crispEdges;
+}
 #content {
     max-width: 1884px !important;
     width: calc(100%) !important;
@@ -943,11 +951,10 @@ select#snippetStat:hover {
     background: red !important;
     color: white !important;
 }
-canvas {
-    image-rendering: pixelated;
-    shape-rendering: crispEdges;
-}
-img {
-    image-rendering: pixelated;
-    shape-rendering: crispEdges;
+#no-saved-tanks {
+    position: relative;
+    left: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }

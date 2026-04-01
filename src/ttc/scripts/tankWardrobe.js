@@ -117,7 +117,7 @@ TankTrouble.GarageOverlay = {
         let saves = JSON.parse(localStorage.getItem("tt_tank_saves") || "[]");
         saves = saves.filter(s => s.playerId === this.playerId);
         if (saves.length === 0) {
-            wrapper.append("<p>No saved loadouts</p>");
+            wrapper.append("<p id='no-saved-tanks'>No saves</p>");
             return;
         }
         saves.forEach(save => {
@@ -167,12 +167,10 @@ TankTrouble.GarageOverlay = {
         const applyAccessory = (part, value, currentValue) => new Promise(resolve => {
         const currentNum = currentValue != null ? currentValue : 0;
         const valueNum = value != null ? value : 0;
-
         if (currentNum === valueNum) {
             resolve();
             return;
         }
-
             Backend.getInstance().setAccessory(
                 () => {
                     Users.updateUser(playerId, true, false);
