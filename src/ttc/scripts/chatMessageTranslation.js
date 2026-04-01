@@ -8,8 +8,7 @@ whenContentInitialized().then(() => {
         if (!translationEnabled) return text;
         if (!text || text.length < 2) return text;
         if (text.length <= 3) return text;
-        if (!text.includes(" ")) return text;
-        if (/^[a-zA-Z]+$/.test(text) && text.length < 5) return text;
+        if (/^[a-zA-Z]+$/.test(text) && text.length < 2) return text;
 
         if (translationCache.has(text)) {
             return translationCache.get(text);
@@ -32,7 +31,7 @@ whenContentInitialized().then(() => {
             console.warn("Translation failed:", e);
             return text;
         }
-    }
+    };
     const originalParse = TankTrouble.ChatBox._parseChat;
     TankTrouble.ChatBox._parseChat = function () {
         let message = this.chatInput.val().trim();

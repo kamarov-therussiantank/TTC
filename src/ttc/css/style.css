@@ -260,7 +260,6 @@ text {
 }
 .body.ui-resizable {
     left: 5px;
-    overflow: hidden;
 }
 #chat.opening textarea, #chat.open textarea {
     width: 210px !important;
