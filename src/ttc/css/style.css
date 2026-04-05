@@ -21,6 +21,9 @@ canvas {
 img {
     shape-rendering: crispEdges;
 }
+img.disabled {
+    cursor: pointer;
+}
 #content {
     max-width: 1884px !important;
     width: calc(100%) !important;

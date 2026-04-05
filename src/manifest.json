@@ -95,6 +95,7 @@
 			 "ttc/scripts/tankIconLoader.js",
 			 "ttc/scripts/chatMessageTranslation.js",
 			 "ttc/scripts/tankWardrobe.js",
+			 "ttc/scripts/friending.js",
 			 "ttc/scripts/forumAdditions.js",
 			 "ttc/scripts/additionalPlayerDetails.js",
 			 "ttc/scripts/UIConstants.js",
