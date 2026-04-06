@@ -260,7 +260,7 @@ whenContentInitialized().then(() => {
         TankTrouble.TankInfoBox._updateFavouriteStatus = function () {};
         if (!TankTrouble.TankInfoBox.infoFavorites) {
             TankTrouble.TankInfoBox.infoFavorites = $('<div class="button" title="Favourites"></div>');
-            const standardIcon = $('<img class="standard" src="https://raw.githubusercontent.com/kamarov-therussiantank/TankTrouble-Tools/refs/heads/main/TTC/src/images/assets/tankInfo/favourites.png", srcset="https://raw.githubusercontent.com/kamarov-therussiantank/TankTrouble-Tools/refs/heads/main/TTC/src/images/assets/tankInfo/favourites@2x.png 2x">');
+            const standardIcon = $('<img class="standard" src="https://raw.githubusercontent.com/kamarov-therussiantank/TTC/refs/heads/main/src/assets/images/tankInfo/favourites.png", srcset="https://raw.githubusercontent.com/kamarov-therussiantank/TTC/refs/heads/main/src/assets/images/tankInfo/favourites%402x.png 2x">');
             TankTrouble.TankInfoBox.infoFavorites.append(standardIcon);
             standardIcon.show();
         }
