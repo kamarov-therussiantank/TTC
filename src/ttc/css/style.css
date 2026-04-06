@@ -929,15 +929,8 @@ select#snippetStat:hover {
     mask-size: 100% 100%;
     border-radius: 5px;
 }
-#wardrobe::-webkit-scrollbar {
-    width: 8px;
-}
 #wardrobe::-webkit-scrollbar-track {
     background: transparent;
-}
-#wardrobe::-webkit-scrollbar-thumb {
-    background: #d3d3d3;
-    border-radius: 5px;
 }
 .wardrobe-item {
     display: flex;
@@ -959,4 +952,52 @@ select#snippetStat:hover {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+#favourites-box {
+    border: 3px #d3d3d3 solid;
+    border-radius: 6px;
+}
+#favourites-box .content {
+    overflow-y: auto;
+    width: max-content;
+    max-height: 250px;
+    border: none !important;
+    background: #ffffff;
+}
+#favourites-box .content::-webkit-scrollbar-track {
+    background: transparent;
+}
+.player-row {
+    display: flex;
+    align-items: center;
+    padding: 8px;
+    border-radius: 6px;
+    margin-bottom: 4px;
+    border: 2px #d3d3d3 solid;
+}
+.player-name {
+    font-weight: bold;
+    display: flex;
+    justify-content: space-between;
+}
+.player-login {
+    font-size: 12px;
+    opacity: 0.8;
+}
+.player-tank canvas {
+    display: block;
+}
+.player-info {
+    display: flex;
+    flex-direction: column;
+}
+.button.remove-fav {
+    position: relative;
+    width: max-content;
+    cursor: pointer;
+    padding: 2px 5px;
+    border: 1px solid #d3d3d3;
+    border-radius: 6px;
+    background: #f8f8f8;
+    font-size: 12px;
 }
