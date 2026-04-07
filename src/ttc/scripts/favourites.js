@@ -41,7 +41,7 @@ whenContentInitialized().then(() => {
         tankCache.set(key, canvas);
         return canvas;
     }
-    function showNotification(message, player = null, duration = 3000) {
+    function showNotification(message, player = null, duration = 3500) {
         let notif = document.getElementById("tt-notification");
         if (!notif) {
             notif = document.createElement("div");
@@ -49,6 +49,7 @@ whenContentInitialized().then(() => {
             document.body.appendChild(notif);
             Object.assign(notif.style, {
                 position: "fixed",
+                height: "40px",
                 top: "20px",
                 left: "50%",
                 transform: "translateX(-50%)",
@@ -241,7 +242,7 @@ whenContentInitialized().then(() => {
             this.background.fadeIn(200);
             this.container.css({
                 left: x + 50,
-                top: y - 225,
+                top: y - 230,
                 position: 'absolute',
                 transform: 'scale(0.1)',
                 opacity: 0
