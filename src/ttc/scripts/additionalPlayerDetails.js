@@ -31,7 +31,7 @@ whenContentInitialized().then(() => {
 		});
 		TankTrouble.TankInfoBox.infoExpDiv.hide();
 	});
-Loader.interceptFunction(TankTrouble.TankInfoBox, 'show', (original, ...args) => {
+	Loader.interceptFunction(TankTrouble.TankInfoBox, 'show', (original, ...args) => {
     original(...args);
 
     TankTrouble.TankInfoBox.infoExpDiv.tooltipster('content', 'Classic EXP');

@@ -103,8 +103,7 @@
 			 "ttc/scripts/UITankSprite.js",
 			 "ttc/scripts/UIMineSprite.js",
 			 "ttc/scripts/UIButtonGroup.js",
-			 "ttc/scripts/UIScoreGroup.js",
-			 "ttc/scripts/countdownImageLoader.js"
+			 "ttc/scripts/UIScoreGroup.js"
 			],
 			"css": ["ttc/css/style.css"],
 			"run_at": "document_idle",
