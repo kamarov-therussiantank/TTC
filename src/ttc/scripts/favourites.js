@@ -69,6 +69,14 @@ whenContentInitialized().then(() => {
                 gap: "10px"
             });
         }
+        document.addEventListener("visibilitychange", () => {
+            if (document.visibilityState === "visible" && notif._timeout) {
+                notif.style.opacity = "0";
+                notif.style.transform = "translateX(-50%) translateY(-10px)";
+                clearTimeout(notif._timeout);
+                notif._timeout = null;
+            }
+        });
         notif.innerHTML = "";
         if (player) {
             const canvas = createTankCanvas(player);
