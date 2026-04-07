@@ -223,7 +223,6 @@ TankTrouble.GarageOverlay = {
             ...Object.entries(savedAccessories).map(([part, value]) => (value != null) ? applyAccessory(part, value, currentAccessories[part]) : null).filter(Boolean)
         ];
         await Promise.all(doneTasks);
-        this.renderWardrobe();
         }, function(){}, function(){}, playerId, Caches.getPlayerDetailsCache());
     },
     deleteLoadout: function(id) {
