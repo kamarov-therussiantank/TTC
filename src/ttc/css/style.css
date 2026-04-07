@@ -770,29 +770,21 @@ button:disabled {
 }
 .currencyIcon {
     top: -5px !important;
-}
-.mod-entry {
+}.mod-entry {
   display: flex;
-  justify-content: space-between;
+  flex-direction: column;
   align-items: center;
-  margin-bottom: 3px;
+  margin-bottom: 5px;
   margin-left: 3px;
   margin-right: 3px;
 }
 .mod-username {
-  font-size: 9px;
-  flex: auto;
-  display: flex;
-  text-decoration: none;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
+  font-family: 'TankTrouble';
+  font-size: 12px;
+  font-weight: bold;
 }
 .mod-last-login {
-  font-size: 9px;
-  text-align: right;
-  width: 60%;
-  font-weight: bold;
+  font-size: 10px;
 }
 @keyframes disappear {
   0% {
@@ -884,6 +876,8 @@ label.subheadline {
     margin-bottom: 3px;
 }
 .leaderboard-snippet-list .username {
+    font-family: 'TankTrouble';
+    font-weight: bold;
     flex: auto;
     display: flex;
     text-decoration: none;
@@ -930,7 +924,7 @@ select#snippetStat:hover {
     border-radius: 5px;
 }
 #wardrobe::-webkit-scrollbar-track {
-    background: transparent;
+    background: transparent !important;
 }
 .wardrobe-item {
     display: flex;
@@ -966,7 +960,7 @@ select#snippetStat:hover {
     background: #ffffff;
 }
 #favourites-box .content::-webkit-scrollbar-track {
-    background: transparent;
+    background: transparent !important;
 }
 .player-row {
     display: flex;

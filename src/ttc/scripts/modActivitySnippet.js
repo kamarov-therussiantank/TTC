@@ -52,7 +52,7 @@ whenContentInitialized().then(() => {
                         playerDetailsList
                         const sorted = playerDetailsList
                             .sort((a, b) => b.getLastLogin() - a.getLastLogin())
-                            .slice(0, 10)
+                            .slice(0, 3)
                             if (!sorted.length) {
                             snippet.find('#mod-activity').html(`<p class="empty" id="modActivityEmpty"></p>`);
                             const msgElement = document.getElementById("modActivityEmpty");
