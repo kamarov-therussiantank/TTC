@@ -10,13 +10,13 @@ window.getTimeAgo = function(unixTimestampInSeconds) {
     const year = day * 365.25;
 
     if (secondsAgo < minute) {
-        return `${secondsAgo} sec${secondsAgo !== 1 ? 's' : ''} ago`;
+        return `${secondsAgo} second${secondsAgo !== 1 ? 's' : ''} ago`;
     } else if (secondsAgo < hour) {
         const minutes = Math.floor(secondsAgo / minute);
-        return `${minutes} min${minutes !== 1 ? 's' : ''} ago`;
+        return `${minutes} minute${minutes !== 1 ? 's' : ''} ago`;
     } else if (secondsAgo < day) {
         const hours = Math.floor(secondsAgo / hour);
-        return `${hours} hr${hours !== 1 ? 's' : ''} ago`;
+        return `${hours} hour${hours !== 1 ? 's' : ''} ago`;
     } else if (secondsAgo < week) {
         const days = Math.floor(secondsAgo / day);
         return `${days} day${days !== 1 ? 's' : ''} ago`;
