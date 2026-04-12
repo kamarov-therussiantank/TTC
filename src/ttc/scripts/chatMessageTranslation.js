@@ -1,13 +1,13 @@
-// Chat Message Translation Script
+// Chat translation
 whenContentInitialized().then(() => {
     const targetLanguage = "en";
     const translationCache = new Map();
-    let translationEnabled = localStorage.getItem("tt_translationEnabled");
+    let translationEnabled = localStorage.getItem("chat");
     translationEnabled = translationEnabled === null ? true : translationEnabled === "true";
     async function translateText(text, target = targetLanguage) {
         if (!translationEnabled) return text;
         if (!text || text.length < 2) return text;
-        if (text.length <= 3) return text;
+        if (text.length <= 2) return text;
         if (/^[a-zA-Z]+$/.test(text) && text.length < 2) return text;
 
         if (translationCache.has(text)) {
@@ -37,7 +37,7 @@ whenContentInitialized().then(() => {
         let message = this.chatInput.val().trim();
         if (message.toLowerCase() === "/t") {
             translationEnabled = !translationEnabled;
-            localStorage.setItem("tt_translationEnabled", translationEnabled);
+            localStorage.setItem("chat", translationEnabled);
             const statusMsg = translationEnabled
                 ? "Chat translation enabled"
                 : "Chat translation disabled";

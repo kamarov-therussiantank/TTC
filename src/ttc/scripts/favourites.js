@@ -1,7 +1,8 @@
+// Favourites box
 whenContentInitialized().then(() => {
-    const FAV_KEY = "tt_custom_favourites";
+    const KEY = "favourites";
     function getFavourites() {
-        return JSON.parse(localStorage.getItem(FAV_KEY) || "[]");
+        return JSON.parse(localStorage.getItem(KEY) || "[]");
     }
     const lastLoginTracker = new Map();
     const tankCache = new Map();
@@ -228,7 +229,7 @@ whenContentInitialized().then(() => {
                     removeBtn.on('click', () => {
                         const currentFavourites = getFavourites();
                         const updatedFavourites = currentFavourites.filter(id => id !== player.playerId);
-                        localStorage.setItem(FAV_KEY, JSON.stringify(updatedFavourites));
+                        localStorage.setItem(KEY, JSON.stringify(updatedFavourites));
                         this.renderList();
                     });
                     const info = $('<div class="player-info"></div>');

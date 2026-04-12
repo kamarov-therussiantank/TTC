@@ -76,7 +76,7 @@ whenContentInitialized().then(() => {
             item.html[key] = el;
         }
     };
-    let storedThreads = JSON.parse(localStorage.getItem('ttForumThreads')) || [];
+    let storedThreads = JSON.parse(localStorage.getItem('forum')) || [];
     function storeThreads() {
         let changed = false;
         $('.thread').each(function () {
@@ -97,7 +97,7 @@ whenContentInitialized().then(() => {
             }
         });
         if (changed) {
-            localStorage.setItem('ttForumThreads', JSON.stringify(storedThreads));
+            localStorage.setItem('forum', JSON.stringify(storedThreads));
         }
     }
     if (!hooked) {
@@ -175,7 +175,7 @@ whenContentInitialized().then(() => {
                 item.find('.deleteSuggestion').on('click', (e) => {
                     e.stopPropagation();
                     storedThreads = storedThreads.filter(t => t.id !== thread.id);
-                    localStorage.setItem('ttForumThreads', JSON.stringify(storedThreads));
+                    localStorage.setItem('forum', JSON.stringify(storedThreads));
                     item.remove();
                 });
                 suggestions.append(item);

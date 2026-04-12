@@ -1,3 +1,4 @@
+// Tank wardrobe
 var TankTrouble = TankTrouble || {};
 TankTrouble.GarageOverlay = {
     garageWrapper: null,
@@ -78,14 +79,14 @@ TankTrouble.GarageOverlay = {
                 backgroundAccessory: null,
                 badge: null
             };
-        let saves = JSON.parse(localStorage.getItem("tt_tank_saves") || "[]");
+        let saves = JSON.parse(localStorage.getItem("wardrobe") || "[]");
         const saveId = Date.now() + "_" + Math.floor(Math.random() * 1000);
         saves.push({
             id: saveId,
             playerId: playerId,
             data: save
         });
-        localStorage.setItem("tt_tank_saves", JSON.stringify(saves));
+        localStorage.setItem("wardrobe", JSON.stringify(saves));
         this.renderWardrobe();
         }, function(){}, function(){}, playerId, Caches.getPlayerDetailsCache());
     },
@@ -114,7 +115,7 @@ TankTrouble.GarageOverlay = {
     renderWardrobe: function() {
         const wrapper = this.garageWardrobe;
         wrapper.empty();
-        let saves = JSON.parse(localStorage.getItem("tt_tank_saves") || "[]");
+        let saves = JSON.parse(localStorage.getItem("wardrobe") || "[]");
         saves = saves.filter(s => s.playerId === this.playerId);
         if (saves.length === 0) {
             wrapper.append("<p id='no-saved-tanks'>No saves</p>");
@@ -136,7 +137,7 @@ TankTrouble.GarageOverlay = {
         });
     },
     loadLoadout: function(id) {
-    let saves = JSON.parse(localStorage.getItem("tt_tank_saves") || "[]");
+    let saves = JSON.parse(localStorage.getItem("wardrobe") || "[]");
     const save = saves.find(s => s.id === id);
     if (!save) return;
     const state = this.phaserInstance.state.getCurrentState();
@@ -226,9 +227,9 @@ TankTrouble.GarageOverlay = {
         }, function(){}, function(){}, playerId, Caches.getPlayerDetailsCache());
     },
     deleteLoadout: function(id) {
-        let saves = JSON.parse(localStorage.getItem("tt_tank_saves") || "[]");
+        let saves = JSON.parse(localStorage.getItem("wardrobe") || "[]");
         saves = saves.filter(s => s.id !== id);
-        localStorage.setItem("tt_tank_saves", JSON.stringify(saves));
+        localStorage.setItem("wardrobe", JSON.stringify(saves));
         this.renderWardrobe();
     },
     hide: function() {
