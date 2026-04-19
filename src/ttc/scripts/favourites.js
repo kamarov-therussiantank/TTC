@@ -59,6 +59,7 @@ whenContentInitialized().then(() => {
                 color: "#464646",
                 padding: "10px 16px",
                 borderRadius: "24px",
+                fontFamily: "TankTrouble",
                 fontSize: "14px",
                 zIndex: 9999,
                 opacity: 0,
