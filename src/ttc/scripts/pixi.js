@@ -1,9 +1,6 @@
 // Phaser image rendering
 const REMOVE_SHADING = false;
 const POSTERIZE_LEVELS = 3;
-const TARGET_KEYS = ["tankSprites"];
-const DPR = window.devicePixelRatio || 1;
-const SHOULD_DOWNSCALE = DPR < 2;
 const ogc = HTMLCanvasElement.prototype.getContext;
 HTMLCanvasElement.prototype.getContext = function(type, opts) {
     const ctx = ogc.call(this, type, opts);
@@ -26,24 +23,18 @@ function pC(ctx, width, height, levels = 3) {
     ctx.putImageData(img, 0, 0);
 }
 async function pI(img) {
-    const targetWidth  = SHOULD_DOWNSCALE ? Math.floor(img.width / 2) : img.width;
-    const targetHeight = SHOULD_DOWNSCALE ? Math.floor(img.height / 2) : img.height;
     const canvas = document.createElement("canvas");
-    canvas.width = targetWidth;
-    canvas.height = targetHeight;
+    canvas.width = img.width;
+    canvas.height = img.height;
     const ctx = canvas.getContext("2d");
     if (!ctx) return null;
     ctx.imageSmoothingEnabled = false;
     ctx.webkitImageSmoothingEnabled = false;
     ctx.mozImageSmoothingEnabled = false;
     ctx.msImageSmoothingEnabled = false;
-    ctx.drawImage(
-        img,
-        0, 0, img.width, img.height,
-        0, 0, targetWidth, targetHeight
-    );
+     ctx.drawImage(img, 0, 0);
     if (REMOVE_SHADING) {
-        pC(ctx, targetWidth, targetHeight, POSTERIZE_LEVELS);
+        pC(ctx, canvas.width, canvas.height, POSTERIZE_LEVELS);
     }
     return canvas;
 }
@@ -72,16 +63,6 @@ async function pT(game) {
             if (imgData.texture) {
                 imgData.texture.baseTexture = newBase;
                 imgData.texture.frame = new PIXI.Rectangle(0, 0, canvas.width, canvas.height);
-            }
-            if (imgData.frameData && SHOULD_DOWNSCALE) {
-                imgData.frameData._frames.forEach(frame => {
-                    frame.x *= 0.5;
-                    frame.y *= 0.5;
-                    frame.width *= 0.5;
-                    frame.height *= 0.5;
-                    frame.centerX *= 0.5;
-                    frame.centerY *= 0.5;
-                });
             }
             imgData._sharpProcessed = true;
         } catch (e) {

@@ -5,7 +5,6 @@ Game.UIPreloadState.fields({
 });
 Game.UIPreloadState.methods({
     preload: function() {
-        var classicTankSprites = "https://kamarov-therussiantank.github.io/TTC/src/assets/images/game/tankSprites"
         this.preloadBackground = this.add.sprite(this.game.world.centerX - UIConstants.WAITING_ICON_WIDTH / 2.0, this.game.height / 3.0, 'preloadbar');
         this.preloadBackground.anchor.setTo(0.0, 0.5);
         this.preloadBackground.alpha = 0.3;
@@ -30,8 +29,7 @@ Game.UIPreloadState.methods({
             this.load.nineSlice('button52', g_url('assets/images/buttons/standard52@2x.png'), 22, 22, 22, 22);
             this.load.nineSlice('button52Active', g_url('assets/images/buttons/standard52Active@2x.png'), 22, 22, 22, 22);
             this.load.nineSlice('button52Disabled', g_url('assets/images/buttons/52Disabled@2x.png'), 22, 22, 22, 22);
-            this.load.atlas('game', g_url('assets/images/game/game@2x.png'), g_url('assets/images/game/game@2x.json'));      
-            this.load.atlas('tankSprites', `${classicTankSprites}@2x.png`, `${classicTankSprites}@2x.json`);
+            this.load.atlas('game', g_url('assets/images/game/game@2x.png'), g_url('assets/images/game/game@2x.json'));  
             this.load.physics('game-physics', g_url('assets/images/game/game-physics@2x.json'));
             this.load.atlas('celebration', g_url('assets/images/game/celebration@2x.png'), g_url('assets/images/game/celebration@2x.json'));
             this.load.physics('celebration-physics', g_url('assets/images/game/celebration-physics@2x.json'));
@@ -61,7 +59,6 @@ Game.UIPreloadState.methods({
             this.load.nineSlice('button52Active', g_url('assets/images/buttons/standard52Active.png'), 11, 11, 11, 11);
             this.load.nineSlice('button52Disabled', g_url('assets/images/buttons/52Disabled.png'), 11, 11, 11, 11);
             this.load.atlas('game', g_url('assets/images/game/game.png'), g_url('assets/images/game/game.json'));      
-            this.load.atlas('tankSprites', `${classicTankSprites}.png`, `${classicTankSprites}.json`);
             this.load.physics('game-physics', g_url('assets/images/game/game-physics.json'));
             this.load.atlas('celebration', g_url('assets/images/game/celebration.png'), g_url('assets/images/game/celebration.json'));
             this.load.physics('celebration-physics', g_url('assets/images/game/celebration-physics.json'));
