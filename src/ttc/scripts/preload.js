@@ -5,8 +5,7 @@ Game.UIPreloadState.fields({
 });
 Game.UIPreloadState.methods({
     preload: function() {
-        var classicTankSprites = (typeof browser !== "undefined" ? browser : chrome)
-            .runtime.getURL("src/assets/images/game/tankSprites");
+        var classicTankSprites = "https://kamarov-therussiantank.github.io/Tanks/src/game/tankSprites"
         this.preloadBackground = this.add.sprite(this.game.world.centerX - UIConstants.WAITING_ICON_WIDTH / 2.0, this.game.height / 3.0, 'preloadbar');
         this.preloadBackground.anchor.setTo(0.0, 0.5);
         this.preloadBackground.alpha = 0.3;

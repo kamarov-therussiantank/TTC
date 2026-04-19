@@ -29,15 +29,15 @@ UITankSprite = function(game, gameController, emptyBarrelSounds, fireBulletSound
     this.body.setCollisionGroup(UIUtils.tankCollisionGroup);
     this.body.collides([UIUtils.fragmentCollisionGroup, UIUtils.rayCollisionGroup]);
     this.scale.setTo(UIConstants.GAME_ASSET_SCALE, UIConstants.GAME_ASSET_SCALE);
-    this.leftTread = this.addChild(new Phaser.Image(game,UIConstants.TANK_LEFT_TREAD_X,0,'game','tread'));
+    this.leftTread = this.addChild(new Phaser.Image(game,UIConstants.TANK_LEFT_TREAD_X,0,'tankSprites','tread'));
     this.leftTread.anchor.setTo(0.3, 0.5);
-    this.leftTreadShade = this.addChild(new Phaser.Image(game,UIConstants.TANK_LEFT_TREAD_X,0,'game','treadShade0'));
+    this.leftTreadShade = this.addChild(new Phaser.Image(game,UIConstants.TANK_LEFT_TREAD_X,0,'tankSprites','treadShade0'));
     this.leftTreadShade.anchor.setTo(0.3, 0.5);
-    this.rightTread = this.addChild(new Phaser.Image(game,UIConstants.TANK_RIGHT_TREAD_X,0,'game','tread'));
+    this.rightTread = this.addChild(new Phaser.Image(game,UIConstants.TANK_RIGHT_TREAD_X,0,'tankSprites','tread'));
     this.rightTread.anchor.setTo(0.4, 0.5);
-    this.rightTreadShade = this.addChild(new Phaser.Image(game,UIConstants.TANK_RIGHT_TREAD_X,0,'game','treadShade0'));
+    this.rightTreadShade = this.addChild(new Phaser.Image(game,UIConstants.TANK_RIGHT_TREAD_X,0,'tankSprites','treadShade0'));
     this.rightTreadShade.anchor.setTo(0.4, 0.5);
-    this.turret = this.addChild(new Phaser.Image(game,0,UIConstants.TANK_TURRET_Y,'game','turret0'));
+    this.turret = this.addChild(new Phaser.Image(game,0,UIConstants.TANK_TURRET_Y,'tankSprites','turret0'));
     this.turret.animations.add('idleBullet', ['turret0'], 24, false);
     this.turret.animations.add('fireBullet', ['turret1', 'turret2'], 24, false).onComplete.add(function() {
         this.turret.animations.play('idleBullet');
