@@ -1,6 +1,9 @@
 // Phaser image rendering
 const REMOVE_SHADING = false;
 const POSTERIZE_LEVELS = 3;
+
+
+
 const ogc = HTMLCanvasElement.prototype.getContext;
 HTMLCanvasElement.prototype.getContext = function(type, opts) {
     const ctx = ogc.call(this, type, opts);
@@ -23,16 +26,22 @@ function pC(ctx, width, height, levels = 3) {
     ctx.putImageData(img, 0, 0);
 }
 async function pI(img) {
+
+
     const canvas = document.createElement("canvas");
     canvas.width = img.width;
     canvas.height = img.height;
     const ctx = canvas.getContext("2d");
     if (!ctx) return null;
     ctx.imageSmoothingEnabled = false;
-    ctx.webkitImageSmoothingEnabled = false;
-    ctx.mozImageSmoothingEnabled = false;
-    ctx.msImageSmoothingEnabled = false;
-     ctx.drawImage(img, 0, 0);
+    ctx.drawImage(img, 0, 0);
+
+
+
+
+
+
+
     if (REMOVE_SHADING) {
         pC(ctx, canvas.width, canvas.height, POSTERIZE_LEVELS);
     }
@@ -42,11 +51,11 @@ async function pT(game) {
     if (!game || !game.cache || !game.cache._cache?.image) return;
     const images = game.cache._cache.image;
     const SCALE_MODE =
-        (typeof PIXI !== "undefined" && PIXI.SCALE_MODES?.NEAREST) ||
-        (typeof PIXI !== "undefined" && PIXI.scaleModes?.NEAREST) ||
-        1;
+        (typeof PIXI !== "undefined" && PIXI.SCALE_MODES?.LINEAR) ||
+        (typeof PIXI !== "undefined" && PIXI.scaleModes?.LINEAR) ||
+        0;
     for (let key in images) {
-        if (!TARGET_KEYS.includes(key)) continue;
+
         const imgData = images[key];
         if (!imgData || !imgData.base || !imgData.base.source) continue;
         if (imgData._sharpProcessed) continue;
@@ -64,6 +73,16 @@ async function pT(game) {
                 imgData.texture.baseTexture = newBase;
                 imgData.texture.frame = new PIXI.Rectangle(0, 0, canvas.width, canvas.height);
             }
+
+
+
+
+
+
+
+
+
+
             imgData._sharpProcessed = true;
         } catch (e) {
             console.warn("Failed processing:", key, e);
@@ -93,4 +112,4 @@ setInterval(() => {
         fR(game);
         pT(game);
     }
-}, 100);
+}, 1000);
