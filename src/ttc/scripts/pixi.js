@@ -1,9 +1,6 @@
 // Phaser image rendering
 const REMOVE_SHADING = false;
 const POSTERIZE_LEVELS = 3;
-
-
-
 const ogc = HTMLCanvasElement.prototype.getContext;
 HTMLCanvasElement.prototype.getContext = function(type, opts) {
     const ctx = ogc.call(this, type, opts);
@@ -26,8 +23,6 @@ function pC(ctx, width, height, levels = 3) {
     ctx.putImageData(img, 0, 0);
 }
 async function pI(img) {
-
-
     const canvas = document.createElement("canvas");
     canvas.width = img.width;
     canvas.height = img.height;
@@ -35,13 +30,6 @@ async function pI(img) {
     if (!ctx) return null;
     ctx.imageSmoothingEnabled = false;
     ctx.drawImage(img, 0, 0);
-
-
-
-
-
-
-
     if (REMOVE_SHADING) {
         pC(ctx, canvas.width, canvas.height, POSTERIZE_LEVELS);
     }
@@ -55,7 +43,6 @@ async function pT(game) {
         (typeof PIXI !== "undefined" && PIXI.scaleModes?.LINEAR) ||
         0;
     for (let key in images) {
-
         const imgData = images[key];
         if (!imgData || !imgData.base || !imgData.base.source) continue;
         if (imgData._sharpProcessed) continue;
@@ -73,16 +60,6 @@ async function pT(game) {
                 imgData.texture.baseTexture = newBase;
                 imgData.texture.frame = new PIXI.Rectangle(0, 0, canvas.width, canvas.height);
             }
-
-
-
-
-
-
-
-
-
-
             imgData._sharpProcessed = true;
         } catch (e) {
             console.warn("Failed processing:", key, e);
