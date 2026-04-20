@@ -163,11 +163,33 @@ whenContentInitialized().then(() => {
             this.container = $('<div class="box noselect" id="favourites-box"></div>');
             this.content = $('<div class="content"></div>');
             this.background = $('<div class="boxbackground"></div>');
+            this.searchContainer = $('<div id="search-container"></div>');;
+            this.searchInput = $('<input type="text" placeholder="Enter username or identifier..." class="fav-search">');
+            this.container.append(this.searchContainer);
+            this.searchContainer.append(this.searchInput);
             this.container.append(this.content);
             $('body').append(this.background);
             $('body').append(this.container);
             this.container.hide();
             this.background.hide();
+            this.searchInput.css({
+                width: "90%",
+                margin: "5px",
+                padding: "4px",
+                background: "#fff",
+                borderRadius: "4px",
+                border: "2px solid #ccc",
+                fontFamily: "TankTrouble",
+                fontSize: "14px"
+            });
+            let searchTimeout;
+            this.searchInput.on("input", (e) => {
+                clearTimeout(searchTimeout);
+                searchTimeout = setTimeout(() => {
+                    this.searchQuery = e.target.value.toLowerCase();
+                    this.renderList();
+                }, 120);
+            });
             this.background.on('click', () => {
                 if (this.showing) this.hide();
             });
@@ -211,14 +233,26 @@ whenContentInitialized().then(() => {
                     );
                 });
             });
-            Promise.all(promises).then(players => {
+        Promise.all(promises).then(players => {
                 players.sort((a, b) => b.lastLogin - a.lastLogin);
+                if (this.searchQuery) {
+                players = players.filter(player => {
+                        const usernameMatch = player.username.toLowerCase().includes(this.searchQuery);
+                        const idMatch = String(player.playerId).includes(this.searchQuery);
+                        return usernameMatch || idMatch;
+                    });
+                }
+                if (!players.length) {
+                    this.content.append('<div>No matching players</div>');
+                    return;
+                }
                 players.forEach(player => {
         const row = $('<div class="player-row"></div>');
         const canvas = createTankCanvas(player);
         const tankWrapper = $('<div class="player-tank"></div>');
         tankWrapper.append(canvas);
         const name = $(`<div class="player-name">${player.username}</div>`);
+        const id = $(`<div class="player-id">#${player.playerId}</div>`);
         const login = $(`
             <div class="player-login">
                 ${player.lastLogin 
@@ -235,6 +269,7 @@ whenContentInitialized().then(() => {
                     });
                     const info = $('<div class="player-info"></div>');
                     info.append(name);
+                    info.append(id);
                     info.append(login);
                     info.append(removeBtn);
                     row.append(tankWrapper);
@@ -254,8 +289,7 @@ whenContentInitialized().then(() => {
                 left: x + 50,
                 top: y - 230,
                 position: 'absolute',
-                transform: 'scale(0.1)',
-                opacity: 0
+                transform: 'scale(0.1)'
             });
             this.container.animate({ opacity: 1 }, 200);
             this.container.css({ transform: 'scale(1)' });

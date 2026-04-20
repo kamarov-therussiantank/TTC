@@ -954,10 +954,14 @@ select#snippetStat:hover {
 #favourites-box .content {
     overflow-y: auto;
     width: max-content;
-    max-height: 250px;
+    max-height: 260px;
     border: none !important;
     border-radius: 2px;
     background: #ffffff;
+}
+#search-container {
+    border-radius: 4px;
+    background: rgb(255, 255, 255)
 }
 #favourites-box .content::-webkit-scrollbar-track {
     background: transparent !important;
@@ -975,7 +979,15 @@ select#snippetStat:hover {
     display: flex;
     justify-content: space-between;
 }
+.player-id {
+    position: relative;
+    left: -34%;
+    font-size: 12px;
+    opacity: 0.8;
+}
 .player-login {
+    position: relative;
+    left: 0%;
     font-size: 12px;
     opacity: 0.8;
 }
