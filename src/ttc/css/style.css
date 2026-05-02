@@ -698,10 +698,6 @@ button {
     font-weight: 600;
     box-shadow: none !important;
 }
-button.medium {
-    min-width: 36px !important;
-    line-height: 30px !important;
-}
 button.warning {
     background: red !important;
     color: #fff !important;
