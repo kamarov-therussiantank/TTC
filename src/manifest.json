@@ -85,6 +85,7 @@
 			 "ttc/scripts/pixi.js",
 			 "ttc/scripts/patches.js",
 			 "ttc/scripts/preload.js",
+			 "ttc/scripts/lab.js",
 			 "ttc/scripts/settingsAdditions.js",
 			 "ttc/scripts/visitsSnippet.js",
 			 "ttc/scripts/FAQSnippet.js",
