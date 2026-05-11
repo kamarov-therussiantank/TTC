@@ -1004,3 +1004,6 @@ select#snippetStat:hover {
     background: #f8f8f8;
     font-size: 12px;
 }
+#shopItemsWrapper {
+    display: flow-root;
+}
