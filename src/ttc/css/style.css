@@ -944,23 +944,33 @@ select#snippetStat:hover {
     align-items: center;
 }
 #favourites-box {
+    background: #ffffff;
     border: 3px #d3d3d3 solid;
-    border-radius: 6px;
+    border-radius: 12px;
+}
+#favourites-box .ui-button {
+    margin: 6px 0 0 0 !important;
+    border: 2px solid #d3d3d3;
+    font-weight: normal;
 }
 #favourites-box .content {
     overflow-y: auto;
+    margin: 6px;
     width: max-content;
-    max-height: 260px;
+    max-height: 250px;
+    background: none !important;
     border: none !important;
-    border-radius: 2px;
-    background: #ffffff;
-}
-#search-container {
-    border-radius: 4px;
-    background: rgb(255, 255, 255)
 }
 #favourites-box .content::-webkit-scrollbar-track {
     background: transparent !important;
+}
+.player-info {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    flex-direction: column;
+    margin-left: 10px;
 }
 .player-row {
     display: flex;
@@ -975,12 +985,6 @@ select#snippetStat:hover {
     display: flex;
     justify-content: space-between;
 }
-.player-id {
-    position: relative;
-    left: -34%;
-    font-size: 12px;
-    opacity: 0.8;
-}
 .player-login {
     position: relative;
     left: 0%;
@@ -989,10 +993,6 @@ select#snippetStat:hover {
 }
 .player-tank canvas {
     display: block;
-}
-.player-info {
-    display: flex;
-    flex-direction: column;
 }
 .button.remove-fav {
     position: relative;
